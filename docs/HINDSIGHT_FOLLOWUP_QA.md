@@ -76,6 +76,9 @@ Common workbook checks: `Data`, `Scope`, `Definitions`, and `Contributing pairs`
 
 ## Remaining targeted desktop and responsive checks
 
+- **Deployment follow-up:** the app is live on Vercel; see `DEPLOYMENT.md`. Automatic GitHub deployment setup was approved but explicitly deferred by the user until GitHub/Vercel browser sign-in can be completed. Current pushes do not automatically publish.
+- **Dependency audit triage:** the first Vercel clean install reported33 advisories (15moderate,14high,4critical). Assess dependency paths and runtime reachability before targeted upgrades. No breaking bulk upgrade was attempted during the urgent demo release.
+
 Complete the corresponding steps in the JSON runbook; avoid restarting every successful unchanged flow.
 
 - **NR04:** native typed numeric filters: AND/OR, between, missing and no-positive-base; search + sort + grouping + paging + column visibility; all 72 items reachable. Confirm view state survives exact child navigation and Back. Actual main tables are recovered DataGrid, not a static HTML substitute.
