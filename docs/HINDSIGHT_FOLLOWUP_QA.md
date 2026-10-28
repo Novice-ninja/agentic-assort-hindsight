@@ -23,7 +23,7 @@ Canonical entry: `/assort/hindsight?mode=in-season`. PLR entry: `/assort/hindsig
 
 ### 1. Permission projection — final repair gate
 
-The permission agent was finishing the final repair at handoff. Read its current reports and source before declaring it complete. Test the actual latest integrated build, not an older captured screenshot.
+The final repair passed eight actual provider, CaseDetail DOM and workbook regression groups before publication (`authored-permissions-checks.json`), and the integrated production build passed. The native replay remains deferred. Test the actual deployed build, not an older captured screenshot.
 
 - Start with a permitted merchant session; author an observation, learning, case note or saved-view text containing GM/COGS evidence and a distinctive number. Switch to restricted margin access through Demo settings.
 - Verify the denied metric cannot reappear through cards, tables, case text, decision history, saved views, notices, Iris evidence/context, drill destinations or export rows/metadata. Permitted sales and quantity must remain usable.
