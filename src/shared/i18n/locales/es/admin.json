@@ -1,0 +1,215 @@
+{
+  "page": {
+    "title": "Administración de planificación",
+    "subtitle": "Configure productos, ubicaciones, mapeo de calendario y excepciones globales",
+    "hideFilters": "Ocultar filtros",
+    "showFilters": "Mostrar filtros"
+  },
+  "stepper": {
+    "label": "Módulos de planificación"
+  },
+  "modules": {
+    "products": "Productos",
+    "locations": "Ubicaciones",
+    "calendar": "Mapeo de calendario",
+    "exceptions": "Excepciones globales"
+  },
+  "status": {
+    "active": "Activo",
+    "done": "Completado",
+    "inProgress": "En progreso"
+  },
+  "filters": {
+    "applied": "Filtros aplicados",
+    "barLabel": "Filtros aplicados",
+    "allFilters": "Todos los filtros",
+    "groups": {
+      "department": "Departamento",
+      "season": "Temporada",
+      "region": "Región"
+    }
+  },
+  "filterModal": {
+    "title": "Agregar filtros",
+    "tabsLabel": "Categorías de filtros",
+    "tabs": {
+      "products": "Productos",
+      "channel": "Canal",
+      "calendar": "Calendario"
+    },
+    "fields": {
+      "productGroupId": "Grupo de producto",
+      "subDepartmentId": "Subdepartamento",
+      "categoryId": "Categoría",
+      "subCategoryId": "Subcategoría",
+      "classId": "Clase",
+      "subClassId": "Subclase",
+      "brandId": "Marca",
+      "channelRegionIds": "Región de canal",
+      "customerTypeIds": "Tipo de cliente",
+      "fulfillmentScopeIds": "Alcance de cumplimiento",
+      "calendarSeasonId": "Temporada",
+      "periodIds": "Período"
+    },
+    "clearTab": "Borrar todo",
+    "cancel": "Cancelar",
+    "apply": "Aplicar"
+  },
+  "empty": {
+    "globalTitle": "Aún no hay módulos configurados",
+    "globalBody": "Comience configurando Productos, Ubicaciones, Mapeo de calendario o Excepciones globales para impulsar sus flujos de planificación.",
+    "moduleTitle": "Sin resultados para este módulo",
+    "moduleBody": "Intente ajustar sus filtros o agregue nuevos para ver datos aquí.",
+    "addFilter": "Agregar filtro"
+  },
+  "view": {
+    "table": "Vista de tabla",
+    "globe": "Vista de globo",
+    "toggleLabel": "Modo de vista"
+  },
+  "grid": {
+    "export": "Exportar CSV",
+    "moreActions": "Más acciones",
+    "products": {
+      "groupIdentity": "Producto",
+      "groupAttributes": "Atributos",
+      "id": "ID estilo color",
+      "name": "Nombre",
+      "dept": "Depto",
+      "class": "Clase",
+      "brand": "Marca",
+      "colour": "Color",
+      "collar": "Cuello",
+      "fit": "Ajuste",
+      "sleeve": "Manga",
+      "length": "Largo",
+      "rowCount": "{{count}} productos"
+    },
+    "locations": {
+      "groupLocation": "Ubicación",
+      "groupAttributes": "Atributos de ubicación",
+      "id": "ID",
+      "name": "Nombre",
+      "city": "Ciudad",
+      "climate": "Clima",
+      "customerType": "Tipo de cliente",
+      "fulfillment": "Cumplimiento",
+      "income": "Nivel de ingresos",
+      "type": "Tipo de ubicación"
+    },
+    "exceptions": {
+      "geography": "Geografía",
+      "id": "ID",
+      "type": "Tipo",
+      "customerType": "Tipo de cliente",
+      "summary": "Resumen de reglas",
+      "owner": "Propietario"
+    }
+  },
+  "locations": {
+    "search": "Buscar ubicaciones",
+    "customerTypeFilter": "Tipo de cliente",
+    "allCustomerTypes": "Todos los tipos de cliente",
+    "globe": {
+      "title": "Ubicaciones de tiendas",
+      "subtitle": "{{count}} tiendas en el mapa",
+      "aria": "Globo interactivo que muestra ubicaciones de tiendas",
+      "listLabel": "Tarjetas de ubicación de tienda"
+    }
+  },
+  "locationCard": {
+    "climate": "Clima",
+    "customerType": "Tipo de cliente",
+    "fulfillmentType": "Cumplimiento",
+    "incomeLevel": "Nivel de ingresos",
+    "locationType": "Tipo de ubicación"
+  },
+  "exceptions": {
+    "search": "Buscar excepciones",
+    "customerTypeFilter": "Tipo de cliente",
+    "allCustomerTypes": "Todos los tipos de cliente",
+    "globe": {
+      "title": "Excepciones globales",
+      "subtitle": "{{stores}} regiones · {{rules}} reglas",
+      "aria": "Globo interactivo que muestra regiones de excepción global",
+      "listLabel": "Tarjetas de reglas de excepción"
+    },
+    "card": {
+      "ruleCount": "{{count}} reglas",
+      "operator": "Operador",
+      "value": "Valor",
+      "done": "Listo",
+      "editRule": "Editar regla",
+      "addRule": "Agregar regla",
+      "remove": "Eliminar excepción",
+      "added": "Agregado {{date}} por {{by}}",
+      "newAttribute": "Nuevo atributo"
+    },
+    "removeConfirm": {
+      "title": "¿Eliminar excepción?",
+      "body": "¿Está seguro de que desea eliminar \"{{title}}\"? Esta acción no se puede deshacer.",
+      "confirm": "Eliminar"
+    }
+  },
+  "calendar": {
+    "title": "Mapeo de calendario",
+    "body": "La configuración del mapeo de calendario está en progreso. Las especificaciones de campos y la edición estarán disponibles en una versión futura."
+  },
+  "operators": {
+    "equals": "igual a",
+    "notEquals": "distinto de",
+    "in": "en",
+    "contains": "contiene"
+  },
+  "enums": {
+    "temperate": "Templado",
+    "cold": "Frío",
+    "premium": "Premium",
+    "mainstream": "Convencional",
+    "conservative": "Conservador",
+    "value": "Económico",
+    "storePickUp": "Recogida en tienda",
+    "shipToStore": "Envío a tienda",
+    "delivery": "Entrega",
+    "high": "Alto",
+    "middle": "Medio",
+    "lowerMiddle": "Medio bajo",
+    "store": "Tienda",
+    "outlet": "Outlet"
+  },
+  "facets": {
+    "dept": {
+      "apparel": "Ropa",
+      "footwear": "Calzado"
+    },
+    "subDept": {
+      "mensTops": "Tops de hombre",
+      "womensTops": "Tops de mujer"
+    },
+    "category": {
+      "tops": "Tops"
+    },
+    "subCategory": {
+      "tees": "Camisetas"
+    },
+    "class": {
+      "tees": "Camisetas"
+    },
+    "subClass": {
+      "basic": "Básico"
+    },
+    "brand": {
+      "ownLabel": "Marca propia"
+    },
+    "season": {
+      "spring2026": "Primavera 2026"
+    },
+    "region": {
+      "northAmerica": "América del Norte",
+      "emea": "EMEA"
+    },
+    "productGroup": {
+      "all": "Todos los grupos de producto"
+    }
+  }
+}

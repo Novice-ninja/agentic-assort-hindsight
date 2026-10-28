@@ -1,0 +1,21 @@
+{
+  "kind": "Actual TSX renderer text regression using canonical facts; not a Chrome width/layout test",
+  "passed": 3,
+  "checkCount": 3,
+  "checks": [
+    {
+      "name": "Actual PairTable quantity and sellable cell renderers retain full numeric text without repeated unit suffixes",
+      "pass": true,
+      "canonicalPairsChecked": 3240
+    },
+    {
+      "name": "Coverage column states its week unit and reserves a readable state width",
+      "pass": true
+    },
+    {
+      "name": "Actual supply ledger renders full quantity/allocation values separately from its formatted UOM",
+      "pass": true,
+      "supplyLinesChecked": 6482
+    }
+  ]
+}

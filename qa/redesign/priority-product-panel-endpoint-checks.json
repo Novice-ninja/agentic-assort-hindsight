@@ -1,0 +1,78 @@
+{
+  "kind": "Actual MSW endpoint replay; separate from browser acceptance",
+  "passed": 12,
+  "checks": [
+    {
+      "name": "topStyleColors: full explicit scope and all matching pages",
+      "pass": true,
+      "rows": 72,
+      "pages": 18
+    },
+    {
+      "name": "missedOpportunities: full explicit scope and all matching pages",
+      "pass": true,
+      "rows": 12,
+      "pages": 3
+    },
+    {
+      "name": "carryForwards: full explicit scope and all matching pages",
+      "pass": true,
+      "rows": 12,
+      "pages": 3
+    },
+    {
+      "name": "topStyleColors: Bamboo explicit scope and all matching pages",
+      "pass": true,
+      "rows": 12,
+      "pages": 3
+    },
+    {
+      "name": "missedOpportunities: Bamboo explicit scope and all matching pages",
+      "pass": true,
+      "rows": 2,
+      "pages": 1
+    },
+    {
+      "name": "carryForwards: Bamboo explicit scope and all matching pages",
+      "pass": true,
+      "rows": 2,
+      "pages": 1
+    },
+    {
+      "name": "topStyleColors: empty explicit scope and all matching pages",
+      "pass": true,
+      "rows": 0,
+      "pages": 1
+    },
+    {
+      "name": "missedOpportunities: empty explicit scope and all matching pages",
+      "pass": true,
+      "rows": 0,
+      "pages": 1
+    },
+    {
+      "name": "carryForwards: empty explicit scope and all matching pages",
+      "pass": true,
+      "rows": 0,
+      "pages": 1
+    },
+    {
+      "name": "topStyleColors: all explicit scope and all matching pages",
+      "pass": true,
+      "rows": 72,
+      "pages": 18
+    },
+    {
+      "name": "missedOpportunities: all explicit scope and all matching pages",
+      "pass": true,
+      "rows": 12,
+      "pages": 3
+    },
+    {
+      "name": "carryForwards: all explicit scope and all matching pages",
+      "pass": true,
+      "rows": 12,
+      "pages": 3
+    }
+  ]
+}

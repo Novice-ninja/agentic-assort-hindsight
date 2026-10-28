@@ -1,0 +1,53 @@
+.hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Scope these vendor overrides to this existing product-only drawer. */
+.panel:global(.impact_drawer_filter_container) {
+  width: 100%;
+  max-width: 100%;
+}
+
+.panel:global(.impact_drawer_filter_container) :global(.impact_drawer_filter_container_right_panel) {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+.state {
+  margin: 0;
+  padding: 16px 0;
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (width <= 560px) {
+  /* A single, already-active rail adds no choice and would consume 200px. */
+  .panel:global(.impact_drawer_filter_container) :global(.impact_drawer_filter_container_left_panel) {
+    display: none;
+  }
+
+  .panel:global(.impact_drawer_filter_container) :global(.impact_drawer_filter_container_right_panel) :global(.impact_drawer_filter_footer) {
+    left: 0;
+  }
+
+  .hierarchy :global(.impact_inputbox_container_with_icons) {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hierarchy :global(.impact_inputbox_container_with_icons .impact-input-wrapper) {
+    min-width: 0;
+  }
+
+  .hierarchy :global(.impact_inputbox_container_with_icons .impact-input-wrapper .MuiInputBase-root input.MuiInputBase-input) {
+    min-width: 0;
+    width: 100%;
+  }
+}

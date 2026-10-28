@@ -1,0 +1,263 @@
+{
+  "name": "impact-ui",
+  "version": "5.0.2",
+  "description": "Impact Analytics UI library",
+  "type": "module",
+  "main": "./dist/components/index.js",
+  "module": "./dist/components/index.js",
+  "types": "./dist/components/index.d.ts",
+  "sideEffects": [
+    "./dist/styles/style.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./styles.css": "./dist/styles/style.css",
+    "./styles": "./dist/styles/style.css",
+    "./package.json": "./package.json",
+    "./eslint-plugin": {
+      "import": "./eslint-plugin/index.js"
+    },
+    "./*": {
+      "types": "./dist/components/*/index.d.ts",
+      "import": "./dist/components/*/index.js"
+    },
+    "./common/*": {
+      "types": "./dist/components/common/*/index.d.ts",
+      "import": "./dist/components/common/*/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js"
+    },
+    "./utils/assetBase": {
+      "types": "./dist/utils/assetBase.d.ts",
+      "import": "./dist/utils/assetBase.js"
+    }
+  },
+  "bin": {
+    "impact-ui-migrate": "bin/migrate.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "codemods",
+    "eslint-plugin",
+    "README.md",
+    "MIGRATION_GUIDE.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:lib",
+    "build:lib": "node ./scripts/clean-dist.mjs && tsc --noEmit && SOURCE_MAP=0 vite build && SOURCE_MAP=0 vite build --config vite.styles.config.ts && node ./scripts/generate-mcp-registry.mjs",
+    "build:lib:debug": "node ./scripts/clean-dist.mjs && tsc && NO_MINIFY=1 SOURCE_MAP=1 vite build && node ./scripts/generate-mcp-registry.mjs",
+    "optimize:images": "node ./scripts/optimize-images.mjs",
+    "optimize:images:dry": "node ./scripts/optimize-images.mjs --dry-run",
+    "optimize:images:staged": "node ./scripts/optimize-images.mjs --verbose",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build",
+    "test:storybook": "vitest --project=storybook",
+    "test:storybook:run": "vitest run --project=storybook",
+    "test": "vitest --project=unit",
+    "test:run": "vitest run --project=unit",
+    "test:root-attrs": "vitest run --project=unit src/components/__tests__/componentRootAttributes.test.tsx",
+    "test:automation-ids": "vitest run --project=unit -t \"forwards id and data-testid\"",
+    "test:ui": "vitest --project=unit --ui",
+    "test:coverage": "vitest run --project=unit --coverage",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:a11y": "eslint . --ext .tsx",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,json,scss,md}\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,scss,md}\"",
+    "type-check": "tsc --noEmit",
+    "format:fix": "npm run format -- --write && npm run lint:fix",
+    "validate": "npm run lint && npm run format:check && npm run type-check && npm run test:coverage",
+    "pre-push": "npm run type-check && npm run lint:errors && npm run format && npm run test:coverage",
+    "lint:errors": "eslint . --ext .js,.jsx,.ts,.tsx --quiet",
+    "docs": "cd docs && npm start",
+    "docs:build": "npm run docs:api && cd docs && npm run build",
+    "docs:api": "typedoc --options typedoc.json",
+    "docs:serve": "cd docs && npm run serve",
+    "docs:deploy": "npm run docs:build && cd docs && npm run deploy",
+    "migrate:image-paths": "node ./bin/migrate-image-paths.cjs ./src",
+    "migrate:image-paths:dry": "node ./bin/migrate-image-paths.cjs ./src --dry"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "./node_modules/.bin/prettier --write"
+    ],
+    "src/**/*.{json,scss,md}": [
+      "./node_modules/.bin/prettier --write"
+    ],
+    "src/assets/**/*.{svg,png,jpg,jpeg}": [
+      "node ./scripts/optimize-images.mjs --verbose",
+      "sh -c 'git add -A src/assets/webp || true'"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/react": "^4.8.4",
+    "@chromatic-com/storybook": "^5.0.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@impactsmartsuite/impact-icons": "^0.1.4",
+    "@mui/base": "^5.0.0-alpha.82",
+    "@mui/docs": "^5.8.0",
+    "@mui/envinfo": "^2.0.6",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.83",
+    "@mui/material": "^5.0.1",
+    "@mui/private-theming": "^5.8.0",
+    "@mui/styled-engine": "^5.8.0",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "@mui/styles": "^5.8.0",
+    "@mui/system": "^5.8.1",
+    "@mui/types": "^7.1.3",
+    "@mui/x-date-pickers": "^5.0.0-alpha.4",
+    "@storybook/addon-a11y": "10.2.15",
+    "@storybook/addon-docs": "10.2.15",
+    "@storybook/addon-vitest": "10.2.15",
+    "@storybook/react-vite": "10.2.15",
+    "@testing-library/jest-dom": "^6.2.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@tiptap/extension-highlight": "^2.26.1",
+    "@tiptap/extension-image": "^2.26.1",
+    "@tiptap/extension-link": "^2.26.1",
+    "@tiptap/extension-mention": "^2.26.1",
+    "@tiptap/extension-placeholder": "^2.26.1",
+    "@tiptap/extension-strike": "^2.26.1",
+    "@tiptap/react": "^2.26.1",
+    "@tiptap/starter-kit": "^2.26.1",
+    "@tiptap/suggestion": "^2.26.1",
+    "@types/node": "^20.11.0",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^17.0.25",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/browser-playwright": "^4.0.18",
+    "@vitest/coverage-istanbul": "^4.0.18",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
+    "ag-grid-community": "^36.2.0",
+    "ag-grid-enterprise": "^36.2.0",
+    "ag-grid-react": "^36.2.0",
+    "cssnano": "^7.1.3",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "10.2.15",
+    "highcharts": "^12.4.0",
+    "highcharts-react-official": "^3.2.3",
+    "husky": "^8.0.3",
+    "jscodeshift": "^0.15.2",
+    "jsdom": "^28.1.0",
+    "lint-staged": "^15.2.0",
+    "moment": "^2.29.4",
+    "playwright": "^1.58.2",
+    "postcss": "^8.5.8",
+    "prettier": "^3.2.4",
+    "react": "^17.0.0",
+    "react-dates": "^21.8.0",
+    "react-dom": "^17.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "rollup-plugin-visualizer": "^7.0.1",
+    "sass": "^1.72.0",
+    "sharp": "^0.34.5",
+    "storybook": "10.2.15",
+    "svgo": "^4.0.1",
+    "terser": "^5.46.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vite-plugin-css-injected-by-js": "^4.0.1",
+    "vite-plugin-dts": "^3.7.0",
+    "vite-plugin-svgr": "^5.2.0",
+    "vitest": "^4.0.18",
+    "vitest-axe": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11.14.0",
+    "@emotion/styled": ">=11.14.0",
+    "@mui/material": ">=5.0.0",
+    "ag-grid-community": ">=36.0.0",
+    "ag-grid-enterprise": ">=36.0.0",
+    "ag-grid-react": ">=36.0.0",
+    "highcharts": "^12.4.0",
+    "highcharts-react-official": "^3.2.3",
+    "moment": ">=2.29.0",
+    "react": ">=17.0.0 <20.0.0",
+    "react-dates": ">=21.0.0",
+    "react-dom": ">=17.0.0 <20.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ag-grid-community": {
+      "optional": true
+    },
+    "ag-grid-enterprise": {
+      "optional": true
+    },
+    "ag-grid-react": {
+      "optional": true
+    },
+    "@tiptap/pm": {
+      "optional": true
+    },
+    "moment": {
+      "optional": true
+    },
+    "react-dates": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@ag-grid-community/locale": "^36.2.0",
+    "@dnd-kit/core": "^6.2.0",
+    "@dnd-kit/sortable": "^9.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@tiptap/extension-highlight": "^2.26.1",
+    "@tiptap/extension-image": "^2.26.1",
+    "@tiptap/extension-link": "^2.26.1",
+    "@tiptap/extension-mention": "^2.26.1",
+    "@tiptap/extension-placeholder": "^2.26.1",
+    "@tiptap/extension-strike": "^2.26.1",
+    "@tiptap/react": "^2.26.1",
+    "@tiptap/starter-kit": "^2.26.1",
+    "@tiptap/suggestion": "^2.26.1",
+    "dompurify": "^3.2.7",
+    "emoji-picker-react": "^4.14.0",
+    "highcharts-border-radius": "^0.0.4",
+    "prosemirror-model": "^1.25.3",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.40.1",
+    "react-hook-form": "^7.54.2",
+    "react-router-dom": "^6.2.2",
+    "react-select": "^5.7.0",
+    "react-textarea-autosize": "^8.5.9",
+    "react-window": "^1.8.11",
+    "tippy.js": "^6.3.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

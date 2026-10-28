@@ -1,0 +1,69 @@
+/* Reference table card (table-v32 card-container): soft shadow, no outer border */
+.card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 8px;
+  background: var(--color-surface);
+  box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+  padding-bottom: var(--space-smd);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-smd) var(--space-md) var(--space-md);
+  border-bottom: none;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 21px;
+  color: var(--slate-900);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Reference "text" icon button: 32px square, slate surface */
+.moreBtn.moreBtn {
+  width: 32px;
+  height: 32px;
+  padding: var(--space-sm);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--slate-100);
+  color: var(--slate-600);
+}
+
+.moreBtn.moreBtn:hover:not(:disabled) {
+  background-color: var(--indigo-100);
+  color: var(--indigo-500);
+}
+
+.grid {
+  width: 100%;
+  min-height: 320px;
+}
+
+:global(html[data-theme='dark']) .card {
+  background: var(--graphite-4);
+  box-shadow: 0 0 4px rgb(0 0 0 / 45%);
+}
+
+:global(html[data-theme='dark']) .title {
+  color: var(--graphite-9);
+}
+
+:global(html[data-theme='dark']) .moreBtn.moreBtn {
+  background-color: color-mix(in srgb, var(--graphite-10) 6%, transparent);
+  color: var(--graphite-8);
+}

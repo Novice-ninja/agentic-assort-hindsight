@@ -1,0 +1,20 @@
+// Restored tree-shaken barrel: reexports retain the recovered implementation.
+export { METRIC_FILTER_KEY } from './services/metricFilter';
+export { RECOMMENDATION_FILTER_KEY } from './services/controlFilter';
+export { appConfigReducer } from './store/appConfigSlice';
+export { getComponentConfig } from './services/configLookup';
+export { getMetricLabel } from './services/metricCatalogue';
+export { getMetricType } from './services/metricCatalogue';
+export { normaliseMetricKey } from './services/metricCatalogue';
+export { placementForTimeGrain } from './services/metricFilter';
+export { scopeToConfiguredDimensions } from './services/componentScope';
+export { scopeToConfiguredKpis } from './services/componentScope';
+export { selectGlobalConfig } from './store/selectors';
+export { useAppConfigBootstrap } from './hooks/useAppConfig';
+export { useComponentConfig } from './hooks/useAppConfig';
+export { useControlFilter } from './hooks/useControlFilter';
+export { useGlobalConfig } from './hooks/useAppConfig';
+export { useMetricCatalogue } from './hooks/useMetricConfig';
+export { useMetricFilter } from './hooks/useMetricFilter';
+export { useMetricLabel } from './hooks/useMetricConfig';
+export { useMetricType } from './hooks/useMetricConfig';

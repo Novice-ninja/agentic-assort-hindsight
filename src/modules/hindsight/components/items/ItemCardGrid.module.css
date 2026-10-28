@@ -1,0 +1,131 @@
+.gridViewport {
+  position: relative;
+  height: 675px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-anchor: none;
+  /* Allow scroll chaining so wheel/trackpad at the top/bottom reaches the page. */
+  overscroll-behavior: auto;
+  padding: 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-anchor: none;
+}
+
+@media (width <=1500px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (width <=980px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-block: var(--space-xl);
+}
+
+.stateText {
+  margin: 0;
+  color: var(--color-text-secondary, var(--slate-600));
+  font-size: var(--font-size-sm);
+}
+
+.retry {
+  padding: 6px 12px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: var(--color-text-primary, var(--slate-900));
+  font: inherit;
+  cursor: pointer;
+}
+
+.pageError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 304px;
+  min-inline-size: 0;
+  padding: 14px;
+  border: 1px solid rgb(225 230 240);
+  border-radius: 10px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: 0 4px 10px rgb(13 21 44 / 7%);
+  overflow-anchor: none;
+}
+
+.skeletonImage {
+  width: 100%;
+  aspect-ratio: 459 / 303;
+  border-radius: 10px;
+}
+
+.skeletonTitle {
+  width: 72%;
+  height: 16px;
+  border-radius: 6px;
+}
+
+.skeletonMetrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeletonMetric {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.skeletonFooter {
+  width: 56%;
+  height: 28px;
+  margin-top: auto;
+  border-radius: 8px;
+}
+
+.skeletonBone {
+  background: linear-gradient(90deg, #f0f1f5 25%, #e4e6ed 37%, #f0f1f5 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeletonBone {
+    animation: none;
+  }
+}

@@ -1,0 +1,72 @@
+/* Header and title mirror the Sales Mix table card below (AttributeBreakdownTable). */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 16px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: none;
+}
+
+/* The card's 16px side padding already matches the table's 16px title inset. */
+.card > header {
+  min-height: 32px;
+  margin: 0;
+  padding: 0;
+  border-block-end: none;
+}
+
+.card h3 {
+  color: var(--colors-neutrals-text-icon-title, #0d152c);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.card > div {
+  padding: 0;
+}
+
+/* Two panes in the card body: the first is a third of the width, the second takes the rest. */
+.panes {
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  min-height: 0;
+}
+
+.pane,
+.paneFill {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d9dde7;
+  border-radius: 8px;
+}
+
+.pane {
+  display: flex;
+  flex: 0 0 calc((100% - 12px) / 3);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* The list runs edge to edge inside a clipped, outlined pane. */
+.paneFill {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d9dde7;
+  border-radius: 8px;
+  background: none;
+}
+
+@media (max-width: 900px) {
+  .panes { flex-direction: column; }
+  .pane { min-height: 200px; flex-basis: auto; }
+}

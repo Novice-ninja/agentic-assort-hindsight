@@ -1,0 +1,10 @@
+.grid {
+  width: 100%;
+  min-height: 320px;
+}
+
+.grid :global(.ag-root-wrapper) {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}

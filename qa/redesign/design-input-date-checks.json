@@ -1,0 +1,22 @@
+{
+  "kind": "Actual recovered ImpactInput and shared DesignInput mounted in jsdom, native input/change events; no native Chrome date-segmentation automation claim",
+  "passed": 4,
+  "checks": [
+    {
+      "name": "Actual Impact date input preserves controlled ISO date and bounds",
+      "pass": true
+    },
+    {
+      "name": "Native input event changes the actual Impact date field and controlled React value",
+      "pass": true
+    },
+    {
+      "name": "Native change event also forwards the ISO date without segmentation coercion",
+      "pass": true
+    },
+    {
+      "name": "Clearing a date forwards an empty value for explicit validation",
+      "pass": true
+    }
+  ]
+}

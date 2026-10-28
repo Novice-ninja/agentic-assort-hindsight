@@ -1,0 +1,170 @@
+/* Admin grid theme — matches the reference "impact" table (table-v32). */
+
+.ag-theme-admin-light,
+.ag-theme-admin-dark {
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: var(--font-size-sm);
+  --ag-border-radius: 0;
+  --ag-wrapper-border-radius: 0;
+  --ag-row-height: 40px;
+  --ag-header-height: 40px;
+  --ag-cell-horizontal-padding: var(--space-md);
+  --ag-borders: none;
+  --ag-header-column-separator-display: none;
+  --ag-header-column-resize-handle-display: none;
+}
+
+.ag-theme-admin-light {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--slate-800);
+  --ag-data-color: var(--slate-800);
+  --ag-header-background-color: var(--slate-100);
+  --ag-header-foreground-color: var(--slate-900);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-border-color: var(--slate-200);
+  --ag-secondary-border-color: var(--slate-200);
+  --ag-row-border-color: var(--slate-200);
+  --ag-row-hover-color: var(--indigo-100);
+  --ag-selected-row-background-color: var(--indigo-100);
+  --ag-checkbox-checked-color: var(--indigo-400);
+  --ag-checkbox-unchecked-color: var(--slate-300);
+  --ag-range-selection-border-color: var(--indigo-400);
+  --ag-input-focus-border-color: var(--color-focus);
+}
+
+.ag-theme-admin-dark {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-data-color: var(--color-text-primary);
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-header-foreground-color: var(--color-text-primary);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-border-color: var(--color-border);
+  --ag-secondary-border-color: var(--color-border);
+  --ag-row-border-color: var(--color-border);
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(in srgb, var(--indigo-400) 18%, var(--color-surface));
+  --ag-checkbox-checked-color: var(--indigo-200);
+  --ag-checkbox-unchecked-color: var(--color-border);
+  --ag-range-selection-border-color: var(--indigo-200);
+  --ag-input-focus-border-color: var(--color-focus);
+}
+
+/* Frame: hairline top/bottom only (card supplies the rounded shadow frame) */
+.ag-theme-admin-light .ag-root-wrapper,
+.ag-theme-admin-dark .ag-root-wrapper {
+  border: none;
+  border-top: 1px solid var(--ag-border-color);
+  border-bottom: 1px solid var(--ag-border-color);
+}
+
+/* Header: flat slate surface, bold 14px labels */
+.ag-theme-admin-light .ag-header,
+.ag-theme-admin-dark .ag-header {
+  border-bottom: none;
+}
+
+.ag-theme-admin-light .ag-header-cell-text,
+.ag-theme-admin-dark .ag-header-cell-text {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 21px;
+}
+
+/* Cells: 0 16px padding, vertical separators, navy text */
+.ag-theme-admin-light .ag-ltr .ag-cell,
+.ag-theme-admin-dark .ag-ltr .ag-cell {
+  border: none;
+  border-right: 1px solid var(--ag-border-color);
+  padding: 0 var(--space-md);
+  line-height: 39px;
+}
+
+.ag-theme-admin-light .ag-rtl .ag-cell,
+.ag-theme-admin-dark .ag-rtl .ag-cell {
+  border: none;
+  border-left: 1px solid var(--ag-border-color);
+  padding: 0 var(--space-md);
+  line-height: 39px;
+}
+
+/* Emphasised cells (Style-Colour ID, Dept) */
+.ag-theme-admin-light .ag-cell-strong,
+.ag-theme-admin-dark .ag-cell-strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+.ag-theme-admin-light .ag-cell-id,
+.ag-theme-admin-dark .ag-cell-id {
+  letter-spacing: 0.02em;
+}
+
+/* Pinned column soft shadow — AG Grid 36 sticky sections (legacy `.ag-pinned-left-*` removed). */
+.ag-theme-admin-light .ag-grid-pinned-left-cells,
+.ag-theme-admin-dark .ag-grid-pinned-left-cells {
+  box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+  border-right: 1px solid var(--ag-border-color);
+}
+
+/* Selected row keeps the indigo wash and a tinted bottom border */
+.ag-theme-admin-light .ag-row-selected {
+  border-bottom-color: var(--indigo-200);
+}
+
+/* Checkboxes: 16px, radius 4 (reference table-v32 checkbox) */
+.ag-theme-admin-light .ag-checkbox-input-wrapper,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 4px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.ag-theme-admin-light .ag-checkbox-input-wrapper::after,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper::after {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--ag-checkbox-unchecked-color);
+  border-radius: 4px;
+  background: var(--ag-background-color);
+}
+
+.ag-theme-admin-light .ag-checkbox-input-wrapper:hover::after,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper:hover::after {
+  border-color: var(--ag-checkbox-checked-color);
+}
+
+.ag-theme-admin-light .ag-checkbox-input-wrapper.ag-checked::after,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper.ag-checked::after {
+  border-color: var(--ag-checkbox-checked-color);
+  background: var(--indigo-100)
+    url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.54401L3.22222 6.72179L8 1.27734' stroke='%234259EE' stroke-width='1.5338' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center / 10px;
+}
+
+.ag-theme-admin-light .ag-checkbox-input-wrapper.ag-indeterminate::after,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper.ag-indeterminate::after {
+  border-color: var(--ag-checkbox-checked-color);
+  background: var(--indigo-100)
+    url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.00391L9.00391 0.996094' stroke='%234259EE' stroke-linecap='round'/%3E%3C/svg%3E")
+    no-repeat center;
+}
+
+.ag-theme-admin-light .ag-checkbox-input-wrapper input,
+.ag-theme-admin-dark .ag-checkbox-input-wrapper input {
+  cursor: pointer;
+}
+
+/* Header group text (still used by the locations grid) */
+.ag-theme-admin-light .ag-header-group-cell .ag-header-group-text,
+.ag-theme-admin-dark .ag-header-group-cell .ag-header-group-text {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  color: var(--ag-header-foreground-color);
+}

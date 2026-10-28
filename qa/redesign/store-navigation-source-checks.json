@@ -1,0 +1,47 @@
+{
+  "kind": "Source syntax gate; not Chrome visual acceptance",
+  "passed": 8,
+  "checkCount": 8,
+  "checks": [
+    {
+      "path": "ByStoreView.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "ItemDetailView.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "StoreDetailView.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "PairDetailView.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "detailHelpers.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "tableModel.ts",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "ScreenChart.tsx",
+      "kind": "TS/TSX parse",
+      "pass": true
+    },
+    {
+      "path": "views.module.css",
+      "kind": "PostCSS parse",
+      "pass": true
+    }
+  ]
+}

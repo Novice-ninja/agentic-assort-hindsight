@@ -1,0 +1,42 @@
+{
+  "kind": "Real React drawer/provider state with semantic vendor-control stand-ins, not visual/Chrome acceptance",
+  "passed": 9,
+  "checks": [
+    {
+      "name": "Recovered drawer has all eight functional section choices and separate Apply/Cancel",
+      "pass": true
+    },
+    {
+      "name": "Clearing product choices previews an empty draft without changing applied data",
+      "pass": true
+    },
+    {
+      "name": "Applying explicit none keeps the population empty",
+      "pass": true
+    },
+    {
+      "name": "Cancel discards draft Select All and preserves applied none",
+      "pass": true
+    },
+    {
+      "name": "Select All is explicit and restores all canonical products",
+      "pass": true
+    },
+    {
+      "name": "Category controls apply the exact canonical Bamboo cut",
+      "pass": true
+    },
+    {
+      "name": "Changing tactical sales period retains independently selected inventory date",
+      "pass": true
+    },
+    {
+      "name": "PLR shows approved cutoff control and has no rolling sales-window selector",
+      "pass": true
+    },
+    {
+      "name": "PLR cutoff applies an approved contiguous prefix while keeping original identity",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"constants.d.ts","sourceRoot":"","sources":["../../../src/utils/shortcuts/constants.ts"],"names":[],"mappings":"AAAA,eAAO,MAAM,aAAa,aAA+C,CAAC;AAE1E,eAAO,MAAM,cAAc,aAA2C,CAAC;AAEvE,+DAA+D;AAC/D,eAAO,MAAM,WAAW,EAAE,MAAM,CAAC,MAAM,EAAE,MAAM,CA0B9C,CAAC;AAEF;;;GAGG;AACH,eAAO,MAAM,0BAA0B,aAoBrC,CAAC;AAEH,gEAAgE;AAChE,eAAO,MAAM,wBAAwB,OAAO,CAAC"}

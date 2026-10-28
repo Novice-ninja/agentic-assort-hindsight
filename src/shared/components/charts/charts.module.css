@@ -1,0 +1,225 @@
+.plot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.plotIntrinsic {
+  display: block;
+  overflow: visible;
+}
+
+.plotHost {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.plotHostIntrinsic {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  max-width: none;
+}
+
+.yAxisBackdrop {
+  fill: var(--color-surface, #fff);
+}
+
+.gridline {
+  stroke: var(--color-border-subtle, var(--slate-200));
+  stroke-width: 1;
+  shape-rendering: crispedges;
+}
+
+.gridlineDashed {
+  stroke: var(--color-border, var(--slate-300));
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  shape-rendering: crispedges;
+}
+
+.axis {
+  stroke: var(--color-border-default, var(--slate-300));
+  stroke-width: 1;
+  shape-rendering: crispedges;
+}
+
+.axisLabel {
+  fill: var(--color-text-secondary, var(--slate-500));
+  font-family: var(--font-family-base);
+  font-size: 10px;
+}
+
+.yAxisLabel {
+  fill: var(--color-text-secondary, var(--slate-500));
+  font-family: var(--font-family-base);
+  font-size: 13px;
+}
+
+.categoryLabel {
+  fill: var(--color-text-primary, var(--slate-800));
+  font-family: var(--font-family-base);
+  font-size: 13px;
+  pointer-events: none;
+}
+
+
+.categoryTooltip {
+  position: absolute;
+  z-index: 6;
+  max-width: min(280px, 85%);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm, 4px);
+  background-color: var(--color-text-primary, #1f2430);
+  color: var(--color-text-inverse, #fff);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-xs, 12px);
+  line-height: 1.35;
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(15, 23, 42, 0.18));
+  /* Default: centred above the label. */
+  transform: translate(-50%, calc(-100% - 6px));
+  white-space: normal;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+}
+
+/* Grow right — keeps the tip clear of the pinned y-axis / left scroll clip. */
+.categoryTooltipStart {
+  transform: translate(0, calc(-100% - 6px));
+}
+
+/* Grow left — keeps the tip inside the right edge of the plot. */
+.categoryTooltipEnd {
+  transform: translate(-100%, calc(-100% - 6px));
+}
+
+.bar {
+  transition: opacity 120ms ease;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.area {
+  opacity: 0.16;
+}
+
+.marker {
+  stroke: var(--color-surface);
+  stroke-width: 1.5;
+}
+
+/* Semi-donut */
+
+.donutWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.donut {
+  flex: 0 0 220px;
+  max-width: 220px;
+  height: auto;
+}
+
+.donutSegment {
+  stroke: var(--color-surface);
+  stroke-width: 1.5;
+}
+
+.donutValue {
+  fill: var(--color-text-primary, var(--slate-900));
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+.donutLabel {
+  fill: var(--color-text-secondary, var(--slate-500));
+  font-family: var(--font-family-base);
+  font-size: 11px;
+}
+
+.legend {
+  flex: 1 1 160px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legendItem {
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legendLabel {
+  color: var(--color-text-secondary, var(--slate-600));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.legendValue {
+  color: var(--color-text-primary, var(--slate-900));
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-weight-medium, 500);
+}
+
+/* Impact UI donut */
+
+.impactDonut {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.impactDonut > :global(*) {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.impactDonut :global(.chart-container),
+.impactDonut :global(.chart-container-wrapper),
+.impactDonut :global(.highcharts-container),
+.impactDonut :global(.highcharts-root) {
+  width: 100px !important;
+  height: 100px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  gap: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* .impactDonut :global(.chart-container-header),
+.impactDonut :global(.chart-title),
+.impactDonut :global(.highcharts-title),
+.impactDonut :global(.highcharts-credits) {
+  display: none;
+} */
+/* 
+.impactDonut :global(.highcharts-background),
+.impactDonut :global(.highcharts-plot-background) {
+  fill: transparent;
+} */

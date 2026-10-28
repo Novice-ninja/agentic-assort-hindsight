@@ -1,0 +1,54 @@
+.slot {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+
+  /* A fixed minimum so text arriving or degrading never reflows the widget above. */
+  min-height: 2.5em;
+  margin: 0;
+  padding: var(--space-sm) var(--space-sm) var(--space-sm) 0;
+  color: var(--color-text-secondary, var(--slate-600));
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-relaxed, 1.55);
+}
+
+.label {
+  flex: 0 0 auto;
+  color: var(--color-accent-default, var(--iris-500));
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold, 600);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.generating {
+  color: var(--color-text-tertiary, var(--slate-500));
+  font-style: italic;
+}
+
+.pulse {
+  flex: 0 0 auto;
+  align-self: center;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent-default, var(--iris-400));
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none;
+  }
+}

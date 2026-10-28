@@ -1,0 +1,269 @@
+[
+  {
+    "id": "NR11-configuration",
+    "utc": "2026-10-28T05:27:49.719Z",
+    "build": "WorkspacePage-BvJOZRJ5.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Metric library and card customization",
+    "observed": "87 definitions visible; MIP alias search returnsK63/K81/K87 with inferred status. Five selected cards disables Save; addingK03 saves6; Restore mode defaults restoresK40 without changing globalR4 values.",
+    "shots": [
+      "final-BvJOZRJ5/configuration-metric-library.jpg"
+    ]
+  },
+  {
+    "id": "NR02-learning-destination",
+    "utc": "2026-10-28T05:27:49.740Z",
+    "build": "WorkspacePage-BvJOZRJ5.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Open For next PLR then Open origin PLR",
+    "observed": "Only1 Accepted learning shown; Pending excluded; destinationSS27, originSS26/v1/reviewer/evidence5/exactpair1 retained. Origin returns approvedPLR.",
+    "shots": [
+      "final-BvJOZRJ5/learning-next-plr.jpg"
+    ]
+  },
+  {
+    "id": "NR01-plr-scorecard",
+    "utc": "2026-10-28T05:28:15.718Z",
+    "build": "WorkspacePage-BvJOZRJ5.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight?mode=plr",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Mode switch, six cards, K01 definition/Escape",
+    "observed": "Full26-week original cohort66styles2970pairs,8.373M actual/8.8Mplan,181746/200000 quantity,31.6%GM,Unknown1launchhistory,64.8%sellthrough; K01 definition preserves inference/aliases/source cells; Escape closes.",
+    "shots": [
+      "final-BvJOZRJ5/plr-summary.jpg",
+      "final-BvJOZRJ5/definition-sales.jpg"
+    ]
+  },
+  {
+    "id": "NR02-prefix",
+    "utc": "2026-10-28T05:36:14.662Z",
+    "build": "WorkspacePage-BvJOZRJ5.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight?mode=plr",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Applied 13-week PLR prefix ending26Apr",
+    "observed": "Start remains26Jan;13of26weeks;originalactual4880441;historicalEOP/physical/sellable missing;stockdate31Jul independent",
+    "shots": []
+  },
+  {
+    "id": "NR01-Dyg",
+    "utc": "2026-10-28T05:36:50.045Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight?mode=plr",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Reloaded frozen build; inspected original reconciliation and lower supply",
+    "observed": "Full-width2columntable, plaincaptionnotes, originalImpactheaders/cards; full26weeks restored; supplynet181746/available280388/physical98642",
+    "shots": []
+  },
+  {
+    "id": "NR02-launch",
+    "utc": "2026-10-28T05:36:58.267Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/matrix?mode=plr",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Opened K26 due exception drill",
+    "observed": "Exactly4pairs;4axes with offdiagonalOutsidePopulation;future2excluded;AllcandidatePLRdisabled",
+    "shots": []
+  },
+  {
+    "id": "NR02-event",
+    "utc": "2026-10-28T05:37:18.747Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=plr",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Opened1Juneexitrecordandaffectedpairdrill",
+    "observed": "Exactsource1000444:ST1001:exit;1source/1pair;originalperformancekept;datedfeedssynthetic;price/promotionunconnected",
+    "shots": []
+  },
+  {
+    "id": "NR03-Comp",
+    "utc": "2026-10-28T05:38:09.392Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "AppliedSeasonthenDemoCompandexportedpolicy",
+    "observed": "44stores/3168pairs;ST1045explicitrehearsalholdout;actualtable8139314rounded/176740units;LYsame44;notclientapproved",
+    "shots": []
+  },
+  {
+    "id": "NR05-shared-pair",
+    "utc": "2026-10-28T05:39:19.656Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/store/ST1001?mode=in-season&focus=1000037",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "OpenedNorthportfromsearchedtable→StoresHouston→pairAvailability/History→Houstonstore",
+    "observed": "Northport1.6M/23288;pair43034/626/physical91/sellable0/openPO200/oneDC900allocated200;dated2024/2026records;originalplan45227actual43034;2UIXLSXdownloaded",
+    "shots": []
+  },
+  {
+    "id": "NR05-Back",
+    "utc": "2026-10-28T05:39:53.019Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "RepeatedsingleBackthroughrecordedsubtabs",
+    "observed": "Storefull72scope225928/4909;itemStoresHoustonsearchrestored;originByItemsearch1000037/selectedrowrestored;oneBackonly",
+    "shots": []
+  },
+  {
+    "id": "NR06",
+    "utc": "2026-10-28T05:40:24.024Z",
+    "build": "WorkspacePage-DygDkuZn.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/stores/map?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "ComparedHouston/SanAntonio;exported;removedHouston;openedNetwork",
+    "observed": "Total45/$8.4M/182400;2–5limit/min2explicit;productivitystoreweekdistinct;networkcoordinates/formattargetunconnectedhonest",
+    "shots": []
+  },
+  {
+    "id": "NR07-desktop",
+    "utc": "2026-10-28T05:41:16.674Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/matrix?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Pagedmatrix8/8and5/5;selectedtwodiagonalpairsandcompared",
+    "observed": "Final1000000/ST1045reachable;2exactcomparisoncards,not4Cartesian;3240pairfullscope;longformUIexport",
+    "shots": []
+  },
+  {
+    "id": "NR07-breadth",
+    "utc": "2026-10-28T05:41:23.222Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/breadth?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "OpenedHoustonSolidHardwood19/20memberdrill",
+    "observed": "TY31Jul2026/LY27Jul2025;retained/removedexactIDs,chainunionnotstore-sum;sourceexplicitillustrative",
+    "shots": []
+  },
+  {
+    "id": "NR08",
+    "utc": "2026-10-28T05:41:56.453Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/attributes?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "BrandmixWoodlandsearch/export/drill/Back;Concentration;GBB",
+    "observed": "Woodland19SKUs2301600/44861exact;global72unchanged;BacksearchWoodland;assignmentUnknownkept;additiveconcentrationonly",
+    "shots": []
+  },
+  {
+    "id": "NR09-draft",
+    "utc": "2026-10-28T05:42:56.782Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/case/FQ01?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "InvalidblankreasonsubmissionthenChase200Save",
+    "observed": "Invalidowner/reasonalert;inputsretained;D001DraftexactHouston/200correct. DisplaydefectExistingselectedinbound0despitePO200;agentrepairpending. Saveguardcorrect.",
+    "shots": []
+  },
+  {
+    "id": "NR09-approval",
+    "utc": "2026-10-28T05:43:18.903Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/case/FQ01?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "Submittedmerchantdraft→roleapprover→approved",
+    "observed": "MerchantApproveDisabled;approvercanapprove;Awaitingexecution/NoneExecutionreference/0completed1pending;recordackdisabledapprover",
+    "shots": []
+  },
+  {
+    "id": "NR12-reportfailure",
+    "utc": "2026-10-28T05:43:52.843Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "SelectedItemperformanceFailed/Showcomponentstate/Retry",
+    "observed": "Onlyonecomponentfailed;leaderboardremained;search1000037andselectionrestored;focusheadingreturned;noApplyscope",
+    "shots": []
+  },
+  {
+    "id": "NR12-Iris",
+    "utc": "2026-10-28T05:44:41.579Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "UnknownSKUclarification→exactNorthport→computedanswer;Endresize;unavailableassistant",
+    "observed": "Noanswerbroaderthanexactfrozenchoice;1SKU45stores;promptretained;640pxEnd;failureRetry/OpenEvidence/Continuemanual;noapprovalexecution",
+    "shots": []
+  },
+  {
+    "id": "NR11-saved",
+    "utc": "2026-10-28T05:45:18.302Z",
+    "build": "WorkspacePage-ptsd9Lsa.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/deep-dive/items?mode=in-season",
+    "viewport": {
+      "height": 1000,
+      "width": 1440
+    },
+    "action": "SavedPersonalworkingview→changedsearchBamboo→Applysaved",
+    "observed": "Search1000037/checkedrowandSeasonrestored;accessremainsapprover;recordsindependent",
+    "shots": []
+  },
+  {
+    "id": "NR07-phone",
+    "utc": "2026-10-28T05:46:13.303Z",
+    "build": "WorkspacePage-8pxhXtyD.js",
+    "url": "http://127.0.0.1:5174/assort/hindsight/pair/1000037/ST1001/availability?mode=in-season",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "action": "390matrixpairlistnext/back/EnterHoustonAvailability",
+    "observed": "3240/25=130pages;26–50nextthenfirst;exactpairroute;390documentwidth;sharedsupplyreachable",
+    "shots": []
+  }
+]

@@ -1,0 +1,1 @@
+{"version":3,"file":"menuList.d.ts","sourceRoot":"","sources":["../../../src/components/Select/menuList.tsx"],"names":[],"mappings":"AAQA,OAAO,KAAK,EAAE,kBAAkB,EAAgB,yBAAyB,EAAE,MAAM,gBAAgB,CAAC;AAMlG,eAAO,MAAM,QAAQ,GACnB,OAAO,kBAAkB,GAAG;IAC1B,WAAW,EAAE,yBAAyB,CAAC;CACxC,4CA6IF,CAAC"}

@@ -1,0 +1,46 @@
+{
+  "kind": "Shared applied-scope source invariants; not browser acceptance",
+  "passed": 10,
+  "checks": [
+    {
+      "name": "Fresh shared scope covers all 72 canonical flooring products and exact headline totals",
+      "pass": true
+    },
+    {
+      "name": "Editing an unapplied draft leaves the committed scope unchanged",
+      "pass": true
+    },
+    {
+      "name": "Apply publishes one plan-specific revision and persists the same filter selection",
+      "pass": true
+    },
+    {
+      "name": "A committed category cut reconciles summary, brand rows and stores",
+      "pass": true
+    },
+    {
+      "name": "A document reload restores the committed cut from versioned tab storage",
+      "pass": true
+    },
+    {
+      "name": "Select All exclusions keep their raw recipe while chips show the effective values",
+      "pass": true
+    },
+    {
+      "name": "Explicit empty selection shows an empty population rather than silently broadening to all",
+      "pass": true
+    },
+    {
+      "name": "Only the untouched raw legacy four-subcategory default migrates to full scope",
+      "pass": true
+    },
+    {
+      "name": "An explicit current four-subcategory selection is preserved",
+      "pass": true
+    },
+    {
+      "name": "Non-browser imports and default scope reads do not require storage or DOM globals",
+      "pass": true
+    }
+  ]
+}

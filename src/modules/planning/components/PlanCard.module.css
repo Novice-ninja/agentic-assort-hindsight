@@ -1,0 +1,196 @@
+/* === Layout === */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12px;
+  border: 1px solid #C3C8D4;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F4FE 100%);
+  width: 100%;
+  transition: border-color 0.15s ease;
+}
+
+.card[data-selected='true'] {
+  border-color: #3649C6;
+}
+
+.card[data-status='approved'] {
+  background: linear-gradient(180deg, #EDFBF0 0%, #FAFAFA 100%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 12px 8px;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.headerLeft {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.checkboxWrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nameWrap {
+  display: block;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+/* === Typography === */
+.name {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1F2B4D;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* === Tags === */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+
+/* === Actions === */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* === Panel (pipeline + stepper + metrics) === */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 96%;
+}
+
+.panelInner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.pipeline {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.pipelineLabel {
+  color: #60697D;
+}
+
+.pipelineName {
+  font-weight: 600;
+  color: #1F2B4D;
+}
+
+/* === Metrics === */
+.metrics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 46px;
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 8px;
+  margin: 0;
+  overflow: auto;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.metricValue {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #31416E;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.metricLabel {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #60697D;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.metricDivider {
+  width: 0;
+  height: 12px;
+  border-left: 1px solid #D9DDE7;
+  flex-shrink: 0;
+}
+
+.steps {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #60697D;
+  white-space: nowrap;
+}

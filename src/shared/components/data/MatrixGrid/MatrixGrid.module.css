@@ -1,0 +1,140 @@
+/*
+ * MatrixGrid shell: the fixed-height frame, the three state panels, the aggregated warning
+ * banner, and the live region.
+ *
+ * Two constraints: every value is a token (constitution II), and every box property is logical
+ * (`padding-inline`, `inset-inline-start`) so the shell mirrors under `dir="rtl"` alongside the
+ * vendor's own `enableRtl` (research R13).
+ */
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+
+/*
+ * The body height is fixed and supplied by the host. `autoHeight` is prohibited: it renders every
+ * row, which defeats virtualization and with it the entire point of this component.
+ */
+.grid {
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+
+/*
+ * Alignment is a logical property so a right-aligned quantity sits on the correct side under
+ * `dir="rtl"` — `text-align: right` would not move.
+ */
+.alignStart {
+  text-align: start;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignEnd {
+  text-align: end;
+}
+
+.groupLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-inline-size: 0;
+}
+
+/* The descendant count beside a group label, and the annotation on a childless group. */
+.leafCount {
+  flex: none;
+  padding-inline: var(--space-xs);
+  border-radius: var(--radius-full);
+  background: var(--matrix-grid-badge-surface);
+  color: var(--matrix-grid-badge-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+}
+
+.groupTotal {
+  font-weight: var(--font-weight-bold);
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding-block: var(--space-xl);
+  padding-inline: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+.panelTitle {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.errorPanel {
+  border-color: var(--color-error);
+}
+
+/*
+ * The aggregated paste warning. One banner per paste, never one per cell — and it carries an icon
+ * as well as colour, because colour is never the only signal (constitution III).
+ */
+.warning {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-block-end: var(--space-xs);
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-sm);
+  border: 1px solid var(--matrix-grid-warning-accent);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.warningIcon {
+  flex: none;
+  color: var(--matrix-grid-warning-accent);
+}
+
+.warningDismiss {
+  margin-inline-start: auto;
+  border: none;
+  background: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+}
+
+.warningDismiss:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Announcements for validation rejections and paste outcomes. Present, but never seen. */
+.liveRegion {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

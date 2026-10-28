@@ -1,0 +1,13 @@
+{
+  "kind": "Runbook completeness/schema/current-source validation only; not browser execution",
+  "passed": 7,
+  "checks": {
+    "countsAndUniqueIds": true,
+    "allReverseLinksResolve": true,
+    "allStatusesArePlanOnly": true,
+    "prior18KeptSeparate": true,
+    "sourceHashesCurrent": true,
+    "canonicalSeasonSales": true,
+    "canonicalR4Sales": true
+  }
+}

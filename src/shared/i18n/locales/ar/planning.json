@@ -1,0 +1,273 @@
+{
+  "allPlans": {
+    "title": "جميع الخطط",
+    "subtitle": "تصفّح خطط التشكيلة وقم بتصفيتها واستئنافها."
+  },
+  "createPlan": {
+    "title": "إنشاء خطة",
+    "subtitle": "",
+    "backToPlans": "العودة إلى جميع الخطط",
+    "comingSoon": "تم إعداد معالج إنشاء الخطة على هذا المسار.",
+    "successMessage": "تم إنشاء الخطة بنجاح!"
+  },
+  "actions": {
+    "createPlan": "إنشاء خطة جديدة",
+    "editPlan": "تعديل الخطة",
+    "clonePlan": "استنساخ الخطة",
+    "deletePlan": "حذف",
+    "download": "تنزيل الخطط",
+    "showDeletedPlans": "إظهار الخطط المحذوفة",
+    "cancel": "إلغاء",
+    "back": "رجوع",
+    "backToNameCalendar": "العودة إلى الاسم والتقويم",
+    "backToProductScope": "العودة إلى نطاق المنتج",
+    "backToClustering": "العودة إلى التجميع ووضع التشغيل",
+    "goToProductScope": "الانتقال إلى نطاق المنتج",
+    "goToClustering": "الانتقال إلى التجميع ووضع التشغيل",
+    "goToReview": "المراجعة والإنشاء",
+    "done": "تم",
+    "chooseColumns": "اختيار الأعمدة",
+    "searchColumns": "البحث في الأعمدة"
+  },
+  "deleteConfirm": {
+    "title": "حذف الخطة/الخطط؟",
+    "body": "هل أنت متأكد من حذف {{count}} خطة محددة؟ لا يمكن التراجع عن هذا الإجراء من هذه الشاشة.",
+    "confirm": "حذف"
+  },
+  "toasts": {
+    "deleteSuccess": "تم حذف {{count}} خطة بنجاح",
+    "deleteError": "تعذّر حذف الخطط. يُرجى المحاولة مرة أخرى."
+  },
+  "tabs": {
+    "label": "تصفية الخطط حسب الحالة",
+    "all": "جميع الخطط",
+    "draft": "مسودة",
+    "inProgress": "قيد التنفيذ",
+    "review": "مراجعة",
+    "approved": "معتمدة",
+    "count": "{{count}} خطط"
+  },
+  "filters": {
+    "label": "عوامل تصفية الخطط",
+    "stages": "المراحل",
+    "seasons": "المواسم",
+    "selectStages": "تحديد المراحل...",
+    "selectSeasons": "تحديد المواسم...",
+    "selected": "{{count}} محدد"
+  },
+  "view": {
+    "label": "وضع العرض",
+    "grid": "عرض شبكي",
+    "table": "عرض جدولي"
+  },
+  "card": {
+    "steps": "الخطوة {{current}} من {{total}}",
+    "stepsShort": "الخطوات: {{current}} / {{total}}",
+    "stepTooltip": "الخطوة {{current}} من {{total}} · {{step}}",
+    "clusterTag": "المجموعة:{{clusters}}",
+    "pipeline": "المسار:",
+    "select": "تحديد {{name}}",
+    "metrics": {
+      "sales": "المبيعات",
+      "units": "الوحدات",
+      "sellThrough": "معدل البيع",
+      "grossMargin": "هامش الربح الإجمالي"
+    },
+    "actions": {
+      "resume": "استئناف",
+      "view": "عرض",
+      "resumeNamed": "استئناف {{name}}",
+      "viewNamed": "عرض {{name}}",
+      "history": "عرض سجل {{name}}"
+    }
+  },
+  "table": {
+    "caption": "خطط التشكيلة",
+    "name": "اسم الخطة",
+    "status": "الحالة",
+    "season": "الموسم",
+    "category": "الفئة",
+    "cluster": "المجموعة",
+    "progress": "التقدّم",
+    "createdBy": "أنشئ بواسطة",
+    "createdAt": "تاريخ الإنشاء",
+    "sales": "المبيعات",
+    "margin": "الهامش",
+    "actions": "الإجراءات"
+  },
+  "empty": {
+    "noPlansTitle": "لا توجد خطط بعد",
+    "noPlansBody": "أنشئ خطة التشكيلة الأولى للبدء.",
+    "filteredTitle": "لا توجد خطط تطابق عوامل التصفية",
+    "filteredBody": "حاول مسح أحد عوامل التصفية أو تبديل علامات تبويب الحالة.",
+    "filtered": "لا توجد خطط تطابق عوامل التصفية"
+  },
+  "common": {
+    "upcoming": "قريباً"
+  },
+  "wizard": {
+    "stepperLabel": "خطوات إنشاء الخطة",
+    "stepLabel": "الخطوة {{number}}"
+  },
+  "steps": {
+    "nameCalendar": {
+      "title": "الاسم والتقويم",
+      "description": "سمِّ خطتك واختر السنة المالية والموسم التجاري ونقطة البداية."
+    },
+    "productScope": {
+      "title": "نطاق المنتج",
+      "description": "حدد القسم والفئات والفئات الفرعية ووحدات SKU المراد تخطيطها."
+    },
+    "clusteringRunMode": {
+      "title": "التجميع ووضع التشغيل",
+      "description": "اختر سيناريو تجميع المتاجر ووضع التشغيل وعتبة الثقة."
+    },
+    "reviewCreate": {
+      "title": "المراجعة والإنشاء",
+      "description": "راجع اختياراتك وشاهد ما سيفعله الوكيل، ثم أنشئ الخطة."
+    }
+  },
+  "planDetails": "تفاصيل الخطة",
+  "fields": {
+    "planName": "اسم الخطة",
+    "planNamePlaceholder": "مثال: SS26 ملابس نسائية – السيناريو ب",
+    "fiscalYear": "السنة المالية",
+    "seasonsAvailable": "{{count}} مواسم متاحة",
+    "tradingSeason": "الموسم التجاري",
+    "selectFiscalFirst": "حدد سنة مالية لعرض مواسمها التجارية.",
+    "startingPoint": "نقطة البداية"
+  },
+  "fiscalTags": {
+    "complete": "مكتملة",
+    "current": "حالية",
+    "future": "مستقبلية"
+  },
+  "startingPoints": {
+    "startFresh": "البدء من جديد",
+    "carryForwardLY": "الترحيل من العام الماضي"
+  },
+  "startingPointDesc": {
+    "startFresh": "يبني الوكيل الخطة من الصفر باستخدام إشارات البيانات الحالية.",
+    "carryForwardLY": "تطبيق الرؤى بأثر رجعي والترحيل من الموسم المكافئ السابق تلقائيًا."
+  },
+  "scope": {
+    "department": "القسم",
+    "class": "الفئة",
+    "subClass": "الفئة الفرعية",
+    "sku": "وحدة SKU",
+    "notSelected": "غير محدد",
+    "noneSelected": "لا شيء محدد",
+    "selectedCount": "{{count}} محدد",
+    "selectAll": "تحديد الكل",
+    "selectAllAccessible": "تحديد كل {{level}}",
+    "selectAllMatchingAccessible": "تحديد كل {{level}} المطابق للبحث الحالي",
+    "allSelected": "تم تحديد الكل",
+    "allSelectedWithExcept": "تم تحديد الكل (−{{count}})",
+    "matchingSelected": "مطابق لـ “{{needles}}”",
+    "exceptMatchingSelected": "باستثناء المطابق لـ “{{needles}}”",
+    "matchingAndExceptSelected": "مطابق لـ “{{matching}}”؛ باستثناء “{{except}}”",
+    "clear": "مسح",
+    "searchLabel": "بحث في {{level}}",
+    "searchPlaceholder": "بحث…",
+    "styles": "{{count}} أنماط",
+    "listView": "عرض القائمة",
+    "gridView": "عرض شبكي",
+    "selectProductHierarchy": "اختر التسلسل الهرمي للمنتج",
+    "overflowCount": "+{{count}}",
+    "selectParentFirst": "حدد {{parent}} أولاً",
+    "noOptions": "لا توجد خيارات لهذا التحديد",
+    "levelLoadError": "تعذر تحميل هذا المستوى",
+    "retry": "إعادة المحاولة",
+    "loadingMore": "جارٍ التحميل…",
+    "noHierarchy": "لا تتوفر تسلسل هرمي للمنتج"
+  },
+  "clustering": {
+    "scenario": "سيناريو تجميع المتاجر",
+    "confidence": "الثقة {{pct}}٪",
+    "runMode": "وضع تشغيل المسار",
+    "default": "افتراضي",
+    "confidenceThreshold": "عتبة الثقة",
+    "marks": {
+      "autonomous": "60٪ ذاتي",
+      "recommended": "80٪ موصى به",
+      "strict": "95٪ صارم"
+    }
+  },
+  "clusteringTags": {
+    "recommended": "موصى به",
+    "alternative": "بديل",
+    "experimental": "تجريبي"
+  },
+  "runModes": {
+    "gated": {
+      "title": "الوضع المُتحكَّم",
+      "description": "يتوقف الوكيل للموافقة عند كل مرحلة من مراحل المسار."
+    },
+    "autonomous": {
+      "title": "ذاتي",
+      "description": "يعمل الوكيل من البداية إلى النهاية ويتوقف فقط عند انخفاض الثقة."
+    }
+  },
+  "review": {
+    "edit": "تعديل",
+    "skuCount": "{{count}} وحدات SKU",
+    "clustering": "التجميع",
+    "runMode": "وضع التشغيل"
+  },
+  "agent": {
+    "title": "ما الذي سيفعله الوكيل",
+    "stageMeta": "{{scenario}} · ثقة {{pct}}٪",
+    "selectScenarioFirst": "حدد سيناريو تجميع لمعاينة المسار."
+  },
+  "errors": {
+    "nameRequired": "اسم الخطة مطلوب.",
+    "nameTooLong": "اسم الخطة طويل جداً.",
+    "nameInvalidChars": "استخدم الأحرف والأرقام والمسافات والشرطات والشرطات السفلية فقط.",
+    "nameNotUnique": "توجد خطة بهذا الاسم بالفعل.",
+    "createFailed": "تعذّر إنشاء الخطة. حاول مرة أخرى.",
+    "seasonsFetchFailed": "تعذّر تحميل المواسم. يُرجى المحاولة مرة أخرى."
+  },
+  "history": {
+    "heading": "العنوان",
+    "close": "إغلاق السجل",
+    "tabsLabel": "طرق عرض سجل الخطة",
+    "mode": "{{mode}} - عتبة {{pct}}٪",
+    "runMode": {
+      "gated": "محكوم",
+      "autonomous": "مستقل"
+    },
+    "stages": "{{completed}}/{{total}} مراحل",
+    "progressLabel": "اكتمل {{percent}}٪",
+    "tabs": {
+      "pipeline": "المسار",
+      "versionHistory": "سجل الإصدارات",
+      "activityLog": "سجل نشاط الوكيل"
+    },
+    "review": {
+      "needed": "مطلوب مراجعتك — {{stage}}"
+    },
+    "stage": {
+      "view": "عرض",
+      "review": "مراجعة",
+      "reasoning": "قرارات الوكيل والمبررات"
+    },
+    "versions": {
+      "cascade": "تسلسل: سيُعاد تشغيل {{count}} مراحل لاحقة.",
+      "empty": "لا يوجد سجل إصدارات بعد."
+    },
+    "activity": {
+      "emptyTitle": "سجل النشاط قريباً",
+      "emptyBody": "سيظهر سجل نشاط الوكيل هنا."
+    },
+    "states": {
+      "loading": "جارٍ تحميل السجل…",
+      "errorTitle": "تعذّر تحميل السجل",
+      "errorBody": "حدث خطأ ما أثناء تحميل سجل هذه الخطة.",
+      "retry": "إعادة المحاولة"
+    },
+    "footer": {
+      "cancel": "إلغاء",
+      "apply": "تطبيق"
+    }
+  }
+}

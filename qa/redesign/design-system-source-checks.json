@@ -1,0 +1,73 @@
+{
+  "kind": "Syntax and actual TSX element inventory; not browser or visual acceptance",
+  "passed": 13,
+  "checkCount": 13,
+  "checks": [
+    {
+      "path": "src/modules/hindsight/redesign/components/ui.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/tableModel.ts",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ScreenChart.tsx",
+      "pass": true,
+      "kind": "TypeScript syntax parse/transpile"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/components/ui.module.css",
+      "pass": true,
+      "kind": "PostCSS syntax parse"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/views.module.css",
+      "pass": true,
+      "kind": "PostCSS syntax parse"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/screens.module.css",
+      "pass": true,
+      "kind": "PostCSS syntax parse"
+    }
+  ],
+  "unstyledNativeControlsInAssignedViews": []
+}

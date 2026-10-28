@@ -1,0 +1,21 @@
+.grid {
+  inline-size: 100%;
+}
+
+.style {
+  color: var(--color-text-primary, var(--slate-900));
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+.description {
+  display: block;
+  overflow: hidden;
+  color: var(--color-text-secondary, var(--slate-600));
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.numeric {
+  font-variant-numeric: tabular-nums;
+}

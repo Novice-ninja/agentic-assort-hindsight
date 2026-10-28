@@ -1,0 +1,36 @@
+declare const ChatHeaderAction: ({ enableSearch, messageSearchValue, handleOpenMessageSearch, handleCloseMessageSearch, handleMessageSearchChange, onParticipantsClick, participants, onPinnedClick, threeDotMenuOptions, showNotificationSettings, handleNotificationSettingsClose, onThreeDotMenuClick, externalHandlers, isLoadingOptions, isSearching, filteredMenuOptions, menuSearchQuery, setMenuSearchQuery, renderCustomHeader, threeDotMenuOpen, onSaveNotification, selectedMenuItems, setSelectedMenuItems, handleThreeDotMenuClose, notificationSettings, maxAvatars, selectedRadioOption, chatId, menuOptions, externalSavingMembers, chatHeaderConfig, ...restProps }: {
+    [x: string]: any;
+    enableSearch: any;
+    messageSearchValue: any;
+    handleOpenMessageSearch: any;
+    handleCloseMessageSearch: any;
+    handleMessageSearchChange: any;
+    onParticipantsClick: any;
+    participants: any;
+    onPinnedClick: any;
+    threeDotMenuOptions: any;
+    showNotificationSettings: any;
+    handleNotificationSettingsClose: any;
+    onThreeDotMenuClick: any;
+    externalHandlers: any;
+    isLoadingOptions: any;
+    isSearching: any;
+    filteredMenuOptions: any;
+    menuSearchQuery: any;
+    setMenuSearchQuery: any;
+    renderCustomHeader: any;
+    threeDotMenuOpen: any;
+    onSaveNotification: any;
+    selectedMenuItems: any;
+    setSelectedMenuItems: any;
+    handleThreeDotMenuClose: any;
+    notificationSettings: any;
+    maxAvatars?: number | undefined;
+    selectedRadioOption: any;
+    chatId: any;
+    menuOptions: any;
+    externalSavingMembers: any;
+    chatHeaderConfig: any;
+}) => import("react/jsx-runtime").JSX.Element;
+export default ChatHeaderAction;
+//# sourceMappingURL=ChatHeaderAction.d.ts.map

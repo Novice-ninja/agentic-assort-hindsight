@@ -1,0 +1,215 @@
+{
+  "page": {
+    "title": "Planning Admin",
+    "subtitle": "Configure products, locations, calendar mapping, and global exceptions",
+    "hideFilters": "Hide Filter",
+    "showFilters": "Show Filters"
+  },
+  "stepper": {
+    "label": "Planning modules"
+  },
+  "modules": {
+    "products": "Products",
+    "locations": "Locations",
+    "calendar": "Calendar Mapping",
+    "exceptions": "Global Exceptions"
+  },
+  "status": {
+    "active": "Active",
+    "done": "Done",
+    "inProgress": "In Progress"
+  },
+  "filters": {
+    "applied": "Filters Applied",
+    "barLabel": "Applied filters",
+    "allFilters": "All Filters",
+    "groups": {
+      "department": "Department",
+      "season": "Season",
+      "region": "Region"
+    }
+  },
+  "filterModal": {
+    "title": "Add Filters",
+    "tabsLabel": "Filter categories",
+    "tabs": {
+      "products": "Products",
+      "channel": "Channel",
+      "calendar": "Calendar"
+    },
+    "fields": {
+      "productGroupId": "Product Group",
+      "subDepartmentId": "Sub Department",
+      "categoryId": "Category",
+      "subCategoryId": "Sub Category",
+      "classId": "Class",
+      "subClassId": "Sub Class",
+      "brandId": "Brand",
+      "channelRegionIds": "Channel Region",
+      "customerTypeIds": "Customer Type",
+      "fulfillmentScopeIds": "Fulfillment Scope",
+      "calendarSeasonId": "Season",
+      "periodIds": "Period"
+    },
+    "clearTab": "Clear all",
+    "cancel": "Cancel",
+    "apply": "Apply"
+  },
+  "empty": {
+    "globalTitle": "No modules configured yet",
+    "globalBody": "Start by setting up Products, Locations, Calendar Mapping, or Global exceptions to power your planning workflows.",
+    "moduleTitle": "No results for this module",
+    "moduleBody": "Try adjusting your filters or add new ones to see data here.",
+    "addFilter": "Add Filter"
+  },
+  "view": {
+    "table": "Table view",
+    "globe": "Globe view",
+    "toggleLabel": "View mode"
+  },
+  "grid": {
+    "export": "Export CSV",
+    "moreActions": "More actions",
+    "products": {
+      "groupIdentity": "Product",
+      "groupAttributes": "Attributes",
+      "id": "Style Colour ID",
+      "name": "Name",
+      "dept": "Dept",
+      "class": "Class",
+      "brand": "Brand",
+      "colour": "Colour",
+      "collar": "Collar",
+      "fit": "Fit",
+      "sleeve": "Sleeve",
+      "length": "Length",
+      "rowCount": "{{count}} products"
+    },
+    "locations": {
+      "groupLocation": "Location",
+      "groupAttributes": "Location Attributes",
+      "id": "ID",
+      "name": "Name",
+      "city": "City",
+      "climate": "Climate",
+      "customerType": "Customer Type",
+      "fulfillment": "Fulfillment",
+      "income": "Income Level",
+      "type": "Location Type"
+    },
+    "exceptions": {
+      "geography": "Geography",
+      "id": "ID",
+      "type": "Type",
+      "customerType": "Customer Type",
+      "summary": "Rule Summary",
+      "owner": "Owner"
+    }
+  },
+  "locations": {
+    "search": "Search locations",
+    "customerTypeFilter": "Customer type",
+    "allCustomerTypes": "All customer types",
+    "globe": {
+      "title": "Store locations",
+      "subtitle": "{{count}} stores on map",
+      "aria": "Interactive globe showing store locations",
+      "listLabel": "Store location cards"
+    }
+  },
+  "locationCard": {
+    "climate": "Climate",
+    "customerType": "Customer Type",
+    "fulfillmentType": "Fulfillment",
+    "incomeLevel": "Income Level",
+    "locationType": "Location Type"
+  },
+  "exceptions": {
+    "search": "Search exceptions",
+    "customerTypeFilter": "Customer type",
+    "allCustomerTypes": "All customer types",
+    "globe": {
+      "title": "Global exceptions",
+      "subtitle": "{{stores}} regions · {{rules}} rules",
+      "aria": "Interactive globe showing global exception regions",
+      "listLabel": "Exception rule cards"
+    },
+    "card": {
+      "ruleCount": "{{count}} rules",
+      "operator": "Operator",
+      "value": "Value",
+      "done": "Done",
+      "editRule": "Edit rule",
+      "addRule": "Add rule",
+      "remove": "Remove exception",
+      "added": "Added {{date}} by {{by}}",
+      "newAttribute": "New attribute"
+    },
+    "removeConfirm": {
+      "title": "Remove exception?",
+      "body": "Are you sure you want to remove \"{{title}}\"? This cannot be undone.",
+      "confirm": "Remove"
+    }
+  },
+  "calendar": {
+    "title": "Calendar Mapping",
+    "body": "Calendar mapping configuration is in progress. Field specifications and editing will be available in a future release."
+  },
+  "operators": {
+    "equals": "equals",
+    "notEquals": "not equals",
+    "in": "in",
+    "contains": "contains"
+  },
+  "enums": {
+    "temperate": "Temperate",
+    "cold": "Cold",
+    "premium": "Premium",
+    "mainstream": "Mainstream",
+    "conservative": "Conservative",
+    "value": "Value",
+    "storePickUp": "Store pick-up",
+    "shipToStore": "Ship to store",
+    "delivery": "Delivery",
+    "high": "High",
+    "middle": "Middle",
+    "lowerMiddle": "Lower middle",
+    "store": "Store",
+    "outlet": "Outlet"
+  },
+  "facets": {
+    "dept": {
+      "apparel": "Apparel",
+      "footwear": "Footwear"
+    },
+    "subDept": {
+      "mensTops": "Men's Tops",
+      "womensTops": "Women's Tops"
+    },
+    "category": {
+      "tops": "Tops"
+    },
+    "subCategory": {
+      "tees": "Tees"
+    },
+    "class": {
+      "tees": "Tees"
+    },
+    "subClass": {
+      "basic": "Basic"
+    },
+    "brand": {
+      "ownLabel": "Own Label"
+    },
+    "season": {
+      "spring2026": "Spring 2026"
+    },
+    "region": {
+      "northAmerica": "North America",
+      "emea": "EMEA"
+    },
+    "productGroup": {
+      "all": "All product groups"
+    }
+  }
+}

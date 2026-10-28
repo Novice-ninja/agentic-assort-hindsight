@@ -1,0 +1,23 @@
+.cell {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Reference: small square swatch with a soft slate ring */
+.swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--slate-950) 18%, transparent);
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: var(--slate-800);
+}
+
+:global(html[data-theme='dark']) .label {
+  color: var(--color-text-primary);
+}

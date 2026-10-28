@@ -1,0 +1,70 @@
+.tabs {
+  display: flex;
+  align-items: stretch;
+  height: 34px;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 92px;
+  height: 34px;
+  padding: 0 12px;
+  border: 0;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.tab:hover {
+  color: var(--color-text-primary);
+}
+
+.tab:focus-visible {
+  outline: 2px solid var(--color-focus-ring, var(--iris-400));
+  outline-offset: -2px;
+  border-radius: var(--radius-sm);
+}
+
+.tabActive {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Sits on the container's border so the active tab reads as connected to its panel. */
+.tabActive::after {
+  content: '';
+  position: absolute;
+  inset-inline: var(--space-sm);
+  bottom: -1px;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  background-color: var(--color-primary);
+}
+
+.counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 16px;
+  border-radius: 999px;
+  background-color: var(--slate-200);
+  color: var(--slate-600);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}

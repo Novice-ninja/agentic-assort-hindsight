@@ -1,0 +1,94 @@
+{
+  "data": {
+    "default": {
+      "configHash": "cfg-flooring-7f3a91",
+      "fields": [
+        {
+          "fieldKey": "l0_name",
+          "label": "Division",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": true,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "l1_name",
+          "label": "Category",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": true,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "l2_name",
+          "label": "Sub Category",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": false,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "channel",
+          "label": "Channel",
+          "dimension": "store",
+          "type": "list",
+          "mandatory": false,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "region",
+          "label": "Region",
+          "dimension": "store",
+          "type": "list",
+          "mandatory": false,
+          "multiSelect": true
+        }
+      ]
+    },
+    "cluster_config": {
+      "configHash": "cfg-cluster-flooring-2c8d04",
+      "fields": [
+        {
+          "fieldKey": "l0_name",
+          "label": "Division",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": true,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "l1_name",
+          "label": "Category",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": true,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "l2_name",
+          "label": "Sub Category",
+          "dimension": "product",
+          "type": "cascaded",
+          "mandatory": false,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "channel",
+          "label": "Channel",
+          "dimension": "store",
+          "type": "list",
+          "mandatory": false,
+          "multiSelect": true
+        },
+        {
+          "fieldKey": "region",
+          "label": "Region",
+          "dimension": "store",
+          "type": "list",
+          "mandatory": false,
+          "multiSelect": true
+        }
+      ]
+    }
+  }
+}

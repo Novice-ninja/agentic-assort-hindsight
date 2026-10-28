@@ -1,0 +1,346 @@
+/*
+ * Store Assignments side panel (Finalize Cluster → View Store Assignment / Compare Store
+ * Assignments). The Impact UI Panel supplies the header + close; everything below is ours.
+ */
+
+.panel {
+  box-sizing: border-box;
+}
+
+/* The drawer body scrolls by default. Keep the title, tabs, and search fixed and scroll the table. */
+.panel :global(.impact_drawer_body) {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-smd);
+  width: 100%;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Tab strip in its own bordered box; the active tab is underlined in the primary colour. */
+.tabs :global(.ia-tabList) {
+  box-sizing: border-box;
+  min-height: 40px;
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.tabs :global(.ia-tabList .MuiTabs-flexContainer) {
+  gap: var(--space-sm);
+}
+
+.tabs :global(.ia-tab) {
+  min-height: 40px;
+  padding: 0 var(--space-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium, 500);
+  text-transform: none;
+  color: var(--color-text-secondary);
+}
+
+.tabs :global(.ia-activeTabHeader) {
+  color: var(--color-primary);
+}
+
+.tabs :global(.MuiTabs-indicator) {
+  height: 2px;
+  background: var(--color-primary);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.tabs > :global(.MuiBox-root) {
+  flex-shrink: 0;
+}
+
+.tabs :global(.impact-tab-panel) {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  margin-top: var(--space-smd);
+  overflow: hidden;
+}
+
+.tabs :global(.impact-tab-panel > .ia-tabPanel:not([hidden])) {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.tabs :global(.impact-tab-panel > .ia-tabPanel:not([hidden]) > .MuiBox-root) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Content card under the tabs. */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-smd);
+  box-sizing: border-box;
+  min-height: 0;
+  padding: var(--space-smd);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-height: 32px;
+}
+
+.toolbarLead {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.listViewLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 20px;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.movesPill {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 var(--space-sm);
+  border-radius: var(--radius-full);
+  background: var(--slate-100);
+  color: var(--slate-600);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.searchField {
+  flex: 0 0 auto;
+  width: 192px;
+}
+
+.searchField > * {
+  width: 100%;
+}
+
+.searchIcon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+/*
+ * Table: lavender header strip with column dividers, then one bordered "card" per row with
+ * an 8px gap. Built on the shared DataTable, restyled through its table element.
+ */
+.tableFrame {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: auto;
+}
+
+.tableFrame > * {
+  overflow: visible;
+}
+
+.tableFrame :global(table) {
+  border-collapse: separate;
+  border-spacing: 0 var(--space-sm);
+  margin-top: calc(var(--space-sm) * -1);
+  table-layout: fixed;
+}
+
+.tableFrame :global(thead th) {
+  height: 40px;
+  min-height: 40px;
+  padding: 0 var(--space-md);
+  border: 0;
+  border-inline-start: 1px solid var(--color-border);
+  background: var(--iris-50);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 20px;
+  text-transform: none;
+}
+
+.tableFrame :global(thead th:first-child) {
+  border-inline-start: 0;
+  border-start-start-radius: var(--radius-md);
+  border-end-start-radius: var(--radius-md);
+}
+
+.tableFrame :global(thead th:last-child) {
+  border-start-end-radius: var(--radius-md);
+  border-end-end-radius: var(--radius-md);
+}
+
+.tableFrame :global(tbody td) {
+  height: 56px;
+  max-width: none;
+  padding: 0 var(--space-md);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-inline-end: 0;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular, 400);
+  overflow: visible;
+  white-space: normal;
+  pointer-events: auto;
+}
+
+.tableFrame :global(td *) {
+  pointer-events: auto;
+}
+
+.tableFrame :global(tbody td:first-child) {
+  border-inline-start: 1px solid var(--color-border);
+  border-start-start-radius: var(--radius-md);
+  border-end-start-radius: var(--radius-md);
+}
+
+.tableFrame :global(tbody td:last-child) {
+  border-inline-end: 1px solid var(--color-border);
+  border-start-end-radius: var(--radius-md);
+  border-end-end-radius: var(--radius-md);
+}
+
+.tableFrame :global(tbody tr:hover td) {
+  background: var(--color-surface);
+}
+
+/* Store · Cluster · Move To… */
+.variantTable :global(th:nth-child(1)),
+.variantTable :global(td:nth-child(1)) {
+  width: 26%;
+}
+
+.variantTable :global(th:nth-child(2)),
+.variantTable :global(td:nth-child(2)) {
+  width: 25%;
+}
+
+/* Store, then equal variant columns. */
+.compareTable :global(th:nth-child(1)),
+.compareTable :global(td:nth-child(1)) {
+  width: 27%;
+}
+
+.storeName {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notAssigned {
+  color: var(--slate-400);
+}
+
+/* Cluster pill: five tones cycled by label number (see `clusterTone`). */
+.clusterPill {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  height: 22px;
+  padding: 0 var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clusterPill[data-tone='0'] {
+  background: var(--iris-50);
+  color: var(--iris-600);
+}
+
+.clusterPill[data-tone='1'] {
+  background: var(--saffron-50);
+  color: var(--saffron-700);
+}
+
+.clusterPill[data-tone='2'] {
+  background: var(--slate-100);
+  color: var(--slate-600);
+}
+
+.clusterPill[data-tone='3'] {
+  background: var(--sky-50);
+  color: var(--sky-700);
+}
+
+.clusterPill[data-tone='4'] {
+  background: var(--rose-50);
+  color: var(--rose-700);
+}
+
+/* Loading / error states keep the card layout instead of collapsing the panel. */
+.skeletonList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skeletonRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  height: 56px;
+  padding: 0 var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.errorState {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+}
+
+.content :global(.impact_inputbox_container_with_icons .impact-input-wrapper) {
+  min-width: 0;
+}

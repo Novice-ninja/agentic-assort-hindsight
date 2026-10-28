@@ -1,0 +1,47 @@
+{
+  "kind": "Actual TSX renderer expressions, original design-system variable generator and source mutation/export contracts; not browser appearance",
+  "passed": 10,
+  "checkCount": 10,
+  "checks": [
+    {
+      "name": "views/overview.module.css: only undefined aliases were replaced by real semantic tokens",
+      "pass": true
+    },
+    {
+      "name": "views/views.module.css: only undefined aliases were replaced by real semantic tokens",
+      "pass": true
+    },
+    {
+      "name": "views/screens.module.css: only undefined aliases were replaced by real semantic tokens",
+      "pass": true
+    },
+    {
+      "name": "Replacement aliases exist in the actual design-system variable generator and light theme",
+      "pass": true
+    },
+    {
+      "name": "Case compatible unit: actual option renderer changes only readable labels while retaining exact canonical values",
+      "pass": true
+    },
+    {
+      "name": "Rule threshold unit: actual option renderer changes only readable labels while retaining exact canonical values",
+      "pass": true
+    },
+    {
+      "name": "Actual Decision log quantity renderer preserves numeric zero/absence and displays humane or explicitly unavailable units",
+      "pass": true
+    },
+    {
+      "name": "Actual case quantity and chart-axis expressions remove raw UOM enums without changing measured values",
+      "pass": true
+    },
+    {
+      "name": "views/CaseDetailView.tsx: actual saveDraft payload expressions remain byte-for-byte unchanged",
+      "pass": true
+    },
+    {
+      "name": "views/DecisionsView.tsx: actual exportRows payload expressions remain byte-for-byte unchanged",
+      "pass": true
+    }
+  ]
+}

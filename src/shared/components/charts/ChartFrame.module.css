@@ -1,0 +1,127 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin: 0;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  min-height: 24px;
+}
+
+.caption {
+  color: var(--color-text-primary, var(--slate-900));
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: var(--line-height-snug, 1.35);
+}
+
+.heatmapFrame {
+  gap: var(--space-md);
+}
+
+.heatmapFrame .header {
+  min-height: 0;
+}
+
+.heatmapFrame .caption {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 21px;
+}
+
+.action {
+  flex: 0 0 auto;
+}
+
+.plotArea {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--color-text-secondary, var(--slate-600));
+  font-size: var(--font-size-xs);
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.stateText {
+  margin: 0;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: var(--font-size-sm);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-border-subtle, var(--slate-200));
+  border-top-color: var(--color-accent-default, var(--iris-400));
+  border-radius: 50%;
+  animation: spin 700ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
+
+.narration {
+  min-width: 0;
+}
+
+/*
+  Kept in the accessibility tree and readable by a screen reader, but takes no visual space.
+  `clip-path` rather than `display: none`, which would remove it from the tree entirely.
+*/
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

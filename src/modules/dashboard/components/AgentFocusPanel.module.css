@@ -1,0 +1,202 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  border-radius: var(--radius-xl);
+  background-color: var(--purple-5);
+  background-image: var(--texture-grain), var(--gradient-focus-panel);
+  background-blend-mode: soft-light, normal;
+  background-size: 200px 200px, cover;
+  color: var(--graphite-10);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.heading {
+  margin: 0 0 var(--space-lg);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: var(--space-md);
+  flex: 1;
+}
+
+.grid>li {
+  display: flex;
+  min-height: 0;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: var(--radius-lg);
+  color: inherit;
+  cursor: pointer;
+  isolation: isolate;
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 5%);
+}
+
+.itemIris {
+  background-image: var(--gradient-focus-card-iris);
+  border-color: color-mix(in srgb, var(--iris-300) 16%, transparent);
+}
+
+.itemIrisAlt {
+  background-image: var(--gradient-focus-card-iris-alt);
+  border-color: color-mix(in srgb, var(--iris-200) 14%, transparent);
+}
+
+.itemSky {
+  background-image: var(--gradient-focus-card-sky);
+  border-color: color-mix(in srgb, var(--sky-300) 16%, transparent);
+}
+
+.itemAccent {
+  background-image: var(--gradient-focus-card-sky);
+  border: none;
+  box-shadow: inset -1px 0 0 0 color-mix(in srgb, var(--iris-400) 45%, transparent),
+    inset 0 1px 0 0 rgb(255 255 255 / 5%);
+}
+
+.itemAccent::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  padding: 1px;
+  border-radius: inherit;
+  background-image: var(--gradient-focus-card-accent-border);
+  pointer-events: none;
+
+  /* Conic gradient border — warm glow bottom-left, purple right */
+  mask: linear-gradient(var(--graphite-10) 0 0) content-box,
+    linear-gradient(var(--graphite-10) 0 0);
+  mask-composite: exclude;
+}
+
+.item:hover {
+  /* filter: brightness(1.04); */
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.26);
+  background:
+    linear-gradient(180deg,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0) 35%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.24) 0%,
+      rgba(255, 255, 255, 0.07) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.36),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+    0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+/*
+ * Rotating gradient border. `--module_card_angle` must be a registered custom property so the
+ * browser can interpolate it as an <angle>; without this the conic sweep cannot animate.
+ */
+@property --module_card_angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes module-card-border-rotate {
+  to {
+    --module_card_angle: 360deg;
+  }
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: var(--gradient-focus-card-active-border);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: module-card-border-rotate 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+/* Reveal the rotating border on hover/keyboard focus, with a soft multi-colour glow. */
+.item:hover::before,
+.item:focus-visible::before {
+  opacity: 1;
+  filter:
+    drop-shadow(0 0 3px color-mix(in srgb, var(--iris-400) 55%, transparent))
+    drop-shadow(0 0 6px color-mix(in srgb, var(--coral-400) 35%, transparent));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item::before {
+    animation: none;
+  }
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: var(--radius-sm);
+  background-color: rgb(255 255 255 / 8%);
+}
+
+.sparkles {
+  opacity: 0.9;
+}
+
+.itemTitle {
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+.chevron {
+  font-weight: var(--font-weight-regular);
+  opacity: 0.7;
+}
+
+.itemDescription {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  opacity: 0.78;
+}
+
+/* Tablet: 2 → 1 column */
+@media (width <=1280px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

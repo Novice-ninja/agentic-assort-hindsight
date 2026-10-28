@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "primary": "Principal",
+    "home": "Inicio",
+    "dashboard": "Panel",
+    "decisionDashboard": "Panel de Decisiones",
+    "allPlan": "Todos los Planes",
+    "reports": "Informes",
+    "products": "Productos",
+    "locations": "Ubicaciones",
+    "plans": "Planes",
+    "hindsight": "Retrospectiva",
+    "admin": "Administración",
+    "planningAdmin": "Admin de Planificación",
+    "assortmentPeriod": "Período de Surtido",
+    "locationClustering": "Agrupación de Ubicaciones",
+    "planningRules": "Reglas de Planificación",
+    "settings": "Ajustes",
+    "logout": "Cerrar sesión",
+    "expand": "Expandir barra lateral",
+    "collapse": "Contraer barra lateral",
+    "comingSoon": "Esta sección estará disponible pronto."
+  }
+}

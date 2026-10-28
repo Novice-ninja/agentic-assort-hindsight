@@ -1,0 +1,136 @@
+{
+  "app": {
+    "title": "Assort",
+    "skipToContent": "تخطَّ إلى المحتوى"
+  },
+  "actions": {
+    "search": "بحث",
+    "clearFilters": "مسح عوامل التصفية",
+    "showFilters": "إظهار الفلاتر",
+    "hideFilters": "إخفاء الفلاتر",
+    "retry": "إعادة المحاولة"
+  },
+  "states": {
+    "loading": "جارٍ التحميل…",
+    "empty": "لا توجد نتائج",
+    "error": "حدث خطأ ما"
+  },
+  "appConfig": {
+    "metricsLoadFailed": "تعذر تحميل إعدادات المقاييس. يتم عرض المقاييس الافتراضية.",
+    "globalLoadFailed": "تعذر تحميل إعدادات التطبيق. يتم عرض الإعدادات الافتراضية."
+  },
+  "aiStrip": {
+    "loadingLabel": "جمع الرؤى",
+    "askIris": "اسأل Iris",
+    "emptyNarration": "لا توجد رؤى متاحة"
+  },
+  "theme": {
+    "toggle": "تبديل السمة",
+    "light": "فاتح",
+    "dark": "داكن"
+  },
+  "language": {
+    "label": "اللغة",
+    "en": "الإنجليزية",
+    "es": "الإسبانية",
+    "ar": "العربية"
+  },
+  "header": {
+    "help": "مساعدة",
+    "messages": "الرسائل",
+    "notifications": "الإشعارات",
+    "notificationsCount": "{{count}} إشعارات غير مقروءة",
+    "agentHub": "مركز الوكيل",
+    "userMenu": "قائمة المستخدم",
+    "modeToggle": "وضع التخطيط",
+    "agentic": "وكيل",
+    "override": "تجاوز"
+  },
+  "breadcrumb": {
+    "label": "مسار التنقل",
+    "home": "الرئيسية"
+  },
+  "matrixGrid": {
+    "empty": "لا توجد بيانات للعرض",
+    "error": "تعذر تحميل الشبكة",
+    "loading": "جارٍ تحميل الشبكة…",
+    "retry": "إعادة المحاولة",
+    "readOnly": "هذا العمود للقراءة فقط",
+    "bulkApply": "تطبيق الكل",
+    "grandTotal": "الإجمالي العام",
+    "rowHeader": "العنصر",
+    "emptyGroup": "لا توجد عناصر",
+    "modified": "تم تغييره عن القيمة الأساسية",
+    "invalidValue": "تعذّر قراءة هذه القيمة لهذا العمود",
+    "editing": "تحرير {{column}}",
+    "leafCount_zero": "لا توجد عناصر",
+    "leafCount_one": "عنصر واحد",
+    "leafCount_two": "عنصران",
+    "leafCount_few": "{{count}} عناصر",
+    "leafCount_many": "{{count}} عنصرًا",
+    "leafCount_other": "{{count}} عنصر",
+    "pasteWarning_zero": "تم لصق {{written}} خلية دون استثناءات.",
+    "pasteWarning_one": "تم لصق {{written}} خلية. لم تُطبَّق خلية واحدة: {{skippedReadOnly}} للقراءة فقط، {{truncated}} خارج الشبكة.",
+    "pasteWarning_two": "تم لصق {{written}} خلية. لم تُطبَّق خليتان: {{skippedReadOnly}} للقراءة فقط، {{truncated}} خارج الشبكة.",
+    "pasteWarning_few": "تم لصق {{written}} خلية. لم تُطبَّق {{count}} خلايا: {{skippedReadOnly}} للقراءة فقط، {{truncated}} خارج الشبكة.",
+    "pasteWarning_many": "تم لصق {{written}} خلية. لم تُطبَّق {{count}} خلية: {{skippedReadOnly}} للقراءة فقط، {{truncated}} خارج الشبكة.",
+    "pasteWarning_other": "تم لصق {{written}} خلية. لم تُطبَّق {{count}} خلية: {{skippedReadOnly}} للقراءة فقط، {{truncated}} خارج الشبكة.",
+    "agGrid": {
+      "noRowsToShow": "لا توجد بيانات للعرض",
+      "loadingOoo": "جارٍ التحميل…",
+      "group": "مجموعة",
+      "total": "الإجمالي",
+      "pivotColumnGroupTotals": "الإجمالي",
+      "pivotMode": "وضع المحور",
+      "groups": "مجموعات الصفوف",
+      "values": "القيم",
+      "columns": "الأعمدة",
+      "rowGroupColumnsEmptyMessage": "اسحب هنا لتجميع الصفوف",
+      "valueColumnsEmptyMessage": "اسحب هنا للتجميع",
+      "pivotColumnsEmptyMessage": "اسحب هنا لتحديد عناوين الأعمدة",
+      "copy": "نسخ",
+      "copyWithHeaders": "نسخ مع العناوين",
+      "paste": "لصق",
+      "ctrlC": "Ctrl+C",
+      "ctrlV": "Ctrl+V"
+    }
+  },
+  "iris": {
+    "readingRequest": "جارٍ قراءة طلبك مقابل كتالوج المنتجات وتقويم شركتك وقائمة المتاجر…",
+    "processSteps": "خطوات المعالجة ({{current}}/{{total}})",
+    "connectionError": "فقدت Iris الاتصال. يُرجى المحاولة مرة أخرى.",
+    "planError": "تعذر تحميل هذه الخطة لـ Iris: {{message}}",
+    "emptyResult": "انتهت Iris دون إجابة نصية.",
+    "emptyChart": "انتهت Iris دون بيانات رسم بياني للعرض.",
+    "emptyTable": "انتهت Iris دون بيانات جدول للعرض.",
+    "chartDataCaption": "بيانات {{title}}",
+    "untitledChart": "الرسم البياني",
+    "missingPlan": "افتح خطة من قائمة الخطط أولاً حتى تعرف Iris أي خطة تستخدم.",
+    "suggestedAnalysis": "تحليل مقترح",
+    "replyActions": "الإجراءات",
+    "feedback": {
+      "like": "استجابة جيدة",
+      "dislike": "استجابة سيئة",
+      "ratedLike": "تم وضع علامة على أنها استجابة جيدة.",
+      "ratedDislike": "تم وضع علامة على أنها استجابة سيئة.",
+      "cleared": "تم مسح التقييم."
+    },
+    "replyView": {
+      "viewsLabel": "طرق عرض الرد",
+      "withCount": "{{label}} ({{count}})",
+      "text": "نص",
+      "table": "جدول",
+      "bar": "مخطط أعمدة",
+      "line": "مخطط خطي",
+      "area": "مخطط مساحي",
+      "pie": "مخطط دونات",
+      "heatmap": "خريطة حرارية",
+      "chart": "مخطط"
+    },
+    "downloadFile": "تنزيل {{filename}}",
+    "downloadFailed": "فشل التنزيل. حاول مرة أخرى.",
+    "copilotTitle": "Cluster Copilot",
+    "minimizeCopilot": "تصغير Cluster Copilot",
+    "maximizeCopilot": "تكبير Cluster Copilot"
+  }
+}

@@ -1,0 +1,324 @@
+/* Right-anchored full-height filter drawer (reference impact_drawer_filter_container) */
+
+.drawerOverlay {
+  justify-content: flex-end;
+  align-items: stretch;
+  padding: 0;
+}
+
+.drawer.drawer {
+  display: flex;
+  flex-direction: column;
+  width: min(840px, 100vw);
+  max-width: none;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: -8px 0 28px rgb(0 0 0 / 14%);
+}
+
+/* Drawer header — Modal renders the title as an h2 */
+.drawer.drawer h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 9px var(--space-md);
+  border-bottom: 1px solid var(--slate-200);
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-800);
+}
+
+.drawer.drawer h2::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--indigo-100);
+  border-radius: 8px;
+  background: var(--color-surface)
+    url("data:image/svg+xml,%3Csvg width='15' height='20' viewBox='0 0 15 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3768 6.62372C14.1647 6.10582 13.6828 5.78711 13.1431 5.78711H1.577C1.03725 5.78711 0.555331 6.10582 0.343286 6.62372C0.131241 7.14162 0.227625 7.71929 0.613161 8.11767L5.45164 13.3764V16.9818C5.45164 17.2407 5.58657 17.4997 5.79862 17.6391L8.22749 19.3323C8.34315 19.4119 8.45882 19.4518 8.59375 19.4518C8.70941 19.4518 8.8058 19.4319 8.90218 19.3721C9.11423 19.2526 9.24916 19.0136 9.24916 18.7745V13.3764L14.1069 8.13759C14.4925 7.71929 14.5888 7.14162 14.3768 6.62372Z' fill='%233649C6'/%3E%3Cpath d='M5.54835 4.85141H9.38443C9.53864 4.85141 9.67358 4.77173 9.75069 4.63229C9.82779 4.49286 9.82779 4.3335 9.75069 4.19407L7.82301 0.767941C7.7459 0.628506 7.61096 0.548828 7.45675 0.548828C7.30253 0.548828 7.1676 0.628506 7.09049 0.767941L5.16281 4.19407C5.0857 4.3335 5.0857 4.49286 5.16281 4.63229C5.23992 4.77173 5.39413 4.85141 5.54835 4.85141ZM7.45675 1.86351L8.63263 3.97496H6.28087L7.45675 1.86351Z' fill='%233BB273'/%3E%3Cpath d='M12.2177 4.85181C13.3357 4.85181 14.261 3.9156 14.261 2.74036C14.261 1.56512 13.3357 0.628906 12.2177 0.628906C11.0996 0.628906 10.1743 1.56512 10.1743 2.74036C10.1743 3.9156 11.0996 4.85181 12.2177 4.85181ZM12.2177 1.52528C12.8731 1.52528 13.3935 2.08302 13.3935 2.74036C13.3935 3.3977 12.8538 3.95544 12.2177 3.95544C11.5622 3.95544 11.0418 3.3977 11.0418 2.74036C11.0418 2.08302 11.5622 1.52528 12.2177 1.52528Z' fill='%23E1BC29'/%3E%3Cpath d='M1.40355 4.55342C1.48065 4.69285 1.61559 4.77253 1.76981 4.77253H3.54327C3.69748 4.77253 3.83242 4.69285 3.90953 4.55342L4.79626 2.95987C4.87337 2.82044 4.87337 2.66108 4.79626 2.52165L3.90953 0.928097C3.83242 0.788662 3.69748 0.708984 3.54327 0.708984H1.76981C1.61559 0.708984 1.48065 0.788662 1.40355 0.928097L0.516815 2.52165C0.439708 2.66108 0.439708 2.82044 0.516815 2.95987L1.40355 4.55342ZM2.0204 1.60536H3.31195L3.94808 2.76068L3.31195 3.89608H2.03968L1.38427 2.74076L2.0204 1.60536Z' fill='%23E15554'/%3E%3C/svg%3E")
+    no-repeat center / 14px;
+}
+
+/* Children wrapper fills the remaining height */
+.drawer.drawer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  inset-inline-end: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--slate-500);
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Left tab rail (reference impact_drawer_filter_container_left_panel) */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+  width: 200px;
+  padding: 10px var(--space-sm) 0;
+  border: none;
+  border-right: 1px solid var(--slate-200);
+  border-radius: 0;
+  background: var(--slate-100);
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  padding: 6px var(--space-sm) 6px 18px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  text-align: start;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: var(--indigo-100);
+}
+
+.tabContent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.tabIcon {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--slate-600);
+}
+
+.tabLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--font-size-md);
+  line-height: 20px;
+  color: var(--slate-600);
+}
+
+.tabBadge {
+  flex-shrink: 0;
+  min-width: 27px;
+  height: 18px;
+  padding: 0 var(--space-sm);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--slate-600);
+  font-size: var(--font-size-xs);
+  line-height: 18px;
+  text-align: center;
+}
+
+.tabActive {
+  background: var(--indigo-100);
+  box-shadow: none;
+  border: none;
+}
+
+.tabActive .tabLabel,
+.tabActive .tabIcon,
+.tabActive .tabBadge {
+  color: var(--indigo-400);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--space-md);
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+/* Field styling (reference ia-select): 12px label, 32px bordered trigger */
+.fields > div > span:first-child {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--slate-600);
+}
+
+.fields > div > button {
+  min-height: 32px;
+  padding: 5px var(--space-smd);
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--slate-800);
+}
+
+/* Footer (reference impact_drawer_filter_footer) */
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 56px;
+  margin-top: auto;
+  padding: 0 var(--space-md);
+  border-top: 1px solid var(--slate-200);
+  background: var(--color-surface);
+}
+
+.actionsRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+/* Reference link button */
+.clearBtn.clearBtn {
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--indigo-400);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.clearBtn.clearBtn:hover:not(:disabled) {
+  background: transparent;
+  text-decoration: underline;
+}
+
+/* Reference tertiary button */
+.tertiaryBtn.tertiaryBtn {
+  height: 32px;
+  padding: 6px var(--space-smd);
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--slate-800);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.tertiaryBtn.tertiaryBtn:hover:not(:disabled) {
+  background-color: var(--indigo-100);
+  border-color: var(--indigo-500);
+  color: var(--indigo-500);
+}
+
+/* Reference primary (contained) button */
+.primaryBtn.primaryBtn {
+  height: 32px;
+  padding: 6px var(--space-smd);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--indigo-400);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.primaryBtn.primaryBtn:hover:not(:disabled) {
+  background-color: var(--indigo-600);
+}
+
+@media (width <= 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    padding: var(--space-sm);
+    border-right: none;
+    border-bottom: 1px solid var(--slate-200);
+  }
+
+  .fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+:global(html[data-theme='dark']) .drawer.drawer h2 {
+  border-bottom-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+:global(html[data-theme='dark']) .sidebar {
+  background: var(--color-surface-muted);
+  border-right-color: var(--color-border);
+}
+
+:global(html[data-theme='dark']) .tabLabel,
+:global(html[data-theme='dark']) .tabIcon {
+  color: var(--color-text-secondary);
+}
+
+:global(html[data-theme='dark']) .tabBadge {
+  background-color: color-mix(in srgb, var(--graphite-10) 8%, transparent);
+  color: var(--color-text-secondary);
+}
+
+:global(html[data-theme='dark']) .tab:hover,
+:global(html[data-theme='dark']) .tabActive {
+  background: color-mix(in srgb, var(--indigo-400) 18%, transparent);
+}
+
+:global(html[data-theme='dark']) .tabActive .tabLabel,
+:global(html[data-theme='dark']) .tabActive .tabIcon,
+:global(html[data-theme='dark']) .tabActive .tabBadge {
+  color: var(--indigo-200);
+}
+
+:global(html[data-theme='dark']) .actions {
+  background: var(--color-surface);
+  border-top-color: var(--color-border);
+}
+
+:global(html[data-theme='dark']) .fields > div > button {
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+:global(html[data-theme='dark']) .tertiaryBtn.tertiaryBtn {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}

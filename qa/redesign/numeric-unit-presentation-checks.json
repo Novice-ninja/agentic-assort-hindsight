@@ -1,0 +1,30 @@
+{
+  "kind": "Actual Metric/SummaryCards rendering with semantic MetricCard stand-in plus compact-column source contracts; native clipping retest is separate",
+  "passed": 6,
+  "checks": [
+    {
+      "name": "Compact numeric text keeps all digits and puts humane unit in tooltip",
+      "pass": true
+    },
+    {
+      "name": "Restricted metric tooltip does not expose a hidden raw number",
+      "pass": true
+    },
+    {
+      "name": "Mixed or unavailable measure remains explicit rather than becoming zero",
+      "pass": true
+    },
+    {
+      "name": "Summary helper formats the source unit for merchants",
+      "pass": true
+    },
+    {
+      "name": "ByItemView compact grid columns omit inline unit suffixes and show a common unit helper",
+      "pass": true
+    },
+    {
+      "name": "ByStoreView compact grid columns omit inline unit suffixes and show a common unit helper",
+      "pass": true
+    }
+  ]
+}

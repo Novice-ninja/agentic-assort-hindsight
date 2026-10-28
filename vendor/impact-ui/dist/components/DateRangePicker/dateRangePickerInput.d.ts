@@ -1,0 +1,2 @@
+export declare function DateRangePickerInput({ inputContainerRef, startDateString, startDateInputRef, startDateInputProps, endDateString, endDateInputRef, endDateInputProps, isDisabled, isError, onStartDateFocus, onEndDateFocus, displayFormat, onStartDateStringChange, onEndDateStringChange, minDate, maxDate, readOnly, isOutsideRange, onErrorStateChange, clearErrorsTrigger, resetTrigger, customIcon, }: any): import("react/jsx-runtime").JSX.Element;
+//# sourceMappingURL=dateRangePickerInput.d.ts.map

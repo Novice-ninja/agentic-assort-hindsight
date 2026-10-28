@@ -1,0 +1,103 @@
+{
+  "data": {
+    "metric": "sell_thru_pct",
+    "clusters": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "rows": [
+      {
+        "value": "Woodland Reserve",
+        "values": [
+          70.9,
+          65.6,
+          61.3,
+          65.6,
+          61,
+          56.6
+        ]
+      },
+      {
+        "value": "Westridge",
+        "values": [
+          67,
+          71.3,
+          66.9,
+          64.1,
+          59.6,
+          54.2
+        ]
+      },
+      {
+        "value": "American Spirit",
+        "values": [
+          65.6,
+          66.3,
+          66.7,
+          66.3,
+          56.3,
+          57.2
+        ]
+      },
+      {
+        "value": "Lifescapes",
+        "values": [
+          66.4,
+          66,
+          66.4,
+          67.1,
+          57.1,
+          57
+        ]
+      },
+      {
+        "value": "Bruce",
+        "values": [
+          69.6,
+          70.2,
+          60.1,
+          62,
+          61.9,
+          62.6
+        ]
+      },
+      {
+        "value": "Not Specified",
+        "values": [
+          71.8,
+          61.6,
+          62.2,
+          64,
+          63.8,
+          55.1
+        ]
+      },
+      {
+        "value": "Dimensions",
+        "values": [
+          68.7,
+          68.2,
+          68.5,
+          61.1,
+          61.1,
+          60.8
+        ]
+      },
+      {
+        "value": "Eco Forest",
+        "values": [
+          68.5,
+          62.1,
+          68.3,
+          63.4,
+          58.8,
+          62.9
+        ]
+      }
+    ]
+  }
+}

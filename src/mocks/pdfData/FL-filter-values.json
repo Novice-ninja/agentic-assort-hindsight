@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "attribute": "l0_name",
+      "value": "Flooring",
+      "label": "Flooring",
+      "path": "Flooring",
+      "styleCount": 452,
+      "parentL0": "Flooring"
+    },
+    {
+      "attribute": "l1_name",
+      "value": "Hardwood",
+      "label": "Hardwood",
+      "path": "Flooring____Hardwood",
+      "styleCount": 230,
+      "parentL0": "Flooring",
+      "parentL1": "Hardwood"
+    },
+    {
+      "attribute": "l1_name",
+      "value": "Engineered Hardwood",
+      "label": "Engineered Hardwood",
+      "path": "Flooring____Engineered Hardwood",
+      "styleCount": 167,
+      "parentL0": "Flooring",
+      "parentL1": "Engineered Hardwood"
+    },
+    {
+      "attribute": "l1_name",
+      "value": "Bamboo",
+      "label": "Bamboo",
+      "path": "Flooring____Bamboo",
+      "styleCount": 80,
+      "parentL0": "Flooring",
+      "parentL1": "Bamboo"
+    },
+    {
+      "attribute": "l1_name",
+      "value": "Laminate",
+      "label": "Laminate",
+      "path": "Flooring____Laminate",
+      "styleCount": 8,
+      "parentL0": "Flooring",
+      "parentL1": "Laminate"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Solid Hardwood",
+      "label": "Solid Hardwood",
+      "path": "Flooring____Hardwood____Solid Hardwood",
+      "styleCount": 162,
+      "parentL0": "Flooring",
+      "parentL1": "Hardwood"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Hand Scraped Hardwood",
+      "label": "Hand Scraped Hardwood",
+      "path": "Flooring____Hardwood____Hand Scraped Hardwood",
+      "styleCount": 95,
+      "parentL0": "Flooring",
+      "parentL1": "Hardwood"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Water Resistant Engineered",
+      "label": "Water Resistant Engineered",
+      "path": "Flooring____Engineered Hardwood____Water Resistant Engineered",
+      "styleCount": 63,
+      "parentL0": "Flooring",
+      "parentL1": "Engineered Hardwood"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Wire Brushed Engineered",
+      "label": "Wire Brushed Engineered",
+      "path": "Flooring____Engineered Hardwood____Wire Brushed Engineered",
+      "styleCount": 134,
+      "parentL0": "Flooring",
+      "parentL1": "Engineered Hardwood"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Stranded Bamboo",
+      "label": "Stranded Bamboo",
+      "path": "Flooring____Bamboo____Stranded Bamboo",
+      "styleCount": 89,
+      "parentL0": "Flooring",
+      "parentL1": "Bamboo"
+    },
+    {
+      "attribute": "l2_name",
+      "value": "Click Laminate",
+      "label": "Click Laminate",
+      "path": "Flooring____Laminate____Click Laminate",
+      "styleCount": 14,
+      "parentL0": "Flooring",
+      "parentL1": "Laminate"
+    },
+    {
+      "attribute": "channel",
+      "value": "BnM",
+      "label": "BnM",
+      "path": "BnM"
+    },
+    {
+      "attribute": "channel",
+      "value": "WEB",
+      "label": "WEB",
+      "path": "WEB"
+    },
+    {
+      "attribute": "channel",
+      "value": "WHS",
+      "label": "WHS",
+      "path": "WHS"
+    },
+    {
+      "attribute": "region",
+      "value": "North Island",
+      "label": "North Island",
+      "path": "North Island"
+    },
+    {
+      "attribute": "region",
+      "value": "South Island",
+      "label": "South Island",
+      "path": "South Island"
+    },
+    {
+      "attribute": "region",
+      "value": "Auckland Metro",
+      "label": "Auckland Metro",
+      "path": "Auckland Metro"
+    },
+    {
+      "attribute": "region",
+      "value": "Canterbury",
+      "label": "Canterbury",
+      "path": "Canterbury"
+    }
+  ]
+}

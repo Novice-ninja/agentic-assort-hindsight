@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "dimension": "color",
+      "cardTitle": "Color",
+      "aiInsight": "Natural and Espresso account for 44% of sales; warm neutrals continue to lead the range.",
+      "segments": [
+        {
+          "id": "natural",
+          "name": "Natural",
+          "sharePct": 24.6
+        },
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "sharePct": 19.8
+        },
+        {
+          "id": "gray-wash",
+          "name": "Gray Wash",
+          "sharePct": 16.3
+        },
+        {
+          "id": "honey-oak",
+          "name": "Honey Oak",
+          "sharePct": 14.1
+        },
+        {
+          "id": "walnut",
+          "name": "Walnut",
+          "sharePct": 11.2
+        },
+        {
+          "id": "others",
+          "name": "others",
+          "sharePct": 14
+        }
+      ]
+    },
+    {
+      "dimension": "article_brand_name",
+      "cardTitle": "Brand",
+      "aiInsight": "Woodland Reserve and Westridge together deliver almost half of season sales.",
+      "segments": [
+        {
+          "id": "woodland-reserve",
+          "name": "Woodland Reserve",
+          "sharePct": 27.4
+        },
+        {
+          "id": "westridge",
+          "name": "Westridge",
+          "sharePct": 21.9
+        },
+        {
+          "id": "american-spirit",
+          "name": "American Spirit",
+          "sharePct": 15.2
+        },
+        {
+          "id": "lifescapes",
+          "name": "Lifescapes",
+          "sharePct": 11.8
+        },
+        {
+          "id": "bruce",
+          "name": "Bruce",
+          "sharePct": 9.6
+        },
+        {
+          "id": "others",
+          "name": "others",
+          "sharePct": 14.1
+        }
+      ]
+    },
+    {
+      "dimension": "product_type",
+      "cardTitle": "Product Type",
+      "aiInsight": "Solid Hardwood remains the largest product type, but Water Resistant Engineered is closing the gap.",
+      "segments": [
+        {
+          "id": "solid-hardwood",
+          "name": "Solid Hardwood",
+          "sharePct": 29.3
+        },
+        {
+          "id": "water-resistant-engineered",
+          "name": "Water Resistant Engineered",
+          "sharePct": 25.1
+        },
+        {
+          "id": "wire-brushed-engineered",
+          "name": "Wire Brushed Engineered",
+          "sharePct": 14.7
+        },
+        {
+          "id": "stranded-bamboo",
+          "name": "Stranded Bamboo",
+          "sharePct": 12.4
+        },
+        {
+          "id": "hand-scraped-hardwood",
+          "name": "Hand Scraped Hardwood",
+          "sharePct": 10.2
+        },
+        {
+          "id": "others",
+          "name": "others",
+          "sharePct": 8.3
+        }
+      ]
+    },
+    {
+      "dimension": "species",
+      "cardTitle": "Species",
+      "aiInsight": "Red Oak and White Oak dominate; Stranded Bamboo is the smallest but fastest-growing species.",
+      "segments": [
+        {
+          "id": "red-oak",
+          "name": "Red Oak",
+          "sharePct": 26.5
+        },
+        {
+          "id": "white-oak",
+          "name": "White Oak",
+          "sharePct": 22.1
+        },
+        {
+          "id": "hickory",
+          "name": "Hickory",
+          "sharePct": 17.4
+        },
+        {
+          "id": "hard-maple",
+          "name": "Hard Maple",
+          "sharePct": 13.2
+        },
+        {
+          "id": "acacia",
+          "name": "Acacia",
+          "sharePct": 11.6
+        },
+        {
+          "id": "stranded-bamboo",
+          "name": "Stranded Bamboo",
+          "sharePct": 9.2
+        }
+      ]
+    },
+    {
+      "dimension": "finish",
+      "cardTitle": "Finish",
+      "aiInsight": "Wire-Brushed is the most popular finish at 31% of sales.",
+      "segments": [
+        {
+          "id": "wire-brushed",
+          "name": "Wire-Brushed",
+          "sharePct": 31.4
+        },
+        {
+          "id": "hand-scraped",
+          "name": "Hand Scraped",
+          "sharePct": 22.8
+        },
+        {
+          "id": "smooth",
+          "name": "Smooth",
+          "sharePct": 18.9
+        },
+        {
+          "id": "distressed",
+          "name": "Distressed",
+          "sharePct": 15.3
+        },
+        {
+          "id": "water-resistant",
+          "name": "Water Resistant",
+          "sharePct": 11.6
+        }
+      ]
+    }
+  ]
+}

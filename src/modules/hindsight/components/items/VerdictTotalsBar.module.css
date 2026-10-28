@@ -1,0 +1,79 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.track {
+  display: flex;
+  overflow: hidden;
+  block-size: var(--space-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-surface-muted, var(--slate-100));
+}
+
+.segment {
+  display: block;
+  block-size: 100%;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-md);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--font-size-xs);
+}
+
+.swatch {
+  flex: 0 0 auto;
+  inline-size: var(--space-sm);
+  block-size: var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.label {
+  color: var(--color-text-secondary, var(--slate-600));
+}
+
+.count {
+  color: var(--color-text-primary, var(--slate-900));
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+.total {
+  margin: 0;
+  margin-inline-start: auto;
+  color: var(--color-text-secondary, var(--slate-600));
+  font-size: var(--font-size-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Verdict colours mirror VerdictControl so a segment, a swatch and a pill agree. */
+.keep {
+  background-color: var(--color-success, var(--emerald-400));
+}
+
+.shop {
+  background-color: var(--color-warning, var(--amber-400));
+}
+
+.drop {
+  background-color: var(--color-error, var(--rose-400));
+}

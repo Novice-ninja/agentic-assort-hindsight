@@ -1,0 +1,83 @@
+.front {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  min-inline-size: 0;
+  padding: 10px;
+  border: 1px solid rgb(225 230 240);
+  border-radius: 10px;
+  background-color: var(--color-surface, rgb(255 255 255));
+  box-shadow: 0 4px 10px rgb(13 21 44 / 7%);
+}
+
+.imageWrap {
+  position: relative;
+}
+
+.aiButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.description {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: #0d152c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.metrics {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  color: #7a8294;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.metrics div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 1px;
+}
+
+/* A divider under the first figure, matching the design's grouping of Style ID on its own. */
+.metrics div:first-child {
+  padding-block-end: 6px;
+  border-bottom: 1px solid rgb(217 221 231);
+  margin-block-end: 6px;
+}
+
+.metrics dt,
+.metrics dd {
+  margin: 0;
+}
+
+.metrics dd {
+  color: #0d152c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.recommendation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  color: #7a8294;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}

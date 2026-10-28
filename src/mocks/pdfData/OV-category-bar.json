@@ -1,0 +1,27 @@
+{
+  "data": {
+    "metric": "revenue",
+    "rows": [
+      {
+        "version": "ly",
+        "category": "Hardwood",
+        "metricValue": 3138225
+      },
+      {
+        "version": "ly",
+        "category": "Engineered Hardwood",
+        "metricValue": 2972817
+      },
+      {
+        "version": "ly",
+        "category": "Bamboo",
+        "metricValue": 1288508
+      },
+      {
+        "version": "ly",
+        "category": "Laminate",
+        "metricValue": 937696
+      }
+    ]
+  }
+}

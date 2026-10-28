@@ -1,0 +1,64 @@
+{
+  "kind": "Owned-file parse/type-diagnostic gate; not browser evidence",
+  "passed": 11,
+  "checkCount": 11,
+  "checks": [
+    {
+      "path": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/tableModel.ts",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ScreenChart.tsx",
+      "pass": true,
+      "kind": "TypeScript TS/TSX syntax parse and transpilation"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/views.module.css",
+      "pass": true,
+      "kind": "PostCSS syntax parse"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/screens.module.css",
+      "pass": true,
+      "kind": "PostCSS syntax parse"
+    }
+  ],
+  "ownedFileTypeErrors": [],
+  "wholeProjectTypeCheck": "Known recovered declaration-only modules cause unrelated project-wide diagnostics; no whole-project strict-clean claim."
+}

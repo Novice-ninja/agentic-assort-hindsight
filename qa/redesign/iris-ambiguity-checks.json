@@ -1,0 +1,86 @@
+{
+  "kind": "Pure deterministic reference/period/denominator guards using frozen canonical selectors; not an NLP backend or native interaction test",
+  "passed": 20,
+  "checks": [
+    {
+      "name": "General assortment question keeps the frozen population without a fabricated identity",
+      "pass": true
+    },
+    {
+      "name": "Generic metric and store-level wording do not fabricate a SKU/store reference",
+      "pass": true
+    },
+    {
+      "name": "One canonical SKU mention resolves to a named answer cohort",
+      "pass": true
+    },
+    {
+      "name": "One canonical store mention resolves to the exact store",
+      "pass": true
+    },
+    {
+      "name": "Unknown SKU asks for a permitted concrete identity before any broad answer",
+      "pass": true
+    },
+    {
+      "name": "Unknown store never silently becomes all stores",
+      "pass": true
+    },
+    {
+      "name": "Multiple explicit SKU IDs require one identity or an explicitly confirmed named cohort",
+      "pass": true
+    },
+    {
+      "name": "Confirmed SKU choice retains the original unknown question but narrows only its answer",
+      "pass": true
+    },
+    {
+      "name": "A known SKU outside the frozen global scope is not retrieved through clarification",
+      "pass": true
+    },
+    {
+      "name": "Same-named products are never merged by name",
+      "pass": true
+    },
+    {
+      "name": "Multiple stores require an explicit answer selection",
+      "pass": true
+    },
+    {
+      "name": "Vague last-month period presents exact dates inside frozen evidence",
+      "pass": true
+    },
+    {
+      "name": "Confirmed period narrows reply evidence without rewriting global filters",
+      "pass": true
+    },
+    {
+      "name": "Named different period and future date cannot silently broaden the frozen interval",
+      "pass": true
+    },
+    {
+      "name": "Unspecified denominator asks which distinct definition applies",
+      "pass": true
+    },
+    {
+      "name": "A confirmed ranged-pair denominator uses its actual frozen exposure, not the S15 sample",
+      "pass": true
+    },
+    {
+      "name": "Explicit PWPS example retains source-cell aliases and inference bounds",
+      "pass": true
+    },
+    {
+      "name": "Restricted gross margin cannot be selected as a clarification escape hatch",
+      "pass": true
+    },
+    {
+      "name": "No-comparator question offers explicit supported comparisons",
+      "pass": true
+    },
+    {
+      "name": "Diagonal pair cohorts constrain store choices after a SKU is confirmed",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+.back {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  min-inline-size: 0;
+  padding: 10px;
+  border: 1px solid rgb(225 230 240);
+  border-radius: 10px;
+
+  /* Sampled from the design: a lavender wash, slightly lighter at the top. */
+  background: linear-gradient(180deg, rgb(250 248 254), rgb(246 246 251));
+  box-shadow: 0 4px 10px rgb(13 21 44 / 7%);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(236 238 252);
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: var(--color-text-primary, rgb(15 21 42));
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.aiButton {
+  justify-self: end;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 2 / -1;
+  gap: 6px;
+}
+
+.chip {
+  padding: 2px 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: rgb(242 243 244);
+  color: rgb(96 102 114);
+  font-size: 10px;
+  line-height: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.metrics {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.value {
+  margin: 0;
+  color: rgb(33 43 75);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+
+/* The design separates the "(Vs Plan)" rows from the plain ones by weight and size, not by rule. */
+.row[data-emphasis='strong'] .label {
+  color: #60697d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.row[data-emphasis='strong'] .value {
+  color: #1f2b4d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.row[data-emphasis='muted'] .label {
+  color: #7a8294;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.row[data-emphasis='muted'] .value {
+  color: #0d152c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.badge {
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+/* Colour follows the backend's `status`, never the sign of the number. */
+.badge[data-status='positive'] {
+  background-color: rgb(246 255 248);
+  color: rgb(60 130 60);
+}
+
+.badge[data-status='negative'] {
+  background-color: rgb(252 244 245);
+  color: rgb(197 63 54);
+}
+
+.badge[data-status='neutral'] {
+  background-color: rgb(242 243 244);
+  color: rgb(96 102 114);
+}
+
+.recommendation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  color: #7a8294;
+  font-size: 12px;
+  line-height: 16px;
+}

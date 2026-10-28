@@ -1,0 +1,93 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+  background-image: var(--texture-diagonal-stride);
+  background-size: var(--texture-diagonal-stride-size, 12px) var(--texture-diagonal-stride-size, 12px);
+  min-height: 120px;
+  overflow: hidden;
+}
+
+/*
+ * Layered backgrounds (top → bottom): diagonal stride hatch, then top-right accent glow.
+ * Glow tokens match the reference dashboard platform cards screenshot.
+ */
+.tintSky {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-sky);
+  background-size:
+    var(--texture-diagonal-stride-size, 12px) var(--texture-diagonal-stride-size, 12px),
+    auto;
+}
+
+.tintEmerald {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-emerald);
+  background-size:
+    var(--texture-diagonal-stride-size, 12px) var(--texture-diagonal-stride-size, 12px),
+    auto;
+}
+
+.tintAmber {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-amber);
+  background-size:
+    var(--texture-diagonal-stride-size, 12px) var(--texture-diagonal-stride-size, 12px),
+    auto;
+}
+
+/* Dark theme: swap in the saturated corner-glow variants (see reference recording). */
+:global(html[data-theme='dark']) .tintSky {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-sky-dark);
+}
+
+:global(html[data-theme='dark']) .tintEmerald {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-emerald-dark);
+}
+
+:global(html[data-theme='dark']) .tintAmber {
+  background-image: var(--texture-diagonal-stride), var(--gradient-platform-glow-amber-dark);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.dot {
+  width: var(--space-sm);
+  height: var(--space-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-text-secondary);
+}
+
+.dot_active {
+  background-color: var(--color-success);
+}
+
+.dot_done {
+  background-color: var(--color-info);
+}
+
+.dot_inProgress {
+  background-color: var(--color-warning);
+}
+
+.title {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.description {
+  flex: 1;
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}

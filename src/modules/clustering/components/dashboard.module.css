@@ -1,0 +1,282 @@
+/* === Layout === */
+.plansGrid {
+  width: 100%;
+  min-width: 0;
+  --ag-header-height: 80px;
+  --ag-row-height: 46px;
+  --ag-header-background-color: #f5f6fa;
+  --ag-header-foreground-color: #0d152c;
+  --ag-background-color: #fafafa;
+  --ag-odd-row-background-color: #fafafa;
+  --ag-data-color: #31416e;
+  --ag-border-color: #d9dde7;
+  --ag-row-border-color: #d9dde7;
+  --ag-cell-horizontal-padding: 16px;
+}
+
+.plansGrid :global(.ag-root-wrapper) {
+  border: none;
+}
+
+.plansGrid :global(.ag-header) {
+  border-bottom: none;
+}
+
+.plansGrid :global(.ag-header-cell) {
+  border-top: 1px solid #c3c8d4;
+  border-inline-end: 1px solid #c3c8d4;
+}
+
+.plansGrid :global(.ag-header-cell-text) {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.plansGrid :global(.ag-cell) {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #31416e;
+  border-inline-end: 1px solid #d9dde7;
+}
+
+.plansGrid :global(.ag-header-cell[col-id='name']),
+.plansGrid :global(.ag-header-cell[col-id='name']) :global(.ag-header-cell-label) {
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.plansGrid :global(.ag-header-cell[col-id='select']),
+.plansGrid :global(.ag-cell[col-id='select']),
+.plansGrid :global(.ag-cell[col-id='name']) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.plansGrid :global(.ag-cell[col-id='name']) {
+  overflow: hidden;
+}
+
+.plansGrid :global(.ag-cell[col-id='name']) :global(.ag-cell-wrapper) {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.planName {
+  display: inline-flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.planNameText {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.plansGrid
+  :global(.ag-header-cell[col-id='select'])
+  :global(.ag-header-cell-comp-wrapper),
+.plansGrid :global(.ag-header-cell[col-id='select']) :global(.ag-header-select-all),
+.plansGrid :global(.ag-cell[col-id='select']) :global(.ag-cell-wrapper),
+.plansGrid :global(.ag-cell[col-id='select']) :global(.ag-selection-checkbox) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-inline: 0;
+  width: 100%;
+}
+
+/* === States (selected row + AG Grid checkboxes) === */
+.plansGrid :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover)),
+.plansGrid :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover))::before,
+.plansGrid :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover)) :global(.ag-cell) {
+  background-color: #fafafa !important;
+}
+
+.plansGrid :global(.ag-row-hover:not(.ag-row-selected)),
+.plansGrid :global(.ag-row-hover:not(.ag-row-selected))::before,
+.plansGrid :global(.ag-row-hover:not(.ag-row-selected)) :global(.ag-cell) {
+  background-color: #f0f1f8 !important;
+}
+
+.plansGrid :global(.ag-row-selected),
+.plansGrid :global(.ag-row-selected)::before,
+.plansGrid :global(.ag-row-selected.ag-row-hover),
+.plansGrid :global(.ag-row-selected.ag-row-hover)::before {
+  background-color: #eceefd !important;
+}
+
+.plansGrid :global(.ag-row-selected) :global(.ag-cell),
+.plansGrid :global(.ag-row-selected.ag-row-hover) :global(.ag-cell) {
+  background-color: #eceefd !important;
+  border-inline-end-color: #b3bdf8 !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper) {
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 0 !important;
+  line-height: 16px !important;
+  border: 1px solid #c3c8d4 !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper)::after {
+  content: none !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper:hover) {
+  border-color: #4259ee !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper.ag-checked) {
+  border-color: #4259ee !important;
+  background: #eceefd
+    url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.54401L3.22222 6.72179L8 1.27734' stroke='%234259EE' stroke-width='1.5338' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center / 10px !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper.ag-indeterminate) {
+  border-color: #4259ee !important;
+  background: #eceefd
+    url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.00391L9.00391 0.996094' stroke='%234259EE' stroke-linecap='round'/%3E%3C/svg%3E")
+    no-repeat center !important;
+}
+
+.plansGrid :global(.ag-checkbox-input-wrapper) input {
+  cursor: pointer;
+}
+
+/* === Dark theme (does not change light-mode rules above) === */
+:global([data-theme='dark']) .plansGrid {
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-header-foreground-color: var(--color-text-primary);
+  --ag-background-color: var(--color-surface);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-data-color: var(--color-text-primary);
+  --ag-border-color: var(--color-border);
+  --ag-row-border-color: var(--color-border);
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 18%,
+    var(--color-surface)
+  );
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-root-wrapper),
+:global([data-theme='dark']) .plansGrid :global(.ag-body-viewport),
+:global([data-theme='dark']) .plansGrid :global(.ag-center-cols-viewport) {
+  background-color: var(--color-surface);
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-header),
+:global([data-theme='dark']) .plansGrid :global(.ag-header-row),
+:global([data-theme='dark']) .plansGrid :global(.ag-header-cell) {
+  background-color: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-header-cell) {
+  border-top-color: var(--color-border);
+  border-inline-end-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-header-cell-text) {
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-cell) {
+  color: var(--color-text-primary);
+  border-inline-end-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover)),
+:global([data-theme='dark'])
+  .plansGrid
+  :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover))::before,
+:global([data-theme='dark'])
+  .plansGrid
+  :global(.ag-row:not(.ag-row-selected):not(.ag-row-hover))
+  :global(.ag-cell) {
+  background-color: var(--color-surface) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-row-hover:not(.ag-row-selected)),
+:global([data-theme='dark']) .plansGrid :global(.ag-row-hover:not(.ag-row-selected))::before,
+:global([data-theme='dark'])
+  .plansGrid
+  :global(.ag-row-hover:not(.ag-row-selected))
+  :global(.ag-cell) {
+  background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 14%,
+    var(--color-surface)
+  ) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected),
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected)::before,
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected.ag-row-hover),
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected.ag-row-hover)::before {
+  background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 18%,
+    var(--color-surface)
+  ) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected) :global(.ag-cell),
+:global([data-theme='dark']) .plansGrid :global(.ag-row-selected.ag-row-hover) :global(.ag-cell) {
+  background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 18%,
+    var(--color-surface)
+  ) !important;
+  border-inline-end-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 30%,
+    var(--color-border)
+  ) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-checkbox-input-wrapper) {
+  border-color: var(--color-border) !important;
+  background: var(--color-surface) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-checkbox-input-wrapper:hover) {
+  border-color: var(--indigo-200, #b3bdf8) !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-checkbox-input-wrapper.ag-checked) {
+  border-color: var(--indigo-200, #b3bdf8) !important;
+  background: color-mix(in srgb, var(--indigo-400, #4259ee) 22%, var(--color-surface))
+    url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.54401L3.22222 6.72179L8 1.27734' stroke='%23B3BDF8' stroke-width='1.5338' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center / 10px !important;
+}
+
+:global([data-theme='dark']) .plansGrid :global(.ag-checkbox-input-wrapper.ag-indeterminate) {
+  border-color: var(--indigo-200, #b3bdf8) !important;
+  background: color-mix(in srgb, var(--indigo-400, #4259ee) 22%, var(--color-surface))
+    url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.00391L9.00391 0.996094' stroke='%23B3BDF8' stroke-linecap='round'/%3E%3C/svg%3E")
+    no-repeat center !important;
+}

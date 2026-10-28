@@ -1,0 +1,45 @@
+{
+  "label": "Illustrative design-session facts, not observed client operational results",
+  "source": "Hindsight redesign specification, 67 pages, especially pages14-15,19-23,25-33,38-44",
+  "fixedInventorySnapshot": "2026-03-29",
+  "salesWindow": {"name":"R4","start":"2026-03-02","end":"2026-03-29","weeks":["FY2026-W10","FY2026-W11","FY2026-W12","FY2026-W13"],"calendarStatus":"Illustrative explicit week mapping; client calendar requires approval"},
+  "tactical": {
+    "sales":24000,"quantitySqFt":4000,"gmDollars":7680,"gmPercent":32,"onHandCost":16000,
+    "exposurePairs":15,"candidatePairs":16,"currentRangedPairs":12,"outOfStockPairs":["P101:S102","P103:S104"],
+    "cases":3,"impactedPairs":3,"impactedSkus":2,
+    "qualifyingQuantitySqFt":3300,"exposurePairWeeks":48,"velocitySqFtPerPairWeek":68.75
+  },
+  "productTotals": [
+    {"id":"P101","sales":7200,"quantity":1200,"gmPercent":30,"onHandCost":3000,"rangedStores":2,"qualifyingQuantity":900,"exposureWeeks":8},
+    {"id":"P102","sales":9600,"quantity":1600,"gmPercent":35,"onHandCost":5000,"rangedStores":3,"qualifyingQuantity":1200,"exposureWeeks":12},
+    {"id":"P103","sales":4800,"quantity":800,"gmPercent":30,"onHandCost":4000,"rangedStores":4,"qualifyingQuantity":800,"exposureWeeks":16},
+    {"id":"P104","sales":2400,"quantity":400,"gmPercent":30,"onHandCost":4000,"rangedStores":3,"qualifyingQuantity":400,"exposureWeeks":12}
+  ],
+  "storeTotals": [
+    {"id":"S101","name":"North","sales":7200,"onHandCost":4000,"rangedSkus":4},
+    {"id":"S102","name":"East","sales":6000,"onHandCost":3000,"rangedSkus":4},
+    {"id":"S103","name":"South","sales":4800,"onHandCost":5000,"rangedSkus":2},
+    {"id":"S104","name":"West","sales":6000,"onHandCost":4000,"rangedSkus":2}
+  ],
+  "salesGrid": [[3600,1800,1800,0],[2400,2400,2400,2400],[600,1200,600,2400],[600,600,0,1200]],
+  "onHandCostGrid": [[1000,0,2000,0],[1000,1500,1000,1500],[1000,1000,2000,0],[1000,500,0,2500]],
+  "matrixStates": [["R+","R0","X+","NR"],["R+","R+","R+","E"],["R+","R+","R+","R0"],["R+","R+","E","R+"]],
+  "pairStory": {"id":"P101:S102","sales":1800,"lySales":2400,"changePercent":-25,"sellableStock":0,"inboundSqFt":200,"sharedDcPoolSqFt":900,"action":"Chase existing inbound; do not create a second order"},
+  "lyOnlyPair": "P104:S103",
+  "excludedNonmemberPair": "P101:S104",
+  "casePairs": {"Q01":"P101:S102","Q02":"P101:S103","Q03":"P104:S101"},
+  "mixStory": {"lens":"color","value":"Gray","itemId":"P102","salesSharePercent":40,"skuSharePercent":25,"productivityIndex":1.6},
+  "plr": {
+    "reviewId":"PLR-FLOORING-26","originalVersion":"v1","revisionVersion":"v2","sellingStart":"2025-12-29","sellingEnd":"2026-02-22",
+    "originalPairs":12,"duePairs":12,"onTimePairs":10,"latePairs":1,"notActivatedPairs":1,
+    "salesPlan":50000,"revisionSalesPlan":46000,"originalCohortSales":48000,"variance":-2000,"variancePercent":-4,
+    "laterAdditionSales":6000,"allRealizedSales":54000,"demandQuantitySqFt":10000,"actualQuantitySqFt":8000,
+    "gmDollars":15360,"gmPercent":32,"plannedGmPercent":30,"gmGapPercentagePoints":2,
+    "approvedBuySqFt":12000,"receiptsSqFt":10000,"openingSqFt":2000,"openNotDueSqFt":2000,
+    "availableSupplySqFt":12000,"endingQuantitySqFt":4000,"plannedEndingQuantitySqFt":2000,
+    "endingCost":16000,"plannedEndingCost":8000,"sellThroughPercent":66.66666667,
+    "week6ExitPair":"P101:S103","latePair":"P102:S104","notActivatedPair":"P101:S104"
+  },
+  "derivedAllocations": "Unspecified cell values, LY values except P101×S102, inventory quantity valuation at USD4/SQFT, weekly phasing, historical pair allocations, demo product names/attributes and fictional source references are explicit coherent demo choices. They are not client facts or approved definitions.",
+  "integrityRules": ["Never sum SQFT with EA or inventory across snapshots", "The shared DC pool is stored once at DC grain", "Original plan/cohort is immutable across current range changes", "Unknown history is not failed launch", "GM access is applied to all selector outputs", "Pure session helpers do not execute operational orders"]
+}

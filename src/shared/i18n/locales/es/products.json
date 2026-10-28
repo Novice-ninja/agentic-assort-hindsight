@@ -1,0 +1,18 @@
+{
+  "products": {
+    "title": "Productos",
+    "subtitle": "Gestiona tu surtido de productos",
+    "columns": {
+      "name": "Nombre",
+      "category": "Categoría",
+      "status": "Estado",
+      "price": "Precio",
+      "updatedAt": "Actualizado"
+    },
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "draft": "Borrador"
+    }
+  }
+}

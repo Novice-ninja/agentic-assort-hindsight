@@ -1,0 +1,190 @@
+/* === Category cell === */
+.categoryCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* === Table chrome — Figma node 1984:52060 === */
+.grid {
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: var(--font-size-sm);
+  --ag-border-radius: 0;
+  --ag-wrapper-border-radius: 0;
+  --ag-row-height: 46px;
+  --ag-header-height: 40px;
+  --ag-cell-horizontal-padding: var(--space-md);
+  --ag-borders: none;
+  --ag-header-column-separator-display: none;
+  --ag-header-column-resize-handle-display: none;
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: #31416e;
+  --ag-data-color: #31416e;
+  --ag-header-background-color: #f5f6fa;
+  --ag-header-foreground-color: #0d152c;
+  --ag-odd-row-background-color: #fafafa;
+  --ag-row-hover-color: #f0f1f8;
+  --ag-selected-row-background-color: #eceefd;
+  --ag-border-color: #c3c8d4;
+  --ag-row-border-color: #d9dde7;
+}
+
+.grid :global(.ag-root-wrapper) {
+  border: none;
+  height: 100%;
+}
+
+/* === Header === */
+.grid :global(.ag-header),
+.grid :global(.ag-header-row),
+.grid :global(.ag-header-cell) {
+  background-color: #f5f6fa;
+}
+
+.grid :global(.ag-header) {
+  border-bottom: 1px solid #c3c8d4;
+}
+
+.grid :global(.ag-header-cell) {
+  padding: 0 var(--space-md);
+  border-top: 1px solid #c3c8d4;
+  border-right: 1px solid #c3c8d4;
+}
+
+.grid :global(.ag-header-cell:last-child) {
+  border-right: none;
+}
+
+.grid :global(.ag-header-cell-text) {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0d152c;
+}
+
+.grid :global(.ag-header-cell[col-id='select']),
+.grid :global(.ag-cell[col-id='select']) {
+  justify-content: center;
+  padding-inline: var(--space-md);
+}
+
+/* === Rows & cells === */
+.grid :global(.ag-row) {
+  background-color: #fafafa;
+  border: none;
+}
+
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-md);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  color: #31416e;
+  text-transform: capitalize;
+  border-top: none;
+  border-bottom: 1px solid #d9dde7;
+  border-right: 1px solid #d9dde7;
+  border-left: none;
+}
+
+.grid :global(.ag-rtl .ag-cell) {
+  border-left: 1px solid #d9dde7;
+  border-right: none;
+}
+
+.grid :global(.ag-ltr .ag-cell:last-child) {
+  border-right: none;
+}
+
+.grid :global(.ag-rtl .ag-cell:first-child) {
+  border-left: none;
+}
+
+.grid :global(.ag-row-hover) {
+  background-color: #f0f1f8;
+}
+
+.grid :global(.ag-row:has(input:checked)) {
+  background-color: #eceefd;
+}
+
+.grid :global(.ag-row:has(input:checked) .ag-cell) {
+  background-color: #eceefd;
+  border-right-color: #b3bdf8;
+}
+
+.grid :global(.impact-form-checkbox-container .MuiCheckbox-root.impact-checkbox-container) {
+  margin-right: 0;
+}
+
+/* === Dark theme === */
+:global([data-theme='dark']) .grid {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-data-color: var(--color-text-primary);
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-header-foreground-color: var(--color-text-primary);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 18%,
+    var(--color-surface)
+  );
+  --ag-border-color: var(--color-border);
+  --ag-row-border-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-header),
+:global([data-theme='dark']) .grid :global(.ag-header-row),
+:global([data-theme='dark']) .grid :global(.ag-header-cell) {
+  background-color: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-header) {
+  border-bottom-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-header-cell) {
+  border-top-color: var(--color-border);
+  border-right-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-header-cell-text) {
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-row) {
+  background-color: var(--color-surface);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-cell) {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-border);
+  border-right-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-rtl .ag-cell) {
+  border-left-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .grid :global(.ag-row-hover) {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .grid :global(.ag-row:has(input:checked)),
+:global([data-theme='dark']) .grid :global(.ag-row:has(input:checked) .ag-cell) {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface));
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "Actual selectors; no native layout claim",
+  "passed": 6,
+  "checks": [
+    "Whole-window ly comparison uses the same exact cohort and weighted GM",
+    "Whole-window previous comparison uses the same exact cohort and weighted GM",
+    "Whole-window original comparison uses the same exact cohort and weighted GM",
+    "Whole-window revision comparison uses the same exact cohort and weighted GM",
+    "Whole-window none comparison uses the same exact cohort and weighted GM",
+    "Restricted margin remains withheld in whole-window summary comparison"
+  ]
+}

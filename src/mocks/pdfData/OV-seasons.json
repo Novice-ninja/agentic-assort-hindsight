@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "seasonCode": 78,
+      "name": "SS26",
+      "type": "Flooring Season",
+      "active": true,
+      "year": 2026,
+      "start": "2026-02-01",
+      "end": "2026-07-31",
+      "display": "2026 Q1"
+    },
+    {
+      "seasonCode": 74,
+      "name": "SS25",
+      "type": "Flooring Season",
+      "active": true,
+      "year": 2025,
+      "start": "2025-02-01",
+      "end": "2025-07-31",
+      "display": "2025 Q1"
+    },
+    {
+      "seasonCode": 70,
+      "name": "SS24",
+      "type": "Flooring Season",
+      "active": false,
+      "year": 2024,
+      "start": "2024-02-01",
+      "end": "2024-07-31",
+      "display": "2024 Q1"
+    }
+  ]
+}

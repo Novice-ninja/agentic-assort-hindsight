@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "key": "brand",
+      "label": "Brand",
+      "order": 1,
+      "valueCount": 12,
+      "significance": "high",
+      "default": true
+    },
+    {
+      "key": "species",
+      "label": "Species",
+      "order": 2,
+      "valueCount": 6,
+      "significance": "high",
+      "default": false
+    },
+    {
+      "key": "colour",
+      "label": "Colour",
+      "order": 3,
+      "valueCount": 8,
+      "significance": "medium",
+      "default": false
+    },
+    {
+      "key": "finish",
+      "label": "Finish",
+      "order": 4,
+      "valueCount": 5,
+      "significance": "medium",
+      "default": false
+    }
+  ]
+}

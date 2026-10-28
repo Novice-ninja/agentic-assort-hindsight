@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+}

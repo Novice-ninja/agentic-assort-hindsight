@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci --legacy-peer-deps",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "redirects": [
+    { "source": "/", "destination": "/assort/hindsight", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/assort/:path*", "destination": "/index.html" },
+    { "source": "/agentic-assort/:path*", "destination": "/index.html" },
+    { "source": "/reports", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/index.html" },
+    { "source": "/settings", "destination": "/index.html" },
+    { "source": "/logout", "destination": "/index.html" }
+  ],
+  "headers": [
+    { "source": "/mockServiceWorker.js", "headers": [
+      { "key": "Cache-Control", "value": "no-store" },
+      { "key": "Service-Worker-Allowed", "value": "/" }
+    ] },
+    { "source": "/index.html", "headers": [
+      { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+    ] }
+  ]
+}

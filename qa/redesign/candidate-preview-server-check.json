@@ -1,0 +1,208 @@
+{
+  "server": "http://127.0.0.1:5177",
+  "node": "v22.23.2",
+  "platform": "darwin",
+  "checks": [
+    {
+      "name": "HTML deep route fallback",
+      "path": "/agentic-assort/hindsight",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 479
+    },
+    {
+      "name": "Redesign detail route fallback",
+      "path": "/assort/hindsight/item/DEMO-ID",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 479
+    },
+    {
+      "name": "Preserved legacy route fallback",
+      "path": "/assort/hindsight/legacy",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 479
+    },
+    {
+      "name": "Canonical Assort deep route fallback",
+      "path": "/assort/hindsight",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 479
+    },
+    {
+      "name": "Canonical Assort HEAD has no body",
+      "path": "/assort/hindsight",
+      "method": "HEAD",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 0
+    },
+    {
+      "name": "Root HTML route",
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 479
+    },
+    {
+      "name": "HTML HEAD has no body",
+      "path": "/agentic-assort/hindsight",
+      "method": "HEAD",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "responseBytes": 0
+    },
+    {
+      "name": ".js asset MIME",
+      "path": "/assets/ImpactChart-BoTa4Yg5.js",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "responseBytes": 347616
+    },
+    {
+      "name": ".css asset MIME",
+      "path": "/assets/ImpactChart-DRO33VVV.css",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/css; charset=utf-8",
+      "responseBytes": 4458
+    },
+    {
+      "name": ".svg asset MIME",
+      "path": "/agentic-assort/014905cb51fc88bdf131.svg",
+      "method": "GET",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "responseBytes": 604
+    },
+    {
+      "name": ".woff2 asset MIME",
+      "path": "/vendor/font-27326e85052163.woff2",
+      "method": "GET",
+      "status": 200,
+      "mime": "font/woff2",
+      "responseBytes": 24436
+    },
+    {
+      "name": ".json asset MIME",
+      "path": "/demo-flooring/manifest.json",
+      "method": "GET",
+      "status": 200,
+      "mime": "application/json; charset=utf-8",
+      "responseBytes": 22730
+    },
+    {
+      "name": "Service worker MIME",
+      "path": "/mockServiceWorker.js",
+      "method": "GET",
+      "status": 200,
+      "mime": "text/javascript; charset=utf-8",
+      "responseBytes": 9666
+    },
+    {
+      "name": "Missing JavaScript never becomes HTML",
+      "path": "/assets/does-not-exist.js",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "Missing SVG never becomes HTML",
+      "path": "/vendor/does-not-exist.svg",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "Missing extensionless asset never becomes HTML",
+      "path": "/vendor/does-not-exist",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "Non-HTML route request has no fallback",
+      "path": "/agentic-assort/hindsight",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "GET API miss remains non-JSON for browser recovery",
+      "path": "/api/not-a-service",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "Second API prefix never becomes HTML",
+      "path": "/agentic-assort-go/api/not-a-service",
+      "method": "GET",
+      "status": 404,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 23
+    },
+    {
+      "name": "POST is not handled as a backend",
+      "path": "/api/not-a-service",
+      "method": "POST",
+      "status": 405,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 54
+    },
+    {
+      "name": "Raw traversal guard",
+      "path": "/../package.json",
+      "method": "GET",
+      "status": 403,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 24
+    },
+    {
+      "name": "Encoded traversal guard",
+      "path": "/%2e%2e/package.json",
+      "method": "GET",
+      "status": 403,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 24
+    },
+    {
+      "name": "Encoded slash traversal guard",
+      "path": "/assets/%2e%2e%2f%2e%2e/package.json",
+      "method": "GET",
+      "status": 403,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 24
+    },
+    {
+      "name": "Backslash traversal guard",
+      "path": "/assets/%5c..%5cpackage.json",
+      "method": "GET",
+      "status": 403,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 24
+    },
+    {
+      "name": "Malformed encoding rejected",
+      "path": "/%zz",
+      "method": "GET",
+      "status": 400,
+      "mime": "text/plain; charset=utf-8",
+      "responseBytes": 24
+    }
+  ],
+  "passed": 25
+}

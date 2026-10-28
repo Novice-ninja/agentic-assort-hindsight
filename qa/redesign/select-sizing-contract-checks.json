@@ -1,0 +1,14 @@
+{
+  "kind": "Actual recovered vendor markup/inline-sizing contract only; native geometry is separately reviewed in Chrome",
+  "passed": 2,
+  "checks": [
+    {
+      "name": "Select 180 wrapper owns width/basis and actual vendor container does not collapse to zero",
+      "pass": true
+    },
+    {
+      "name": "Select 100% wrapper owns width/basis and actual vendor container does not collapse to zero",
+      "pass": true
+    }
+  ]
+}

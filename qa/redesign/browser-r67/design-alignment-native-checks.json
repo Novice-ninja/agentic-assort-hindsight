@@ -1,0 +1,121 @@
+{
+  "kind": "Native Chrome via CUA; targeted design/workflow checks, not blanket acceptance",
+  "builds": [
+    "WorkspacePage-BRsfN0d2.js",
+    "WorkspacePage-Dz7icKqA.js",
+    "WorkspacePage-6Hi_2OZ6.js",
+    "WorkspacePage--O-dJ-dt.js",
+    "WorkspacePage-D9KGTDPl.js"
+  ],
+  "passed": 18,
+  "checks": [
+    {
+      "name": "Original reference comparison",
+      "observation": "Original preserved priority5176 inspected in Chrome; shared KPI assets/Manrope/Impact controls/filter tags/tabs/grid reused. Appearance alignment is ongoing, not full R67 signoff.",
+      "pass": true
+    },
+    {
+      "name": "Trend toolbar1440",
+      "observation": "Four actual dropdown trigger widths180 with non-overlapping x163.16,391.96,618.88,829.20 after zero-width adapter repair.",
+      "pass": true
+    },
+    {
+      "name": "Breadcrumb route persistence",
+      "observation": "Review mode remains present after Deep Dive / By Item / By Store / matrix navigation.",
+      "pass": true
+    },
+    {
+      "name": "Compact quantity cells",
+      "observation": "By Item/Store show complete numeric quantity with human selling-unit note; no repeated suffix clipping leading digits.",
+      "pass": true
+    },
+    {
+      "name": "Original filter drawer desktop/phone",
+      "observation": "Original FilterPanel sections, checkboxes, search and fixed Apply/Cancel observed at1440 and390; phone footer remains visible.",
+      "pass": true
+    },
+    {
+      "name": "Filter cancel",
+      "observation": "Changed category draft then Cancel; global72styles/45stores and original2970pair scope retained.",
+      "pass": true
+    },
+    {
+      "name": "Primary tabs390",
+      "observation": "Overview/Deep Dive/Decisions each100px, x77/177/277 and right377 within390; document scrollWidth390.",
+      "pass": true
+    },
+    {
+      "name": "Phone cards/trend",
+      "observation": "Original tiles stack; trend dropdowns wrap and chart stays within card at390.",
+      "pass": true
+    },
+    {
+      "name": "Mix drill and Back",
+      "observation": "Woodland Reserve PLR group drills to18styles/45stores/$2,299,988/44,816; browser Back restores Sales Mix and clears drill context.",
+      "pass": true
+    },
+    {
+      "name": "Iris timestamps",
+      "observation": "Actual original chat host shows Today and valid local time after source timestamp fix.",
+      "pass": true
+    },
+    {
+      "name": "Iris keyboard width",
+      "observation": "Desktop panel448px; End key changes aria-valuenow to640.",
+      "pass": true
+    },
+    {
+      "name": "Iris phone bounds",
+      "observation": "Viewport390: panel374px x8, Close x348 width24; Send and Close visible. Actual Close click removes composer.",
+      "pass": true
+    },
+    {
+      "name": "Iris after filter cancellation",
+      "observation": "Cancel with settled DOM followed by header Enter opens panel. Earlier rapid batched click failed; no lost-state defect reproduced with settled boundary.",
+      "pass": true
+    },
+    {
+      "name": "Draft permission boundary",
+      "observation": "Merchant saved D001 Keep for exactly1000037:ST1001 and submitted to Awaiting approval; approval disabled for merchant.",
+      "pass": true
+    },
+    {
+      "name": "Approval boundary",
+      "observation": "Local approver role enables approval; approval transitions to Awaiting execution with0completed/1pending and no execution reference.",
+      "pass": true
+    },
+    {
+      "name": "Acknowledgement permission",
+      "observation": "Approver cannot record local execution. Administrator can use explicitly labeled simulation with SIM-reference and exact pair completion.",
+      "pass": true
+    },
+    {
+      "name": "Review and carry-forward source",
+      "observation": "D001 simulated acknowledgement becomes Executed1completed/0pending; qualified baseline-only review saved as Reviewed with Accepted low-confidence learning targetingPLR-SS27-FLOORING. Incoming register native check pending next build.",
+      "pass": true
+    },
+    {
+      "name": "Frozen PLR after closure",
+      "observation": "Closing reviewedFQ01 leaves original plan8,800,000 /original actual8,373,352 /additions26,648 /realized8,400,000 unchanged.",
+      "pass": true
+    }
+  ],
+  "remaining": [
+    "All90 requirement final native evidence",
+    "Phone suggestion button wrapping fix",
+    "Latest comparator/learning/Comp/report-state/ambiguity integration",
+    "Tablet and phone detail/workflow/export coverage",
+    "Actual R67 browser-generated workbooks",
+    "Final source/build packaging and illustrated demo"
+  ],
+  "historicalResolved": [
+    "Shared select wrapper0px",
+    "Breadcrumb controls disappearing",
+    "Quantity leading digits clipped",
+    "Queue filters stacked fullwidth ondesktop",
+    "Chat InvalidDate/NaN timestamps",
+    "Phone chat close/send clipped",
+    "Duplicate Back row removed in D9; settled detail native count still toverify"
+  ],
+  "automationCaveat": "Rapid CUA locator clicks can occur during drawer/scroll transitions; keyboard/settled snapshot replay is recorded separately from unverified click attempts."
+}

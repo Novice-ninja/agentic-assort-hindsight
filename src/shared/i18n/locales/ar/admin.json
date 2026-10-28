@@ -1,0 +1,215 @@
+{
+  "page": {
+    "title": "إدارة التخطيط",
+    "subtitle": "تكوين المنتجات والمواقع وتعيين التقويم والاستثناءات العالمية",
+    "hideFilters": "إخفاء الفلتر",
+    "showFilters": "إظهار الفلاتر"
+  },
+  "stepper": {
+    "label": "وحدات التخطيط"
+  },
+  "modules": {
+    "products": "المنتجات",
+    "locations": "المواقع",
+    "calendar": "تعيين التقويم",
+    "exceptions": "الاستثناءات العالمية"
+  },
+  "status": {
+    "active": "نشط",
+    "done": "مكتمل",
+    "inProgress": "قيد التنفيذ"
+  },
+  "filters": {
+    "applied": "الفلاتر المطبقة",
+    "barLabel": "الفلاتر المطبقة",
+    "allFilters": "جميع الفلاتر",
+    "groups": {
+      "department": "القسم",
+      "season": "الموسم",
+      "region": "المنطقة"
+    }
+  },
+  "filterModal": {
+    "title": "إضافة فلاتر",
+    "tabsLabel": "فئات الفلاتر",
+    "tabs": {
+      "products": "المنتجات",
+      "channel": "القناة",
+      "calendar": "التقويم"
+    },
+    "fields": {
+      "productGroupId": "مجموعة المنتج",
+      "subDepartmentId": "القسم الفرعي",
+      "categoryId": "الفئة",
+      "subCategoryId": "الفئة الفرعية",
+      "classId": "الصنف",
+      "subClassId": "الصنف الفرعي",
+      "brandId": "العلامة التجارية",
+      "channelRegionIds": "منطقة القناة",
+      "customerTypeIds": "نوع العميل",
+      "fulfillmentScopeIds": "نطاق التنفيذ",
+      "calendarSeasonId": "الموسم",
+      "periodIds": "الفترة"
+    },
+    "clearTab": "مسح الكل",
+    "cancel": "إلغاء",
+    "apply": "تطبيق"
+  },
+  "empty": {
+    "globalTitle": "لم يتم تكوين أي وحدات بعد",
+    "globalBody": "ابدأ بإعداد المنتجات والمواقع وتخطيط التقويم والاستثناءات العامة لتشغيل سير عمل التخطيط.",
+    "moduleTitle": "لا توجد نتائج لهذه الوحدة",
+    "moduleBody": "حاول تعديل الفلاتر أو إضافة فلاتر جديدة لعرض البيانات هنا.",
+    "addFilter": "إضافة فلتر"
+  },
+  "view": {
+    "table": "عرض الجدول",
+    "globe": "عرض الكرة الأرضية",
+    "toggleLabel": "وضع العرض"
+  },
+  "grid": {
+    "export": "تصدير CSV",
+    "moreActions": "المزيد من الإجراءات",
+    "products": {
+      "groupIdentity": "المنتج",
+      "groupAttributes": "السمات",
+      "id": "معرف النمط واللون",
+      "name": "الاسم",
+      "dept": "القسم",
+      "class": "الصنف",
+      "brand": "العلامة",
+      "colour": "اللون",
+      "collar": "الياقة",
+      "fit": "القصة",
+      "sleeve": "الكم",
+      "length": "الطول",
+      "rowCount": "{{count}} منتج"
+    },
+    "locations": {
+      "groupLocation": "الموقع",
+      "groupAttributes": "سمات الموقع",
+      "id": "المعرف",
+      "name": "الاسم",
+      "city": "المدينة",
+      "climate": "المناخ",
+      "customerType": "نوع العميل",
+      "fulfillment": "التنفيذ",
+      "income": "مستوى الدخل",
+      "type": "نوع الموقع"
+    },
+    "exceptions": {
+      "geography": "الجغرافيا",
+      "id": "المعرف",
+      "type": "النوع",
+      "customerType": "نوع العميل",
+      "summary": "ملخص القواعد",
+      "owner": "المالك"
+    }
+  },
+  "locations": {
+    "search": "البحث في المواقع",
+    "customerTypeFilter": "نوع العميل",
+    "allCustomerTypes": "جميع أنواع العملاء",
+    "globe": {
+      "title": "مواقع المتاجر",
+      "subtitle": "{{count}} متجر على الخريطة",
+      "aria": "كرة أرضية تفاعلية تعرض مواقع المتاجر",
+      "listLabel": "بطاقات مواقع المتاجر"
+    }
+  },
+  "locationCard": {
+    "climate": "المناخ",
+    "customerType": "نوع العميل",
+    "fulfillmentType": "التنفيذ",
+    "incomeLevel": "مستوى الدخل",
+    "locationType": "نوع الموقع"
+  },
+  "exceptions": {
+    "search": "البحث في الاستثناءات",
+    "customerTypeFilter": "نوع العميل",
+    "allCustomerTypes": "جميع أنواع العملاء",
+    "globe": {
+      "title": "الاستثناءات العالمية",
+      "subtitle": "{{stores}} منطقة · {{rules}} قاعدة",
+      "aria": "كرة أرضية تفاعلية تعرض مناطق الاستثناء العالمية",
+      "listLabel": "بطاقات قواعد الاستثناء"
+    },
+    "card": {
+      "ruleCount": "{{count}} قواعد",
+      "operator": "المشغل",
+      "value": "القيمة",
+      "done": "تم",
+      "editRule": "تعديل القاعدة",
+      "addRule": "إضافة قاعدة",
+      "remove": "إزالة الاستثناء",
+      "added": "أُضيف {{date}} بواسطة {{by}}",
+      "newAttribute": "سمة جديدة"
+    },
+    "removeConfirm": {
+      "title": "إزالة الاستثناء؟",
+      "body": "هل أنت متأكد من إزالة \"{{title}}\"؟ لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "إزالة"
+    }
+  },
+  "calendar": {
+    "title": "تعيين التقويم",
+    "body": "تكوين تعيين التقويم قيد التنفيذ. ستتوفر مواصفات الحقول والتحرير في إصدار مستقبلي."
+  },
+  "operators": {
+    "equals": "يساوي",
+    "notEquals": "لا يساوي",
+    "in": "في",
+    "contains": "يحتوي"
+  },
+  "enums": {
+    "temperate": "معتدل",
+    "cold": "بارد",
+    "premium": "مميز",
+    "mainstream": "سائد",
+    "conservative": "محافظ",
+    "value": "اقتصادي",
+    "storePickUp": "استلام من المتجر",
+    "shipToStore": "شحن إلى المتجر",
+    "delivery": "توصيل",
+    "high": "مرتفع",
+    "middle": "متوسط",
+    "lowerMiddle": "متوسط منخفض",
+    "store": "متجر",
+    "outlet": "منفذ بيع"
+  },
+  "facets": {
+    "dept": {
+      "apparel": "الملابس",
+      "footwear": "الأحذية"
+    },
+    "subDept": {
+      "mensTops": "قمصان رجالية",
+      "womensTops": "قمصان نسائية"
+    },
+    "category": {
+      "tops": "قمصان"
+    },
+    "subCategory": {
+      "tees": "تيشيرتات"
+    },
+    "class": {
+      "tees": "تيشيرتات"
+    },
+    "subClass": {
+      "basic": "أساسي"
+    },
+    "brand": {
+      "ownLabel": "علامة خاصة"
+    },
+    "season": {
+      "spring2026": "ربيع 2026"
+    },
+    "region": {
+      "northAmerica": "أمريكا الشمالية",
+      "emea": "أوروبا والشرق الأوسط وأفريقيا"
+    },
+    "productGroup": {
+      "all": "جميع مجموعات المنتجات"
+    }
+  }
+}

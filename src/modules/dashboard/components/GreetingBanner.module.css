@@ -1,0 +1,21 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: var(--space-md); */
+  /* padding: var(--space-sm) 0 var(--space-md); */
+  background: transparent;
+  overflow: hidden;
+}
+
+.greeting {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.slot {
+  flex-shrink: 0;
+}

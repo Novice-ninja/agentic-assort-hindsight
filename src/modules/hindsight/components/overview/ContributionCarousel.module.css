@@ -1,0 +1,99 @@
+/* === Contribution Carousel === */
+
+.carousel {
+  position: relative;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  z-index: 1;
+  pointer-events: none;
+  backdrop-filter: blur(1px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
+  border-radius: 8px 0 0 8px;
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.6), transparent);
+  border-radius: 0 8px 8px 0;
+}
+
+.hasScrollLeft::before {
+  opacity: 1;
+}
+
+.hasScrollRight::after {
+  opacity: 1;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 8px;
+  overflow-y: hidden;
+}
+
+.track > * {
+  flex: 0 0 auto;
+  /* Keep the previous half-track floor so loading skeletons still fill the slot.
+     Loaded cards can grow past this when legend labels need more room. */
+  min-width: calc((100% - 16px) / 2);
+  scroll-snap-align: start;
+}
+
+/* === Navigation Buttons === */
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1.5px solid #4259ee;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.navBtnLeft {
+  left: 8px;
+}
+
+.navBtnRight {
+  right: 9px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Responsive === */
+
+@media (width <= 1080px) {
+  .track > * {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+}

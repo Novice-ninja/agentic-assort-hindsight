@@ -1,0 +1,288 @@
+/* === Layout === */
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: var(--font-family-base);
+}
+
+.outer {
+  position: relative;
+  overflow: hidden;
+  padding: 6px 32px 4px 0;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin-left: 3.5rem; /* TODO: Remove this once the more steps are implemented */
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+/* === Card Base === */
+
+.card {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+}
+
+/* === Card States === */
+
+.cardCompleted {
+  background: rgb(255 255 255 / 80%);
+  backdrop-filter: blur(2px);
+}
+
+.cardActive {
+  gap: 2px;
+  border: 1px solid #b3bdf8;
+  background: var(--colors-neutrals-surface-white, #fff);
+  box-shadow:
+    0 4px 25px rgb(0 0 0 / 8%),
+    0 4px 3px rgb(0 0 0 / 5%);
+}
+
+.cardUpcoming {
+  border: 1px solid transparent;
+  background: rgb(255 255 255 / 80%);
+  cursor: default;
+}
+
+/* Figma 4880:173223 — upcoming hover: 1px #3649c6 border + L→R fill */
+.cardUpcoming:hover {
+  border-color: #3649c6;
+  background: linear-gradient(
+    90deg,
+    rgb(255 255 255 / 49%) 0%,
+    rgb(236 238 253 / 57%) 100%
+  );
+}
+
+.cardUpcoming:hover .badgeInactive {
+  background: #b3bdf8;
+}
+
+/* === Current Step Label === */
+
+.currentLabel {
+  width: 100%;
+  margin: 0;
+  color: #60697d;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+/* === Card Row === */
+
+.cardRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.badgeGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* === Number Badge === */
+
+.badge {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.15;
+  letter-spacing: -0.14px;
+}
+
+.badgeActive {
+  background: #4259ee;
+}
+
+.badgeInactive {
+  background: #7a8294;
+}
+
+/* === Check Icon (completed state) === */
+
+.checkIcon {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+/* === Typography === */
+
+.title {
+  color: #1f2b4d;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 21px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.titleActive {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 20px;
+}
+
+.titleCompleted {
+  color: #26734b;
+}
+
+/* === Arrow Buttons === */
+
+.arrowButton {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  border: 1.5px solid #4259ee;
+  border-radius: 8px;
+  background: var(--colors-greys-0, #fff);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.arrowButton:hover {
+  background: color-mix(in srgb, #fff 94%, var(--color-surface-muted));
+}
+
+.arrowButton:focus-visible {
+  outline: 2px solid var(--color-focus-ring, var(--iris-400));
+  outline-offset: 2px;
+}
+
+.arrowPrevious {
+  left: 8px;
+}
+
+.arrowNext {
+  right: 8px;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+}
+
+/* === Sparkle Decorations === */
+
+.sparkle {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.sparkleOne {
+  top: -12px;
+  right: 13%;
+  width: 48px;
+  height: 36px;
+  opacity: 0.45;
+}
+
+.sparkleTwo {
+  top: 6px;
+  right: 46%;
+  width: 64px;
+  height: 48px;
+  opacity: 0.3;
+}
+
+.sparkleThree {
+  top: 12px;
+  right: 3%;
+  width: 32px;
+  height: 24px;
+  opacity: 0.35;
+}
+
+/* === Fade Overlays === */
+
+.fadeLeft {
+  position: absolute;
+  z-index: 5;
+  inset: 0 91% 0 0;
+  background: linear-gradient(to right, rgb(217 217 217 / 9%), rgb(255 255 255 / 0%));
+  /* backdrop-filter: blur(2px); */ /* TODO: Uncomment this once the more steps are implemented */
+  pointer-events: none;
+}
+
+.fadeRight {
+  position: absolute;
+  z-index: 5;
+  inset: 0 0 0 91%;
+  border-radius: 0 16px 16px 0;
+  background: linear-gradient(to left, rgb(115 115 115 / 9%), rgb(255 255 255 / 0%));
+  /* backdrop-filter: blur(2px); */ /* TODO: Uncomment this once the more steps are implemented */
+  pointer-events: none;
+}
+
+/* === Dot Pagination === */
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.dot,
+.dotActive {
+  appearance: none;
+  display: block;
+  min-width: 0;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dot {
+  width: 8px;
+  background-color: rgb(200 205 215 / 60%);
+}
+
+.dotActive {
+  width: 24px;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgb(255 255 255 / 40%);
+}

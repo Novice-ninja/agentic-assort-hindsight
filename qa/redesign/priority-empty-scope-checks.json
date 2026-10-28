@@ -1,0 +1,38 @@
+{
+  "kind": "Actual hierarchy hook SSR and pure adapter checks; not browser acceptance",
+  "passed": 8,
+  "checks": [
+    {
+      "name": "default: loading hierarchy is distinct from an empty result",
+      "pass": true
+    },
+    {
+      "name": "default: completed empty scope has no chart request or loading dropdown",
+      "pass": true
+    },
+    {
+      "name": "default: restoring a populated scope yields chart filters again",
+      "pass": true
+    },
+    {
+      "name": "pareto: loading hierarchy is distinct from an empty result",
+      "pass": true
+    },
+    {
+      "name": "pareto: completed empty scope has no chart request or loading dropdown",
+      "pass": true
+    },
+    {
+      "name": "pareto: restoring a populated scope yields chart filters again",
+      "pass": true
+    },
+    {
+      "name": "Empty contribution cards retain all three dimension identities and corresponding headings",
+      "pass": true
+    },
+    {
+      "name": "No contribution segments means no insight request payload",
+      "pass": true
+    }
+  ]
+}

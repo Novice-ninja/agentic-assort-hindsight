@@ -1,0 +1,1363 @@
+/* === Step wrapper === */
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* === Step header (used by Steps 2-4) === */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: var(--slate-950);
+  text-transform: capitalize;
+}
+
+.description {
+  margin: 0;
+  color: var(--slate-500);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+/* === Section wrapper (tinted background per Figma) === */
+.sectionWrapper {
+  background: #f7f9fd;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* === Section titles (ExtraBold 16px per Figma) === */
+.sectionTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: var(--slate-950);
+  text-transform: capitalize;
+}
+
+.required::after {
+  content: '*';
+  color: #e15554;
+  margin-inline-start: 2px;
+}
+
+/* === Input label override for Figma styling === */
+.inputLabel {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--slate-600);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--slate-500);
+}
+
+/* === Card grid (horizontal row layout) === */
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* === Option card (base — column for steps 2-4 backward compat) === */
+.optionCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: 12px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+}
+
+.optionCard:hover:not(.selected):not(:disabled) {
+  border-color: var(--indigo-400);
+}
+
+.optionCard.selected {
+  border-radius: 12px;
+  border-top: 1px solid #4259ee;
+  border-right: 1px solid #4259ee;
+  border-bottom: 1px solid #4259ee;
+  border-left: 3px solid #4259ee;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.06);
+}
+
+.optionCard:disabled {
+  cursor: not-allowed;
+  background: #f5f6fa;
+}
+
+.optionCard:disabled .optionName {
+  color: #60697d;
+}
+
+.optionCard:disabled .optionDesc {
+  color: #7a8294;
+}
+
+/* === Horizontal variant (Step 1 cards with icon + text + radio) === */
+.horizontalCard {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* === Carry Forward card (wider per Figma to fit ribbon) === */
+.wideCard {
+  width: 664px;
+}
+
+/* === Icon container (40x40 colored box — emoji fallback) === */
+.optionIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* === Icon image (PNG from Figma, already includes container bg) === */
+.optionIconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* === Card head (row for steps 2-4; column inside .horizontalCard for Step 1) === */
+.optionCardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.horizontalCard .optionCardHead {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.optionNameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.optionName {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--slate-950);
+  text-transform: capitalize;
+}
+
+.optionMeta {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--slate-600);
+}
+
+.optionDesc {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--slate-600);
+}
+
+/* === Custom radio circle === */
+.radioCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1px solid var(--slate-300);
+  background: #ffffff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  margin-top: 4px;
+}
+
+.radioCircle::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+
+.radioCircle.checked {
+  border-color: var(--indigo-400);
+}
+
+.radioCircle.checked::after {
+  background: var(--indigo-400);
+}
+
+.radioCircle.disabled {
+  background: #f8f9fb;
+  border-color: var(--slate-200);
+}
+
+/* === Fiscal year badge overrides === */
+.badgeComplete {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  background: #f4fff7;
+  color: #108431;
+}
+
+.badgeCurrent {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  background: #f1f3fe;
+  color: var(--indigo-400);
+}
+
+.badgeFuture {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  background: #f6edfd;
+  color: #ae57ea;
+}
+
+/* === "Upcoming" ribbon badge (bottom-right of disabled card) === */
+.upcomingRibbon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.ribbonEdge {
+  display: block;
+  width: 12px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.ribbonBody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 12px 0 6px;
+  border-radius: 0 0 12px 0;
+  background: linear-gradient(89.94deg, #dfbbf7 2.15%, #f6edfd 100%);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #0d152c;
+  white-space: nowrap;
+}
+
+/* === Chip row (run mode in Step 3 — preserved) === */
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+.chip.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.chip:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* Run-mode options (larger, with description). */
+.modeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* ===================================================================
+   Step 3 — Clustering & Run Mode (Figma-matched)
+   =================================================================== */
+
+/* === Scenario Card Layout === */
+.scenarioCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-smd);
+  border: 1px solid #d9dde7;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+  width: 487px;
+  flex-shrink: 0;
+}
+
+.scenarioCard:hover:not(.selected) {
+  border-color: var(--indigo-400);
+}
+
+.scenarioCard.selected {
+  border-color: var(--indigo-400);
+  box-shadow:
+    0 0 0 1px var(--indigo-400) inset,
+    0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Row 1: icon + content + radio */
+.scenarioTopRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-smd);
+  width: 100%;
+}
+
+.scenarioIconWrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.scenarioIconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.scenarioContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.scenarioTitleRow {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.scenarioNameConfidence {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.scenarioName {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.confidenceText {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.scenarioDesc {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #60697d;
+  max-width: 329px;
+}
+
+/* Row 2: segment badges */
+.segmentRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* === Run Mode Card Layout === */
+.runModeCard {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #d9dde7;
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.runModeCard:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.runModeCard:hover:not(.selected):not(:disabled) {
+  border-color: var(--indigo-400);
+}
+
+.runModeCard.selected {
+  border-color: var(--indigo-400);
+  box-shadow:
+    0 0 0 1px var(--indigo-400) inset,
+    0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.runModeIconWrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.runModeIconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.runModeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.runModeTitleRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.runModeName {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.runModeDesc {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #60697d;
+  max-width: 329px;
+}
+
+/* === Confidence Threshold — custom slider matching Figma === */
+.confidenceSection {
+  background: var(--color-surface);
+  border-radius: 8px;
+  padding: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.confidenceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confidenceLabel {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.confidenceValue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  height: 48px;
+  border-radius: 8px;
+  background: #eceefd;
+  color: #4259ee;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.confidenceTrack {
+  position: relative;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  touch-action: none;
+}
+
+.confidenceTrackDragging {
+  user-select: none;
+}
+
+.confidenceLeftTrack {
+  height: 6px;
+  border-radius: 3px;
+  background: #4259ee;
+  flex-shrink: 0;
+}
+
+.confidenceRightTrack {
+  height: 6px;
+  border-radius: 3px;
+  background: #e5e7eb;
+  flex-shrink: 0;
+  margin-left: 4px;
+  z-index: 1;
+}
+
+.confidenceThumb {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.confidenceThumb:active,
+.confidenceTrackDragging .confidenceThumb {
+  cursor: grabbing;
+}
+
+.confidenceThumb[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.confidenceMarks {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confidenceMark {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #60697d;
+  text-transform: capitalize;
+  white-space: nowrap;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ===================================================================
+   Step 2 — Product Scope (Figma-matched)
+   =================================================================== */
+
+/* Outer container with tinted bg */
+.hierarchyWrapper {
+  background: #f7f9fd;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hierarchyTitle {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #31416e;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* --- Accordion header content (rendered inside AccordionModern title slot) --- */
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+
+.accordionLevelTitle {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mandatoryMark {
+  margin-inline-start: 2px;
+  color: var(--color-danger, #c62828);
+}
+
+.accordionHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 600px;
+  min-width: 0;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.accordionHeaderRight :global(.MuiChip-label) {
+  font-weight: 400 !important;
+}
+
+.previewText {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #60697d;
+  text-align: end;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+
+/* --- Accordion content inner layout (Figma: flex column, gap 12) --- */
+.accordionContentInner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* --- Toolbar row (search + toggle + actions) --- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.toolbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolbarActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Search input container (Figma: 200px fixed width) */
+.scopeSearch {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+/* Shared 16×16 icon sizing for icon slots */
+.iconSm {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* --- Infinite-scroll sentinel below grid/list --- */
+.loadMoreSentinel {
+  width: 100%;
+  height: 1px;
+}
+
+.showMoreWrapper {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-sm, 8px) 0;
+}
+
+/* --- Product card grid (Figma: flex wrap, gap 12) --- */
+.productCardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* --- List view grid (Figma: multi-column compact rows) --- */
+.listGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 4px 24px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.listItemCheck {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.listItemImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listItemName {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #0d152c;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+/* --- Product card --- */
+.productCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d9dde7;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+  min-width: 0;
+}
+
+.productCard:hover:not(.productCardSelected) {
+  border-color: #4259ee;
+}
+
+.productCardSelected {
+  background: #fafaff;
+  border-color: #4259ee;
+}
+
+.productCardGrid .productCard {
+  width: 198px;
+  flex-shrink: 0;
+}
+
+.productCardContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.productImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noImageIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.productName {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #0d152c;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productStyleCount {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #60697d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.productCardCheck {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --- Legacy compat: styleCount used by ReviewStep --- */
+.styleCount {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+/* ===================================================================
+   Step 4 — Review & Create (Figma-matched)
+   =================================================================== */
+
+.reviewWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Review section (header + content row) --- */
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  padding-right: 12px;
+}
+
+.reviewSectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.reviewSectionTitle {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 800;
+  color: #0d152c;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/* --- Edit icon button (square, bordered) --- */
+.reviewEditBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px;
+  max-height: 32px;
+  border-radius: 8px;
+  border: 1px solid #c3c8d4;
+  background: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.reviewEditBtn:hover {
+  border-color: #a0a8bc;
+}
+
+.reviewEditIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* --- Content row (grey bg, horizontal columns) --- */
+.reviewContentRow {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fb;
+  border-radius: 8px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* --- Review column (label + value stack) --- */
+.reviewCol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.reviewCol230 {
+  width: 230px;
+}
+.reviewCol232 {
+  width: 232px;
+}
+.reviewCol228 {
+  width: 228px;
+}
+.reviewCol298 {
+  width: 298px;
+}
+
+.reviewLabel {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #60697d;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.reviewValue {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1f2b4d;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reviewValueRow .reviewValue {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+/* --- Overflow value row (value text + badge) --- */
+.reviewValueRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.overflowBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 164px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.overflowBadgeText {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #5f6673;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.error {
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+}
+
+/* === Skeleton card (loading placeholder for option cards) === */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeletonCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: #ffffff;
+  min-width: 200px;
+}
+
+.skeletonBone {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.skeletonIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.skeletonContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.skeletonTitle {
+  width: 80px;
+  height: 20px;
+}
+
+.skeletonMeta {
+  width: 140px;
+  height: 14px;
+}
+
+.skeletonRadio {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.skeletonAccordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: #ffffff;
+  min-height: 56px;
+}
+
+.skeletonAccordionTitle {
+  width: 100px;
+  height: 18px;
+}
+
+.skeletonAccordionPreview {
+  width: 160px;
+  height: 14px;
+  margin-left: auto;
+}
+
+.skeletonAccordionChevron {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.skeletonProductGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skeletonProductCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--slate-200);
+  border-radius: 12px;
+  background: #ffffff;
+  width: 198px;
+  flex-shrink: 0;
+}
+
+.skeletonProductContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.skeletonProductImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.skeletonProductName {
+  width: 80px;
+  height: 14px;
+  margin-top: 5px;
+}
+
+.skeletonProductCheck {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.emptyStateText {
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--slate-500);
+  font-size: var(--font-size-sm, 14px);
+}
+
+:global([data-theme='dark']) .title,
+:global([data-theme='dark']) .sectionTitle,
+:global([data-theme='dark']) .optionName,
+:global([data-theme='dark']) .scenarioName,
+:global([data-theme='dark']) .runModeName,
+:global([data-theme='dark']) .hierarchyTitle,
+:global([data-theme='dark']) .accordionLevelTitle,
+:global([data-theme='dark']) .productName,
+:global([data-theme='dark']) .reviewSectionTitle,
+:global([data-theme='dark']) .reviewValue {
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .description,
+:global([data-theme='dark']) .inputLabel,
+:global([data-theme='dark']) .hint,
+:global([data-theme='dark']) .optionMeta,
+:global([data-theme='dark']) .optionDesc,
+:global([data-theme='dark']) .scenarioDesc,
+:global([data-theme='dark']) .runModeDesc,
+:global([data-theme='dark']) .confidenceLabel,
+:global([data-theme='dark']) .confidenceMark,
+:global([data-theme='dark']) .previewText,
+:global([data-theme='dark']) .productStyleCount,
+:global([data-theme='dark']) .reviewLabel,
+:global([data-theme='dark']) .overflowBadgeText,
+:global([data-theme='dark']) .emptyStateText {
+  color: var(--color-text-secondary);
+}
+
+:global([data-theme='dark']) .sectionWrapper,
+:global([data-theme='dark']) .hierarchyWrapper,
+:global([data-theme='dark']) .confidenceSection,
+:global([data-theme='dark']) .reviewContentRow {
+  background: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .optionCard,
+:global([data-theme='dark']) .scenarioCard,
+:global([data-theme='dark']) .runModeCard,
+:global([data-theme='dark']) .accordionHeader,
+:global([data-theme='dark']) .listItem,
+:global([data-theme='dark']) .productCard,
+:global([data-theme='dark']) .reviewEditBtn,
+:global([data-theme='dark']) .overflowBadge,
+:global([data-theme='dark']) .skeletonCard,
+:global([data-theme='dark']) .skeletonAccordion,
+:global([data-theme='dark']) .skeletonProductCard {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .optionCard:hover:not(.selected):not(:disabled),
+:global([data-theme='dark']) .scenarioCard:hover:not(.selected),
+:global([data-theme='dark']) .runModeCard:hover:not(.selected),
+:global([data-theme='dark']) .productCard:hover:not(.productCardSelected) {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 8%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .optionCard.selected,
+:global([data-theme='dark']) .scenarioCard.selected,
+:global([data-theme='dark']) .runModeCard.selected,
+:global([data-theme='dark']) .productCardSelected {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .optionCard:disabled,
+:global([data-theme='dark']) .radioCircle.disabled,
+:global([data-theme='dark']) .chip:disabled {
+  background: color-mix(in srgb, var(--color-surface-muted) 70%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .radioCircle {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .chip {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+:global([data-theme='dark']) .chip.selected {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 14%, var(--color-surface));
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .confidenceValue {
+  background: color-mix(in srgb, var(--color-primary) 18%, var(--color-surface));
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .confidenceRightTrack {
+  background: var(--color-border);
+}
+
+:global([data-theme='dark']) .productImage,
+:global([data-theme='dark']) .listItemImage {
+  background: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .skeletonBone {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-muted) 25%,
+    color-mix(in srgb, var(--color-border) 55%, var(--color-surface-muted)) 50%,
+    var(--color-surface-muted) 75%
+  );
+}

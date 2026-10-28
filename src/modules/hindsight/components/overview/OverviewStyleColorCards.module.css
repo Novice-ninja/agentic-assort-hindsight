@@ -1,0 +1,331 @@
+/* === Layout === */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  min-height: 550px;
+  padding: 12px 16px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--color-surface, #fff);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 24px;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.swatchNotice { margin: -8px 0 0; font: 12px/18px var(--font-family-base, Manrope, sans-serif); color: var(--color-text-secondary, #60697d); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  align-items: start;
+  gap: 16px;
+  flex: 1 1 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0 6px 0 0;
+  overflow-y: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.grid:hover,
+.grid:focus-within {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border, rgb(217 221 231)) transparent;
+}
+
+.grid::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.grid:hover::-webkit-scrollbar,
+.grid:focus-within::-webkit-scrollbar {
+  width: 6px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--color-border, rgb(217 221 231));
+}
+
+.grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* === Card === */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d9dde7;
+  border-radius: 12px;
+  background-color: var(--color-surface, #fff);
+}
+
+/* === Color Strip === */
+
+.strip {
+  display: block;
+  width: 100%;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #eab57f;
+}
+
+.strip[data-tone='1'] {
+  background-color: #d09bf3;
+}
+
+.strip[data-tone='2'] {
+  background-color: #6fd2ea;
+}
+
+.strip[data-tone='3'] {
+  background-color: #cccdbb;
+}
+
+.strip[data-tone='4'] {
+  background-color: #e397a7;
+}
+
+.strip[data-tone='5'] {
+  background-color: #a5889e;
+}
+
+/* === Item Details === */
+
+.details {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.imageSlot {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.imageSlot :global(*) {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+.nameCol {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 0;
+}
+
+.name {
+  overflow: hidden;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 21px;
+  color: #0d152c;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.meta {
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 16px;
+  color: #1f2b4d;
+  opacity: 0.6;
+}
+
+/* === Stats Row === */
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.sales {
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 21px;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+.sellThrough {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 164px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  background: #f1f3fe;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 16px;
+  color: #4259ee;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+/* === Empty / Error States === */
+
+.empty,
+.state {
+  display: grid;
+  flex: 1 1 0;
+  min-height: 0;
+  margin: 0;
+  place-items: center;
+  gap: 12px;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.stateText {
+  margin: 0;
+}
+
+.retry {
+  padding: 6px 12px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: var(--color-text-primary, var(--slate-900));
+  font: inherit;
+  cursor: pointer;
+}
+
+/* === Page Status === */
+
+.pageStatus,
+.pageError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px 0 0;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* === Skeleton === */
+
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 12px;
+  background-color: var(--color-surface);
+  pointer-events: none;
+}
+
+.skeletonBone {
+  display: block;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(241 243 248) 0%,
+    rgb(232 236 244) 50%,
+    rgb(241 243 248) 100%
+  );
+  background-size: 200% 100%;
+}
+
+.skeletonStrip {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.skeletonDetails {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.skeletonImage {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.skeletonNameCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.skeletonName {
+  height: 16px;
+  width: 72%;
+}
+
+.skeletonMeta {
+  height: 12px;
+  width: 48%;
+}
+
+.skeletonStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skeletonSales {
+  height: 16px;
+  width: 40%;
+}
+
+.skeletonSt {
+  height: 20px;
+  width: 56px;
+  border-radius: 1000px;
+}
+
+.skeletonAi {
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+}

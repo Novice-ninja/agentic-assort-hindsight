@@ -1,0 +1,42 @@
+{
+  "kind": "Pure source and fixture invariants; no browser claim",
+  "checks": [
+    {
+      "name": "Exact full-scope fixture remains $8.4M and 182,400 units",
+      "pass": true
+    },
+    {
+      "name": "All 45 original store IDs and clusters are retained",
+      "pass": true
+    },
+    {
+      "name": "Store sales and sales units reconcile to the shared full-scope totals",
+      "pass": true
+    },
+    {
+      "name": "Absolute ST rates are within 0–100 and derive from sold versus supplied units",
+      "pass": true
+    },
+    {
+      "name": "Every sortable column supports ascending and descending without losing identities or mutating input",
+      "pass": true
+    },
+    {
+      "name": "Numeric ST sorting and stable ID tie order avoid string-sort errors",
+      "pass": true
+    },
+    {
+      "name": "Visible Cluster B label searches the actual cluster population; name, ID, empty and clear searches retain their meaning",
+      "pass": true
+    },
+    {
+      "name": "A–F commentary derives actual store-average leaders and contains no apparel residue",
+      "pass": true
+    },
+    {
+      "name": "Single sentences, percentages and decimal points survive punctuation cleanup",
+      "pass": true
+    }
+  ],
+  "passed": 9
+}

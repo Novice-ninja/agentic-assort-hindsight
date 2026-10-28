@@ -1,0 +1,170 @@
+{
+  "title": "Original design-system component restoration",
+  "scope": "Shared new-workspace primitives and assigned Deep Dive controls. No workflow/data redesign in this pass.",
+  "mappings": [
+    {
+      "component": "MetricCard",
+      "original": [
+        "src/modules/hindsight/components/overview/ProductPerformanceKpiCards.tsx",
+        "src/modules/hindsight/components/overview/ProductPerformanceKpiCards.module.css",
+        "src/assets/icons/hindsight/kpi-card-grid-bg.svg",
+        "src/assets/icons/hindsight/kpi-card-ellipse-bg.svg"
+      ],
+      "implementation": "Composes the original KPI CSS module and both exact assets; original gradient, 12px radius, 14px label and 24px semibold value. Parent controls the intended grid layout; original comparison Badge is reused."
+    },
+    {
+      "component": "WorkspaceCard / SectionHeading / Toolbar",
+      "original": [
+        "src/modules/hindsight/components/attributes/SalesMixChartCard.module.css",
+        "src/modules/hindsight/components/items/ItemToolbar.module.css"
+      ],
+      "implementation": "White surface, 8px radius, 12px 16px padding, no generic card shadow/border. Original 16px/600/24px section heading and 32px control rhythm; subtitle is compact with full string available as title."
+    },
+    {
+      "component": "DesignSelect / NativeDesignSelect",
+      "original": [
+        "src/modules/hindsight/components/attributes/SalesMixHeader.tsx",
+        "src/shared/components/primitives/Dropdown/Dropdown.tsx",
+        "src/shared/components/vendor/impact-ui.ts",
+        "vendor/impact-ui/dist/components/Select/index.js"
+      ],
+      "implementation": "Actual recovered Impact Select, controlled options/current selection, disabled options, portal/outside-close and vendor keyboard handling. NativeDesignSelect parses existing option children and adapts the existing event.target.value handlers. Adapter restores the supplied accessible name on the real vendor combobox."
+    },
+    {
+      "component": "DesignInput / DesignTextarea",
+      "original": [
+        "vendor/impact-ui/dist/components/Input/index.js",
+        "vendor/impact-ui/dist/components/Input/VanillaInput.js",
+        "src/modules/hindsight/components/watchlist/WatchlistEditPanel.tsx"
+      ],
+      "implementation": "Actual recovered Impact Input at original large/32px size, native events and aria labels; numeric constraints preserved. Multiline uses the same Impact Input capability. No bespoke gray field chrome is used."
+    },
+    {
+      "component": "DesignCheckbox",
+      "original": [
+        "vendor/impact-ui/dist/components/Checkbox/index.js",
+        "vendor/impact-ui/dist/components/Checkbox/WithoutFormLabel.js"
+      ],
+      "implementation": "Actual recovered Impact Checkbox, preserving vendor focus/Enter/click behavior and native checked events. Adapter repairs the recovered vendor inputProps overwrite by restoring aria-label on its actual input."
+    },
+    {
+      "component": "Pill / comparisons",
+      "original": [
+        "vendor/impact-ui/dist/components/Badge/index.js",
+        "vendor/impact-ui/dist/components/Badge/subtle/subtleOnlyLabelBadges/index.js",
+        "src/modules/hindsight/components/overview/ProductPerformanceKpiCards.tsx"
+      ],
+      "implementation": "Actual small subtle Impact Badge. No className replaces the vendor styling classes; this was verified against actual rendered markup."
+    },
+    {
+      "component": "Evidence menu / columns / typed filter popovers",
+      "original": [
+        "vendor/impact-ui/dist/components/Popover/index.js",
+        "src/modules/hindsight/components/items/ItemToolbar.tsx"
+      ],
+      "implementation": "Actual recovered Impact Popover and Impact Buttons replace the handcrafted details/positioned-menu surfaces. Checkbox/input/select contents use actual vendor components. Popup allows portal dropdown focus while retaining normal close/focus return."
+    },
+    {
+      "component": "Tabs / presentation switch",
+      "original": [
+        "src/modules/hindsight/components/items/ItemToolbar.tsx",
+        "vendor/impact-ui/dist/components/ButtonGroup/index.js"
+      ],
+      "implementation": "Actual original ButtonGroup replaces the handcrafted tab strip for local view/presentation controls."
+    },
+    {
+      "component": "DataTable / WorkspaceTable / evidence ledgers",
+      "original": [
+        "src/shared/components/data/DataGrid/DataGrid.tsx",
+        "src/modules/hindsight/components/items/ByItemTable.tsx",
+        "src/modules/hindsight/components/attributes/SalesMixBreakdownTable.tsx"
+      ],
+      "implementation": "Actual recovered DataGrid throughout. Standard rows/header use original 46px/48px rhythm and 14px grid header text; exact controlled sorting/selection/paging/export semantics are retained."
+    },
+    {
+      "component": "Item card",
+      "original": [
+        "src/modules/hindsight/components/items/ItemCardFront.module.css",
+        "src/modules/hindsight/components/items/ItemCardGrid.module.css"
+      ],
+      "implementation": "Composes the original front surface class, original border/radius/shadow and 16px grid rhythm, retaining canonical illustrative flooring images and separate name/image actions."
+    },
+    {
+      "component": "ScreenChart",
+      "original": [
+        "src/modules/hindsight/components/overview/RegularPromoTrendWidget.tsx",
+        "src/shared/components/charts/seriesColour.ts",
+        "src/design-system/tokens/charts.ts",
+        "vendor/impact-ui/dist/components/Chart/index.js"
+      ],
+      "implementation": "Original canonical actual/LY colors via seriesColour(0/1): iris #7A5CFF and sky #4BCFFF; original Manrope 12px axes, 13px legend, dashed neutral grid and white 8px tooltip/shadow treatment. No invented gray comparison series."
+    }
+  ],
+  "implementationFiles": [
+    {
+      "path": "src/modules/hindsight/redesign/components/ui.tsx",
+      "sha256": "40d39c3948d74fd8d49c7af01963a155c3cc220dd310f5dcc62c791de30a4449"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "sha256": "e66ef4734284dfe34a12cce1c1315085988e812e3754b0035664d4e069af8ed4"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "sha256": "2ada1b409d7ad63ada877dd5360c04f9f05a37982978ba0bb4843592d0022f39"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "sha256": "eaf2506e4219e64eb77fd79e9882862f91cf3ce55d11c0a906b7dc11f54671d9"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "sha256": "db43b5003fd948591501649b0a13fd0905e6400399093a8148ebc245d2013439"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "sha256": "48fc109795a2c2f8b83fc874f0e6e5ec3bee0b2bfdecf98748fe28f116cdff44"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "sha256": "bf2d5f02b3cbd96d5e688f41b4dceb684811d84c9802a4a6735d16de1edcda03"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/tableModel.ts",
+      "sha256": "fbd4ce7c8420ccabbf0a4208c2a5e8be53e49560689620fad55f9e6453f89238"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "sha256": "024423d6a802e546eff97fbf025f5cb4265836d999c40da5c6f48be40db96793"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ScreenChart.tsx",
+      "sha256": "828ec5a22fc56fe2f6faa96593b4f8cb2244c9964d47a0a4ff9dd7e2a5ee83df"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/components/ui.module.css",
+      "sha256": "428669b9d5697808f514fa890a034575116c1cf02d2ecf78500901e3143e0a38"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/views.module.css",
+      "sha256": "37ea9a75478c9e327454bb136c11328ab74ded556137ca963f0d55ac8113874f"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/screens.module.css",
+      "sha256": "03e3e03a035caaf79f24ceef43d7dc41abd66100f3132e4c835929ad550e7820"
+    }
+  ],
+  "evidence": {
+    "source": "qa/redesign/design-system-source-checks.json",
+    "actualVendorMarkup": "qa/redesign/design-system-ssr-checks.json",
+    "actualVendorDom": "qa/redesign/design-system-dom-checks.json",
+    "canonicalModels": "qa/redesign/deep-dive-model-checks.json",
+    "typeDiagnostics": "qa/redesign/design-system-tsc.log"
+  },
+  "limits": [
+    "No Chrome was driven by this agent. Actual viewport/pixel comparison remains root’s native-browser acceptance.",
+    "SSR/jsdom checks use actual recovered vendor components, but do not establish visual parity.",
+    "The full recovered project retains unrelated original declaration/type deficits; no project-wide strict-clean claim.",
+    "Root owns local Overview/Mix styles; source_build owns shell/filter/Iris; priority_review owns Configuration/Decisions/Case Detail control conversion."
+  ]
+}

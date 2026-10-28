@@ -1,0 +1,29 @@
+/* === Layout === */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.grid {
+  width: 100%;
+  min-width: 0;
+}
+
+/* === Empty / Error States === */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+}
+
+.emptyText {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* The chart layer is sized to the pane, so it is pinned to every edge. */
+.layer {
+  position: absolute;
+  inset: 0;
+}
+
+/*
+ * The vendor chart wraps itself in `.chart-container` with `padding: 12px 12px 0` and a flex gap.
+ * That pushes the donut down and leaves nothing below it, so it sat off-centre. The pane already
+ * provides even padding on all four sides, so the wrapper's own padding is removed.
+ */
+.wrapper :global(.chart-container) {
+  gap: 0;
+  padding: 0;
+}

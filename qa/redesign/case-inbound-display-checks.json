@@ -1,0 +1,23 @@
+{
+  "kind": "Actual CaseDetailView + WorkspaceProvider + canonical ledger and save guard; semantic control/view surfaces, not native appearance",
+  "passed": 3,
+  "checkCount": 3,
+  "checks": [
+    {
+      "name": "Actual CaseDetailView/provider FQ01 defaults to Chase and displays the same200 existing canonical units as Pair evidence, retaining its review-linked PO",
+      "pass": true
+    },
+    {
+      "name": "The actual case Save action rejects201 against the same200 displayed source quantity and preserves entered form state",
+      "pass": true
+    },
+    {
+      "name": "Actual200-unit draft saves against exactHouston pair and existingPO evidence without altering supply, inventory or canonical UOM",
+      "pass": true
+    }
+  ],
+  "caseId": "FQ01",
+  "pairId": "1000037:ST1001",
+  "sourceId": "PO-NORTHPORT-200",
+  "dataVersion": "flooring-ledger-ss26-v2"
+}

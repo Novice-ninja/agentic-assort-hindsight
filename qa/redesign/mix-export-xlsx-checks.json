@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "workbooks": 5,
+  "method": "Independent openpyxl read of generated controls from the actual MixView export adapter. No browser download is claimed.",
+  "results": [
+    {
+      "file": "all-brands.xlsx",
+      "dataRows": 5,
+      "leafRows": 3240,
+      "definitions": 87,
+      "passed": true
+    },
+    {
+      "file": "exact-diagonal.xlsx",
+      "dataRows": 2,
+      "leafRows": 2,
+      "definitions": 87,
+      "passed": true
+    },
+    {
+      "file": "no-matching-groups.xlsx",
+      "dataRows": 0,
+      "leafRows": 0,
+      "definitions": 87,
+      "passed": true
+    },
+    {
+      "file": "restricted-woodland.xlsx",
+      "dataRows": 1,
+      "leafRows": 855,
+      "definitions": 85,
+      "passed": true
+    },
+    {
+      "file": "woodland.xlsx",
+      "dataRows": 1,
+      "leafRows": 855,
+      "definitions": 87,
+      "passed": true
+    }
+  ]
+}

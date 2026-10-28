@@ -1,0 +1,35 @@
+.wrapper {
+  min-block-size: 300px;
+}
+
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actions :global([data-orientation='horizontal']) {
+  gap: 6px;
+}
+
+.actions :global([data-orientation='horizontal'] > span) {
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 9px;
+  line-height: 12px;
+}
+
+.actions :global([data-orientation='horizontal'] button) {
+  min-width: 116px;
+  height: 26px;
+  padding: 4px 30px 4px 10px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 6px;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.wrapper :global(.highcharts-container),
+.wrapper :global(.highcharts-root) {
+  overflow: visible !important;
+}

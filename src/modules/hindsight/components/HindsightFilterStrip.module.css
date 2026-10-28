@@ -1,0 +1,92 @@
+/*
+ * Loading and empty rows for the applied-filters strip.
+ *
+ * The height and horizontal padding mirror the vendor's `.impact-info-panel-container` (48px, 8px
+ * 24px) so swapping this row for the real strip moves nothing on the page.
+ */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  height: 48px;
+  padding: 8px 24px;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.divider {
+  flex-shrink: 0;
+  width: 1px;
+  height: 16px;
+  background-color: var(--color-border, rgb(217 221 231));
+}
+
+.bone {
+  display: block;
+  flex-shrink: 0;
+  height: 20px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(241 243 248) 0%,
+    rgb(232 236 244) 50%,
+    rgb(241 243 248) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+/* Each bone matches the element it stands in for, so nothing resizes when data arrives. */
+.boneHeading {
+  width: 84px;
+}
+
+.boneLabel {
+  width: 52px;
+  height: 14px;
+}
+
+.boneChip {
+  width: 64px;
+  height: 24px;
+  border-radius: 999px;
+}
+
+.emptyText {
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bone {
+    animation: none;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

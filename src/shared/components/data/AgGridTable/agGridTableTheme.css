@@ -1,0 +1,294 @@
+/* === AG Grid Table Theme — pixel-perfect match to Figma (node 1984:52060) === */
+
+.ag-theme-quartz.ag-theme-plans-light,
+.ag-theme-quartz.ag-theme-plans-dark {
+  --ag-font-family: 'Manrope', sans-serif;
+  --ag-font-size: 14px;
+  --ag-border-radius: 0;
+  --ag-wrapper-border-radius: 0;
+  --ag-row-height: 46px;
+  --ag-header-height: 80px;
+  --ag-cell-horizontal-padding: 16px;
+  --ag-borders: none;
+  --ag-column-border: 1px solid #c3c8d4;
+  --ag-header-column-separator-display: none;
+  --ag-header-column-resize-handle-display: none;
+  font-family: 'Manrope', sans-serif !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light *,
+.ag-theme-quartz.ag-theme-plans-dark * {
+  font-family: 'Manrope', sans-serif !important;
+}
+
+/* === Light theme === */
+.ag-theme-quartz.ag-theme-plans-light {
+  --ag-background-color: #ffffff;
+  --ag-foreground-color: #31416e;
+  --ag-data-color: #31416e;
+  --ag-header-background-color: #f5f6fa;
+  --ag-header-foreground-color: #0d152c;
+  --ag-odd-row-background-color: #ffffff;
+  --ag-border-color: #c3c8d4;
+  --ag-secondary-border-color: #c3c8d4;
+  --ag-row-border-color: #c3c8d4;
+  --ag-row-hover-color: #f0f1f8;
+  --ag-selected-row-background-color: #eceefd;
+  --ag-checkbox-checked-color: #4259ee;
+  --ag-checkbox-unchecked-color: #c3c8d4;
+  --ag-range-selection-border-color: #4259ee;
+  --ag-input-focus-border-color: var(--color-focus, #4259ee);
+}
+
+/* === Dark theme === */
+.ag-theme-quartz.ag-theme-plans-dark {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-data-color: var(--color-text-primary);
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-header-foreground-color: var(--color-text-primary);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-border-color: var(--color-border);
+  --ag-secondary-border-color: var(--color-border);
+  --ag-row-border-color: var(--color-border);
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface));
+  --ag-checkbox-checked-color: var(--indigo-200, #b5bef8);
+  --ag-checkbox-unchecked-color: var(--color-border);
+  --ag-range-selection-border-color: var(--indigo-200, #b5bef8);
+  --ag-input-focus-border-color: var(--color-focus, #4259ee);
+}
+
+/* === Frame === */
+.ag-theme-quartz.ag-theme-plans-light .ag-root-wrapper,
+.ag-theme-quartz.ag-theme-plans-dark .ag-root-wrapper {
+  border: none;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row-first,
+.ag-theme-quartz.ag-theme-plans-dark .ag-row-first {
+  border-top: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-body-viewport,
+.ag-theme-quartz.ag-theme-plans-dark .ag-body-viewport {
+  border-top: none !important;
+}
+
+/* === Header === */
+.ag-theme-quartz.ag-theme-plans-light .ag-header,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header {
+  border-bottom: 1px solid #c3c8d4;
+  background-color: #f5f6fa;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-header-row,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-row {
+  background-color: #f5f6fa;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-header-cell,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell {
+  background-color: #f5f6fa;
+  border-right: 1px solid #c3c8d4;
+  border-top: 1px solid #c3c8d4;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-header {
+  border-bottom-color: var(--color-border);
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-header,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-row,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell {
+  background-color: var(--color-surface-muted);
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell {
+  border-right: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-header-cell:last-child,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell:last-child {
+  border-right: none;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-header-cell-text,
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0d152c;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-header-cell-text {
+  color: var(--color-text-primary);
+}
+
+/* === Cells === */
+.ag-theme-quartz.ag-theme-plans-light .ag-cell,
+.ag-theme-quartz.ag-theme-plans-dark .ag-cell {
+  padding: 0 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #31416e;
+  display: flex;
+  align-items: center;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-ltr .ag-cell {
+  border-right: 1px solid #c3c8d4 !important;
+  border-left: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-rtl .ag-cell {
+  border-left: 1px solid #c3c8d4 !important;
+  border-right: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-cell {
+  color: var(--color-text-primary);
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-ltr .ag-cell {
+  border-right: 1px solid var(--color-border) !important;
+  border-left: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-rtl .ag-cell {
+  border-left: 1px solid var(--color-border) !important;
+  border-right: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-ltr .ag-cell:last-child,
+.ag-theme-quartz.ag-theme-plans-dark .ag-ltr .ag-cell:last-child {
+  border-right: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-rtl .ag-cell:first-child,
+.ag-theme-quartz.ag-theme-plans-dark .ag-rtl .ag-cell:first-child {
+  border-left: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row,
+.ag-theme-quartz.ag-theme-plans-dark .ag-row {
+  background-color: #ffffff;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row-last,
+.ag-theme-quartz.ag-theme-plans-dark .ag-row-last {
+  border-bottom: 1px solid #c3c8d4 !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row-last {
+  border-bottom-color: var(--color-border) !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row {
+  background-color: var(--color-surface);
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row-hover {
+  background-color: #f0f1f8 !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row-hover {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface)) !important;
+}
+
+/* Selected row — background + borders per Figma */
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected {
+  background-color: #eceefd !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected::before {
+  background-color: #eceefd !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected .ag-cell {
+  background-color: #eceefd !important;
+  border-right-color: #b3bdf8 !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected.ag-row-hover,
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected.ag-row-hover::before {
+  background-color: #eceefd !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-row.ag-row-selected.ag-row-hover .ag-cell {
+  background-color: #eceefd !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row.ag-row-selected {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface)) !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row.ag-row-selected::before {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface)) !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-dark .ag-row.ag-row-selected .ag-cell {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface)) !important;
+  border-right-color: color-mix(in srgb, var(--indigo-400, #4259ee) 30%, var(--color-border)) !important;
+}
+
+/* === Checkboxes — style the wrapper directly, no ::after === */
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper {
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 0 !important;
+  line-height: 16px !important;
+  border: 1px solid #c3c8d4 !important;
+  border-radius: 4px !important;
+  background: white !important;
+  box-shadow: none !important;
+  color: transparent !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper::after,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper::after {
+  content: none !important;
+  display: none !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper:hover,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper:hover {
+  border-color: #4259ee !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper.ag-checked,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper.ag-checked {
+  border-color: #4259ee !important;
+  background: #eceefd
+    url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.54401L3.22222 6.72179L8 1.27734' stroke='%234259EE' stroke-width='1.5338' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center / 10px !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper.ag-indeterminate,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper.ag-indeterminate {
+  border-color: #4259ee !important;
+  background: #eceefd
+    url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.00391L9.00391 0.996094' stroke='%234259EE' stroke-linecap='round'/%3E%3C/svg%3E")
+    no-repeat center !important;
+}
+
+.ag-theme-quartz.ag-theme-plans-light .ag-checkbox-input-wrapper input,
+.ag-theme-quartz.ag-theme-plans-dark .ag-checkbox-input-wrapper input {
+  cursor: pointer;
+}
+
+/* === No rows overlay === */
+.ag-theme-quartz.ag-theme-plans-light .ag-overlay-no-rows-wrapper,
+.ag-theme-quartz.ag-theme-plans-dark .ag-overlay-no-rows-wrapper {
+  padding: 32px;
+}

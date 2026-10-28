@@ -1,0 +1,1 @@
+{"version":3,"file":"ShortcutsProvider.d.ts","sourceRoot":"","sources":["../../../src/components/Shortcuts/ShortcutsProvider.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAW,KAAK,SAAS,EAAE,MAAM,OAAO,CAAC;AAGhD,MAAM,WAAW,sBAAsB;IACrC,gEAAgE;IAChE,OAAO,CAAC,EAAE,OAAO,GAAG,MAAM,EAAE,CAAC;IAC7B,QAAQ,EAAE,SAAS,CAAC;CACrB;AAED,wBAAgB,iBAAiB,CAAC,EAAE,OAAe,EAAE,QAAQ,EAAE,EAAE,sBAAsB,2CActF"}

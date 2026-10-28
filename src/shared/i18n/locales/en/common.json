@@ -1,0 +1,128 @@
+{
+  "app": {
+    "title": "Assort",
+    "skipToContent": "Skip to content"
+  },
+  "actions": {
+    "search": "Search",
+    "clearFilters": "Clear filters",
+    "showFilters": "Show filters",
+    "hideFilters": "Hide filters",
+    "retry": "Retry"
+  },
+  "states": {
+    "loading": "Loading…",
+    "empty": "No results found",
+    "error": "Something went wrong"
+  },
+  "appConfig": {
+    "metricsLoadFailed": "Could not load metric configuration. Showing default metrics.",
+    "globalLoadFailed": "Could not load application configuration. Showing default settings."
+  },
+  "aiStrip": {
+    "loadingLabel": "Gathering Insights",
+    "askIris": "Ask Iris",
+    "emptyNarration": "No insights available"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "es": "Spanish",
+    "ar": "Arabic"
+  },
+  "header": {
+    "help": "Help",
+    "messages": "Messages",
+    "notifications": "Notifications",
+    "notificationsCount": "{{count}} unread notifications",
+    "agentHub": "Ask Iris",
+    "userMenu": "User menu",
+    "modeToggle": "Planning mode",
+    "agentic": "Agentic",
+    "override": "Override"
+  },
+  "breadcrumb": {
+    "label": "Breadcrumb",
+    "home": "Home"
+  },
+  "matrixGrid": {
+    "empty": "No data to show",
+    "error": "The grid could not be loaded",
+    "loading": "Loading grid…",
+    "retry": "Retry",
+    "readOnly": "This column is read-only",
+    "bulkApply": "Apply all",
+    "grandTotal": "Grand total",
+    "rowHeader": "Item",
+    "emptyGroup": "No items",
+    "modified": "Changed from baseline",
+    "invalidValue": "That value could not be read for this column",
+    "editing": "Editing {{column}}",
+    "leafCount_one": "{{count}} item",
+    "leafCount_other": "{{count}} items",
+    "pasteWarning_one": "Pasted {{written}} cells. {{count}} cell was not applied: {{skippedReadOnly}} read-only, {{truncated}} outside the grid.",
+    "pasteWarning_other": "Pasted {{written}} cells. {{count}} cells were not applied: {{skippedReadOnly}} read-only, {{truncated}} outside the grid.",
+    "agGrid": {
+      "noRowsToShow": "No data to show",
+      "loadingOoo": "Loading…",
+      "group": "Group",
+      "total": "Total",
+      "pivotColumnGroupTotals": "Total",
+      "pivotMode": "Pivot mode",
+      "groups": "Row groups",
+      "values": "Values",
+      "columns": "Columns",
+      "rowGroupColumnsEmptyMessage": "Drag here to set row groups",
+      "valueColumnsEmptyMessage": "Drag here to aggregate",
+      "pivotColumnsEmptyMessage": "Drag here to set column labels",
+      "copy": "Copy",
+      "copyWithHeaders": "Copy with headers",
+      "paste": "Paste",
+      "ctrlC": "Ctrl+C",
+      "ctrlV": "Ctrl+V"
+    }
+  },
+  "iris": {
+    "readingRequest": "Reading your request against the product catalog, your company's calendar and the store list…",
+    "processSteps": "Process Steps ({{current}}/{{total}})",
+    "connectionError": "Iris lost the connection. Please try again.",
+    "planError": "This plan could not be loaded for Iris: {{message}}",
+    "emptyResult": "Iris finished without a text answer.",
+    "emptyChart": "Iris finished without chart data to show.",
+    "emptyTable": "Iris finished without table data to show.",
+    "chartDataCaption": "Data for {{title}}",
+    "untitledChart": "chart",
+    "missingPlan": "Open a plan from All Plans first so Iris knows which plan to use.",
+    "suggestedAnalysis": "Suggested analysis",
+    "replyActions": "Actions",
+    "feedback": {
+      "like": "Good response",
+      "dislike": "Bad response",
+      "ratedLike": "Marked as a good response.",
+      "ratedDislike": "Marked as a bad response.",
+      "cleared": "Rating cleared."
+    },
+    "replyView": {
+      "viewsLabel": "Response views",
+      "withCount": "{{label}} ({{count}})",
+      "text": "Text",
+      "table": "Table",
+      "bar": "Bar Chart",
+      "line": "Line Chart",
+      "area": "Area Chart",
+      "pie": "Donut Chart",
+      "heatmap": "Heatmap",
+      "chart": "Chart"
+    },
+    "downloadFile": "Download {{filename}}",
+    "downloadFailed": "Download failed. Try again.",
+    "copilotTitle": "Cluster Copilot",
+    "minimizeCopilot": "Minimize Cluster Copilot",
+    "maximizeCopilot": "Maximize Cluster Copilot"
+  }
+}

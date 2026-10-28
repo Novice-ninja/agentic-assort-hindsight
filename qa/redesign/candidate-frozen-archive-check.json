@@ -1,0 +1,22 @@
+[
+  {
+    "file": "artifacts/agentic-assort-source.zip",
+    "sha256": "1988055a4a3b0250120e4c8bf59da2be3a1af77041528551850c44a0ce81ae36",
+    "unchanged": true
+  },
+  {
+    "file": "artifacts/agentic-assort-preview.zip",
+    "sha256": "25a62546c6ac0cecdba246cfee887a7554d886314dd4c9b696417fa1fbdbe434",
+    "unchanged": true
+  },
+  {
+    "file": "artifacts/priority-fixes/agentic-assort-source.zip",
+    "sha256": "5aea6e0b5f5de80deab15193fe0fc837effa13191025d137623a7938b5e88058",
+    "unchanged": true
+  },
+  {
+    "file": "artifacts/priority-fixes/agentic-assort-preview.zip",
+    "sha256": "f5287dfa5d590e57c62458980d30b1beaefba9557939cddec9ec3c586d32a91b",
+    "unchanged": true
+  }
+]

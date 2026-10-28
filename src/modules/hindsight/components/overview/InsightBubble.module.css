@@ -1,0 +1,139 @@
+/* === Popper override — out-specifies the vendor's .tertiary-tooltip .MuiTooltip-tooltip === */
+
+.bubble:global(.impact-tooltip-container) :global(.MuiTooltip-tooltip) {
+  background: linear-gradient(90deg, rgba(246, 237, 253, 0.75) 0%, rgba(252, 248, 234, 0.75) 100%);
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(3px);
+  color: #1F2B4D;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 25px;
+  max-width: 274px;
+  min-height: unset;
+  white-space: normal;
+  word-break: break-word;
+  text-align: start;
+}
+
+.bubble:global(.impact-tooltip-container) :global(.MuiTooltip-arrow) {
+  display: none;
+}
+
+.bubbleLoading:global(.impact-tooltip-container) :global(.MuiTooltip-tooltip) {
+  border: 1px solid #2AC2EE;
+}
+
+.bubbleContent:global(.impact-tooltip-container) :global(.MuiTooltip-tooltip) {
+  border: 1px solid #F0DFFB;
+}
+
+/* === Body layout === */
+
+.body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--space-xs, 4px);
+  max-height: 500px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(200, 180, 220, 0.5) transparent;
+}
+
+.body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: rgba(200, 180, 220, 0.5);
+  border-radius: 4px;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 155, 205, 0.7);
+}
+
+.loadingRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.insightIcon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: clip;
+}
+
+.insightIcon img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  animation: spinCounterClockwise 1.4s linear infinite;
+}
+
+@keyframes spinCounterClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .insightIcon img {
+    animation: none;
+  }
+}
+
+.list {
+  display: flex;
+  margin: 0;
+  padding-inline-start: var(--space-md, 16px);
+  flex-direction: column;
+  gap: var(--space-xs, 4px);
+}
+
+.item {
+  overflow-wrap: anywhere;
+}
+
+.qualifier {
+  display: block;
+  font-weight: var(--font-weight-semibold, 600);
+  letter-spacing: 0.02em;
+}
+
+.state {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs, 4px);
+  margin: 0;
+}
+
+.retry {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: underline;
+}

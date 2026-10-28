@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "productId": "100987734",
+      "styleId": "HIL-WO-WB",
+      "article": "HIL-WO-WB",
+      "productName": "Hillside White Oak Wire-Brushed Solid Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Flagged for review: days of supply is above target and margin is trending down."
+    },
+    {
+      "rank": 2,
+      "productId": "100963313",
+      "styleId": "LEG-WB-SB",
+      "article": "LEG-WB-SB",
+      "productName": "Legacy Wire Brushed Locking Engineered Stranded Bamboo",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Carry-forward candidate: low markdown exposure and stable weeks of supply."
+    },
+    {
+      "rank": 3,
+      "productId": "100912583",
+      "styleId": "CHA-MA-HS",
+      "article": "CHA-MA-HS",
+      "productName": "Chantrelle Maple Handscraped Engineered Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Flagged for review: days of supply is above target and margin is trending down."
+    },
+    {
+      "rank": 4,
+      "productId": "100898691",
+      "styleId": "ALL-HI-WB",
+      "article": "ALL-HI-WB",
+      "productName": "Allendale Hickory Wire-Brushed Solid Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Carry-forward candidate: low markdown exposure and stable weeks of supply."
+    },
+    {
+      "rank": 5,
+      "productId": "100704337",
+      "styleId": "ARL-HI-HS",
+      "article": "ARL-HI-HS",
+      "productName": "Arlington Hickory Hand Scraped Engineered Hardwood",
+      "label": "In-Season Action",
+      "status": "action",
+      "summary": "Slow-moving in Cluster E but profitable elsewhere; keep with a reduced buy."
+    },
+    {
+      "rank": 6,
+      "productId": "100898931",
+      "styleId": "DRU-HM-SM",
+      "article": "DRU-HM-SM",
+      "productName": "Drummond Hard Maple Smooth Solid Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Carry-forward candidate: low markdown exposure and stable weeks of supply."
+    },
+    {
+      "rank": 7,
+      "productId": "100963354",
+      "styleId": "ATR-WB-SB",
+      "article": "ATR-WB-SB",
+      "productName": "Atrium Wire Brushed Solid Stranded Bamboo",
+      "label": "In-Season Action",
+      "status": "action",
+      "summary": "Healthy sell-through and margin; recommended to carry into next season at current depth."
+    },
+    {
+      "rank": 8,
+      "productId": "100898832",
+      "styleId": "SER-HM-DS",
+      "article": "SER-HM-DS",
+      "productName": "Serafina Hard Maple Distressed Solid Hardwood",
+      "label": "In-Season Action",
+      "status": "action",
+      "summary": "Slow-moving in Cluster E but profitable elsewhere; keep with a reduced buy."
+    },
+    {
+      "rank": 9,
+      "productId": "100819150",
+      "styleId": "MAV-RO-WB",
+      "article": "MAV-RO-WB",
+      "productName": "Maverick Red Oak Wire-Brushed Solid Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Flagged for review: days of supply is above target and margin is trending down."
+    },
+    {
+      "rank": 10,
+      "productId": "100840875",
+      "styleId": "NOR-WO-DWR",
+      "article": "NOR-WO-DWR",
+      "productName": "Northport White Oak Distressed Water Resistant Engineered Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Carry-forward candidate: low markdown exposure and stable weeks of supply."
+    },
+    {
+      "rank": 11,
+      "productId": "100499763",
+      "styleId": "SEA-LLA-SH",
+      "article": "SEA-LLA-SH",
+      "productName": "Seashell Long Leaf Acacia Solid Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Flagged for review: days of supply is above target and margin is trending down."
+    },
+    {
+      "rank": 12,
+      "productId": "100503218",
+      "styleId": "CER-BWO-WBR",
+      "article": "CER-BWO-WBR",
+      "productName": "Ceruse Blonde White Oak Wire Brushed Water Resistant Engineered Hardwood",
+      "label": "Flagged",
+      "status": "flagged",
+      "summary": "Carry-forward candidate: low markdown exposure and stable weeks of supply."
+    }
+  ]
+}

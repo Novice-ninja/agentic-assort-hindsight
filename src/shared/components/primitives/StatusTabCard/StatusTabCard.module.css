@@ -1,0 +1,211 @@
+/* === Layout === */
+.card {
+  position: relative;
+  width: 348px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 4px 16px 1px;
+  border: 1.5px solid var(--card-border-normal, var(--color-border));
+  border-radius: 16px;
+  background:
+    linear-gradient(111.5568deg,
+      var(--card-surface-normal, var(--color-surface-muted)) 2.2961%,
+      var(--color-surface) 95.969%);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  overflow: visible;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+/* === Content Group === */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* === Icon Container === */
+.iconBox {
+  position: relative;
+  flex-shrink: 0;
+  width: 49px;
+  height: 50px;
+  z-index: 1;
+}
+
+/* === Pedestal (arch background behind the icon) === */
+.pedestal {
+  position: absolute;
+  left: 2px;
+  top: 16px;
+  bottom: var(--pedestal-bottom, 1px);
+  width: 35px;
+  border-radius: 17.5px 17.5px 0 0;
+  background: var(--card-pedestal, var(--color-border));
+  transition: background 0.15s ease;
+}
+
+/* === Icon groups: activeGroup sits on top and fades in over normalGroup === */
+.normalGroup,
+.activeGroup {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.normalGroup {
+  z-index: 1;
+}
+
+.activeGroup {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+/* === Glyph and badge within each group === */
+.glyph {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.badge {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* === Icon blink on hover === */
+@keyframes blink {
+  0% { opacity: 1; }
+  30% { opacity: 0; }
+  60% { opacity: 1; }
+}
+
+.card:hover .badge {
+  animation: blink 0.5s ease-in-out;
+}
+
+.card:hover .glyph {
+  animation: blink var(--glyph-blink-duration, 0s) ease-in-out;
+}
+
+/* === Typography === */
+.label {
+  font-size: var(--font-size-md, 16px);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 24px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.count {
+  font-size: var(--font-size-md, 16px);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 24px;
+  font-variant-numeric: tabular-nums;
+  text-transform: capitalize;
+  flex-shrink: 0;
+}
+
+/* === Pointer (triangle below selected tab) === */
+.pointer {
+  position: absolute;
+  bottom: -10px;
+  left: 24px;
+  width: 14.54px;
+  height: 10.75px;
+  opacity: 0;
+  color: transparent;
+  pointer-events: none;
+  transform: rotate(180deg);
+  transition:
+    opacity 0.15s ease,
+    color 0.15s ease;
+}
+
+/* === States: Hover === */
+.card:hover:not(.selected) {
+  border-color: var(--card-accent);
+  background:
+    linear-gradient(111.5568deg,
+      var(--card-surface) 2.2961%,
+      var(--color-surface) 95.969%);
+  color: var(--color-text-primary);
+}
+
+.card:hover:not(.selected) .pedestal {
+  background: var(--card-accent);
+}
+
+.card:hover:not(.selected) .activeGroup {
+  opacity: 1;
+}
+
+.card:hover:not(.selected) .pointer {
+  opacity: 1;
+  color: var(--card-accent);
+}
+
+/* === States: Selected === */
+.selected {
+  border-color: var(--card-border);
+  background:
+    linear-gradient(111.5568deg,
+      var(--card-surface) 2.2961%,
+      var(--color-surface) 95.969%);
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .card {
+  border-color: color-mix(in srgb, var(--card-border-normal, var(--color-border)) 60%, var(--color-border));
+  background:
+    linear-gradient(111.5568deg,
+      color-mix(in srgb, var(--card-surface-normal, var(--color-surface-muted)) 18%, var(--color-surface-muted)) 2.2961%,
+      var(--color-surface) 95.969%);
+}
+
+:global([data-theme='dark']) .card:hover:not(.selected),
+:global([data-theme='dark']) .selected {
+  background:
+    linear-gradient(111.5568deg,
+      color-mix(in srgb, var(--card-surface) 24%, var(--color-surface-muted)) 2.2961%,
+      var(--color-surface) 95.969%);
+}
+
+.selected .pedestal {
+  background: var(--card-accent);
+}
+
+.selected .activeGroup {
+  opacity: 1;
+}
+
+.selected .pointer {
+  opacity: 1;
+  color: var(--card-border);
+}
+
+/* === Accessibility === */
+.srCount {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

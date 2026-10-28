@@ -1,0 +1,242 @@
+{
+  "data": {
+    "metric": "qty_sold",
+    "insight": "Weekly demand peaks around the two spring promotions and fades into the summer.",
+    "rows": [
+      {
+        "week": 1,
+        "ly": 5323,
+        "lly": 5430,
+        "optimisedLy": 5736,
+        "forecast": 5444,
+        "plan": 5910,
+        "optimisedLLy": 5596
+      },
+      {
+        "week": 2,
+        "ly": 5935,
+        "lly": 5368,
+        "optimisedLy": 6474,
+        "forecast": 6150,
+        "plan": 6579,
+        "optimisedLLy": 6305
+      },
+      {
+        "week": 3,
+        "ly": 6603,
+        "lly": 5976,
+        "optimisedLy": 7196,
+        "forecast": 6841,
+        "plan": 6492,
+        "optimisedLLy": 6226
+      },
+      {
+        "week": 4,
+        "ly": 6631,
+        "lly": 6610,
+        "optimisedLy": 7854,
+        "forecast": 7650,
+        "plan": 7185,
+        "optimisedLLy": 6802
+      },
+      {
+        "week": 5,
+        "ly": 7276,
+        "lly": 7240,
+        "optimisedLy": 7639,
+        "forecast": 7443,
+        "plan": 7876,
+        "optimisedLLy": 7457
+      },
+      {
+        "week": 6,
+        "ly": 7891,
+        "lly": 6954,
+        "optimisedLy": 8393,
+        "forecast": 8176,
+        "plan": 8533,
+        "optimisedLLy": 8178
+      },
+      {
+        "week": 7,
+        "ly": 8446,
+        "lly": 7454,
+        "optimisedLy": 8982,
+        "forecast": 8749,
+        "plan": 8094,
+        "optimisedLLy": 7763
+      },
+      {
+        "week": 8,
+        "ly": 12006,
+        "lly": 10871,
+        "optimisedLy": 12058,
+        "forecast": 12286,
+        "plan": 12426,
+        "optimisedLLy": 11182
+      },
+      {
+        "week": 9,
+        "ly": 12029,
+        "lly": 11322,
+        "optimisedLy": 12568,
+        "forecast": 12789,
+        "plan": 12934,
+        "optimisedLLy": 11657
+      },
+      {
+        "week": 10,
+        "ly": 8469,
+        "lly": 8252,
+        "optimisedLy": 8750,
+        "forecast": 8514,
+        "plan": 8488,
+        "optimisedLLy": 8440
+      },
+      {
+        "week": 11,
+        "ly": 8122,
+        "lly": 7925,
+        "optimisedLy": 9465,
+        "forecast": 9209,
+        "plan": 9192,
+        "optimisedLLy": 8096
+      },
+      {
+        "week": 12,
+        "ly": 8563,
+        "lly": 7403,
+        "optimisedLy": 8969,
+        "forecast": 8727,
+        "plan": 8600,
+        "optimisedLLy": 8633
+      },
+      {
+        "week": 13,
+        "ly": 8003,
+        "lly": 7789,
+        "optimisedLy": 8381,
+        "forecast": 8154,
+        "plan": 8030,
+        "optimisedLLy": 8073
+      },
+      {
+        "week": 14,
+        "ly": 7288,
+        "lly": 7282,
+        "optimisedLy": 7528,
+        "forecast": 7520,
+        "plan": 7498,
+        "optimisedLLy": 7264
+      },
+      {
+        "week": 15,
+        "ly": 6642,
+        "lly": 6649,
+        "optimisedLy": 7750,
+        "forecast": 6853,
+        "plan": 7708,
+        "optimisedLLy": 6621
+      },
+      {
+        "week": 16,
+        "ly": 6696,
+        "lly": 5936,
+        "optimisedLy": 7013,
+        "forecast": 6992,
+        "plan": 6892,
+        "optimisedLLy": 6752
+      },
+      {
+        "week": 17,
+        "ly": 8309,
+        "lly": 7357,
+        "optimisedLy": 8699,
+        "forecast": 8680,
+        "plan": 8551,
+        "optimisedLLy": 8383
+      },
+      {
+        "week": 18,
+        "ly": 7357,
+        "lly": 7178,
+        "optimisedLy": 8573,
+        "forecast": 8340,
+        "plan": 7769,
+        "optimisedLLy": 8014
+      },
+      {
+        "week": 19,
+        "ly": 5413,
+        "lly": 4685,
+        "optimisedLy": 5602,
+        "forecast": 5451,
+        "plan": 5066,
+        "optimisedLLy": 5237
+      },
+      {
+        "week": 20,
+        "ly": 4660,
+        "lly": 4545,
+        "optimisedLy": 5030,
+        "forecast": 4894,
+        "plan": 5172,
+        "optimisedLLy": 4553
+      },
+      {
+        "week": 21,
+        "ly": 4557,
+        "lly": 4438,
+        "optimisedLy": 4915,
+        "forecast": 4782,
+        "plan": 4477,
+        "optimisedLLy": 4453
+      },
+      {
+        "week": 22,
+        "ly": 6288,
+        "lly": 5430,
+        "optimisedLy": 6862,
+        "forecast": 6676,
+        "plan": 6187,
+        "optimisedLLy": 6224
+      },
+      {
+        "week": 23,
+        "ly": 4676,
+        "lly": 4046,
+        "optimisedLy": 4532,
+        "forecast": 4410,
+        "plan": 4608,
+        "optimisedLLy": 4628
+      },
+      {
+        "week": 24,
+        "ly": 4491,
+        "lly": 4270,
+        "optimisedLy": 4724,
+        "forecast": 4715,
+        "plan": 4860,
+        "optimisedLLy": 4275
+      },
+      {
+        "week": 25,
+        "ly": 4850,
+        "lly": 4609,
+        "optimisedLy": 5103,
+        "forecast": 5089,
+        "plan": 5243,
+        "optimisedLLy": 4621
+      },
+      {
+        "week": 26,
+        "ly": 5325,
+        "lly": 5057,
+        "optimisedLy": 5672,
+        "forecast": 5016,
+        "plan": 5109,
+        "optimisedLLy": 5143
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+/*
+ * MatrixGrid theme — the vendor's `--ag-*` surface mapped onto design tokens, in the same shape as
+ * `adminGridTheme.css`.
+ *
+ * Three rules hold here:
+ *
+ * 1. No hex, rgb, or raw colour anywhere: every value resolves to a token (constitution II).
+ * 2. Both themes declare the same `--matrix-grid-*` properties, so swapping the class re-resolves
+ *    every colour with no remount and no loss of scroll, selection, expansion, or undo state.
+ * 3. A host overrides colours by declaring these properties in the `className` it passes — never
+ *    by reaching into `.ag-*` selectors.
+ */
+
+.ag-theme-matrix-light,
+.ag-theme-matrix-dark {
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: var(--font-size-sm);
+  --ag-border-radius: 0;
+  --ag-wrapper-border-radius: 0;
+  --ag-row-height: 36px;
+  --ag-header-height: 36px;
+  --ag-cell-horizontal-padding: var(--space-sm);
+  --ag-borders: none;
+  --ag-header-column-resize-handle-display: none;
+}
+
+.ag-theme-matrix-light {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-data-color: var(--color-text-primary);
+  --ag-header-background-color: var(--slate-100);
+  --ag-header-foreground-color: var(--slate-900);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-border-color: var(--slate-200);
+  --ag-secondary-border-color: var(--slate-200);
+  --ag-row-border-color: var(--slate-200);
+  --ag-row-hover-color: var(--indigo-100);
+  --ag-selected-row-background-color: var(--indigo-100);
+  --ag-range-selection-border-color: var(--indigo-400);
+  --ag-range-selection-background-color: color-mix(in srgb, var(--indigo-400) 12%, transparent);
+  --ag-input-focus-border-color: var(--color-focus);
+  --ag-invalid-color: var(--color-error);
+  --ag-value-change-value-highlight-background-color: color-mix(
+    in srgb,
+    var(--color-info) 18%,
+    transparent
+  );
+
+  /* Paired-column variants and the changed marker (contract §7). */
+  --matrix-grid-variant-baseline: var(--slate-600);
+  --matrix-grid-variant-baseline-surface: var(--slate-100);
+  --matrix-grid-variant-editable: var(--indigo-700);
+  --matrix-grid-variant-editable-surface: var(--color-surface);
+  --matrix-grid-modified: var(--indigo-700);
+  --matrix-grid-modified-surface: var(--indigo-100);
+  --matrix-grid-readonly-surface: var(--slate-100);
+  --matrix-grid-total-surface: var(--slate-100);
+  --matrix-grid-badge-surface: var(--slate-200);
+  --matrix-grid-badge-text: var(--slate-800);
+
+  /*
+   * `--color-warning` is amber-400, which reaches only 1.66:1 on a light muted surface — under the
+   * 3:1 a border and an icon need. A darker stop of the same hue carries the same meaning at 3.81:1.
+   */
+  --matrix-grid-warning-accent: var(--amber-600);
+}
+
+.ag-theme-matrix-dark {
+  --ag-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-data-color: var(--color-text-primary);
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-header-foreground-color: var(--color-text-primary);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-border-color: var(--color-border);
+  --ag-secondary-border-color: var(--color-border);
+  --ag-row-border-color: var(--color-border);
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(in srgb, var(--indigo-400) 18%, var(--color-surface));
+  --ag-range-selection-border-color: var(--indigo-200);
+  --ag-range-selection-background-color: color-mix(in srgb, var(--indigo-200) 16%, transparent);
+  --ag-input-focus-border-color: var(--color-focus);
+  --ag-invalid-color: var(--color-error);
+  --ag-value-change-value-highlight-background-color: color-mix(
+    in srgb,
+    var(--color-info) 24%,
+    transparent
+  );
+
+  /* The component's own extension points, host-overridable through `className` (contract §7). */
+  --matrix-grid-variant-baseline: var(--slate-300);
+  --matrix-grid-variant-baseline-surface: var(--color-surface-muted);
+  --matrix-grid-variant-editable: var(--indigo-200);
+  --matrix-grid-variant-editable-surface: var(--color-surface);
+  --matrix-grid-modified: var(--indigo-200);
+  --matrix-grid-modified-surface: color-mix(in srgb, var(--indigo-400) 22%, var(--color-surface));
+  --matrix-grid-readonly-surface: var(--color-surface-muted);
+  --matrix-grid-total-surface: var(--color-surface-muted);
+  --matrix-grid-badge-surface: color-mix(in srgb, var(--slate-300) 22%, var(--color-surface));
+  --matrix-grid-badge-text: var(--color-text-primary);
+
+  /* On a dark surface the warning token itself clears 3:1 comfortably (8.23:1). */
+  --matrix-grid-warning-accent: var(--color-warning);
+}
+
+/* Frame: hairline only. The host card supplies any rounded shadow frame. */
+.ag-theme-matrix-light .ag-root-wrapper,
+.ag-theme-matrix-dark .ag-root-wrapper {
+  border: 1px solid var(--ag-border-color);
+}
+
+.ag-theme-matrix-light .ag-header-cell-text,
+.ag-theme-matrix-dark .ag-header-cell-text,
+.ag-theme-matrix-light .ag-header-group-text,
+.ag-theme-matrix-dark .ag-header-group-text {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+}
+
+/*
+ * Column separators use logical borders so a mirrored grid gets them on the mirrored side without
+ * a second `.ag-rtl` rule (the vendor's own stylesheet still needs its `.ag-ltr`/`.ag-rtl` pairs;
+ * ours does not).
+ */
+.ag-theme-matrix-light .ag-cell,
+.ag-theme-matrix-dark .ag-cell {
+  border-inline-end: 1px solid var(--ag-border-color);
+}
+
+/* A read-only baseline column reads as quieter than its editable partner. */
+.ag-theme-matrix-light .matrix-cell-baseline,
+.ag-theme-matrix-dark .matrix-cell-baseline {
+  background: var(--matrix-grid-variant-baseline-surface);
+  color: var(--matrix-grid-variant-baseline);
+}
+
+.ag-theme-matrix-light .matrix-cell-editable,
+.ag-theme-matrix-dark .matrix-cell-editable {
+  background: var(--matrix-grid-variant-editable-surface);
+  color: var(--matrix-grid-variant-editable);
+}
+
+/*
+ * A modified cell. The tint is the secondary signal; `PairedValueCell` renders a marker glyph as
+ * the primary one, because colour alone fails AA (constitution III).
+ */
+.ag-theme-matrix-light .matrix-cell-modified,
+.ag-theme-matrix-dark .matrix-cell-modified {
+  background: var(--matrix-grid-modified-surface);
+  color: var(--matrix-grid-modified);
+  font-weight: var(--font-weight-semibold);
+}
+
+.ag-theme-matrix-light .matrix-cell-readonly,
+.ag-theme-matrix-dark .matrix-cell-readonly {
+  background: var(--matrix-grid-readonly-surface);
+}
+
+/* Group, grand total, and pinned rows read as summary rows rather than data. */
+.ag-theme-matrix-light .ag-row-group,
+.ag-theme-matrix-dark .ag-row-group,
+.ag-theme-matrix-light .ag-row-pinned,
+.ag-theme-matrix-dark .ag-row-pinned {
+  background: var(--matrix-grid-total-surface);
+  font-weight: var(--font-weight-semibold);
+}
+
+.ag-theme-matrix-light .ag-grid-pinned-left-cells,
+.ag-theme-matrix-light .ag-header-row > .ag-grid-pinned-left-cells,
+.ag-theme-matrix-dark .ag-grid-pinned-left-cells,
+.ag-theme-matrix-dark .ag-header-row > .ag-grid-pinned-left-cells {
+  border-inline-end: 1px solid var(--ag-border-color);
+}
+
+/* Focus must stay visible on a cell the keyboard put there, not just on a clicked one. */
+.ag-theme-matrix-light .ag-cell-focus,
+.ag-theme-matrix-dark .ag-cell-focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
+}

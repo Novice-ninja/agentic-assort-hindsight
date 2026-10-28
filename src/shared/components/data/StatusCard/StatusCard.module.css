@@ -1,0 +1,75 @@
+.card {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  text-align: start;
+  width: 100%;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  cursor: default;
+}
+
+button.card {
+  cursor: pointer;
+}
+
+.selected {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.success {
+  background-image: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-success) 14%, var(--color-surface)),
+    var(--color-surface)
+  );
+}
+
+.warning {
+  background-image: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-warning) 14%, var(--color-surface)),
+    var(--color-surface)
+  );
+}
+
+.info {
+  background-image: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-info) 14%, var(--color-surface)),
+    var(--color-surface)
+  );
+}
+
+.neutral {
+  background-image: none;
+}
+
+.icon {
+  font-size: var(--font-size-xl);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.title {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

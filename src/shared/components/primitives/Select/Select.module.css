@@ -1,0 +1,140 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.select[data-orientation='horizontal'] {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.select[data-orientation='horizontal'] .label {
+  white-space: nowrap;
+  color: var(--color-text-secondary);
+}
+
+.field {
+  position: relative;
+  display: flex;
+  min-width: 0;
+}
+
+.trigger {
+  flex: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  text-align: start;
+  /* Room for the clear + chevron adornments pinned to the trailing edge. */
+  padding: var(--space-sm) 2.25rem var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value[data-placeholder] {
+  color: var(--color-text-secondary);
+}
+
+.adornments {
+  position: absolute;
+  inset-inline-end: var(--space-sm);
+  top: 0;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  /* Let clicks on the chevron fall through to the trigger; only the clear button is interactive. */
+  pointer-events: none;
+}
+
+.clear {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: var(--color-text-primary);
+}
+
+.chevron {
+  color: var(--color-text-secondary);
+}
+
+.popover {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  z-index: 10;
+  margin-top: var(--space-xs);
+  min-width: 100%;
+  width: max-content;
+  max-width: 16rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.search {
+  width: 100%;
+  padding: var(--space-sm);
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-xs);
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: var(--space-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.option.active {
+  background-color: var(--color-surface-muted);
+}
+
+.option.selected {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+.option[aria-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

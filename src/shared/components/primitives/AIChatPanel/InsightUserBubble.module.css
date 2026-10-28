@@ -1,0 +1,46 @@
+.bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--sky-100, #e0f2fe) 70%, #fff) 0%,
+    color-mix(in srgb, var(--rose-100, #ffe4e6) 55%, #fff) 100%
+  );
+  color: var(--color-text-primary, #212b4b);
+  text-align: start;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.35;
+}
+
+.title :global(h2),
+.title :global(h3),
+.title :global(p) {
+  display: inline;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.body {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-text-secondary, #60697d);
+}
+
+.body :global(.narrativeMetricPositive) {
+  color: var(--color-success-text, var(--emerald-600, #059669));
+  font-weight: var(--font-weight-bold, 700);
+}
+
+.body :global(.narrativeMetricNegative) {
+  color: var(--color-danger-text, var(--rose-600, #e11d48));
+  font-weight: var(--font-weight-bold, 700);
+}

@@ -1,0 +1,55 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Serve the application shell on direct route loads. The client redirects
+# compatibility /agentic-assort/* links to their canonical /assort/* route.
+[[redirects]]
+  from = "/"
+  to = "/assort/hindsight"
+  status = 302
+
+[[redirects]]
+  from = "/assort/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/agentic-assort/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/reports"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/settings"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/logout"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/mockServiceWorker.js"
+  [headers.values]
+    Cache-Control = "no-store"
+    Service-Worker-Allowed = "/"

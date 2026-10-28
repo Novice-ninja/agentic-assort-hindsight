@@ -1,0 +1,261 @@
+/* Card: white, 2px #f5f6fa border, 12px radius, 12px pad, 8px gap, items-end */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 8px;
+  padding: 12px;
+  border: 2px solid #f5f6fa;
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: clip;
+  isolation: isolate;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  border-radius: 12px;
+  border: 2px solid #b3bdf8;
+  background: linear-gradient(110deg, #fff 38.64%, #eceefd 98.64%);
+
+  /* Small */
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Header row: 32px height, gap 4px */
+.header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  min-width: 0;
+}
+
+/* Badge: 32×32, radius 8px */
+.badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  overflow: clip;
+  flex-shrink: 0;
+}
+
+/* Emoji text at 22px, centered, on top of bg SVG */
+.badgeEmoji {
+  position: relative;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Badge background SVG overlay — sits behind emoji */
+.badgeBg {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  width: 33.3px;
+  height: 34px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Badge tones — Figma colours */
+.badge[data-tone='lavender'] {
+  background-color: #f6edfd;
+}
+
+.badge[data-tone='mint'] {
+  background-color: #c4e8d5;
+}
+
+.badge[data-tone='amber'] {
+  background-color: #fceeee;
+}
+
+.badge[data-tone='sky'] {
+  background-color: #e9f7fc;
+}
+
+.badge[data-tone='rose'] {
+  background-color: #fceeee;
+}
+
+/* Title: 14/21 semibold #0d152c, ellipsis, capitalize */
+.title {
+  min-width: 0;
+  color: #0d152c;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.titleExpanded {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.title :global(h2),
+.title :global(h3),
+.title :global(p) {
+  display: inline;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* Compact contextual Iris action; title and accessible name are retained. */
+.askIris {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  width: 32px;
+  padding: 6px;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 8px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(136deg, #2ac2ee 12%, #6962ef 49%, #f26921 89%) border-box;
+  border: 1.5px solid transparent;
+  color: #0d152c;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium, 500);
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 20px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.card:hover .askIris,
+.card:focus-within .askIris {
+  opacity: 1;
+}
+
+.askIris:focus-visible {
+  outline: 2px solid var(--iris-500, #6962ef);
+  outline-offset: 2px;
+}
+
+/* Show complete bullets in the preview. A fixed pixel clip bisected the third bullet. */
+.body {
+  color: #60697d;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.body:not(.bodyExpanded) :global(li:nth-child(n + 3)) {
+  display: none;
+}
+
+.bodyExpanded {
+  display: block;
+  max-height: none;
+  overflow: visible;
+}
+
+.body :global(h2),
+.body :global(h3) {
+  margin: 0 0 4px;
+  color: #0d152c;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.body :global(p) {
+  margin: 0;
+}
+
+/*
+ * Impact UI's global reset sets `ol, ul { list-style: none }` and zeroes
+ * list padding — restore markers so agent `<ul>/<ol>` sections read as lists.
+ */
+.body :global(ul),
+.body :global(ol) {
+  margin: 4px 0;
+  padding-inline-start: 1.25em;
+  list-style-position: outside;
+}
+
+.body :global(ul) {
+  list-style-type: disc;
+}
+
+.body :global(ol) {
+  list-style-type: decimal;
+}
+
+.body :global(li) {
+  display: list-item;
+  margin-block-start: 4px;
+}
+
+.body :global(li:first-child) {
+  margin-block-start: 0;
+}
+
+.body :global(li)::marker {
+  color: #60697d;
+}
+
+/* Metrics: positive #26734b bold, negative #ab3939 bold */
+.body :global(.narrativeMetricPositive) {
+  color: #26734b;
+  font-weight: 700;
+}
+
+.body :global(.narrativeMetricNegative) {
+  color: #ab3939;
+  font-weight: 700;
+}
+
+/* Footer: items-end */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Read more: 14/20 medium #4259ee, capitalize */
+.readMore {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #4259ee;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.readMore:focus-visible {
+  outline: 2px solid var(--iris-500, #6962ef);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

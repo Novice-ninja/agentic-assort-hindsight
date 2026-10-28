@@ -1,0 +1,224 @@
+[
+  {
+    "file": "qa/redesign/priority-browser/exports/by-item-bamboo.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [
+          "Hardwood",
+          "Engineered Hardwood"
+        ],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  },
+  {
+    "file": "qa/redesign/priority-browser/exports/by-item-full.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  },
+  {
+    "file": "qa/redesign/priority-browser/exports/sales-mix-breakdown-bamboo.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [
+          "Hardwood",
+          "Engineered Hardwood"
+        ],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  },
+  {
+    "file": "qa/redesign/priority-browser/exports/sales-mix-breakdown-full.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  },
+  {
+    "file": "qa/redesign/priority-browser/exports/sales-mix-breakdown-sorted.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  },
+  {
+    "file": "qa/redesign/priority-browser/exports/sales-mix-summary-full.xlsx",
+    "planCode": "PLAN-KB-001",
+    "hierarchyScope": [
+      {
+        "levelName": "Division",
+        "levelNo": "l0_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Category",
+        "levelNo": "l1_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      },
+      {
+        "levelName": "Sub Category",
+        "levelNo": "l2_name",
+        "selectedValues": [],
+        "selectAll": true,
+        "search": [],
+        "exceptSearch": [],
+        "except": [],
+        "include": []
+      }
+    ]
+  }
+]

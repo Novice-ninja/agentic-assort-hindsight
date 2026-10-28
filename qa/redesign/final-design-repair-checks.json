@@ -1,0 +1,36 @@
+{
+  "kind": "Actual ScreenChart and MaterialDialog React components; original Modal and Impact buttons in jsdom; chart and DataGrid renderer hosts are semantic stand-ins",
+  "passed": 6,
+  "checkCount": 6,
+  "checks": [
+    {
+      "name": "Actual ScreenChart removes the redundant default date-button cloud and keeps exact interval actions inside its collapsed data alternative",
+      "pass": true
+    },
+    {
+      "name": "Keyboard-focusable chart-data row action emits its exact interval ID and preserves controlled selection state",
+      "pass": true
+    },
+    {
+      "name": "Production chart click and zoom-selection callbacks remain intact with exact week sets and the original actual/LY palette",
+      "pass": true
+    },
+    {
+      "name": "Actual MaterialDialog portals the original shared Modal and exact ItemThumbnail preview classes, and opening an image does not navigate",
+      "pass": true
+    },
+    {
+      "name": "Original Modal focus trap, Escape close and trigger focus restoration work through the real image-preview component",
+      "pass": true
+    },
+    {
+      "name": "Original backdrop close and explicit Close work independently; only Open item performance requests the separate item route",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "No native Chrome or pixel-layout assertion.",
+    "Highcharts rendering and AG Grid layout are not exercised; the production callback/options and accessible row renderers are exercised.",
+    "The original Modal visibility helper receives a jsdom-only offsetParent fixture because jsdom has no layout engine."
+  ]
+}

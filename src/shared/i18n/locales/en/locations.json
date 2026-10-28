@@ -1,0 +1,17 @@
+{
+  "locations": {
+    "title": "Locations",
+    "subtitle": "Browse and filter your locations",
+    "columns": {
+      "name": "Name",
+      "region": "Region",
+      "status": "Status",
+      "updatedAt": "Updated"
+    },
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "pending": "Pending"
+    }
+  }
+}

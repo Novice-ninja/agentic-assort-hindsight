@@ -1,0 +1,33 @@
+/**
+ * Shared Highcharts scrollablePlotArea scrollbar — thin pill thumb, hidden until
+ * the scroller is hovered/focused (custom ::-webkit-scrollbar otherwise stays on).
+ */
+.highcharts-scrolling {
+  scrollbar-width: none;
+}
+
+.highcharts-scrolling:hover,
+.highcharts-scrolling:focus-within {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border, rgb(217 221 231)) transparent;
+}
+
+.highcharts-scrolling::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.highcharts-scrolling:hover::-webkit-scrollbar,
+.highcharts-scrolling:focus-within::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.highcharts-scrolling::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--color-border, rgb(217 221 231));
+}
+
+.highcharts-scrolling::-webkit-scrollbar-track {
+  background: transparent;
+}

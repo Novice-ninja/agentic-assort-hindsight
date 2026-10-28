@@ -1,0 +1,262 @@
+.body {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-primary, #212b4b);
+  text-align: start;
+  overflow-x: auto;
+}
+
+/* Tag selectors, not classes: the sanitizer strips every attribute off the reply. */
+.body :global(p) {
+  margin: 0;
+}
+
+.body :global(p + p),
+.body :global(p + ul),
+.body :global(p + ol),
+.body :global(ul + p),
+.body :global(ol + p) {
+  margin-block-start: 8px;
+}
+
+.body :global(h2),
+.body :global(h3),
+.body :global(h4) {
+  margin: 12px 0 4px;
+  font-size: 13px;
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.35;
+}
+
+.body :global(h2:first-child),
+.body :global(h3:first-child),
+.body :global(h4:first-child) {
+  margin-block-start: 0;
+}
+
+.body :global(ul),
+.body :global(ol) {
+  margin: 0;
+  padding-inline-start: 1.25em;
+}
+
+.body :global(li) {
+  margin-block-start: 2px;
+}
+
+.body :global(b),
+.body :global(strong) {
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-primary, #212b4b);
+}
+
+.body :global(code) {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: var(--color-surface-subtle, #f1f2f6);
+  font-family: var(--font-family-mono, ui-monospace, monospace);
+  font-size: 12px;
+}
+
+.body :global(p + table),
+.body :global(table + p) {
+  margin-block-start: 8px;
+}
+
+.body :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.body :global(th),
+.body :global(td) {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--color-border-subtle, #e6e8ef);
+  text-align: start;
+  vertical-align: top;
+}
+
+.body :global(th) {
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-secondary, #60697d);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.viewed {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.panel {
+  min-width: 0;
+}
+
+.fallback {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-secondary, #60697d);
+}
+
+.chart {
+  margin: 0;
+  min-width: 0;
+}
+
+.chartTitle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-primary, #212b4b);
+}
+
+.plot {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.plotShell {
+  display: flex;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.yAxisPane {
+  flex: 0 0 auto;
+  z-index: 1;
+  background: var(--color-surface, #fff);
+}
+
+.plotScroll {
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  min-width: 0;
+  overscroll-behavior-x: contain;
+  /* Keep the thumb discoverable when many categories force a wide plot. */
+  scrollbar-gutter: stable;
+}
+
+.plotScroll:focus-visible {
+  outline: 2px solid var(--color-border-focus, #4259ee);
+  outline-offset: 2px;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 16px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-secondary, #60697d);
+  font-size: 12px;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-text-primary, #212b4b);
+}
+
+.tableCaption {
+  caption-side: top;
+  margin-block-end: 8px;
+  font-size: 13px;
+  font-weight: var(--font-weight-bold, 700);
+  text-align: start;
+}
+
+.table th,
+.table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--color-border-subtle, #e6e8ef);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table th {
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-text-secondary, #60697d);
+}
+
+.files {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-block-start: 12px;
+  min-width: 0;
+}
+
+.fileRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--color-surface-subtle, #f1f2f6);
+  color: var(--color-text-primary, #212b4b);
+}
+
+.fileName {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+.fileError {
+  flex: 1 0 100%;
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-danger, #b42318);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

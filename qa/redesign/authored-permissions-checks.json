@@ -1,0 +1,42 @@
+{
+  "kind": "Actual WorkspaceProvider and CaseDetailView DOM with semantic design/view controls, central nested projection and actual XLSX bytes; not native Chrome or production authorization",
+  "passed": 8,
+  "checkCount": 8,
+  "checks": [
+    {
+      "name": "Full-access authored metadata and cached form fields are available in the actual provider and CaseDetail DOM before access revocation",
+      "pass": true
+    },
+    {
+      "name": "Central session projection also protects recognized financial text in case triggers, merged signals and nested provenance without altering canonical identity",
+      "pass": true
+    },
+    {
+      "name": "Revoking margin access removes authored metadata from actual CaseDetail text and retained controlled input values",
+      "pass": true
+    },
+    {
+      "name": "Provider projections cover session, canonical dataset records, cached forms and full saved-view capture before Iris or exports consume them",
+      "pass": true
+    },
+    {
+      "name": "Actual workbook bytes project raw authored rows and view metadata at the final export boundary while retaining canonical pairs, units and quantity",
+      "pass": true
+    },
+    {
+      "name": "Restricting a read projection never destroys the raw full-access stored record",
+      "pass": true
+    },
+    {
+      "name": "Reload under restricted access retains the same source projection and never flashes previously authored margin metadata",
+      "pass": true
+    },
+    {
+      "name": "Explicit access regrant restores authorized authored records and cached values without changing canonical supply or draft quantities",
+      "pass": true
+    }
+  ],
+  "caseId": "FQ01",
+  "pairId": "1000037:ST1001",
+  "dataVersion": "flooring-ledger-ss26-v2"
+}

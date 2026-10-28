@@ -1,0 +1,58 @@
+.shell {
+  display: flex;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: var(--color-background);
+  /* background-image: var(--texture-dot-grid); */
+  background-size: 20px 20px;
+  background-attachment: fixed;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  margin-left: 64px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.breadcrumbBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-smd) var(--space-lg);
+  flex-shrink: 0;
+}
+
+.breadcrumbActions {
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;
+  min-height: 0;
+  /* padding: var(--space-lg); */
+  overflow-x: clip;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.skipLink {
+  position: absolute;
+  inset-inline-start: var(--space-md);
+  top: -48px;
+  z-index: 200;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-md);
+  transition: top 0.15s ease;
+}
+
+.skipLink:focus {
+  top: var(--space-md);
+}

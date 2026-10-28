@@ -1,0 +1,68 @@
+{
+  "kind": "Independent XLSX package and parsed-value verification",
+  "browser_download_verified": false,
+  "checks": [
+    {
+      "name": "Aggregate workbook has Data, Scope, Definitions, and Contributing pairs sheets",
+      "pass": true
+    },
+    {
+      "name": "Four canonical item rows exported",
+      "pass": true
+    },
+    {
+      "name": "Numeric sales remain numbers and sum to $24,000",
+      "pass": true
+    },
+    {
+      "name": "Quantity totals 4,000 and each row carries SQFT unit",
+      "pass": true
+    },
+    {
+      "name": "15 canonical exposure pairs and stable pair IDs are retained",
+      "pass": true
+    },
+    {
+      "name": "Scope includes source version, snapshots, definition version, and population",
+      "pass": true
+    },
+    {
+      "name": "Restricted Data headers omit GM and COGS",
+      "pass": true
+    },
+    {
+      "name": "Restricted contributing pair headers omit GM and COGS",
+      "pass": true
+    },
+    {
+      "name": "Restricted definitions omit margin metric labels",
+      "pass": true
+    },
+    {
+      "name": "Empty data workbook remains a valid package",
+      "pass": true
+    },
+    {
+      "name": "P101\u00d7S102 export retains exact sales, comparison, zero sellable, and 200 inbound",
+      "pass": true
+    },
+    {
+      "name": "full workbook ZIP CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "restricted workbook ZIP CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "empty workbook ZIP CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "pair workbook ZIP CRC is valid",
+      "pass": true
+    }
+  ],
+  "passed": 15,
+  "phase": "Preserved R67 future-workspace helper; not the current priority export path."
+}

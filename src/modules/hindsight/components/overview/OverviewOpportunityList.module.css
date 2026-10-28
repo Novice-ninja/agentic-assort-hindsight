@@ -1,0 +1,333 @@
+/* === Layout === */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 425px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: var(--color-surface, white);
+  box-shadow: 0 0 2px rgb(0 0 0 / 12%);
+}
+
+.title {
+  margin: 0;
+  color: #0d152c;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.body:hover,
+.body:focus-within {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border, rgb(217 221 231)) transparent;
+}
+
+.body::-webkit-scrollbar {
+  width: 0;
+}
+
+.body:hover::-webkit-scrollbar,
+.body:focus-within::-webkit-scrollbar {
+  width: 6px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--color-border, rgb(217 221 231));
+}
+
+.body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* === Row Card === */
+
+.rowCard {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eff2fa;
+  border-radius: 8px;
+  background-color: var(--color-surface, white);
+  overflow: clip;
+}
+
+.rowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.nameGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+/* Live Watch variant: roomier gap, and the 24px icon artwork scaled up to a 40px box. */
+.nameGroupLarge {
+  gap: 12px;
+}
+
+.iconScale {
+  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.iconScale > * {
+  transform: scale(1.6667);
+  transform-origin: top left;
+}
+
+/* === Status Icons (24x24) === */
+
+.iconWrap {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  overflow: clip;
+}
+
+.iconAttentionRed {
+  composes: iconWrap;
+  background: linear-gradient(to bottom,
+      rgba(252, 229, 223, 0.5),
+      rgba(254, 208, 195, 0.5));
+  border-radius: 6px;
+}
+
+.iconAttentionGold {
+  composes: iconWrap;
+  background: linear-gradient(to bottom,
+      rgba(255, 247, 209, 0.5),
+      rgba(255, 241, 171, 0.5));
+  border-radius: 6px;
+}
+
+.iconCheckbox {
+  composes: iconWrap;
+  background: #ebf7f1;
+  border-radius: 4px;
+}
+
+.iconLayerBg {
+  position: absolute;
+  top: 4.3px;
+  left: -2.7px;
+  width: 34.19px;
+  height: 33.01px;
+}
+
+.iconLayerBgCheckbox {
+  position: absolute;
+  top: 4.63px;
+  left: -2.47px;
+  width: 32.41px;
+  height: 31.53px;
+}
+
+.iconLayerBody {
+  position: absolute;
+  top: 5.81px;
+  left: 5.39px;
+  width: 13.21px;
+  height: 12.35px;
+}
+
+.iconLayerBodyCheckbox {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 12.25px;
+  height: 13.46px;
+}
+
+.iconLayerDetail {
+  position: absolute;
+  top: 8px;
+  left: 12.38px;
+  width: 1.28px;
+  height: 6.22px;
+}
+
+.iconLayerDetailCheckbox {
+  position: absolute;
+  top: 9.4px;
+  left: 9.97px;
+  width: 6.68px;
+  height: 4.02px;
+}
+
+.iconLayer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+
+/* === Typography === */
+
+.nameStack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+/* Subtext matches the body text of the Narrative insight cards. */
+.subText {
+  overflow: hidden;
+  color: #60697d;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nameText {
+  overflow: hidden;
+  color: #31416e;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+/* === Badge Pills === */
+
+.badge {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.badgeError {
+  composes: badge;
+  background-color: #fef4f5;
+  color: #d62f2d;
+}
+
+.badgeWarning {
+  composes: badge;
+  background-color: #fdfae9;
+  color: #8c6f06;
+}
+
+.badgeSuccess {
+  composes: badge;
+  background-color: #f4fff7;
+  color: #108431;
+}
+
+.badgeDot {
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: currentcolor;
+}
+
+.badgeValue {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* === Loading / Error States === */
+
+/* Zero-height marker the scroll observer watches; never occupies space in the list. */
+.sentinel {
+  flex-shrink: 0;
+  height: 1px;
+  margin-top: -1px;
+  list-style: none;
+}
+
+.skeletonBone {
+  display: block;
+  border-radius: 4px;
+  background: linear-gradient(90deg,
+      rgb(241 243 248) 0%,
+      rgb(232 236 244) 50%,
+      rgb(241 243 248) 100%);
+  background-size: 200% 100%;
+}
+
+/* Each bone matches the element it stands in for, so no row resizes when data arrives. */
+.skeletonIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+.skeletonName {
+  width: 60%;
+  max-width: 180px;
+  height: 21px;
+}
+
+.skeletonBadge {
+  flex-shrink: 0;
+  width: 96px;
+  height: 20px;
+  border-radius: 1000px;
+}
+
+.skeletonStrip {
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+}
+
+/* === Empty State === */
+
+.empty {
+  display: grid;
+  min-height: 300px;
+  place-items: center;
+  color: var(--color-text-secondary, #6b7280);
+  font-size: 14px;
+  line-height: 20px;
+}

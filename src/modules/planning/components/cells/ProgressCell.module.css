@@ -1,0 +1,41 @@
+/* === Layout === */
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* === Grey pill badge around step text (Figma node 1984:52371) === */
+.pill {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  background: var(--color-surface-muted);
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-text-primary);
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* === Progress bar — 8px height, 99px fixed width === */
+.track {
+  width: 99px;
+  min-width: 99px;
+  height: 8px;
+  border-radius: 100px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 100px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}

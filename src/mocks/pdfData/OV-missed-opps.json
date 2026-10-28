@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "productId": "100840875",
+      "styleId": "NOR-WO-DWR",
+      "article": "NOR-WO-DWR",
+      "productName": "Northport White Oak Distressed Water Resistant Engineered Hardwood",
+      "label": "889/week • $1.6M",
+      "status": "watch",
+      "summary": "Sold through in 8 weeks last year; this season the buy was cut 40% and stock ran out early."
+    },
+    {
+      "rank": 2,
+      "productId": "100499763",
+      "styleId": "SEA-LLA-SH",
+      "article": "SEA-LLA-SH",
+      "productName": "Seashell Long Leaf Acacia Solid Hardwood",
+      "label": "508/week • $914.9K",
+      "status": "watch",
+      "summary": "Strong run-rate in the first half of the season, then out of stock in 9 of the last 10 weeks."
+    },
+    {
+      "rank": 3,
+      "productId": "100503218",
+      "styleId": "CER-BWO-WBR",
+      "article": "CER-BWO-WBR",
+      "productName": "Ceruse Blonde White Oak Wire Brushed Water Resistant Engineered Hardwood",
+      "label": "261/week • $469.9K",
+      "status": "flagged",
+      "summary": "Competitive price point with high conversion; demand was under-served by the allocation."
+    },
+    {
+      "rank": 4,
+      "productId": "100987734",
+      "styleId": "HIL-WO-WB",
+      "article": "HIL-WO-WB",
+      "productName": "Hillside White Oak Wire-Brushed Solid Hardwood",
+      "label": "250/week • $450K",
+      "status": "flagged",
+      "summary": "Cluster A and B stores sold out while D and E held excess, a missed redistribution."
+    },
+    {
+      "rank": 5,
+      "productId": "100963313",
+      "styleId": "LEG-WB-SB",
+      "article": "LEG-WB-SB",
+      "productName": "Legacy Wire Brushed Locking Engineered Stranded Bamboo",
+      "label": "167/week • $300K",
+      "status": "watch",
+      "summary": "Sold through in 12 weeks last year; this season the buy was cut 40% and stock ran out early."
+    },
+    {
+      "rank": 6,
+      "productId": "100912583",
+      "styleId": "CHA-MA-HS",
+      "article": "CHA-MA-HS",
+      "productName": "Chantrelle Maple Handscraped Engineered Hardwood",
+      "label": "150/week • $270.2K",
+      "status": "watch",
+      "summary": "Strong run-rate in the first half of the season, then out of stock in 8 of the last 10 weeks."
+    },
+    {
+      "rank": 7,
+      "productId": "100898691",
+      "styleId": "ALL-HI-WB",
+      "article": "ALL-HI-WB",
+      "productName": "Allendale Hickory Wire-Brushed Solid Hardwood",
+      "label": "122/week • $218.8K",
+      "status": "flagged",
+      "summary": "Competitive price point with high conversion; demand was under-served by the allocation."
+    },
+    {
+      "rank": 8,
+      "productId": "100704337",
+      "styleId": "ARL-HI-HS",
+      "article": "ARL-HI-HS",
+      "productName": "Arlington Hickory Hand Scraped Engineered Hardwood",
+      "label": "84/week • $151K",
+      "status": "watch",
+      "summary": "Cluster A and B stores sold out while D and E held excess, a missed redistribution."
+    },
+    {
+      "rank": 9,
+      "productId": "100898931",
+      "styleId": "DRU-HM-SM",
+      "article": "DRU-HM-SM",
+      "productName": "Drummond Hard Maple Smooth Solid Hardwood",
+      "label": "56/week • $100.9K",
+      "status": "flagged",
+      "summary": "Sold through in 11 weeks last year; this season the buy was cut 40% and stock ran out early."
+    },
+    {
+      "rank": 10,
+      "productId": "100963354",
+      "styleId": "ATR-WB-SB",
+      "article": "ATR-WB-SB",
+      "productName": "Atrium Wire Brushed Solid Stranded Bamboo",
+      "label": "51/week • $91.7K",
+      "status": "watch",
+      "summary": "Strong run-rate in the first half of the season, then out of stock in 12 of the last 10 weeks."
+    },
+    {
+      "rank": 11,
+      "productId": "100898832",
+      "styleId": "SER-HM-DS",
+      "article": "SER-HM-DS",
+      "productName": "Serafina Hard Maple Distressed Solid Hardwood",
+      "label": "51/week • $91.1K",
+      "status": "watch",
+      "summary": "Competitive price point with high conversion; demand was under-served by the allocation."
+    },
+    {
+      "rank": 12,
+      "productId": "100819150",
+      "styleId": "MAV-RO-WB",
+      "article": "MAV-RO-WB",
+      "productName": "Maverick Red Oak Wire-Brushed Solid Hardwood",
+      "label": "3/week • $3.5K",
+      "status": "flagged",
+      "summary": "Cluster A and B stores sold out while D and E held excess, a missed redistribution."
+    }
+  ]
+}

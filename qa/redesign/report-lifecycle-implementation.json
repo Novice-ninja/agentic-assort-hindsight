@@ -1,0 +1,355 @@
+{
+  "requirement": "HSP60-loading-error",
+  "status": "Implemented local component lifecycle; deterministic component tests passed; native QA pending",
+  "sourceChecks": {
+    "passed": 5,
+    "count": 5,
+    "checks": [
+      {
+        "file": "src/modules/hindsight/redesign/context/ReportStateContext.tsx",
+        "pass": true,
+        "diagnostics": []
+      },
+      {
+        "file": "src/modules/hindsight/redesign/components/ReportStateBoundary.tsx",
+        "pass": true,
+        "diagnostics": []
+      },
+      {
+        "file": "src/modules/hindsight/redesign/components/ui.tsx",
+        "pass": true,
+        "diagnostics": []
+      },
+      {
+        "file": "src/modules/hindsight/redesign/components/GlobalFilterDrawer.tsx",
+        "pass": true,
+        "diagnostics": []
+      },
+      {
+        "file": "src/modules/hindsight/redesign/WorkspacePage.tsx",
+        "pass": true,
+        "diagnostics": []
+      }
+    ]
+  },
+  "cardInventory": [
+    {
+      "file": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "line": 55,
+      "title": "Item performance",
+      "stableId": "report-item-performance"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "line": 62,
+      "title": "Item leaderboard",
+      "stableId": "report-item-leaderboard"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 41,
+      "title": "Store performance",
+      "stableId": "report-store-performance"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 45,
+      "title": "Store network",
+      "stableId": "report-store-network"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 45,
+      "title": "Governed cluster comparison",
+      "stableId": "report-governed-cluster-comparison"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 53,
+      "title": "Compare selected stores",
+      "stableId": "report-compare-selected-stores"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 85,
+      "title": "Item × Store matrix",
+      "stableId": "report-item-store-matrix"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "line": 117,
+      "title": "Assortment breadth TY / LY",
+      "stableId": "report-assortment-breadth-ty-ly"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 28,
+      "title": "Why this case needs review",
+      "stableId": "report-why-this-case-needs-review"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 33,
+      "title": "Current pair facts",
+      "stableId": "report-current-pair-facts"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 40,
+      "title": "Decision records",
+      "stableId": "report-decision-records"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 73,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{editingId ? `Edit draft ${editingId}` : 'Draft a scoped response'}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 135,
+      "title": "Accountable follow-up",
+      "stableId": "report-accountable-follow-up"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "line": 143,
+      "title": "Evidence and field notes",
+      "stableId": "report-evidence-and-field-notes"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 49,
+      "title": "Review queue",
+      "stableId": "report-review-queue"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 70,
+      "title": "Decision log",
+      "stableId": "report-decision-log"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 88,
+      "title": "Rule configuration",
+      "stableId": "report-rule-configuration"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 99,
+      "title": "Rule preview",
+      "stableId": "report-rule-preview"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 100,
+      "title": "Published versions",
+      "stableId": "report-published-versions"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "line": 111,
+      "title": "PLR learning register",
+      "stableId": "report-plr-learning-register"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "line": 24,
+      "title": "Product attributes",
+      "stableId": "report-product-attributes"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "line": 24,
+      "title": "Distribution and exposure",
+      "stableId": "report-distribution-and-exposure"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "line": 24,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{`Where is ${item.id} ranged and selling?`}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/MixView.tsx",
+      "line": 51,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{settings.view==='concentration'?`${labels[lens]} concentration`:`${labels[lens]} · assortment and contribution`}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/MixView.tsx",
+      "line": 55,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{`${labels[lens]} evidence`}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 65,
+      "title": "PLR review interval",
+      "stableId": "report-plr-review-interval"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 67,
+      "title": "Summary",
+      "stableId": "report-summary"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 73,
+      "title": "Performance through the review window",
+      "stableId": "report-performance-through-the-review-window"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 79,
+      "title": "Original plan, revisions and later additions",
+      "stableId": "report-original-plan-revisions-and-later-additions"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 83,
+      "title": "Demand, buy and available supply",
+      "stableId": "report-demand-buy-and-available-supply"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 83,
+      "title": "Launch execution evidence",
+      "stableId": "report-launch-execution-evidence"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 85,
+      "title": "Investigate",
+      "stableId": "report-investigate"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/OverviewView.tsx",
+      "line": 107,
+      "title": "Carry learning into the next PLR",
+      "stableId": "report-carry-learning-into-the-next-plr"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "line": 28,
+      "title": "What the evidence says",
+      "stableId": "report-what-the-evidence-says"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "line": 29,
+      "title": "Supply evidence ledger",
+      "stableId": "report-supply-evidence-ledger"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "line": 38,
+      "title": "Availability reasoning",
+      "stableId": "report-availability-reasoning"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "line": 38,
+      "title": "Range and eligibility history",
+      "stableId": "report-range-and-eligibility-history"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "line": 44,
+      "title": "Draft a scoped follow-up",
+      "stableId": "report-draft-a-scoped-follow-up"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "line": 29,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{`${store.name} assortment`}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "line": 29,
+      "title": "Leading assortment items",
+      "stableId": "report-leading-assortment-items"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "line": 29,
+      "title": "Breadth and store productivity",
+      "stableId": "report-breadth-and-store-productivity"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "line": 29,
+      "title": "Lifecycle and focus exposure",
+      "stableId": "report-lifecycle-and-focus-exposure"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "line": 29,
+      "title": "External signals",
+      "stableId": "report-external-signals"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "line": 38,
+      "title": "Review cases and decisions",
+      "stableId": "report-review-cases-and-decisions"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "line": 48,
+      "title": "Original review history",
+      "stableId": "report-original-review-history"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "line": 57,
+      "title": "Learnings carried forward",
+      "stableId": "report-learnings-carried-forward"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "line": 79,
+      "title": null,
+      "stableId": null,
+      "dynamicTitle": "{title}"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "line": 84,
+      "title": "Field observations",
+      "stableId": "report-field-observations"
+    }
+  ],
+  "registration": {
+    "policy": "Mounted titled WorkspaceCards register semantic report IDs and current human-readable titles. reportId/reportTitle override supports repeated or non-text titles. Rehearsal target list removes unmounted cards.",
+    "scope": "Component lifecycle is separate from Scope, LocalSelection and table view state. Provider stays mounted. A changed scope/local selection immediately ignores the previous failure, then discards its rehearsal state."
+  },
+  "retention": {
+    "behavior": "Loading/failure keep original child DOM mounted and occupy the same body footprint while hidden/inert. Retained failure keeps the same evidence visible with source refresh date. Retry only changes the target report state and focuses its heading.",
+    "date": "dataset.feeds.refreshedAt, supplied by WorkspaceRuntime; independent stock/range dates remain in the existing scope strip."
+  },
+  "evidence": [
+    "qa/redesign/report-lifecycle-component-checks.json",
+    "qa/redesign/report-rehearsal-drawer-checks.json",
+    "qa/redesign/report-lifecycle-tsc.log"
+  ],
+  "nativeQa": [
+    "On Overview, choose Performance through the review window in Filters > Demo settings, choose Loading, then Show component state. Check card dimensions and other cards stay available.",
+    "Choose Failed for Item performance after selecting rows, sorting and hiding a column. Retry that report; confirm selected rows, sort, columns and global chips remain unchanged.",
+    "Choose Refresh failed / retain dated evidence. Check its timestamp and same data. Retry with keyboard; focus returns to report heading.",
+    "Apply an empty or missing-inventory scope independently. Confirm empty/missing messages stay distinct and do not automatically acquire failure Retry."
+  ],
+  "limits": [
+    "Rehearsal controls are explicitly local; no fake production request or backend delay is claimed.",
+    "Production request/caching/refresh adapter and service retry policy remain external dependencies.",
+    "DOM tests establish actual component state and event behavior, not native pixel dimensions or Chrome visual acceptance."
+  ]
+}

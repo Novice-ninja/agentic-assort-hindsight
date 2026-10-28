@@ -1,0 +1,185 @@
+/*
+ * "How do you want to create plan" popover (All Cluster Plans → Create Cluster Plan).
+ * The Impact UI Popover supplies the container, header + close icon, divider and Proceed
+ * button; this module sizes it and styles the two method cards.
+ */
+
+/* Container: 504px wide so two 234px cards sit side by side with the vendor's 12px padding. */
+.paper {
+  width: 504px;
+  max-width: calc(100vw - 2 * var(--space-md));
+  margin-top: var(--space-sm);
+  box-shadow: 0 8px 30px color-mix(in srgb, var(--slate-900) 10%, transparent);
+}
+
+.paper :global(.popover-header-title) {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  color: var(--color-text-primary);
+}
+
+.paper :global(.popover-body) {
+  height: auto;
+  overflow: visible;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-smd);
+  padding-bottom: var(--space-xs);
+}
+
+/*
+ * Each option is one card; the real radio is visually hidden inside so the card is the hit area.
+ * Selected highlight (design): angle 0°, opacity 1, border 1/1/3/1 (T/R/B/L), radius 12px.
+ * Extra 2px on the bottom is offset in padding so card height / radio inset stay stable.
+ */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 120px;
+  padding: var(--space-smd);
+  border-style: solid;
+  border-color: var(--slate-200);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-radius: 12px;
+  opacity: 1;
+  background:
+    radial-gradient(
+      circle at 92% 118%,
+      transparent 54%,
+      color-mix(in srgb, var(--color-surface) 70%, transparent) 55%,
+      transparent 56.5%
+    ),
+    radial-gradient(
+      circle at 92% 118%,
+      transparent 38%,
+      color-mix(in srgb, var(--color-surface) 70%, transparent) 39%,
+      transparent 40.5%
+    ),
+    linear-gradient(135deg, var(--color-surface) 0%, var(--slate-50) 45%, var(--indigo-100) 100%);
+  cursor: pointer;
+  transition:
+    border-color 120ms ease,
+    border-width 120ms ease,
+    padding-bottom 120ms ease;
+}
+
+.card:hover {
+  border-color: var(--slate-300);
+}
+
+.cardSelected,
+.cardSelected:hover {
+  border-color: var(--color-primary);
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 3px;
+  border-left-width: 1px;
+  border-radius: 12px;
+  padding-bottom: calc(var(--space-smd) - 2px);
+  background:
+    radial-gradient(
+      circle at 92% 118%,
+      transparent 54%,
+      color-mix(in srgb, var(--color-surface) 70%, transparent) 55%,
+      transparent 56.5%
+    ),
+    radial-gradient(
+      circle at 92% 118%,
+      transparent 38%,
+      color-mix(in srgb, var(--color-surface) 70%, transparent) 39%,
+      transparent 40.5%
+    ),
+    linear-gradient(135deg, var(--color-surface) 0%, var(--iris-50) 45%, var(--indigo-200) 125%);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.iconImage {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.iconEmoji {
+  font-size: 22px;
+  line-height: 1;
+}
+
+/*
+ * Radio indicator: 16px ring with an 8px filled dot when selected.
+ * Flex-centred dot (not absolute inset) so the fill stays geometrically centred
+ * when the ring border thickens on select.
+ */
+.radio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--slate-300);
+  border-radius: 50%;
+  background: var(--color-surface);
+  transition: border-color 120ms ease;
+}
+
+.cardSelected .radio {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+.cardSelected .radio::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.cardTitle {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 28px;
+  color: var(--color-text-primary);
+}
+
+.cardDescription {
+  margin-top: var(--space-xs);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 20px;
+  color: var(--slate-600);
+}
+
+/* Narrow viewports: keep both options usable by stacking them. */
+@media (width <= 560px) {
+  .options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

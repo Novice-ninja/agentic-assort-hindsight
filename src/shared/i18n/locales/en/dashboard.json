@@ -1,0 +1,62 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your assortment",
+    "greeting": "Hi {{name}}, welcome to {{product}}",
+    "greetingGeneric": "Welcome to {{product}}",
+    "focusHeading": "Agent's Focus For You Today",
+    "focus": {
+      "cards": {
+        "attributePlanReady": {
+          "title": "Attribute Plan Ready",
+          "description": "Top 5 attributes ranked. Earth tones flagged as anchor colour. Oversized fit confirmed as exit."
+        },
+        "earthTonesConfirmed": {
+          "title": "Earth Tones Confirmed",
+          "description": "Top 5 attributes ranked. Earth tones flagged as anchor colour. Oversized fit confirmed as exit."
+        },
+        "exitOversizedConfirmed": {
+          "title": "Exit Oversized Confirmed",
+          "description": "Top 5 attributes ranked. Earth tones flagged as anchor colour. Oversized fit confirmed as exit."
+        }
+      }
+    },
+    "platform": {
+      "review": "Review Now",
+      "status": {
+        "active": "Active",
+        "done": "Done",
+        "inProgress": "In Progress"
+      }
+    },
+    "charts": {
+      "revenue": "Revenue Analytics",
+      "trend": "Performance Trend",
+      "deferred": "Visualization coming soon",
+      "viewAsTable": "View as table",
+      "expand": "Expand chart",
+      "legend": {
+        "revenue": "Revenue",
+        "expenses": "Expenses",
+        "plan": "Plan"
+      },
+      "ranges": {
+        "week": "Week",
+        "month": "Month",
+        "year": "Year"
+      }
+    },
+    "kpi": {
+      "groupLabel": "Key performance indicators"
+    },
+    "tasks": {
+      "title": "My Tasks",
+      "due": "Due {{date}}",
+      "completed": "Completed",
+      "empty": "No tasks"
+    },
+    "weather": {
+      "loading": "Loading…"
+    }
+  }
+}

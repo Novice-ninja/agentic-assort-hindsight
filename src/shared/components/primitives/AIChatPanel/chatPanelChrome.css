@@ -1,0 +1,318 @@
+/**
+ * Ask Iris panel chrome — overrides for Impact UI's `ChatBotComponent`.
+ *
+ * The panel shell is entirely vendor markup with vendor-injected global CSS, and the vendor
+ * exposes no props for the left icon rail or the thread pill bar (`hideCenterOptions` is wired
+ * internally to its own new-chat screen flag). So the only way to drop them is to override the
+ * vendor's class names here, the same way `agGridTableTheme.css` and `adminGridTheme.css`
+ * override AG Grid. The trade-off is that these selectors track vendor internals: an impact-ui
+ * upgrade that renames a class will silently bring the removed chrome back.
+ *
+ * The wrapper class is repeated in each selector purely to outrank the vendor rule it replaces.
+ * The vendor injects its stylesheet from JavaScript at import time, so relying on source order
+ * alone would make these overrides depend on module evaluation order.
+ *
+ * The module-menu chevron is NOT handled here — it has a real prop (`hideModuleArrow`), passed
+ * from `AIChatProvider`.
+ */
+
+.chatbot-modal-wrapper {
+  /* Comfortable reading measure for the centred column. The vendor caps its own user bubbles
+     at 550px, so this stays close to the layout the panel was designed around. */
+  --ai-chat-content-max-width: 720px;
+
+  /* Mirrors the vendor's own inline padding on `.conversation-body-container`. The composer
+     subtracts it so its edges line up with the message bubbles rather than the column. */
+  --ai-chat-content-inline-padding: 32px;
+}
+
+/* === Left icon rail === */
+
+/*
+ * Hidden rather than emptied. The vendor always builds the rail from
+ * `[newChat, bookmark, history, page, notification]` with no per-item opt-out, and each item is a
+ * `role="button"` with `tabIndex={0}`. `display: none` is what keeps those five out of the tab
+ * order and the accessibility tree, not just out of sight.
+ */
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container
+  .chatbot-component-left-side {
+  display: none !important;
+}
+
+/*
+ * Reclaim the rail's 60px strip (70px with its gutter) so the content fills the panel. The
+ * `-open` variant belonged to the rail's side panels, which are now unreachable.
+ *
+ * Physical `left` on purpose: the vendor hard-codes `left: 70px` here in both directions, so a
+ * logical `inset-inline-start` would set `right` under RTL and leave that 70px in place.
+ */
+.chatbot-modal-wrapper.chatbot-modal-wrapper .chatbot-component-right-side,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-right-side.chatbot-component-right-side-open {
+  left: 0 !important;
+}
+
+/* === Thread pill bar === */
+
+.chatbot-modal-wrapper .conversation-screen-container-header .center_options_container {
+  display: none !important;
+}
+
+/* === Centred content column === */
+
+/*
+ * Header, message list, and footer are each capped and centred independently because the vendor
+ * positions them separately — the header is in flow, the message list is absolutely positioned
+ * against the panel, and the composer is absolutely positioned against it too. Below the cap the
+ * max-width stops binding and the auto margins collapse to zero, so narrow panels simply fill.
+ */
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .conversation-screen-container
+  .conversation-screen-container-header,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .conversation-screen-container
+  .conversation-body-container,
+.chatbot-modal-wrapper.chatbot-modal-wrapper .conversation-footer-container {
+  max-width: var(--ai-chat-content-max-width);
+}
+
+/* Suggested follow-ups use the vendor's questions body type so they sit under the
+   reply (outside the bubble) rather than inside it. Hide the leftover chrome. */
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container) {
+  margin-bottom: 16px;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .chat_logo_circle,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .chat_logo_circle_empty {
+  display: none;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .response_main_container {
+  width: 100%;
+  margin-inline-start: 0;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container.questions-container {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .assistant_with_dropdown_container,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .time_chat,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_chat_messages_container:has(.questions-container)
+  .assistant_actions_container {
+  display: none !important;
+}
+
+/* Reply actions and `.time_chat` share one footer row, same inset from the bubble. */
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions']) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--space-md) var(--space-sm);
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions'])
+  .assistant_text_container,
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions'])
+  [data-testid='iris-final-reply'] {
+  display: contents;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions'])
+  [data-testid='iris-final-reply']
+  > *:not([data-testid='iris-actions']) {
+  grid-column: 1 / -1;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions'])
+  [data-testid='iris-actions'] {
+  grid-column: 1;
+  align-self: end;
+  width: auto;
+  margin: 0;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .assistant_main_container:has([data-testid='iris-actions'])
+  .time_chat {
+  grid-column: 2;
+  align-self: end;
+  margin-top: 0;
+  line-height: 1;
+}
+
+/* === Assistant like / dislike === */
+
+/*
+ * Vendor thumbs are background-image buttons. Keep their outline/filled SVGs and only
+ * add token-driven hover, recede, and pending treatments. `background-color` layers
+ * under the existing `background-image` rather than replacing it.
+ */
+.chatbot-modal-wrapper.chatbot-modal-wrapper .asst_feedback_buttons:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .left_icon_container_action:has(.liked)
+  .bad_feedback:not(:disabled),
+.chatbot-modal-wrapper.chatbot-modal-wrapper
+  .left_icon_container_action:has(.disliked)
+  .good_feedback:not(:disabled) {
+  opacity: 0.45;
+}
+
+.chatbot-modal-wrapper.chatbot-modal-wrapper .asst_feedback_buttons:disabled,
+.chatbot-modal-wrapper.chatbot-modal-wrapper .asst_feedback_buttons[aria-busy='true'] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.chatbot-modal-wrapper
+  .conversation-screen-container-header
+  .right_close_save_icon_container
+  .collapse_icon_container {
+  display: none !important;
+}
+
+/* === Describe Your Plan — same chat, compact floating presentation === */
+
+.chatbot-modal-wrapper .right_close_save_icon_container .cluster-copilot-presentation.ia-btn {
+  order: -1;
+  box-sizing: border-box;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-width: 0 !important;
+}
+
+.chatbot-modal-wrapper .cluster-copilot-presentation .ia-btn-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
+}
+
+.chatbot-modal-wrapper .cluster-copilot-presentation .ia-btn-icon img {
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
+}
+
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container {
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  width: min(375px, calc(100vw - 32px)) !important;
+  height: min(445px, calc(100vh - 32px)) !important;
+  right: 16px !important;
+  bottom: 16px !important;
+  left: auto !important;
+  top: auto !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  padding: 12px 14px 8px !important;
+}
+
+/*
+ * Describe Your Plan only. Set while the findings banner is pinned under a chat
+ * that would otherwise cover it. Hindsight never sets this attribute.
+ */
+html[data-describe-banner-stack='true']
+  [data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container,
+html[data-describe-pill-dock='true']
+  [data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container {
+  bottom: calc(
+    16px + var(--describe-banner-reserve, 0px) + var(--describe-pill-reserve, 0px)
+  ) !important;
+}
+
+html[data-describe-banner-stack='true']
+  [data-copilot-presentation='expanded']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container,
+html[data-describe-pill-dock='true']
+  [data-copilot-presentation='expanded']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container {
+  height: calc(
+    100vh - 56px - var(--describe-banner-reserve, 0px) - var(--describe-pill-reserve, 0px)
+  ) !important;
+  max-height: calc(
+    100vh - 56px - var(--describe-banner-reserve, 0px) - var(--describe-pill-reserve, 0px)
+  ) !important;
+}
+
+[data-copilot-presentation='minimized'] .chatbot-modal-wrapper {
+  --ai-chat-content-max-width: 100%;
+  --ai-chat-content-inline-padding: 0px;
+}
+
+[data-copilot-presentation='minimized'] .chatbot-modal-wrapper .resizer,
+[data-copilot-presentation='minimized'] .chatbot-modal-wrapper .chatbot-drag-strip {
+  display: none !important;
+}
+
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-container
+  .chatbot-main-content,
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-right-side,
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .conversation-screen-container {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  height: auto !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+}
+
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-header-row,
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .conversation-footer-container,
+[data-copilot-presentation='minimized']
+  .chatbot-modal-wrapper.chatbot-modal-wrapper
+  .chatbot-component-footer {
+  flex-shrink: 0 !important;
+}

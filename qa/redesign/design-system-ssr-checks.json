@@ -1,0 +1,31 @@
+{
+  "kind": "Actual recovered vendor/server-render markup checks; not browser interaction or visual acceptance",
+  "passed": 6,
+  "checkCount": 6,
+  "checks": [
+    {
+      "name": "KPI markup uses both exact recovered background assets",
+      "pass": true
+    },
+    {
+      "name": "Real Impact input retains zero and numeric constraints with accessible label",
+      "pass": true
+    },
+    {
+      "name": "Real Impact multiline input renders a textarea with supplied value",
+      "pass": true
+    },
+    {
+      "name": "Native option adapter renders an actual Impact select with a valid empty-value selection",
+      "pass": true
+    },
+    {
+      "name": "Status pills render the actual recovered Impact Badge",
+      "pass": true
+    },
+    {
+      "name": "Workspace surface preserves semantic labeled section and compact title",
+      "pass": true
+    }
+  ]
+}

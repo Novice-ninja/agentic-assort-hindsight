@@ -1,0 +1,102 @@
+{
+  "kind": "Actual React hooks in jsdom with deferred API boundary; not Chrome acceptance",
+  "passed": 24,
+  "checks": [
+    {
+      "name": "topStyleColors: applying Bamboo starts a fresh captured-scope first page while old pagination is in flight",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: an out-of-order old next page cannot append rows or clear the new cursor",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: next pages use only the captured scope and matching cursor",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: an unapplied draft and Cancel do not replace the applied rows or fetch",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: explicit empty scope clears rows, totals and pagination",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: restoring all begins at page one without a Bamboo cursor",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: disabling aborts and invalidates pending pages",
+      "pass": true
+    },
+    {
+      "name": "topStyleColors: reenable and unmount use a new generation and cancel transport",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: applying Bamboo starts a fresh captured-scope first page while old pagination is in flight",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: an out-of-order old next page cannot append rows or clear the new cursor",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: next pages use only the captured scope and matching cursor",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: an unapplied draft and Cancel do not replace the applied rows or fetch",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: explicit empty scope clears rows, totals and pagination",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: restoring all begins at page one without a Bamboo cursor",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: disabling aborts and invalidates pending pages",
+      "pass": true
+    },
+    {
+      "name": "missedOpportunities: reenable and unmount use a new generation and cancel transport",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: applying Bamboo starts a fresh captured-scope first page while old pagination is in flight",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: an out-of-order old next page cannot append rows or clear the new cursor",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: next pages use only the captured scope and matching cursor",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: an unapplied draft and Cancel do not replace the applied rows or fetch",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: explicit empty scope clears rows, totals and pagination",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: restoring all begins at page one without a Bamboo cursor",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: disabling aborts and invalidates pending pages",
+      "pass": true
+    },
+    {
+      "name": "carryForwards: reenable and unmount use a new generation and cancel transport",
+      "pass": true
+    }
+  ]
+}

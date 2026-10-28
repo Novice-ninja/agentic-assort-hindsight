@@ -1,0 +1,266 @@
+/* === Wrapper (white card container) === */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-smd, 12px);
+  padding: 12px 16px;
+  border-radius: var(--radius-md, 8px);
+  background: var(--color-surface, #fff);
+}
+
+/* === Header (title + AI strip) === */
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm, 8px);
+  min-width: 0;
+  width: 100%;
+}
+
+.heading {
+  margin: 0;
+  flex-shrink: 0;
+  color: #0d152c;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 24px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.aiStrip {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* === Layout (scrollable track) === */
+.surface {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.surface::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* === Card === */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 0 0 288px;
+  width: 288px;
+  min-width: 288px;
+  height: 80px;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(to right, #fffaf6, #f7f9ff);
+  overflow: clip;
+}
+
+/* === Card Decoration === */
+.decoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.gridBg {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 243px;
+  height: 80px;
+}
+
+.ellipseBg {
+  position: absolute;
+  top: 0;
+  right: -44px;
+  width: 252px;
+  height: 80px;
+}
+
+/* === Content === */
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* === Typography === */
+.label {
+  margin: 0;
+  color: #60697d;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular, 400);
+  line-height: 16px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  width: 100%;
+}
+
+.value {
+  margin: 0;
+  flex-shrink: 0;
+  color: #1f2b4d;
+  font-family: var(--font-family-base, 'Manrope', sans-serif);
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold, 600);
+  font-variant-numeric: tabular-nums;
+  line-height: 36px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* === Badges === */
+.badges {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex-shrink: 1;
+}
+
+/* Cap individual badge width so long text truncates with ellipsis */
+.badges > * {
+  max-width: 164px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+/* === States === */
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: 80px;
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.stateText {
+  margin: 0;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: var(--font-size-sm);
+}
+
+/* === Skeleton === */
+.skeletonTrack {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.skeletonTrack::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 288px;
+  width: 288px;
+  min-width: 288px;
+  height: 80px;
+  padding: 11px 15px 13px;
+  border: 1px solid #D9DDE7;
+  border-radius: 12px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.skeletonLabel {
+  width: 56px;
+  height: 10px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.skeletonValueRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.skeletonValue {
+  width: 96px;
+  height: 22px;
+  border-radius: 6px;
+}
+
+.skeletonBadge {
+  width: 90px;
+  height: 18px;
+  border-radius: 9px;
+  align-self: flex-end;
+}
+
+.skeletonBone {
+  background: linear-gradient(90deg, #eff2fa 25%, #e4e8f4 37%, #eff2fa 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeletonBone {
+    animation: none;
+  }
+}
+
+/* === A11y === */
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,184 @@
+{
+  "title": "Final design-system implementation audit",
+  "snapshotAtUTC": "2026-10-28T05:47:02.443709+00:00",
+  "scope": "Independent source audit plus review of already-saved screenshots; no Chrome operated. Authorized repairs are separately listed.",
+  "sourceStatus": "No remaining material design-system implementation blocker identified after listed fixes; current native/build acceptance still pending.",
+  "sourceHashes": {
+    "src/modules/hindsight/redesign/views/ByItemView.tsx": "550cfa96fe637a98207d2b41cc39f82af1bb6da6bc29c0249ca0c76f1300bb38",
+    "src/modules/hindsight/redesign/views/ScreenChart.tsx": "a743de748bdbb998a2c9de5cdf3e0aeaa8026d36b9dcab679e72a599936cd05f",
+    "src/modules/hindsight/redesign/views/CaseDetailView.tsx": "58834a3109f8e6b7845c7568ed56dfd17e8b1c994b7c94533d2efbb7f7178d45",
+    "src/modules/hindsight/redesign/views/DecisionsView.tsx": "ba1ac38b11dd53d0f5960005831698df22f1ae78b8daf3e71124f1d44227e7d4",
+    "src/modules/hindsight/redesign/views/overview.module.css": "2b051b43431b48eb368bcb5f344bf039bbe5e1a965777fa19197eca9074fb270",
+    "src/modules/hindsight/redesign/views/views.module.css": "4d9ddd8396b072023b3df9236f02a98cc54551d1b7ecd8faa7d3967a8c1d3db3",
+    "src/modules/hindsight/redesign/views/screens.module.css": "71610b17d326d82c60e67b24d97c1c439f13210646ef0ca96e383d864ff93ba1"
+  },
+  "coreComponentMapping": [
+    {
+      "area": "Shared shell/filter/Iris",
+      "assessment": "Uses actual recovered Header/Sidebar, ImpactTabs, ButtonGroup, FiltersStrip, FilterPanel and AIChatPanel. Responsive geometry adapts these existing components.",
+      "sources": [
+        "WorkspacePage.tsx",
+        "components/GlobalFilterDrawer.tsx",
+        "components/IrisWorkspace.tsx"
+      ]
+    },
+    {
+      "area": "Cards and surfaces",
+      "assessment": "MetricCard composes original ProductPerformanceKpiCards CSS and both original SVG background assets. WorkspaceCard matches original SalesMixChartCard surface geometry and ItemToolbar title hierarchy; approved Overview grid is3\u00d72.",
+      "sources": [
+        "components/ui.tsx",
+        "components/ui.module.css",
+        "../../components/overview/ProductPerformanceKpiCards.module.css",
+        "../../components/attributes/SalesMixChartCard.module.css"
+      ]
+    },
+    {
+      "area": "Controls and menus",
+      "assessment": "Actual Impact Button/Select/Input/Checkbox/Popover adapters, not CSS-painted native lookalikes. One native textarea is deliberately the original AIChatPanel composer with its actual chat-input classes.",
+      "sources": [
+        "components/ui.tsx",
+        "components/IrisWorkspace.tsx"
+      ]
+    },
+    {
+      "area": "By Item/By Store/details",
+      "assessment": "Recovered DataGrid supplies row/header styling and behavior; original ItemCardFront CSS surface is composed for product cards. Detail cards, scope notes and domain facts use shared primitives/tokens.",
+      "sources": [
+        "views/ByItemView.tsx",
+        "views/ByStoreView.tsx",
+        "views/ItemDetailView.tsx",
+        "views/StoreDetailView.tsx",
+        "views/PairDetailView.tsx",
+        "views/viewHelpers.tsx"
+      ]
+    },
+    {
+      "area": "Matrix and breadth",
+      "assessment": "Recovered DataGrid hosts new domain state buttons. Text codes and dated member states are functional domain controls rather than generic imitation form chrome. Paging and narrow pair list remain subject to native checks.",
+      "sources": [
+        "views/ByStoreView.tsx",
+        "views/views.module.css"
+      ]
+    },
+    {
+      "area": "Mix/charts",
+      "assessment": "Manrope and original iris/cyan series palette are reused. ScreenChart exact original tooltip/line treatment is present; the date-cloud departure is now removed.",
+      "sources": [
+        "views/MixView.tsx",
+        "views/ScreenChart.tsx"
+      ]
+    },
+    {
+      "area": "Decisions/configuration",
+      "assessment": "Queue/log/library configuration use shared cards, recovered DataGrid and actual controls; ConfigurationDialog uses actual ImpactModal and ImpactTabs. Administrative acknowledgement remains a small semantic table with real ImpactCheckbox.",
+      "sources": [
+        "views/DecisionsView.tsx",
+        "views/CaseDetailView.tsx",
+        "views/ConfigurationDialog.tsx"
+      ]
+    }
+  ],
+  "authorizedRepairs": [
+    {
+      "id": "DSR01",
+      "issue": "Redundant date-button cloud under every trend",
+      "source": "views/ScreenChart.tsx:66",
+      "status": "Fixed in source; final native replay required",
+      "change": "Removed default repeated date controls. Chart click/zoom and the existing From/To controls remain; exact interval row actions are inside the collapsed accessible data table.",
+      "proof": "final-design-repair-checks.json"
+    },
+    {
+      "id": "DSR02",
+      "issue": "Custom near-copy of original image-preview modal",
+      "source": "views/ByItemView.tsx:72",
+      "original": "components/cells/ItemThumbnail.tsx:81",
+      "status": "Fixed in source; final native replay required",
+      "change": "Uses the same shared Modal, portal, previewDialog and previewImage classes as original ItemThumbnail. Preserves focus trap, Escape, backdrop, Close and explicit item-route action.",
+      "proof": "final-design-repair-checks.json"
+    },
+    {
+      "id": "DSR03",
+      "issue": "Undefined color-bg/color-text aliases in active grouped rows and launch counts",
+      "source": "views/overview.module.css:1; views/views.module.css:6",
+      "original": "src/design-system/cssVars.ts; src/design-system/themes/light.ts",
+      "status": "Fixed in source; final native replay required",
+      "change": "Replaced only those aliases with actual color-surface-muted and color-text-primary tokens, including unused scaffolding rules.",
+      "proof": "final-display-polish-checks.json"
+    },
+    {
+      "id": "DSR04",
+      "issue": "Canonical UOM enums displayed in chart axis, case form/supply text and decision log",
+      "source": "views/ScreenChart.tsx:41; views/CaseDetailView.tsx:35; views/DecisionsView.tsx:67",
+      "status": "Fixed in source; final native replay required",
+      "change": "Uses existing formatUnit for readable display. Select option values, saved canonical units, numeric values, export and mutation payloads are unchanged.",
+      "proof": "final-display-polish-checks.json"
+    },
+    {
+      "id": "DSR05",
+      "issue": "Existing selected inbound displayed zero while canonical guard accepted200",
+      "source": "views/CaseDetailView.tsx:46",
+      "status": "Fixed in source; final native failure must be replayed",
+      "change": "Current open-order membership no longer excludes a valid line merely because it has reviewId. Uses exact item/store/UOM and retains unique source IDs. Canonical data unchanged.",
+      "proof": "case-inbound-display-checks.json"
+    }
+  ],
+  "nonblockingReviewNotes": [
+    {
+      "id": "DSN01",
+      "priority": "P3",
+      "source": "views/CaseDetailView.tsx:122; views/decisions.module.css:1 .ackTable",
+      "note": "The three-column execution acknowledgement table is intentionally a small native semantic table, with12px type rather than main DataGrid14px. It is not a fake input: its checkboxes are actual Impact controls. Inspect the phone presentation; consolidate with WorkspaceTable later if one table component is required everywhere."
+    },
+    {
+      "id": "DSN02",
+      "priority": "P3",
+      "source": "components/ui.module.css:10 .metricHelper; components/ui.tsx:42",
+      "note": "Metric helpers clamp to one line and do not expose their complete ReactNode text as a title. The screenshots show some reasons truncated. Global dates/definitions remain available; a future tooltip/full helper affordance would improve information access without adding persistent gray paragraphs."
+    },
+    {
+      "id": "DSN03",
+      "priority": "P3",
+      "source": "views/MixView.tsx:61",
+      "note": "ConcentrationChart still relies on Highcharts default tooltip styling while composition/trend set original tooltip treatment explicitly. Colors/fonts are correct; verify hover appearance in native QA rather than claiming pixel identity from source."
+    },
+    {
+      "id": "DSN04",
+      "priority": "delivery",
+      "source": "qa/redesign/browser-r67/final-DygDkuZn/plr-summary.jpg",
+      "note": "At audit snapshot this file shows the scrolled trend, not the Summary card section. Parent acknowledged and will recapture; do not use it as the Summary illustration."
+    }
+  ],
+  "evidence": {
+    "actualChartModalGroups": 6,
+    "actualRendererTokenPayloadGroups": 10,
+    "actualCaseProviderInboundGroups": 3,
+    "tsxParseFiles": 4,
+    "limits": "Do not sum these groups into native acceptance. Semantic chart/grid/control hosts are disclosed in each artifact; Modal and case/provider production behavior were directly exercised."
+  },
+  "nativeEvidenceSnapshot": {
+    "newJournal": "browser-r67/final-native-events.json",
+    "eventCountAtRead": 20,
+    "builds": [
+      "WorkspacePage-8pxhXtyD.js",
+      "WorkspacePage-BvJOZRJ5.js",
+      "WorkspacePage-DygDkuZn.js",
+      "WorkspacePage-ptsd9Lsa.js"
+    ],
+    "priorTargeted": "browser-r67/design-alignment-native-checks.json",
+    "priorCount": 18,
+    "limit": "Journal events are scoped observations across builds, not90 passed compound requirements. The inbound failure is intentionally retained until replay."
+  },
+  "remainingEfficientAcceptance": [
+    "Replay repaired inbound display after final build: visible200, compatible selling-unit label, save guard201 rejected/200 accepted.",
+    "Replay repaired chart/image preview: no default date cloud; collapsed table row exact drill; original modal on desktop and phone.",
+    "Native matrix arrow crossing/Enter and390px paginated pair-list; comparison5/6 bound; saved-view full local/table state restore.",
+    "Report Loading and Retained failure geometry/date after Failed/Retry already observed; Iris other period/denominator/context-change paths.",
+    "Current native exports require independent parsed-file proof. Existing export-workbook-validation.json is non-browser4\u00d74/$24K evidence only.",
+    "Final1024/390 detail/configuration/case/Iris geometry, frozen screenshot captions, extracted source clean build and portable package boots."
+  ],
+  "downloadsAccess": {
+    "status": "OS read blocked",
+    "details": "Downloads listing returned macOS Operation not permitted under ordinary and authorized elevated read-only execution. Escalation was allowed; OS access remained blocked. Parent is relocating actual Chrome exports to workspace.",
+    "intendedDestination": "qa/redesign/native-exports"
+  }
+}

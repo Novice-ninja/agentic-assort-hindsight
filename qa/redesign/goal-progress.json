@@ -1,0 +1,75 @@
+{
+  "objective": "Complete the uploaded priority fix list first, then resume all recommendations in the 67-page Hindsight redesign specification.",
+  "user_priority_confirmed": "2026-10-27",
+  "active_stage": "Immediate user priority: restore original design-system components and verify native geometry before continuing full R67 acceptance",
+  "priority_source": "qa/browser-exports/Hindsight Netlify App - Design Team Fix List (SS).docx",
+  "priority_matrix": "qa/redesign/priority-fix-acceptance-matrix.json",
+  "full_specification_matrix": "qa/redesign/implementation-acceptance-matrix.json",
+  "ordering": [
+    "A: reconcile all quantitative facts, canonical product IDs, scope, brand dictionaries and chart-specific prose",
+    "B: repair dropdown dismissal, responsive paint, narrative clipping and direct first-load routing",
+    "C: use symbol-only contextual Iris controls, Summary label, store table/details, provisional planning metrics, season zoom, and hide Watchlist",
+    "Verify every applicable priority assertion with current source, calculation, browser and export evidence",
+    "Refresh the illustrated current demo and package the verified priority snapshot",
+    "Resume the full page-linked 67-page redesign backlog while preserving the approved priority behavior and existing design system"
+  ],
+  "priority_source_status": {
+    "implemented": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "B1",
+      "B2",
+      "B3",
+      "B4 local app/config",
+      "C1",
+      "C2 app",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "conditional_not_applicable": [
+      "A5: Watchlist is hidden"
+    ],
+    "remaining_browser_verification": [],
+    "remaining_artifacts": [],
+    "external_deployment_limit": "Only the local app and deployment configuration are changed. The remote Netlify hostname has not been renamed or redeployed.",
+    "structure_checkpoint": "The user explicitly selected Overview / Deep Dive / Decisions for the full redesign after priority verification. Current priority snapshot remains Overview / By Item / Sales Mix; Watchlist stays hidden.",
+    "signoff": "Complete for local frontend; final audit records no open material defects.",
+    "completed_evidence": {
+      "audit": "qa/redesign/priority-coverage-audit.json",
+      "browserEvents": 34,
+      "resolvedHistoricalBrowserFailures": 1,
+      "actualBrowserWorkbooks": 6,
+      "independentWorkbookChecks": 114,
+      "sourceArchive": "artifacts/priority-fixes/agentic-assort-source.zip",
+      "sourceSHA256": "5aea6e0b5f5de80deab15193fe0fc837effa13191025d137623a7938b5e88058",
+      "previewArchive": "artifacts/priority-fixes/agentic-assort-preview.zip",
+      "previewSHA256": "f5287dfa5d590e57c62458980d30b1beaefba9557939cddec9ec3c586d32a91b",
+      "cleanInstallBuild": "Passed;2934runtimefilesand15emittedJS/CSSmatch",
+      "demo": "/Users/niravs_mac_2025/Work tasks/outputs/hindsight-priority-2026-10-27/Hindsight_Demo_Script_Priority.docx",
+      "demoPages": 8
+    }
+  },
+  "preservation": {
+    "phase_one_archives": "Unchanged; hashes are retained in the original artifact manifests.",
+    "priority_snapshot": "artifacts/priority-fixes; independent clean install/build and runtime-file verification passed for staging snapshot.",
+    "R67_draft": "Mounted at5174; full R67 remains incomplete and not release approved. Frozen priority reference preserved at5176."
+  },
+  "verification_note": "Priority snapshot complete. Full R67 mounted; new DS reuse build under native Chrome comparison. Dropdown zero-width defect found in first DS build and corrected; all-screen acceptance remains pending.",
+  "native_browser_blocker": null,
+  "native_browser_resumed": "User confirmed the Mac was unlocked; final priority browser QA resumed.",
+  "full_redesign": {
+    "navigation": "Overview / Deep Dive / Decisions, directly approved by user",
+    "main_story": "Canonical72-style45-storeSS26flooringledger; four-productfixturestaysanalgorithmcontrol",
+    "next_gates": [
+      "Native original-versus-redesign component and spacing comparison",
+      "Verify desktop/tablet/phone geometry, controls and workflows",
+      "Replay all90 page-linked requirements,12 journeys,30 invariants and28 states",
+      "Complete illustrated demo, then independently package final source/build"
+    ],
+    "status": "Inprogress;notreleaseapproved"
+  }
+}

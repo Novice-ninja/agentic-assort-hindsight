@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + var(--space-xs));
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: var(--color-text-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  box-shadow: var(--shadow-md);
+  z-index: 20;
+}

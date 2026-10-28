@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "column": "attr_value",
+      "label": "Sales Mix",
+      "type": "object",
+      "order": 1,
+      "frozen": true,
+      "sortable": true,
+      "searchable": true,
+      "hidden": false,
+      "width": 240
+    },
+    {
+      "column": "performance",
+      "label": "Organisation Performance",
+      "type": "group",
+      "order": 2,
+      "frozen": false,
+      "sortable": false,
+      "searchable": false,
+      "hidden": false,
+      "width": 0
+    },
+    {
+      "column": "trend_yoy",
+      "label": "Trend YoY",
+      "type": "object",
+      "order": 3,
+      "frozen": false,
+      "sortable": true,
+      "searchable": false,
+      "hidden": false,
+      "width": 130
+    },
+    {
+      "column": "signal",
+      "label": "Action",
+      "type": "object",
+      "order": 4,
+      "frozen": false,
+      "sortable": true,
+      "searchable": false,
+      "hidden": false,
+      "width": 140
+    }
+  ]
+}

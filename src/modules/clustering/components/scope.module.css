@@ -1,0 +1,544 @@
+/* Scope step — Figma 2780:131366 / 2780:131368 / 2780:131373 */
+
+/* === Layout === */
+
+.productGrid {
+  gap: 12px;
+}
+
+.scopeCard {
+  width: 216px;
+  min-height: 64px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  border-color: var(--slate-200, #d9dde7);
+}
+
+.scopeCard.scopeCard {
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.scopeCardMain {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  flex: 1;
+}
+
+.iconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+.nameField {
+  width: 289px;
+  max-width: 100%;
+}
+
+/* Bulk Plan Creation — Figma 7717:333960. Switch stays disabled until the flow exists. */
+.planDetailsHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.planDetailsHeader .planDetailsTitle {
+  width: auto;
+  flex: 0 0 auto;
+}
+
+.bulkCreation {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 4px;
+  padding: 4px 16px;
+  border-radius: 1000px;
+  background: #eceefd;
+  white-space: nowrap;
+}
+
+.bulkCreationLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.bulkCreationText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--slate-600, #60697d);
+  text-transform: capitalize;
+}
+
+.bulkCreationInfo {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  flex-shrink: 0;
+}
+
+/* === Pipeline Run Mode cards === */
+.runModeCard {
+  width: 289px;
+  min-height: 64px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-color: var(--slate-200, #d9dde7);
+}
+
+.runModeIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.runModeIconImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+.runModeText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.runModeDesc {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--slate-600, #60697d);
+}
+
+:global([data-theme='dark']) .runModeCard {
+  border-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .runModeDesc {
+  color: var(--color-text-secondary);
+}
+
+.sectionHeading {
+  width: 100%;
+  min-height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Product hierarchy (cascaded accordions, mirrors Create Plan Product Scope) === */
+.hierarchy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-height: 0;
+}
+
+.hierarchyState {
+  margin: 0;
+  padding: 16px 0;
+  color: var(--slate-600, #60697d);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+:global([data-theme='dark']) .hierarchyState {
+  color: var(--color-text-secondary);
+}
+
+/* === Loading skeletons (same treatment as Create Plan Name/Calendar + Product Scope) === */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeletonBone {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-muted) 25%,
+    var(--color-border) 50%,
+    var(--color-surface-muted) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+.skeletonCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  min-width: 200px;
+}
+
+.skeletonIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.skeletonContent {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.skeletonTitle {
+  width: 80px;
+  height: 20px;
+}
+
+.skeletonMeta {
+  width: 140px;
+  height: 14px;
+}
+
+.skeletonRadio {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.skeletonAccordion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  min-height: 56px;
+}
+
+.skeletonAccordionTitle {
+  width: 100px;
+  height: 18px;
+}
+
+.skeletonAccordionPreview {
+  width: 160px;
+  height: 14px;
+  margin-left: auto;
+}
+
+.skeletonAccordionChevron {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+:global([data-theme='dark']) .skeletonCard,
+:global([data-theme='dark']) .skeletonAccordion {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .skeletonBone {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-muted) 25%,
+    color-mix(in srgb, var(--color-border) 55%, var(--color-surface-muted)) 50%,
+    var(--color-surface-muted) 75%
+  );
+}
+
+.countryHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 32px;
+}
+
+.countryTitle.countryTitle {
+  width: auto;
+  max-width: none;
+  flex: 0 0 auto;
+  min-height: 32px;
+}
+
+.countryToolbar.countryToolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+.countryCard {
+  min-height: 64px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-color: var(--slate-200, #d9dde7);
+  width: auto;
+}
+
+.countryCardList {
+  width: 100%;
+}
+
+/* === Typography === */
+
+.optionTitle {
+  text-transform: none;
+  color: var(--slate-950, #0d152c);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.optionMeta {
+  color: var(--slate-600, #60697d);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* === Colors & Backgrounds === */
+
+.flagIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+  background: var(--color-surface-muted);
+}
+
+.flagEurope {
+  background: #f0ebee;
+}
+
+.flagAmericas {
+  background: #f6f6f3;
+}
+
+.flagApac {
+  background: #fbf2e9;
+}
+
+.flagDefault {
+  background: #f4f1f9;
+}
+
+/* === Reference Period (season_info-driven, shown only once a season is selected) === */
+
+.referenceSection {
+  gap: 16px;
+}
+
+.referenceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.referenceHeader .sectionHeading {
+  width: auto;
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.referenceDropdown {
+  display: flex;
+  align-items: center;
+  flex: 0 1 360px;
+  min-width: 240px;
+}
+
+.referenceCard {
+  width: 416px;
+  max-width: 100%;
+  min-height: 72px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  cursor: default;
+}
+
+.referenceCard .checkBox {
+  margin-top: 4px;
+}
+
+/* The reference-period checkbox is a real button: the card hosts an input so it can't be one. */
+.checkBoxButton {
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+}
+
+.checkBoxButton:hover {
+  border-color: var(--color-primary);
+}
+
+.checkBoxButton:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.referenceCardTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.coverageField {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+  width: 112px;
+  margin-inline-start: auto;
+}
+
+/*
+ * Impact UI's Input forces the native <input> to `min-width: 240px`, so inside this 112px field
+ * the value rendered 130px past the visible box and the field looked empty. Let the control
+ * shrink to the field and keep the number aligned towards the % suffix.
+ */
+.coverageField .coverageInput {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
+}
+
+.coverageField .coverageInput :global(.MuiInputBase-root) {
+  min-width: 0;
+}
+
+.coverageField .coverageInput :global(.MuiInputBase-root) input:global(.MuiInputBase-input) {
+  min-width: 0;
+  padding-inline: 8px;
+  text-align: end;
+}
+
+.coverageSuffix {
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--slate-600);
+}
+
+.referenceError {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (width <= 960px) {
+  .referenceCard {
+    width: 100%;
+  }
+}
+
+/* === Border & Radius === */
+
+.radio {
+  margin-top: 0;
+  border-color: var(--slate-300, #c3c8d4);
+}
+
+.checkBox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--slate-300, #c3c8d4);
+  background: var(--color-surface, #ffffff);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.checkBoxChecked {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: url('../../../assets/icons/clustering/checkbox-checked.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+:global([data-theme='dark']) .optionTitle {
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .optionMeta {
+  color: var(--color-text-secondary);
+}
+
+:global([data-theme='dark']) .scopeCard,
+:global([data-theme='dark']) .countryCard {
+  border-color: var(--color-border);
+}
+
+:global([data-theme='dark']) .flagEurope,
+:global([data-theme='dark']) .flagAmericas,
+:global([data-theme='dark']) .flagApac,
+:global([data-theme='dark']) .flagDefault {
+  background: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .checkBox {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}

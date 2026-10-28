@@ -1,0 +1,15 @@
+/*
+ * AG Grid 36 sets `content-visibility: auto` on `.ag-root-wrapper.ag-layout-normal`. Chrome
+ * then skips painting that subtree when the grid sits in a scrollport (AppShell `.main` uses
+ * `overflow-y: auto` + `overflow-x: clip`) and is judged off-screen — or, on Windows, when
+ * classic scrollbars shrink the intersection root so the skip fires while the grid is in view.
+ *
+ * Symptom: sized scrollbars (the row/column model still ran) and a blank body (headers and
+ * rows not painted). macOS overlay scrollbars usually avoid the skip. `fitGridWidth` then
+ * measures a 0×0 centre container (ag-grid#13982).
+ *
+ * Force visible so every grid paints regardless of viewport or scrollbar width.
+ */
+.ag-root-wrapper.ag-layout-normal {
+  content-visibility: visible !important;
+}

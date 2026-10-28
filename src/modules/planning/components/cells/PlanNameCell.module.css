@@ -1,0 +1,60 @@
+/* === Layout === */
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  justify-content: space-between;
+}
+
+/* === Typography === */
+.name {
+  flex: 0 1 auto;
+  max-width: 80%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-primary);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.nameDisabled {
+  color: var(--color-text-secondary);
+  cursor: default;
+}
+
+.nameDisabled:hover {
+  text-decoration: none;
+}
+
+/* === History button === */
+.historyBtn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.historyBtn:hover {
+  background: var(--color-surface-muted);
+  color: var(--color-text-primary);
+}

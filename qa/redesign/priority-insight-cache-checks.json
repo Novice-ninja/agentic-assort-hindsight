@@ -1,0 +1,30 @@
+{
+  "kind": "Client narrative/cache boundary checks; hook and visual behavior require browser acceptance",
+  "passed": 6,
+  "checks": [
+    {
+      "name": "Identical plan and hierarchy reuse the matching cached summary",
+      "pass": true
+    },
+    {
+      "name": "Full to Bamboo to empty to full keeps three isolated narratives and valid cache reuse",
+      "pass": true
+    },
+    {
+      "name": "Explicit plan and hierarchy are both sent rather than inferred from a default plan",
+      "pass": true
+    },
+    {
+      "name": "Regeneration bypasses only the requested cached population",
+      "pass": true
+    },
+    {
+      "name": "Out of order requests cannot overwrite another hierarchy cache entry",
+      "pass": true
+    },
+    {
+      "name": "Card identity changes with actual data, applied hierarchy, plan and season",
+      "pass": true
+    }
+  ]
+}

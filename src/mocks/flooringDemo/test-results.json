@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checkCount": 24,
+  "checks": [
+    "Largest-remainder allocations conserve whole units and cents, including small residuals.",
+    "One 72-row ledger reconciles sales8.4M, quantity182400 and weighted GM31.6%.",
+    "Five genuine brand names and one exact share dictionary replace style-name brands.",
+    "Every actual attribute changes grouping and keeps the same sales/quantity/area totals.",
+    "Rolling measures are separate completed-week sums; area productivity is a ratio, with definitions TBC.",
+    "All 45 original stores aggregate stable style-store leaves and reconcile every additive total.",
+    "A-F cluster rates recompute from supply; flooring grid is3x6 and contains no invented categories.",
+    "One explicit scope yields identical item/brand/store totals; both Select-All recipe shapes work.",
+    "Narratives are chart-specific, sentence-case prose with no double stops or apparel claims.",
+    "Workspace hierarchy AND local chart cuts intersect, including empty, conflicting and Select-All recipes.",
+    "Actual Overview, By Item and Sales Mix endpoint responses reconcile and share the same brand percentages.",
+    "Northport1000037 has the same identity, sales and supply-constrained explanation in Overview and By Item.",
+    "Existing dynamic table contracts expose LY, Plan, original PLR baseline, R4/R13/R52 and sales/area placeholder columns.",
+    "Ratio cells carry additive numerator/denominator evidence for weighted group rolls; WOH has no invented group basis.",
+    "All four attribute APIs, derived18-cell category grid and45-store response use flooring-only canonical facts.",
+    "Hierarchy options and dependent/search counts derive from72 actual styles; Bamboo cascades to its one12-style subcategory.",
+    "Actual Pareto hierarchy helper uses the real three-level master; stale L3 requests resolve explicitly to its represented last level.",
+    "Pareto and weekly charts respect the selected unit/dollar metric, reconcile periods, and receive distinct chart-specific narratives.",
+    "Actual nonempty workspace chart requests honor local Weekly/Pareto selections and category-cluster cells reconcile to their own category leaves.",
+    "Top Performing cards rank the actual canonical sales values after scope filtering and before pagination.",
+    "All72 canonical products use valid code-native illustrative SVGs in visual/table/top APIs; cached, lazy and failure fallback paths contain no apparel imagery.",
+    "Shared applied scope reaches requests omitting hierarchy and reconciles all three tabs after Apply.",
+    "Fresh summary, color insight and all narrative sections follow full→Bamboo→empty→all, explicit body scope and nondefault plan aliases without off-scope product claims.",
+    "Local recommendation save/refetch/clear still works with the canonical data adaptation."
+  ],
+  "source": "Priority fix-list A1-A4/C4",
+  "synthetic": true
+}

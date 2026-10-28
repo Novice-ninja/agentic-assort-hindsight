@@ -1,0 +1,290 @@
+/* ===================================================================
+   Agent Preview — "What The Agent Will Do" (Figma-matched)
+   =================================================================== */
+
+/* === Container === */
+.preview {
+  position: relative;
+  width: 100%;
+  min-height: 155px;
+  flex-shrink: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+/* Inner wrapper establishes the min-width so scrolling works */
+.previewInner {
+  position: relative;
+  min-width: fit-content;
+  height: 155px;
+}
+
+/* === Wave background SVG (rotated 180deg + flipped Y) === */
+.waveBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 139px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.waveBgImg {
+  display: block;
+  width: 100%;
+  height: 139px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+/* === Stage cards row === */
+.stagesRow {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+
+/* === Dashed connector line === */
+.connectorLine {
+  position: absolute;
+  left: 206px;
+  top: 57px;
+  height: 1px;
+  pointer-events: none;
+}
+
+.connectorLineImg {
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+
+/* === Arrow between stage 1 and 2 === */
+.stageArrow {
+  position: absolute;
+  left: 286px;
+  top: 40px;
+  width: 25px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stageArrowImg {
+  display: block;
+  width: 32px;
+  height: 42px;
+  transform: rotate(90deg) scaleY(-1);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* === Individual stage card === */
+.stageCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  flex-shrink: 0;
+  width: 284px;
+}
+
+/* Active stage (first): has rounded highlight background */
+.stageCardActive {
+  composes: stageCard;
+}
+
+.stageActiveBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 284px;
+  height: 65px;
+  pointer-events: none;
+}
+
+.stageActiveBgImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Inactive stages: white rounded bg */
+.stageCardInactive {
+  composes: stageCard;
+}
+
+.stageInactiveBg {
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 283px;
+  height: 65px;
+  background: #ffffff;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+:global([data-theme='dark']) .stageInactiveBg {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .waveBg,
+:global([data-theme='dark']) .connectorLine,
+:global([data-theme='dark']) .stageArrow {
+  opacity: 0.45;
+}
+
+:global([data-theme='dark']) .stageLabelInactive,
+:global([data-theme='dark']) .stageMetaActive,
+:global([data-theme='dark']) .stageMetaInactive,
+:global([data-theme='dark']) .empty {
+  color: var(--color-text-secondary);
+}
+
+/* === Stage card content (above background) === */
+.stageContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Title row: badge + label */
+.stageTitleRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* --- Numbered badge --- */
+.stageBadge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.stageBadgeActive {
+  composes: stageBadge;
+  background: #4259EE;
+}
+
+.stageBadgeInactive {
+  composes: stageBadge;
+  background: #7A8294;
+}
+
+.stageBadgeNumber {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.12px;
+  color: #ffffff;
+}
+
+/* --- Stage label text --- */
+.stageLabelActive {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #4259EE;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.stageLabelInactive {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #7A8294;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* --- Stage meta (scenario + confidence) --- */
+.stageMetaActive {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #60697D;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.stageMetaInactive {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #B4BAC7;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+/* === "What The Agent Will Do" gradient badge === */
+.agentBadge {
+  position: absolute;
+  left: 3px;
+  top: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 15.5%;
+  height: 35px;
+  padding: 2px 12px;
+  border-radius: 1000px;
+  background: linear-gradient(to right, #943F6F 27.885%, #4E1D8D);
+  z-index: 2;
+}
+
+.agentBadgeIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.agentBadgeText {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  flex: 1 0 0;
+  min-width: 1px;
+}
+
+/* === Empty state === */
+.empty {
+  margin: 0;
+  color: #60697D;
+  font-size: 14px;
+  font-weight: 500;
+}

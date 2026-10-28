@@ -1,0 +1,30 @@
+{
+  "kind": "Actual recovered AppShell/PageChrome effects in React/jsdom with semantic header/sidebar/breadcrumb rendering; native visual review remains separate",
+  "passed": 6,
+  "checks": [
+    {
+      "name": "Loaded workspace publishes its breadcrumb mode controls",
+      "pass": true
+    },
+    {
+      "name": "Primary navigation to Deep Dive retains controls after parent effects",
+      "pass": true
+    },
+    {
+      "name": "Changing Deep Dive presets keeps the same mounted owner",
+      "pass": true
+    },
+    {
+      "name": "Opening a full detail route keeps review controls",
+      "pass": true
+    },
+    {
+      "name": "Decisions primary navigation retains controls",
+      "pass": true
+    },
+    {
+      "name": "Return to Overview subview retains controls",
+      "pass": true
+    }
+  ]
+}

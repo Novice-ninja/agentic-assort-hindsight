@@ -1,0 +1,201 @@
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #1f2b4d 0%, #2a474d 74%, #37382a 100%);
+}
+
+/* Decorative glow pinned to the banner's top-left corner, behind the content. */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  transform-origin: top left;
+  animation: glow-pulse 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Swells 50% quickly, then eases back to its size very slowly. */
+@keyframes glow-pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none;
+  }
+}
+
+.summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.textSet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 42px;
+  gap: 0;
+  margin-inline-end: 28px; /* 12px flex gap + 28px = 40px to the divider */
+}
+
+.heading {
+  margin: 0;
+  color: var(--Colors-Neutrals-Surface-Lighter, #f5f6fa);
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.subheading {
+  margin: 0;
+  color: var(--Colors-Neutrals-Text-icon-Placeholder-text, #b4bac7);
+  font-family: Manrope, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.divider {
+  flex-shrink: 0;
+  width: 1px;
+  height: 40px;
+  margin-inline-end: 28px; /* 12px flex gap + 28px = 40px to the metrics */
+  background-color: var(--Colors-Neutrals-Border-Default, #c3c8d4);
+  opacity: 0.4;
+}
+
+.metrics {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.metricLabel {
+  color: var(--Colors-Neutrals-Border-Default, #c3c8d4);
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.metricValueRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metricValue {
+  color: var(--Colors-Neutrals-Surface-Lighter, #f5f6fa);
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.cta {
+  align-self: flex-start;
+  margin-inline-start: auto;
+}
+
+/*
+ * Expand/collapse: the grid track animates between 1fr and 0fr, so the banner hugs the summary
+ * row when collapsed without the height ever being measured in JS.
+ */
+.detailsWrap {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 250ms linear;
+}
+
+.detailsCollapsed {
+  grid-template-rows: 0fr;
+}
+
+.detailsClip {
+  min-height: 0;
+  overflow: hidden;
+
+  /* Hidden once collapsed so the content leaves the tab order and the accessibility tree. */
+  transition: visibility 0s linear 0s;
+}
+
+.detailsCollapsed .detailsClip {
+  visibility: hidden;
+  transition: visibility 0s linear 250ms;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgb(13 21 44 / 40%);
+}
+
+.detailsHeading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detailsTitle {
+  flex: 1;
+  margin: 0;
+  color: var(--Colors-Neutrals-Surface-Lighter, #f5f6fa);
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.rules {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

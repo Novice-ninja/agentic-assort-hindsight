@@ -1,0 +1,188 @@
+/* === Shimmer animation === */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.bone {
+  background:
+    linear-gradient(90deg,
+      var(--color-surface-muted) 25%,
+      color-mix(in srgb, var(--color-border) 55%, var(--color-surface-muted)) 37%,
+      var(--color-surface-muted) 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+/* === Grid layout — matches PlansGrid === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+  padding: 0 16px;
+}
+
+@media (width <= 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width <= 640px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* === Card shell — mirrors PlanCard === */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: linear-gradient(to bottom, var(--color-surface), var(--color-surface-muted));
+  width: 100%;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 12px 8px;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.headerLeft {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.title {
+  width: 180px;
+  max-width: 100%;
+  height: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.tag {
+  width: 72px;
+  height: 22px;
+  border-radius: 1000px;
+}
+
+.tagShort {
+  width: 52px;
+  height: 22px;
+  border-radius: 1000px;
+}
+
+.badge {
+  width: 64px;
+  height: 24px;
+  border-radius: 1000px;
+}
+
+.iconBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+/* === Panel === */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  background: var(--color-surface);
+  border-radius: 8px;
+  margin: 0;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pipelineText {
+  width: 140px;
+  height: 16px;
+}
+
+.stepText {
+  width: 60px;
+  height: 14px;
+}
+
+.stepper {
+  width: 100%;
+  height: 8px;
+  border-radius: 100px;
+}
+
+/* === Metrics === */
+.metrics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 46px;
+  background: var(--color-surface-muted);
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.metricValue {
+  width: 48px;
+  height: 16px;
+}
+
+.metricLabel {
+  width: 36px;
+  height: 12px;
+}

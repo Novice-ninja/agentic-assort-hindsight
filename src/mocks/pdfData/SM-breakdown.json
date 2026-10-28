@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "salesMix": "Woodland Reserve",
+      "sellingSkus": 134,
+      "sales": 43500000,
+      "growthVsLy": 26.4,
+      "salesSharePct": 22.6,
+      "skuSharePct": 19.2,
+      "productivity": 1.18,
+      "gmPct": 29.7,
+      "returnsPct": 11.1,
+      "action": "Expand"
+    },
+    {
+      "salesMix": "Westridge",
+      "sellingSkus": 95,
+      "sales": 40100000,
+      "growthVsLy": 9.3,
+      "salesSharePct": 20.8,
+      "skuSharePct": 13.6,
+      "productivity": 1.53,
+      "gmPct": 32.3,
+      "returnsPct": 11.2,
+      "action": "Expand"
+    },
+    {
+      "salesMix": "American Spirit",
+      "sellingSkus": 63,
+      "sales": 19000000,
+      "growthVsLy": -8.4,
+      "salesSharePct": 9.8,
+      "skuSharePct": 9,
+      "productivity": 1.09,
+      "gmPct": 15.8,
+      "returnsPct": 17.6,
+      "action": "Hold"
+    },
+    {
+      "salesMix": "Lifescapes",
+      "sellingSkus": 59,
+      "sales": 16000000,
+      "growthVsLy": 15,
+      "salesSharePct": 8.3,
+      "skuSharePct": 8.4,
+      "productivity": 0.99,
+      "gmPct": 30.2,
+      "returnsPct": 12.5,
+      "action": "Hold"
+    },
+    {
+      "salesMix": "Bruce",
+      "sellingSkus": 36,
+      "sales": 14400000,
+      "growthVsLy": -4.6,
+      "salesSharePct": 7.5,
+      "skuSharePct": 5.2,
+      "productivity": 1.45,
+      "gmPct": 18.3,
+      "returnsPct": 12.2,
+      "action": "Expand"
+    },
+    {
+      "salesMix": "Not Specified",
+      "sellingSkus": 115,
+      "sales": 13900000,
+      "growthVsLy": 39.6,
+      "salesSharePct": 7.2,
+      "skuSharePct": 16.5,
+      "productivity": 0.44,
+      "gmPct": 14.3,
+      "returnsPct": 10.8,
+      "action": "Rationalize"
+    },
+    {
+      "salesMix": "Dimensions",
+      "sellingSkus": 25,
+      "sales": 13000000,
+      "growthVsLy": 142.1,
+      "salesSharePct": 6.8,
+      "skuSharePct": 3.6,
+      "productivity": 1.89,
+      "gmPct": 33.6,
+      "returnsPct": 12.8,
+      "action": "Expand"
+    },
+    {
+      "salesMix": "Eco Forest",
+      "sellingSkus": 64,
+      "sales": 11100000,
+      "growthVsLy": -20.2,
+      "salesSharePct": 5.8,
+      "skuSharePct": 9.2,
+      "productivity": 0.63,
+      "gmPct": 30.2,
+      "returnsPct": 13.1,
+      "action": "Rationalize"
+    },
+    {
+      "salesMix": "Manor House",
+      "sellingSkus": 26,
+      "sales": 8500000,
+      "growthVsLy": -11.1,
+      "salesSharePct": 4.4,
+      "skuSharePct": 3.7,
+      "productivity": 1.19,
+      "gmPct": 41.6,
+      "returnsPct": 5.4,
+      "action": "Expand"
+    },
+    {
+      "salesMix": "Viviano",
+      "sellingSkus": 19,
+      "sales": 4600000,
+      "growthVsLy": 4006.7,
+      "salesSharePct": 2.4,
+      "skuSharePct": 2.7,
+      "productivity": 0.89,
+      "gmPct": 46.4,
+      "returnsPct": 9,
+      "action": "Hold"
+    },
+    {
+      "salesMix": "Aquaguard",
+      "sellingSkus": 31,
+      "sales": 4000000,
+      "growthVsLy": -31,
+      "salesSharePct": 2.1,
+      "skuSharePct": 4.4,
+      "productivity": 0.47,
+      "gmPct": 11.8,
+      "returnsPct": 16.1,
+      "action": "Rationalize"
+    },
+    {
+      "salesMix": "Aquaguard Whispercore",
+      "sellingSkus": 14,
+      "sales": 2500000,
+      "growthVsLy": -40.2,
+      "salesSharePct": 1.3,
+      "skuSharePct": 2,
+      "productivity": 0.64,
+      "gmPct": 1.2,
+      "returnsPct": 14.1,
+      "action": "Rationalize"
+    }
+  ]
+}

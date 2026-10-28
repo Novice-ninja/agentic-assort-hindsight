@@ -1,0 +1,63 @@
+{
+  "kind": "Production pure Comp policy/selectors and local-drill regressions; not native or client-policy acceptance",
+  "passed": 14,
+  "dataVersion": "flooring-ledger-ss26-v2",
+  "checks": [
+    {
+      "name": "Default all-location 72×45 season remains exactly $8.4M with no Comp policy inferred",
+      "pass": true
+    },
+    {
+      "name": "Illustrative versioned Comp policy has 44 explicit eligible IDs and one declared holdout",
+      "pass": true
+    },
+    {
+      "name": "Actual and matched LY aggregate identical canonical pair/store members",
+      "pass": true
+    },
+    {
+      "name": "Previous equal-period comparison uses the same explicit Comp cohort",
+      "pass": true
+    },
+    {
+      "name": "Canonical closure excludes the store from BOTH periods while all-location exposure still retains it",
+      "pass": true
+    },
+    {
+      "name": "New openings must cover both windows rather than only the current selling period",
+      "pass": true
+    },
+    {
+      "name": "Missing, unknown and expired policy states cannot silently broaden to all locations",
+      "pass": true
+    },
+    {
+      "name": "Unknown and out-of-date member eligibility is disclosed and excluded, not counted as a failed trading store",
+      "pass": true
+    },
+    {
+      "name": "Invalid opening/closure dates and duplicate eligibility records remain explicit unknown states",
+      "pass": true
+    },
+    {
+      "name": "Comp is invalid for PLR or unsupported comparators and never yields a quietly relabeled all-location total",
+      "pass": true
+    },
+    {
+      "name": "Explicit empty and selected location scopes intersect policy membership without broadening",
+      "pass": true
+    },
+    {
+      "name": "Applied Comp closure cohort stays exact across Overview and table local interval drills",
+      "pass": true
+    },
+    {
+      "name": "Anchored policy/version/calendar validation rejects stale or tampered saved cohorts",
+      "pass": true
+    },
+    {
+      "name": "Comp scope signature carries policy version, dates and exact cohort while all-location baseline remains separate",
+      "pass": true
+    }
+  ]
+}

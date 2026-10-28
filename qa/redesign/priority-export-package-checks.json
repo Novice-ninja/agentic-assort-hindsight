@@ -1,0 +1,79 @@
+{
+  "kind": "Priority XLSX byte-builder verification; not an actual browser download",
+  "checks": [
+    {
+      "name": "Metadata export creates Data, Scope and Definitions",
+      "pass": true
+    },
+    {
+      "name": "All five canonical brands export",
+      "pass": true
+    },
+    {
+      "name": "Raw numeric sales sum to $8.4M",
+      "pass": true
+    },
+    {
+      "name": "All seven provisional / comparison columns remain numeric",
+      "pass": true
+    },
+    {
+      "name": "Period measures are distinct rather than duplicated labels",
+      "pass": true
+    },
+    {
+      "name": "Plan and original PLR baseline remain distinct",
+      "pass": true
+    },
+    {
+      "name": "Scope contains named season, source, version, snapshots, units and exported count",
+      "pass": true
+    },
+    {
+      "name": "View filter and sort snapshots are machine-readable JSON",
+      "pass": true
+    },
+    {
+      "name": "Definitions preserve sales-per-area caveat and provisional status",
+      "pass": true
+    },
+    {
+      "name": "Filtered workbook contains only the requested brand row",
+      "pass": true
+    },
+    {
+      "name": "Filtered exported row count matches data sheet",
+      "pass": true
+    },
+    {
+      "name": "Callers without metadata preserve their original sheet name",
+      "pass": true
+    },
+    {
+      "name": "Grouped data headers retain merged spans",
+      "pass": true
+    },
+    {
+      "name": "full package CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "filtered package CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "original package CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "grouped package CRC is valid",
+      "pass": true
+    },
+    {
+      "name": "All four workbook variants parse without warnings and declare the Normal style",
+      "pass": true
+    }
+  ],
+  "passed": 18,
+  "browser_download_verified": false
+}

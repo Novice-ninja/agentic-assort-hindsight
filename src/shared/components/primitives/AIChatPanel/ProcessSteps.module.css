@@ -1,0 +1,39 @@
+.root {
+  margin-block-start: 8px;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary, #60697d);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--color-text-primary, #212b4b);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--iris-500, #6962ef);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.chevron {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.list {
+  margin: 8px 0 0;
+  padding-inline-start: 1.25em;
+  color: var(--color-text-secondary, #60697d);
+  font-size: 12px;
+  line-height: 1.4;
+}

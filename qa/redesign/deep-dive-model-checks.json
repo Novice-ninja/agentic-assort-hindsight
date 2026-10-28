@@ -1,0 +1,119 @@
+{
+  "kind": "Deterministic state/model and canonical selector regression; not native browser acceptance",
+  "datasetVersion": "flooring-ledger-ss26-v2",
+  "scope": {
+    "mode": "in-season",
+    "reviewId": "PLR-SS26-FLOORING",
+    "version": "v1",
+    "productIds": [],
+    "storeIds": [],
+    "productSelection": "all",
+    "storeSelection": "all",
+    "population": "exposure",
+    "window": "R4",
+    "comparison": "ly",
+    "stockAsOf": "2026-07-31",
+    "rangeAsOf": "2026-07-31",
+    "uom": "SELLING_UNIT_TBC",
+    "access": "full",
+    "calendarId": "prototype-52-week-monday-v1",
+    "seasonId": "SS26",
+    "localFilters": {}
+  },
+  "passed": 19,
+  "checkCount": 19,
+  "checks": [
+    {
+      "name": "Inclusive numeric bounds retain endpoints and reject outside values",
+      "pass": true
+    },
+    {
+      "name": "Invalid and incomplete between bounds produce errors and cannot match",
+      "pass": true
+    },
+    {
+      "name": "Blank numeric condition is inactive; valid zero is a number, not missing",
+      "pass": true
+    },
+    {
+      "name": "AND and OR combine independently typed conditions",
+      "pass": true
+    },
+    {
+      "name": "Missing, unknown, restricted and nonpositive base remain distinct",
+      "pass": true
+    },
+    {
+      "name": "Null/restricted values sort last in both directions and ties use stable IDs",
+      "pass": true
+    },
+    {
+      "name": "Main workspace uses 72 canonical SKUs and 45 canonical stores",
+      "pass": true,
+      "detail": {
+        "products": 72,
+        "stores": 45
+      }
+    },
+    {
+      "name": "Every item, store and pair remains reachable through bounded pagination",
+      "pass": true,
+      "detail": {
+        "pairs": 3240
+      }
+    },
+    {
+      "name": "All-candidate matrix covers the full canonical Cartesian product",
+      "pass": true
+    },
+    {
+      "name": "Present empty item/store/pair local drills match no pair",
+      "pass": true
+    },
+    {
+      "name": "Exact pair selection preserves two leaf identities without Cartesian expansion",
+      "pass": true
+    },
+    {
+      "name": "Local attribute selection agrees with canonical product identity",
+      "pass": true
+    },
+    {
+      "name": "Item and store aggregate totals reconcile with the same leaf population",
+      "pass": true,
+      "detail": {
+        "sales": 845799.66,
+        "quantity": 18358,
+        "distinctRangedStores": 45
+      }
+    },
+    {
+      "name": "Typed filtered totals use qualifying numerator and recomputed ratios",
+      "pass": true
+    },
+    {
+      "name": "Local interval changes evidence without mutating applied PLR scope",
+      "pass": true
+    },
+    {
+      "name": "An exact pair cohort is preserved in detail trend and totals",
+      "pass": true
+    },
+    {
+      "name": "Breadth counts distinct dated canonical membership, with matched LY date",
+      "pass": true,
+      "detail": {
+        "tyDate": "2026-07-31",
+        "lyDate": "2025-07-27"
+      }
+    },
+    {
+      "name": "Actual aggregate export adapter preserves sorted IDs, typed metrics and source aliases",
+      "pass": true
+    },
+    {
+      "name": "Store presets avoid duplicate navigation and preserve legacy matrix/breadth destinations",
+      "pass": true
+    }
+  ]
+}

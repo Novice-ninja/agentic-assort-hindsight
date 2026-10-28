@@ -1,0 +1,128 @@
+{
+  "app": {
+    "title": "Assort",
+    "skipToContent": "Saltar al contenido"
+  },
+  "actions": {
+    "search": "Buscar",
+    "clearFilters": "Borrar filtros",
+    "showFilters": "Mostrar filtros",
+    "hideFilters": "Ocultar filtros",
+    "retry": "Reintentar"
+  },
+  "states": {
+    "loading": "Cargando…",
+    "empty": "No se encontraron resultados",
+    "error": "Algo salió mal"
+  },
+  "appConfig": {
+    "metricsLoadFailed": "No se pudo cargar la configuración de métricas. Mostrando métricas predeterminadas.",
+    "globalLoadFailed": "No se pudo cargar la configuración de la aplicación. Mostrando ajustes predeterminados."
+  },
+  "aiStrip": {
+    "loadingLabel": "Recopilando perspectivas",
+    "askIris": "Preguntar a Iris",
+    "emptyNarration": "No hay información disponible"
+  },
+  "theme": {
+    "toggle": "Cambiar tema",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español",
+    "ar": "Árabe"
+  },
+  "header": {
+    "help": "Ayuda",
+    "messages": "Mensajes",
+    "notifications": "Notificaciones",
+    "notificationsCount": "{{count}} notificaciones sin leer",
+    "agentHub": "Centro del agente",
+    "userMenu": "Menú de usuario",
+    "modeToggle": "Modo de planificación",
+    "agentic": "Agentic",
+    "override": "Override"
+  },
+  "breadcrumb": {
+    "label": "Ruta de navegación",
+    "home": "Inicio"
+  },
+  "matrixGrid": {
+    "empty": "No hay datos para mostrar",
+    "error": "No se pudo cargar la cuadrícula",
+    "loading": "Cargando cuadrícula…",
+    "retry": "Reintentar",
+    "readOnly": "Esta columna es de solo lectura",
+    "bulkApply": "Aplicar todo",
+    "grandTotal": "Total general",
+    "rowHeader": "Elemento",
+    "emptyGroup": "Sin elementos",
+    "modified": "Modificado respecto al valor de referencia",
+    "invalidValue": "No se pudo interpretar ese valor para esta columna",
+    "editing": "Editando {{column}}",
+    "leafCount_one": "{{count}} elemento",
+    "leafCount_other": "{{count}} elementos",
+    "pasteWarning_one": "Se pegaron {{written}} celdas. {{count}} celda no se aplicó: {{skippedReadOnly}} de solo lectura, {{truncated}} fuera de la cuadrícula.",
+    "pasteWarning_other": "Se pegaron {{written}} celdas. {{count}} celdas no se aplicaron: {{skippedReadOnly}} de solo lectura, {{truncated}} fuera de la cuadrícula.",
+    "agGrid": {
+      "noRowsToShow": "No hay datos para mostrar",
+      "loadingOoo": "Cargando…",
+      "group": "Grupo",
+      "total": "Total",
+      "pivotColumnGroupTotals": "Total",
+      "pivotMode": "Modo dinámico",
+      "groups": "Grupos de filas",
+      "values": "Valores",
+      "columns": "Columnas",
+      "rowGroupColumnsEmptyMessage": "Arrastre aquí para agrupar filas",
+      "valueColumnsEmptyMessage": "Arrastre aquí para agregar",
+      "pivotColumnsEmptyMessage": "Arrastre aquí para definir las columnas",
+      "copy": "Copiar",
+      "copyWithHeaders": "Copiar con encabezados",
+      "paste": "Pegar",
+      "ctrlC": "Ctrl+C",
+      "ctrlV": "Ctrl+V"
+    }
+  },
+  "iris": {
+    "readingRequest": "Leyendo tu solicitud frente al catálogo de productos, el calendario de tu empresa y la lista de tiendas…",
+    "processSteps": "Pasos del proceso ({{current}}/{{total}})",
+    "connectionError": "Iris perdió la conexión. Inténtalo de nuevo.",
+    "planError": "No se pudo cargar este plan para Iris: {{message}}",
+    "emptyResult": "Iris terminó sin una respuesta de texto.",
+    "emptyChart": "Iris terminó sin datos de gráfico para mostrar.",
+    "emptyTable": "Iris terminó sin datos de tabla para mostrar.",
+    "chartDataCaption": "Datos de {{title}}",
+    "untitledChart": "gráfico",
+    "missingPlan": "Abre primero un plan desde Todos los planes para que Iris sepa cuál usar.",
+    "suggestedAnalysis": "Análisis sugerido",
+    "replyActions": "Acciones",
+    "feedback": {
+      "like": "Buena respuesta",
+      "dislike": "Mala respuesta",
+      "ratedLike": "Marcada como una buena respuesta.",
+      "ratedDislike": "Marcada como una mala respuesta.",
+      "cleared": "Valoración eliminada."
+    },
+    "replyView": {
+      "viewsLabel": "Vistas de la respuesta",
+      "withCount": "{{label}} ({{count}})",
+      "text": "Texto",
+      "table": "Tabla",
+      "bar": "Gráfico de barras",
+      "line": "Gráfico de líneas",
+      "area": "Gráfico de área",
+      "pie": "Gráfico de dona",
+      "heatmap": "Mapa de calor",
+      "chart": "Gráfico"
+    },
+    "downloadFile": "Descargar {{filename}}",
+    "downloadFailed": "La descarga falló. Inténtalo de nuevo.",
+    "copilotTitle": "Cluster Copilot",
+    "minimizeCopilot": "Minimizar Cluster Copilot",
+    "maximizeCopilot": "Maximizar Cluster Copilot"
+  }
+}

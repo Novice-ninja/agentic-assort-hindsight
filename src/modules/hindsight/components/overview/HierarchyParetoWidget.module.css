@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 425px;
+  height: 100%;
+}
+
+.wrapper :global(.chart-container) {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+.wrapper :global(.divider-line) {
+  display: none;
+}
+
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions :global([data-orientation='horizontal']) {
+  gap: 8px;
+}
+
+.actions :global([data-orientation='horizontal'] > span) {
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.actions :global([data-orientation='horizontal'] button) {
+  min-width: 184px;
+  height: 36px;
+  padding: 7px 38px 7px 14px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 9px;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.wrapper :global(.highcharts-scrollable-mask) {
+  fill: var(--color-surface, #ffffff);
+  fill-opacity: 1;
+}
+
+.wrapper :global(.highcharts-legend-item text) {
+  color: var(--color-text-secondary, var(--slate-500)) !important;
+  fill: var(--color-text-secondary, var(--slate-500)) !important;
+  font-family: var(--font-family-base) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

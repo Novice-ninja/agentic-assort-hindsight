@@ -1,0 +1,11 @@
+import { writeFileSync, mkdirSync } from 'node:fs';
+import { buildWorkbookBytes } from '../../src/modules/hindsight/redesign/helpers/exportWorkbook';
+const scope:any={mode:'in-season',reviewId:'SS26-flooring',version:'v1',productIds:['1000037'],storeIds:['ST1001'],population:'exposure',window:'R4',comparison:'ly',stockAsOf:'2026-07-31',rangeAsOf:'2026-07-31',uom:'EA',access:'full',localFilters:{}};
+const pair:any={id:'1000037:ST1001',itemId:'1000037',item:{name:'Northport'},storeId:'ST1001',store:{name:'Houston'},range:'ranged',eligibility:'eligible',matrixState:'R0',stockAsOf:scope.stockAsOf,rangeAsOf:scope.rangeAsOf,sales:{value:1234.56,unit:'USD',state:'ok'},quantity:{value:20,unit:'EA',state:'ok'},gmDollars:{value:370.37,unit:'USD',state:'ok'},gmRate:{value:30.0001,unit:'%',state:'ok'},sellableOh:{value:0,unit:'EA',state:'ok'},caseIds:['Q01']};
+const rows:any[]=[{id:'1000037',sales:pair.sales,gmRate:pair.gmRate,nested:{grossMargin:789,observation:'safe'},nullMetric:{value:null,unit:'USD',state:'missing',reason:'No source'},note:'XML\u0001 control & <characters>'}];
+const folder='qa/redesign/r67-export-checks';mkdirSync(folder,{recursive:true});
+for(const access of ['full','restricted-margin']) writeFileSync(`${folder}/${access}.xlsx`,buildWorkbookBytes('R67 export contract',rows,{...scope,access},{contributingPairs:[pair],viewState:{sort:{key:'sales',direction:'asc'},grossMargin:42,nested:{cogs:51,safe:'retained'}}}));
+const exactPairs=Array.from({length:4000},(_,i)=>`1000037:ST${String(i).padStart(5,'0')}`);
+writeFileSync(`${folder}/large-scope.xlsx`,buildWorkbookBytes('Large exact scope',rows,{...scope,pairIds:exactPairs},{contributingPairs:[pair],viewState:{exactPairs}}));
+writeFileSync(`${folder}/large-scope-expected.json`,JSON.stringify(exactPairs));
+console.log('Two actual adapter workbooks generated for independent read-only parsing.');

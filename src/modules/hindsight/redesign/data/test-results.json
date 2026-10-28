@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checkCount": 18,
+  "checks": [
+    "Canonical master, unique pair-week and snapshot grains remain72 ×45, with valid calendar references.",
+    "Exact SS26 totals and five brand shares reconcile to frozen priority fixture.",
+    "All views share one leaf; Northport1.6M /−29.3% and dated unavailable sellable stock retain separate PO and shared DC.",
+    "Full →Bamboo →explicitempty →all reconciles exact rows, mix, cases, local cohorts and scope signatures.",
+    "R4/R13/R52 phase exactly to priority totals and period presets use completed calendar keys, fixed stock date and real LY mapping.",
+    "Frozen original66-style cohort separates8.8M original,8.1M revision,8.6M latest all72 and later-addition actuals.",
+    "Phasing, original buy, receipts, physical ending and blocked/sellable split are distinct and reconcile without adding future PO/DC to availability.",
+    "Weekly/monthly weighted trends reconcile and never average rates; exact pair-cohort filtering stays frozen across comparable weeks.",
+    "Guarded comparisons, returns, zero sales, LY-only, unknown history, closure, missing/stale feeds and incompatible units remain distinct states.",
+    "Approved PLR prefix4/prefix13/full phase the same frozen cohort without preseason facts or changing approval metadata.",
+    "Null-state formatting never conflates zero, unknown, restricted, negative base, missing, stale or reconciliation.",
+    "Unit-explicit metric rules operate at pair grain; unknown values never match, AND/OR and exact IDs do not broaden none.",
+    "Permission projection strips underlying COGS, planned GM and margin-derived cases before snapshots, with no zero substitution.",
+    "Six queues and immutable trigger timestamps reconcile distinct cases; canonical IDs validate drafts, edits, evidence and inbound commitments.",
+    "Supply caps, destination, Swap membership and outgoing/incoming canonical identities prevent false commitments.",
+    "Approval, partial acknowledgements, union/retry, idempotence and review remain separate audited mutations.",
+    "Notes, accepted learnings and append-only multi-signal cases do not rewrite frozen plans or counts.",
+    "Signed returns are netted once; transfer, adjustment, observed closing and reconciliation fields form one exact supply bridge."
+  ],
+  "dataVersion": "flooring-ledger-ss26-v2",
+  "canonicalStory": {
+    "sales": 8400000,
+    "quantity": 182400,
+    "gmRate": 31.6
+  },
+  "illustrativeNotClientData": true
+}

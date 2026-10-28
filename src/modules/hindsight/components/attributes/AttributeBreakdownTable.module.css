@@ -1,0 +1,208 @@
+/* Colours are token-first with the design's literal as the fallback — see the renderers' sheet. */
+
+/* === Layout === */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-surface, #ffffff);
+  box-shadow: none;
+}
+
+.card > header {
+  min-height: 32px;
+  margin: 0;
+  padding: 0 16px;
+  border-block-end: none;
+}
+
+.card h3 {
+  color: var(--colors-neutrals-text-icon-title, #0d152c);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.subtitle {
+  color: var(--colors-neutrals-text-icon-label, #60697d);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.card > div {
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prototypeNotice {
+  margin: 0;
+  padding-inline: 16px;
+  color: var(--color-text-secondary, #60697d);
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary, #60697d);
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.filter select {
+  width: 154px;
+  height: 30px;
+  padding: 4px 28px 4px 10px;
+  border: 1px solid var(--slate-200, #d9dde7);
+  border-radius: 6px;
+  background-color: var(--color-surface, #ffffff);
+  color: var(--color-text-primary, #0d152c);
+  font: inherit;
+  font-size: 12px;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--slate-200, #d9dde7);
+  border-radius: 6px;
+  background-color: var(--color-surface, #ffffff);
+  color: var(--color-text-secondary, #60697d);
+  font: inherit;
+  cursor: pointer;
+}
+
+.iconButton svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+/* === Grid chrome === */
+
+.grid {
+  --ag-background-color: var(--colors-greys-50, #fafafa);
+  --ag-border-color: var(--colors-neutrals-border-subtle, #d9dde7);
+  --ag-header-background-color: var(--colors-neutrals-surface-lighter, #f5f6fa);
+  --ag-odd-row-background-color: var(--colors-greys-50, #fafafa);
+  --ag-row-border-color: var(--colors-neutrals-border-subtle, #d9dde7);
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: 14px;
+  --ag-cell-horizontal-padding: 16px;
+}
+
+.grid :global(.ag-root-wrapper) {
+  border: 0;
+  border-radius: 0;
+}
+
+.grid :global(.ag-header) {
+  border-block-start: none;
+  border-block-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  background-color: var(--colors-neutrals-surface-lighter, #f5f6fa);
+}
+
+.grid :global(.ag-header-group-cell) {
+  justify-content: center;
+  padding-inline: 16px;
+  border-inline-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  border-block-end: 2px solid var(--othercolor-purple-500, #ad97ce);
+  color: var(--colors-neutrals-text-icon-title, #0d152c);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+/* Empty group-row placeholders (ungrouped / spanning columns) must not draw the seam. */
+.grid :global(.ag-header-group-cell.ag-header-group-cell-no-group),
+.grid :global(.ag-header-group-cell:not(:has(.ag-header-group-text))) {
+  border-block-end: none;
+}
+
+.grid :global(.ag-header-group-cell-label) {
+  justify-content: center;
+}
+
+.grid :global(.ag-header-cell) {
+  padding-inline: 16px;
+  border-inline-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  color: var(--colors-neutrals-text-icon-title, #0d152c);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-inline-end: 1px solid var(--colors-neutrals-border-subtle, #d9dde7);
+  border-block-end: 1px solid var(--colors-neutrals-border-subtle, #d9dde7);
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+}
+
+/*
+ * Pinned-left overflow clips each cell's own right border. Put the separator on the
+ * pin wrapper (its border is not clipped) and drop the theme's soft shadow so the
+ * line reads as a column rule.
+ */
+.grid :global(.ag-grid-pinned-left-cells) {
+  box-shadow: none;
+  border-inline-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+}
+
+/*
+ * Span-height headers live in the leaf row with a negative `top` so they cover the group
+ * row. DataGrid clips pinned header wrappers (`overflow: hidden`), which shears the ⋮ at
+ * that seam. Restore overflow on the leaf pin only — the wrapper still draws the column
+ * rule, so drop the cell's own end border or it doubles. Flex-center the label + ⋮ in the
+ * full (group + leaf) header height.
+ */
+.grid :global(.ag-header-row:not(.ag-header-row-column-group) > .ag-grid-pinned-left-cells) {
+  overflow: visible;
+}
+
+.grid :global(.ag-header-cell.ag-header-span-height) {
+  display: flex;
+  align-items: center;
+  overflow: visible;
+  border-inline-end: none;
+}
+
+.grid :global(.ag-header-cell.ag-header-span-height .ag-header-cell-comp-wrapper),
+.grid :global(.ag-header-cell.ag-header-span-height .ag-header-cell-label) {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* === Vertical divider between header sections === */
+
+.divider {
+  width: 0;
+  height: 12px;
+  border-left: 1px solid #d9dde7;
+  flex-shrink: 0;
+}

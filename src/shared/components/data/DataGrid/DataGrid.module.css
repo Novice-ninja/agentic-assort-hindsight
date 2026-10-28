@@ -1,0 +1,197 @@
+.grid {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  /* Max horizontal scroll, set from DataGrid when columns/viewport resize. */
+  --data-grid-h-scroll-max: 0px;
+}
+
+/*
+ * AG Grid 36 nests column headers inside a vertically sticky top band. Nested
+ * `position: sticky; left` fails there, so a pinned column's header scrolls away while its
+ * body cells stay put. JS translate-on-scroll fixes the pin but flickers (one frame behind
+ * the compositor). Scroll-driven animation applies the same counter-translate on the
+ * compositor, synced to the grid viewport's inline scroll — pin stays, no flicker.
+ */
+.grid :global(.ag-header) {
+  background-color: var(--ag-header-background-color, var(--slate-100));
+}
+
+.grid :global(.ag-header-row > .ag-grid-pinned-left-cells),
+.grid :global(.ag-header-row > .ag-grid-pinned-right-cells) {
+  z-index: 3;
+  overflow: hidden;
+  background-color: var(--ag-header-background-color, var(--slate-100));
+}
+
+/* Fallback when scroll-driven animations are unavailable. */
+.grid :global(.ag-header-row > .ag-grid-pinned-left-cells) {
+  position: sticky;
+  left: var(--ag-internal-pinned-left-sticky-offset, 0px);
+}
+
+.grid :global(.ag-header-row > .ag-grid-pinned-right-cells) {
+  position: sticky;
+  right: var(--ag-internal-pinned-right-sticky-offset, 0px);
+}
+
+@supports (animation-timeline: scroll()) {
+  .grid :global(.ag-grid-viewport) {
+    scroll-timeline-name: --data-grid-inline-scroll;
+    scroll-timeline-axis: inline;
+  }
+
+  .grid :global(.ag-header-row > .ag-grid-pinned-left-cells),
+  .grid :global(.ag-header-row > .ag-grid-pinned-right-cells) {
+    position: relative;
+    left: auto;
+    right: auto;
+    will-change: transform;
+  }
+
+  .grid :global(.ag-header-row > .ag-grid-pinned-left-cells) {
+    animation: dataGridPinLeft linear both;
+    animation-timeline: --data-grid-inline-scroll;
+  }
+
+  .grid :global(.ag-header-row > .ag-grid-pinned-right-cells) {
+    animation: dataGridPinRight linear both;
+    animation-timeline: --data-grid-inline-scroll;
+  }
+}
+
+@keyframes dataGridPinLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(var(--data-grid-h-scroll-max, 0px));
+  }
+}
+
+@keyframes dataGridPinRight {
+  from {
+    transform: translateX(calc(-1 * var(--data-grid-h-scroll-max, 0px)));
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.scrollLocked :global(.ag-body-viewport),
+.scrollLocked :global(.ag-center-cols-viewport),
+.scrollLocked :global(.ag-body-horizontal-scroll-viewport),
+.scrollLocked :global(.ag-body-vertical-scroll-viewport) {
+  overflow: hidden !important;
+  overscroll-behavior: none;
+  pointer-events: none;
+}
+
+.shimmerOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 48px 16px 16px;
+  background: var(--color-surface, #fff);
+}
+
+.shimmerRow {
+  height: 36px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f0f1f5 25%, #e4e6ed 37%, #f0f1f5 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmerRow {
+    animation: none;
+  }
+}
+
+:global([data-theme='dark']) .shimmerOverlay {
+  background: var(--color-surface, #1c1c20);
+}
+
+:global([data-theme='dark']) .shimmerRow {
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-muted) 25%,
+    color-mix(in srgb, var(--color-border) 55%, var(--color-surface-muted)) 37%,
+    var(--color-surface-muted) 63%
+  );
+  background-size: 800px 100%;
+}
+
+.alignEnd :global(.ag-header-cell-label),
+.alignEnd {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.alignCenter :global(.ag-header-cell-label),
+.alignCenter {
+  justify-content: center;
+  text-align: center;
+}
+
+.grid :global(.ag-tooltip),
+:global(.ag-popup) :global(.ag-tooltip) {
+  --ag-tooltip-background-color: var(--slate-900, #0d152c);
+  --ag-tooltip-text-color: var(--slate-50, #f8f9fb);
+  --ag-tooltip-border: none;
+  max-width: 280px;
+  min-height: 30px;
+  padding: var(--space-sm, 8px);
+  border-radius: var(--radius-sm, 6px);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm, 14px);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 21px;
+  /* Palette, not semantic inverse: the popup often lives on `body` and `--color-text-inverse`
+     flips in dark theme, which made the copy the same colour as the fill. */
+  background-color: var(--slate-900, #0d152c);
+  color: var(--slate-50, #f8f9fb);
+  border: none;
+  box-shadow: var(--shadow-md);
+  white-space: pre-wrap;
+}
+
+.rowLinkedHover {
+  background-color: var(--ag-row-hover-color, #f0f1f8) !important;
+}
+
+.rowSelected {
+  background-color: var(--color-surface-selected, var(--indigo-50));
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+}
+
+.stateText {
+  margin: 0;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: var(--font-size-sm);
+}

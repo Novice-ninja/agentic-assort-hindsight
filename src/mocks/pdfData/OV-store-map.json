@@ -1,0 +1,367 @@
+{
+  "data": {
+    "metric": "sell_thru_pct",
+    "rows": [
+      {
+        "storeId": "ST1001",
+        "store": "Houston, TX",
+        "cluster": "B",
+        "latitude": 29.76,
+        "longitude": -95.37,
+        "value": 3.1
+      },
+      {
+        "storeId": "ST1002",
+        "store": "Dallas, TX",
+        "cluster": "D",
+        "latitude": 32.78,
+        "longitude": -96.8,
+        "value": 4.1
+      },
+      {
+        "storeId": "ST1003",
+        "store": "Austin, TX",
+        "cluster": "E",
+        "latitude": 30.27,
+        "longitude": -97.74,
+        "value": -10.7
+      },
+      {
+        "storeId": "ST1004",
+        "store": "San Antonio, TX",
+        "cluster": "A",
+        "latitude": 29.42,
+        "longitude": -98.49,
+        "value": 8
+      },
+      {
+        "storeId": "ST1005",
+        "store": "Atlanta, GA",
+        "cluster": "D",
+        "latitude": 33.75,
+        "longitude": -84.39,
+        "value": 11.3
+      },
+      {
+        "storeId": "ST1006",
+        "store": "Savannah, GA",
+        "cluster": "F",
+        "latitude": 32.08,
+        "longitude": -81.09,
+        "value": -3.4
+      },
+      {
+        "storeId": "ST1007",
+        "store": "Charlotte, NC",
+        "cluster": "C",
+        "latitude": 35.23,
+        "longitude": -80.84,
+        "value": -21.7
+      },
+      {
+        "storeId": "ST1008",
+        "store": "Raleigh, NC",
+        "cluster": "F",
+        "latitude": 35.78,
+        "longitude": -78.64,
+        "value": 1.8
+      },
+      {
+        "storeId": "ST1009",
+        "store": "Nashville, TN",
+        "cluster": "A",
+        "latitude": 36.16,
+        "longitude": -86.78,
+        "value": -19.7
+      },
+      {
+        "storeId": "ST1010",
+        "store": "Memphis, TN",
+        "cluster": "C",
+        "latitude": 35.15,
+        "longitude": -90.05,
+        "value": -17.1
+      },
+      {
+        "storeId": "ST1011",
+        "store": "Orlando, FL",
+        "cluster": "E",
+        "latitude": 28.54,
+        "longitude": -81.38,
+        "value": -11.7
+      },
+      {
+        "storeId": "ST1012",
+        "store": "Tampa, FL",
+        "cluster": "F",
+        "latitude": 27.95,
+        "longitude": -82.46,
+        "value": -17.5
+      },
+      {
+        "storeId": "ST1013",
+        "store": "Miami, FL",
+        "cluster": "F",
+        "latitude": 25.76,
+        "longitude": -80.19,
+        "value": 12.7
+      },
+      {
+        "storeId": "ST1014",
+        "store": "Jacksonville, FL",
+        "cluster": "D",
+        "latitude": 30.33,
+        "longitude": -81.66,
+        "value": 9.1
+      },
+      {
+        "storeId": "ST1015",
+        "store": "Phoenix, AZ",
+        "cluster": "E",
+        "latitude": 33.45,
+        "longitude": -112.07,
+        "value": -0.3
+      },
+      {
+        "storeId": "ST1016",
+        "store": "Tucson, AZ",
+        "cluster": "C",
+        "latitude": 32.22,
+        "longitude": -110.97,
+        "value": 9
+      },
+      {
+        "storeId": "ST1017",
+        "store": "Denver, CO",
+        "cluster": "E",
+        "latitude": 39.74,
+        "longitude": -104.99,
+        "value": -7.3
+      },
+      {
+        "storeId": "ST1018",
+        "store": "Salt Lake City, UT",
+        "cluster": "E",
+        "latitude": 40.76,
+        "longitude": -111.89,
+        "value": -19.1
+      },
+      {
+        "storeId": "ST1019",
+        "store": "Las Vegas, NV",
+        "cluster": "A",
+        "latitude": 36.17,
+        "longitude": -115.14,
+        "value": 27.7
+      },
+      {
+        "storeId": "ST1020",
+        "store": "Los Angeles, CA",
+        "cluster": "A",
+        "latitude": 34.05,
+        "longitude": -118.24,
+        "value": 13.4
+      },
+      {
+        "storeId": "ST1021",
+        "store": "San Diego, CA",
+        "cluster": "B",
+        "latitude": 32.72,
+        "longitude": -117.16,
+        "value": 16.4
+      },
+      {
+        "storeId": "ST1022",
+        "store": "Sacramento, CA",
+        "cluster": "A",
+        "latitude": 38.58,
+        "longitude": -121.49,
+        "value": 22.1
+      },
+      {
+        "storeId": "ST1023",
+        "store": "Portland, OR",
+        "cluster": "C",
+        "latitude": 45.52,
+        "longitude": -122.68,
+        "value": -9.5
+      },
+      {
+        "storeId": "ST1024",
+        "store": "Seattle, WA",
+        "cluster": "E",
+        "latitude": 47.61,
+        "longitude": -122.33,
+        "value": -4.3
+      },
+      {
+        "storeId": "ST1025",
+        "store": "Chicago, IL",
+        "cluster": "C",
+        "latitude": 41.88,
+        "longitude": -87.63,
+        "value": 10.9
+      },
+      {
+        "storeId": "ST1026",
+        "store": "Indianapolis, IN",
+        "cluster": "A",
+        "latitude": 39.77,
+        "longitude": -86.16,
+        "value": -14.5
+      },
+      {
+        "storeId": "ST1027",
+        "store": "Columbus, OH",
+        "cluster": "B",
+        "latitude": 39.96,
+        "longitude": -83,
+        "value": 21.1
+      },
+      {
+        "storeId": "ST1028",
+        "store": "Cleveland, OH",
+        "cluster": "E",
+        "latitude": 41.5,
+        "longitude": -81.69,
+        "value": -4
+      },
+      {
+        "storeId": "ST1029",
+        "store": "Detroit, MI",
+        "cluster": "A",
+        "latitude": 42.33,
+        "longitude": -83.05,
+        "value": 22.9
+      },
+      {
+        "storeId": "ST1030",
+        "store": "Minneapolis, MN",
+        "cluster": "C",
+        "latitude": 44.98,
+        "longitude": -93.27,
+        "value": -6.9
+      },
+      {
+        "storeId": "ST1031",
+        "store": "Kansas City, MO",
+        "cluster": "E",
+        "latitude": 39.1,
+        "longitude": -94.58,
+        "value": -17.2
+      },
+      {
+        "storeId": "ST1032",
+        "store": "St. Louis, MO",
+        "cluster": "F",
+        "latitude": 38.63,
+        "longitude": -90.2,
+        "value": -21.3
+      },
+      {
+        "storeId": "ST1033",
+        "store": "Oklahoma City, OK",
+        "cluster": "D",
+        "latitude": 35.47,
+        "longitude": -97.52,
+        "value": 16.8
+      },
+      {
+        "storeId": "ST1034",
+        "store": "New Orleans, LA",
+        "cluster": "F",
+        "latitude": 29.95,
+        "longitude": -90.07,
+        "value": 10.4
+      },
+      {
+        "storeId": "ST1035",
+        "store": "Birmingham, AL",
+        "cluster": "E",
+        "latitude": 33.52,
+        "longitude": -86.8,
+        "value": -19.8
+      },
+      {
+        "storeId": "ST1036",
+        "store": "Louisville, KY",
+        "cluster": "D",
+        "latitude": 38.25,
+        "longitude": -85.76,
+        "value": 6.3
+      },
+      {
+        "storeId": "ST1037",
+        "store": "Pittsburgh, PA",
+        "cluster": "B",
+        "latitude": 40.44,
+        "longitude": -79.99,
+        "value": -16
+      },
+      {
+        "storeId": "ST1038",
+        "store": "Philadelphia, PA",
+        "cluster": "A",
+        "latitude": 39.95,
+        "longitude": -75.17,
+        "value": -15.3
+      },
+      {
+        "storeId": "ST1039",
+        "store": "Baltimore, MD",
+        "cluster": "D",
+        "latitude": 39.29,
+        "longitude": -76.61,
+        "value": -13
+      },
+      {
+        "storeId": "ST1040",
+        "store": "Richmond, VA",
+        "cluster": "D",
+        "latitude": 37.54,
+        "longitude": -77.44,
+        "value": 10
+      },
+      {
+        "storeId": "ST1041",
+        "store": "Boston, MA",
+        "cluster": "C",
+        "latitude": 42.36,
+        "longitude": -71.06,
+        "value": 3.5
+      },
+      {
+        "storeId": "ST1042",
+        "store": "Hartford, CT",
+        "cluster": "C",
+        "latitude": 41.76,
+        "longitude": -72.67,
+        "value": 18.8
+      },
+      {
+        "storeId": "ST1043",
+        "store": "Newark, NJ",
+        "cluster": "E",
+        "latitude": 40.74,
+        "longitude": -74.17,
+        "value": -8.3
+      },
+      {
+        "storeId": "ST1044",
+        "store": "Buffalo, NY",
+        "cluster": "B",
+        "latitude": 42.89,
+        "longitude": -78.88,
+        "value": 16.9
+      },
+      {
+        "storeId": "ST1045",
+        "store": "Albany, NY",
+        "cluster": "A",
+        "latitude": 42.65,
+        "longitude": -73.76,
+        "value": -9.5
+      }
+    ]
+  }
+}

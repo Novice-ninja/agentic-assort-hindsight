@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/components/CommentsPanel/index.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,OAAO,CAAC;AAE3C,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,uBAAuB,CAAC;AAEhE,QAAA,MAAM,aAAa,EAAwB,aAAa,CAAC,kBAAkB,CAAC,CAAC;AAE7E,eAAe,aAAa,CAAC;AAC7B,OAAO,EAAE,gBAAgB,EAAE,WAAW,EAAE,eAAe,EAAE,MAAM,mBAAmB,CAAC"}

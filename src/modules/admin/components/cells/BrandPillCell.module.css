@@ -1,0 +1,19 @@
+/* Reference "info subtle" badge (MuiChip info-badge-subtle) */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 2px var(--space-sm);
+  border: none;
+  border-radius: var(--radius-full);
+  background: var(--indigo-50);
+  color: var(--indigo-300);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+:global(html[data-theme='dark']) .pill {
+  background: color-mix(in srgb, var(--indigo-400) 18%, transparent);
+  color: var(--indigo-200);
+}

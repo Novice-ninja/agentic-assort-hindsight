@@ -1,0 +1,249 @@
+/* Shared Create Plan / Create Cluster Plan step sections and option cards. */
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.sectionWrapper {
+  background: #f7f9fd;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  min-inline-size: 0;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: var(--slate-950, #0d152c);
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.required::after {
+  content: '*';
+  color: #e15554;
+  margin-inline-start: 2px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.optionCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: 12px;
+  border: 1px solid var(--slate-200, #d9dde7);
+  border-radius: 12px;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: start;
+  overflow: hidden;
+}
+
+.optionCard:hover:not(.selected):not(:disabled) {
+  border-color: var(--indigo-400);
+}
+
+.optionCard.selected {
+  border-radius: 12px;
+  border-top: 1px solid #4259ee;
+  border-right: 1px solid #4259ee;
+  border-bottom: 1px solid #4259ee;
+  border-left: 3px solid #4259ee;
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.06);
+}
+
+.horizontalCard {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.horizontalCard .radioCircle {
+  margin-inline-start: auto;
+}
+
+.optionIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+  background: var(--color-surface-muted);
+}
+
+.optionCardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.horizontalCard .optionCardHead {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.optionName {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--slate-950, #0d152c);
+  text-transform: capitalize;
+}
+
+.optionMeta {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--slate-600, #60697d);
+}
+
+.radioCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 1px solid var(--slate-300, #c3c8d4);
+  background: #ffffff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  margin-top: 4px;
+}
+
+.radioCircle::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: transparent;
+  transition: background 0.15s ease;
+}
+
+.radioCircle.checked {
+  border-color: var(--indigo-400);
+}
+
+.radioCircle.checked::after {
+  background: var(--indigo-400);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.toolbarBaseline {
+  align-items: flex-end;
+}
+
+.toolbarCount {
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.toolbarActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.nameField {
+  width: 100%;
+}
+
+.searchField > *,
+.toolbarField > * {
+  width: 100%;
+}
+
+.empty {
+  padding: 24px 16px;
+  color: var(--slate-500);
+  font-size: var(--font-size-sm, 14px);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+:global([data-theme='dark']) .sectionTitle,
+:global([data-theme='dark']) .optionName {
+  color: var(--color-text-primary);
+}
+
+:global([data-theme='dark']) .optionMeta,
+:global([data-theme='dark']) .empty {
+  color: var(--color-text-secondary);
+}
+
+:global([data-theme='dark']) .sectionWrapper {
+  background: var(--color-surface-muted);
+}
+
+:global([data-theme='dark']) .optionCard {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .optionCard:hover:not(.selected) {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 8%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .optionCard.selected {
+  border-color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .radioCircle {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+:global([data-theme='dark']) .optionIcon {
+  background: var(--color-surface-muted);
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "Actual ConfigurationDialog and React provider with semantic vendor-control stand-ins; not visual or Chrome acceptance",
+  "passed": 9,
+  "checks": [
+    {
+      "name": "Cards show six supported defaults, and unsupported inventory/coverage aliases cannot be added",
+      "pass": true
+    },
+    {
+      "name": "Six-card edits save the actual selected metric IDs and close the dialog",
+      "pass": true
+    },
+    {
+      "name": "Library retains all 87 definitions with exact evidence status and source aliases",
+      "pass": true
+    },
+    {
+      "name": "Saving from Configuration captures local cuts, table controls and active route without recursive saved lists",
+      "pass": true
+    },
+    {
+      "name": "Applying from Configuration restores exact local/table state atomically and retains current access",
+      "pass": true
+    },
+    {
+      "name": "Retired saved cards block application without partially changing route or selection",
+      "pass": true
+    },
+    {
+      "name": "Repairing saved card IDs retains the saved local pair/week cuts and table controls",
+      "pass": true
+    },
+    {
+      "name": "Legacy partial views cannot silently discard current local selections or table state",
+      "pass": true
+    },
+    {
+      "name": "Shared visibility remains disabled for a viewer while personal view storage remains available",
+      "pass": true
+    }
+  ]
+}

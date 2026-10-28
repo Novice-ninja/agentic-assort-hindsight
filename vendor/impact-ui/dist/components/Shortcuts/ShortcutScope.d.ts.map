@@ -1,0 +1,1 @@
+{"version":3,"file":"ShortcutScope.d.ts","sourceRoot":"","sources":["../../../src/components/Shortcuts/ShortcutScope.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAIvC,MAAM,WAAW,kBAAkB;IACjC,IAAI,EAAE,MAAM,CAAC;IACb,MAAM,CAAC,EAAE,OAAO,CAAC;IACjB,QAAQ,EAAE,SAAS,CAAC;CACrB;AAED,wBAAgB,aAAa,CAAC,EAAE,IAAI,EAAE,MAAa,EAAE,QAAQ,EAAE,EAAE,kBAAkB,2CAIlF"}

@@ -1,0 +1,163 @@
+{
+  "version": "flooring-ledger-ss26-v2",
+  "status": "Synthetic design-session data; not client actuals",
+  "master": {
+    "styles": 72,
+    "stores": 45,
+    "candidatePairs": 3240,
+    "pairWeeks": 336960
+  },
+  "calendar": {
+    "id": "prototype-52-week-monday-v1",
+    "season": "SS26",
+    "sellingStart": "2026-01-26",
+    "sellingEnd": "2026-07-31",
+    "completeThrough": "2026-07-26",
+    "snapshot": "2026-07-31",
+    "definition": "Monday\u2013Sunday prototype calendar, not confirmed client fiscal calendar;26 completed season weeks."
+  },
+  "unitPolicy": {
+    "sellingUnit": "SELLING_UNIT_TBC",
+    "confirmed": false,
+    "note": "Synthetic selling units. No SQFT or pack conversion inferred. Allocated selling area is separately measured in sqft."
+  },
+  "tactical": {
+    "defaultWindow": "R4",
+    "seasonSales": 8400000,
+    "seasonQuantity": 182400,
+    "grossMargin": 2654400,
+    "gmPercent": 31.6,
+    "stockCost": 2353139.2,
+    "sellable": 95707,
+    "physical": 99081,
+    "blocked": 3374,
+    "availableSupply": 281481,
+    "allocatedAreaSqFt": 84000,
+    "salesPerAllocatedSqFt": 100,
+    "r4Sales": 845799.66,
+    "r13Sales": 3504027.54,
+    "r52Sales": 15691973.05
+  },
+  "brands": [
+    {
+      "name": "Woodland Reserve",
+      "sales": 2301600,
+      "share": 27.4,
+      "skus": 19
+    },
+    {
+      "name": "Westridge",
+      "sales": 1839600,
+      "share": 21.9,
+      "skus": 12
+    },
+    {
+      "name": "American Spirit",
+      "sales": 1696800,
+      "share": 20.2,
+      "skus": 12
+    },
+    {
+      "name": "Lifescapes",
+      "sales": 1461600,
+      "share": 17.4,
+      "skus": 12
+    },
+    {
+      "name": "Bruce",
+      "sales": 1100400,
+      "share": 13.1,
+      "skus": 17
+    }
+  ],
+  "northport": {
+    "id": "1000037",
+    "article": "NOR-WO-DWR",
+    "brand": "Westridge",
+    "seasonSales": 1600000,
+    "seasonLySales": 2263083.45,
+    "growthPercent": -29.3,
+    "sellable": 0,
+    "physicalBlocked": 3374,
+    "existingInbound": 200,
+    "sharedDcPool": 900,
+    "allocatedDc": 200,
+    "meaning": "Strong in-stock run-rate and lower full-season sales can coexist. Review availability; no unvalidated lost-sales estimate."
+  },
+  "bamboo": {
+    "styles": 12,
+    "sales": 1049808.28,
+    "quantity": 23836,
+    "leadingColor": "Walnut",
+    "containsNorthport": false
+  },
+  "plr": {
+    "reviewId": "PLR-SS26-FLOORING",
+    "originalStyles": 66,
+    "originalPairs": 2970,
+    "originalSalesPlan": 8800000,
+    "sameCohortRevisionPlan": 8100000,
+    "latestAll72Plan": 8600000,
+    "originalActual": 8373352.01,
+    "laterAdditionsActual": 26647.99,
+    "totalRealized": 8400000,
+    "originalDemandPlan": 200000,
+    "approvedBuy": 300000,
+    "laterStyleIds": [
+      "1000000",
+      "1002553",
+      "1002479",
+      "1002109",
+      "1002035",
+      "1002516"
+    ],
+    "cohortChoice": "Six lowest-season-sales styles are explicitly synthetic post-approval additions. Existing priority8.8M all-style placeholder is replaced only in isolated R67 by a true66-style frozen approval.",
+    "duePairs": 2968,
+    "onTime": 2964,
+    "late": 2,
+    "notActivated": 1,
+    "notYetDue": 2,
+    "unknownHistory": 1,
+    "executionRate": "Unavailable with explicit lower/upper bounds because history is unknown.",
+    "periodPolicy": "Fixed approved review calendar; only contiguous complete-week prefix cutoff is a valid elapsed review. Inventory at a historical cutoff requires an exact dated snapshot.",
+    "supplyBridge": {
+      "opening": 54930,
+      "receipts": 225458,
+      "transferIn": 0,
+      "transferOut": 0,
+      "adjustments": 0,
+      "customerReturnsAlreadyNetted": 0,
+      "available": 280388,
+      "netSold": 181746,
+      "expectedPhysicalEnding": 98642,
+      "observedPhysicalEnding": 98642,
+      "sellableEnding": 95268,
+      "blockedEnding": 3374,
+      "reconciliationDifference": 0,
+      "openOrdersExcluded": 200,
+      "unit": "SELLING_UNIT_TBC",
+      "policy": "Customer returns are already netted in signed sales quantity; do not add them again to available supply."
+    }
+  },
+  "cases": {
+    "families": [
+      "Shortages",
+      "Coverage/excess",
+      "New item",
+      "Nonproductive",
+      "Bulk out",
+      "Lifecycle/exit"
+    ],
+    "count": 6,
+    "ruleStatus": "One illustrative merchant-review case per family. Only stated connected facts are numerical evidence; source MIP is unavailable."
+  },
+  "limitations": [
+    "All pair/week allocations and range/supply/case histories are deterministic synthetic fixture choices.",
+    "Category/brand/style names and72/45 stable IDs match the priority demonstration, not a verified client master crosswalk.",
+    "No daily transaction feed: partial open-week normalized numerators remain unavailable.",
+    "GBB, source MIP, vendor and region/district feeds are unconnected; Unknown is retained.",
+    "Only31Jul2026 stock is connected; no historical stock substitution.",
+    "No live approvals, orders, transfers or execution integrations.",
+    "Margin projection is a prototype data guard, not authenticated production authorization."
+  ]
+}

@@ -1,0 +1,10 @@
+import {writeFileSync} from 'node:fs';
+import {buildWorkbookBytes} from '../../src/shared/components/data/excelExport/writeWorkbook';
+import {getFlooringMixRows,FLOORING_DEFINITIONS} from '../../src/mocks/flooringDemo';
+const rows=getFlooringMixRows('brand');const keys=['sales','lyRevenue','planRevenue','plrBaseline','r4Sales','r13Sales','r52Sales','salesPerSqFt'] as const;
+const columns=[{id:'name',header:'Brand',format:'text' as const,value:(r:typeof rows[number])=>r.name},...keys.map(key=>({id:key,header:key,format:'currency' as const,value:(r:typeof rows[number])=>r[key]}))];
+const metadata={scope:{season:'SS26',division:'Flooring',category:['Hardwood','Engineered Hardwood','Bamboo'],stockAsOf:'2026-07-31',uom:'Synthetic units · definition TBC'},definitions:Object.entries(FLOORING_DEFINITIONS).map(([id,definition])=>({id,label:id,definition,status:'Synthetic · definition TBC'})),sourceLabel:'SS26 coherent flooring demo',sourceVersion:'priority-flooring-v1',viewState:{filters:{name:{filterType:'text',type:'contains',filter:'Woodland'}},sort:[{column:'sales',direction:'desc'}]}};
+writeFileSync('/private/tmp/priority-export-full.xlsx',buildWorkbookBytes({rows,columns,fileName:'full.xlsx',sheetName:'Sales Mix',metadata}));
+writeFileSync('/private/tmp/priority-export-filtered.xlsx',buildWorkbookBytes({rows:rows.filter(r=>r.name==='Woodland Reserve'),columns,fileName:'filtered.xlsx',sheetName:'Sales Mix',metadata}));
+writeFileSync('/private/tmp/priority-export-original.xlsx',buildWorkbookBytes({rows,columns,fileName:'original.xlsx',sheetName:'Original parity'}));
+writeFileSync('/private/tmp/priority-export-grouped.xlsx',buildWorkbookBytes({rows,columns:columns.map(c=>({...c,groupHeader:c.id==='name'?'Identity':'Sales metrics'})),fileName:'grouped.xlsx',sheetName:'Grouped',metadata}));

@@ -1,0 +1,126 @@
+/* Shared All Plans / Cluster Plans listing chrome. Keep both pages on this file. */
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  overflow: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-surface);
+}
+
+.containerEmpty {
+  flex: 1;
+}
+
+.bodyEmpty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 16px 16px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headingTitle {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.headingBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  background: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.divider {
+  width: 0;
+  height: 12px;
+  border-left: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.cardView {
+  padding: 0 16px 0 16px;
+}
+
+.body.tableView {
+  padding: 0 0px 16px 0;
+}
+
+/* === Responsive === */
+@media (width <= 1280px) {
+  .containerHeader {
+    gap: 12px;
+  }
+
+  .headerRight {
+    gap: 8px;
+  }
+}

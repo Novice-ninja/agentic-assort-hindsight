@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": 5,
+  "actualUIAdapterSource": "src/modules/hindsight/redesign/views/MixView.tsx",
+  "method": "Executed the active exportView initializer with canonical selector results, captured its real writer arguments, and built XLSX bytes. These are generated model controls, not browser downloads.",
+  "fixtures": [
+    {
+      "name": "all-brands",
+      "groups": 5,
+      "contributingPairs": 3240,
+      "parentPairs": 3240,
+      "parentSales": 8400000
+    },
+    {
+      "name": "woodland",
+      "groups": 1,
+      "contributingPairs": 855,
+      "parentPairs": 3240,
+      "parentSales": 8400000
+    },
+    {
+      "name": "exact-diagonal",
+      "groups": 2,
+      "contributingPairs": 2,
+      "parentPairs": 2,
+      "parentSales": 52285.8
+    },
+    {
+      "name": "no-matching-groups",
+      "groups": 0,
+      "contributingPairs": 0,
+      "parentPairs": 3240,
+      "parentSales": 8400000
+    },
+    {
+      "name": "restricted-woodland",
+      "groups": 1,
+      "contributingPairs": 855,
+      "parentPairs": 3240,
+      "parentSales": 8400000
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+.card {
+  padding: 0;
+  border-radius: 4px;
+}
+
+.card > header {
+  min-height: 42px;
+  margin: 0;
+  padding: 8px 10px;
+  border-block-end: 1px solid var(--color-border);
+}
+
+.card h3 {
+  color: var(--color-text-primary);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+.card > div {
+  padding: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.filter select {
+  width: 154px;
+  height: 30px;
+  padding: 4px 28px 4px 10px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 6px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font: inherit;
+  font-size: 12px;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 6px;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font: inherit;
+  cursor: pointer;
+}
+
+.iconButton svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.grid {
+  --ag-background-color: var(--color-surface);
+  --ag-border-color: var(--color-border);
+  --ag-header-background-color: var(--color-surface-muted);
+  --ag-odd-row-background-color: var(--color-surface);
+  --ag-foreground-color: var(--color-text-primary);
+  --ag-secondary-foreground-color: var(--color-text-secondary);
+  --ag-row-border-color: var(--color-border);
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: 12px;
+}
+
+.grid :global(.ag-root-wrapper) {
+  border: 0;
+  border-radius: 0;
+}
+
+.grid :global(.ag-header) {
+  border-block-end: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+.grid :global(.ag-header-group-cell) {
+  border-block-end: 2px solid var(--purple-300);
+  color: var(--color-text-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.grid :global(.ag-header-cell) {
+  color: var(--color-text-primary);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+  font-size: 12px;
+}
+
+.valueLabel {
+  color: var(--color-text-primary, var(--slate-900));
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.significance {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding-inline: 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-primary) 14%, var(--color-surface));
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.number {
+  color: var(--color-text-primary, var(--slate-900));
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.revCell {
+  display: inline-grid;
+  grid-template-columns: 48px auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.revBar {
+  display: block;
+  height: 7px;
+  max-width: 48px;
+  border-radius: 999px;
+  background: var(--color-primary);
+}
+
+.clusterCell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+}
+
+.dot[data-tone='up'] {
+  background: var(--color-success);
+}
+
+.dot[data-tone='down'] {
+  background: var(--color-error);
+}
+
+.up {
+  color: var(--color-success);
+  font-size: 11px;
+}
+
+.down {
+  color: var(--color-error);
+  font-size: 11px;
+}
+
+.absent {
+  color: var(--color-text-tertiary, var(--slate-400));
+  font-variant-numeric: tabular-nums;
+}
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-success);
+  font-size: 12px;
+}
+
+.signal {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding-inline: 8px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.signalGrow {
+  border-color: var(--emerald-200);
+  background-color: var(--emerald-50);
+  color: var(--emerald-700);
+}
+
+.signalHold {
+  border-color: var(--slate-200);
+  background-color: var(--slate-50);
+  color: var(--slate-700);
+}
+
+.signalExit {
+  border-color: var(--rose-200);
+  background-color: var(--rose-50);
+  color: var(--rose-700);
+}

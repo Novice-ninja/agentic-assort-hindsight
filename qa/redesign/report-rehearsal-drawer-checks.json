@@ -1,0 +1,24 @@
+{
+  "requirement": "HSP60-loading-error",
+  "kind": "Actual GlobalFilterDrawer, ReportStateProvider, WorkspaceCard and Impact controls in jsdom; useWorkspace host is a semantic fixture",
+  "passed": 3,
+  "checkCount": 3,
+  "checks": [
+    {
+      "name": "Actual GlobalFilterDrawer Demo settings exposes a real Impact report selector and explicit rehearsal disclosure",
+      "pass": true
+    },
+    {
+      "name": "Actual recovered Select and Show action apply one report failure, close the drawer, and never call Apply scope or mutate its staged filters",
+      "pass": true
+    },
+    {
+      "name": "Rehearsed failure is recovered by its actual component Retry button without applying filter drafts",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Not a native Chrome or appearance test.",
+    "The host supplies real canonical dataset/default scope while recording Apply calls; production services are not invoked."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "products": {
+    "title": "المنتجات",
+    "subtitle": "إدارة تشكيلة منتجاتك",
+    "columns": {
+      "name": "الاسم",
+      "category": "الفئة",
+      "status": "الحالة",
+      "price": "السعر",
+      "updatedAt": "آخر تحديث"
+    },
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "draft": "مسودة"
+    }
+  }
+}

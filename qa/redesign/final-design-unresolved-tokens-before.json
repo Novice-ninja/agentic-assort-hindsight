@@ -1,0 +1,77 @@
+{
+  "kind": "Comparison with actual staticTokenVars/themeColorVars; no native style assertion",
+  "tokens": [
+    {
+      "file": "src/modules/hindsight/redesign/views/overview.module.css",
+      "line": 1,
+      "variable": "--color-bg",
+      "excerpt": "cution span{padding:12px;background:var(--color-bg);border-radius:8px;font-size:12px;col"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/overview.module.css",
+      "line": 1,
+      "variable": "--color-text",
+      "excerpt": "y)}.execution b{display:block;color:var(--color-text);font-size:23px;line-height:32px}.i"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-text",
+      "excerpt": "/18px var(--font-family-base);color:var(--color-text)}.field textarea{resize:vertical;mi"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-bg",
+      "excerpt": "ndary);padding:11px 13px;background:var(--color-bg);border:1px solid var(--color-border)"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-text",
+      "excerpt": "e-height:30px;font-weight:700;color:var(--color-text)}.weekStrip{display:flex;gap:4px;al"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-bg",
+      "excerpt": "size:12px}.baselineTrack{background:var(--color-bg);height:22px;border-radius:4px;overfl"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-bg",
+      "excerpt": "dius:3px;overflow:hidden;background:var(--color-bg);margin:3px 0}.shareBar{height:100%;b"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/screens.module.css",
+      "line": 1,
+      "variable": "--color-text",
+      "excerpt": "-shadow:-4px 0 28px #12233b24;color:var(--color-text);font-family:var(--font-family-base"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/views.module.css",
+      "line": 6,
+      "variable": "--color-bg",
+      "excerpt": "0px 14px;text-align:left;background:var(--color-bg);border:1px solid var(--color-border)"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/views.module.css",
+      "line": 6,
+      "variable": "--color-text",
+      "excerpt": "lor-border);border-radius:8px;color:var(--color-text);font:600 12px/20px var(--font-fami"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/views.module.css",
+      "line": 6,
+      "variable": "--color-bg",
+      "excerpt": "-index:4;min-width:210px;background:var(--color-bg)}.matrixTable tbody th:first-child{to"
+    },
+    {
+      "file": "src/modules/hindsight/redesign/components/iris.module.css",
+      "line": 5,
+      "variable": "--iris-panel-width",
+      "excerpt": "!important;top:56px!important;width:var(--iris-panel-width)!important;min-width:0!import"
+    }
+  ]
+}

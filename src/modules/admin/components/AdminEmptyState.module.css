@@ -1,0 +1,104 @@
+@property --module_card_angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Reference admin_empty_state_card: white card, radius 20, rotating conic border */
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: var(--space-xl) var(--space-lg);
+  margin: var(--space-lg) auto;
+  width: min(884px, 100%);
+  text-align: center;
+  border-radius: 20px;
+  background: var(--color-surface);
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--slate-950) 6%, transparent);
+  position: relative;
+  z-index: 1;
+}
+
+.wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--gradient-admin-card-active-border);
+  mask:
+    linear-gradient(var(--color-surface) 0 0) content-box,
+    linear-gradient(var(--color-surface) 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: border-rotate 8s linear infinite;
+}
+
+@keyframes border-rotate {
+  to {
+    --module_card_angle: 360deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrap::before {
+    animation: none;
+  }
+}
+
+.illustration {
+  width: 225px;
+  height: 150px;
+  margin-bottom: var(--space-smd);
+}
+
+.title {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--slate-800);
+}
+
+.body {
+  margin: var(--space-smd) 0 40px;
+  max-width: 650px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--slate-650);
+  line-height: 21px;
+}
+
+/* Reference primary (contained) button */
+.addFilterBtn.addFilterBtn {
+  height: 32px;
+  padding: 6px var(--space-smd);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--indigo-400);
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.addFilterBtn.addFilterBtn:hover:not(:disabled) {
+  background-color: var(--indigo-600);
+}
+
+:global(html[data-theme='dark']) .wrap {
+  background: var(--graphite-4);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 38%),
+    0 12px 32px -16px rgb(0 0 0 / 60%);
+}
+
+:global(html[data-theme='dark']) .title {
+  color: var(--graphite-9);
+}
+
+:global(html[data-theme='dark']) .body {
+  color: var(--graphite-8);
+}

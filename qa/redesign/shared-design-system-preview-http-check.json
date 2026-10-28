@@ -1,0 +1,13 @@
+{
+  "origin": "http://127.0.0.1:5174",
+  "route": "/assort/hindsight/overview",
+  "indexMatchesCurrent": true,
+  "workspaceMatchesCurrent": true,
+  "workspaceChunk": "WorkspacePage-C0EN-gD6.js",
+  "workspaceSha256": "492e8dde97fc40eef9791449cc00c32f860bfbb0c3426f5d6fef2400594ddcdf",
+  "css": [
+    "WorkspacePage-DMNF3kOv.css"
+  ],
+  "browserAppearanceVerified": false,
+  "purpose": "Critical authored financial-metadata projection and scoped Mix export production build"
+}

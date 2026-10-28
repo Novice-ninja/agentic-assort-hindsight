@@ -1,0 +1,5 @@
+/* The chip itself is the vendor Tag, so this only has to place it in the header row. */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+}

@@ -1,0 +1,78 @@
+{
+  "data": {
+    "metric": "revenue",
+    "thresholdPct": 80,
+    "rows": [
+      {
+        "version": "ly",
+        "node": "Solid Hardwood",
+        "contributionPct": 27.8,
+        "cumulativePct": 27.8,
+        "metricValue": 2338686
+      },
+      {
+        "version": "ly",
+        "node": "Water Resistant Engineered",
+        "contributionPct": 23.9,
+        "cumulativePct": 51.7,
+        "metricValue": 2013066
+      },
+      {
+        "version": "ly",
+        "node": "Stranded Bamboo",
+        "contributionPct": 17.8,
+        "cumulativePct": 69.5,
+        "metricValue": 1500904
+      },
+      {
+        "version": "ly",
+        "node": "Hand Scraped Hardwood",
+        "contributionPct": 15.8,
+        "cumulativePct": 85.3,
+        "metricValue": 1328361
+      },
+      {
+        "version": "ly",
+        "node": "Wire Brushed Engineered",
+        "contributionPct": 14.7,
+        "cumulativePct": 100,
+        "metricValue": 1238982
+      },
+      {
+        "version": "lly",
+        "node": "Solid Hardwood",
+        "contributionPct": 25.9,
+        "cumulativePct": 25.9,
+        "metricValue": 2027804
+      },
+      {
+        "version": "lly",
+        "node": "Water Resistant Engineered",
+        "contributionPct": 24.4,
+        "cumulativePct": 50.3,
+        "metricValue": 1914376
+      },
+      {
+        "version": "lly",
+        "node": "Stranded Bamboo",
+        "contributionPct": 18.3,
+        "cumulativePct": 68.6,
+        "metricValue": 1432599
+      },
+      {
+        "version": "lly",
+        "node": "Hand Scraped Hardwood",
+        "contributionPct": 17.4,
+        "cumulativePct": 86,
+        "metricValue": 1359195
+      },
+      {
+        "version": "lly",
+        "node": "Wire Brushed Engineered",
+        "contributionPct": 14,
+        "cumulativePct": 100,
+        "metricValue": 1096626
+      }
+    ]
+  }
+}

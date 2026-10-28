@@ -1,0 +1,52 @@
+/*
+ * Colours come from the `--matrix-grid-*` custom properties that `matrixGridTheme.css` resolves
+ * from design tokens, so a host overrides them through the `className` prop rather than by
+ * restyling `.ag-*` selectors (contract §7). Every box property is logical, so the cell mirrors
+ * under `dir="rtl"`.
+ */
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+
+.value {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cell[data-variant='baseline'] .value {
+  color: var(--matrix-grid-variant-baseline);
+}
+
+.cell[data-variant='editable'] .value {
+  color: var(--matrix-grid-variant-editable);
+}
+
+.cell[data-modified='true'] .value {
+  color: var(--matrix-grid-modified);
+  font-weight: var(--font-weight-semibold);
+}
+
+.badge {
+  flex: none;
+  padding-block: 0;
+  padding-inline: var(--space-xs);
+  border-radius: var(--radius-sm);
+  background: var(--matrix-grid-badge-surface);
+  color: var(--matrix-grid-badge-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.marker {
+  flex: none;
+  color: var(--matrix-grid-modified);
+  font-size: var(--font-size-xs);
+}

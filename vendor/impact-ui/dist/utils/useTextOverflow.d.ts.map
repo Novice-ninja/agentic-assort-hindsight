@@ -1,0 +1,1 @@
+{"version":3,"file":"useTextOverflow.d.ts","sourceRoot":"","sources":["../../src/utils/useTextOverflow.tsx"],"names":[],"mappings":"AAEA;;;;;;;;;;;;;;;;GAgBG;AACH,eAAO,MAAM,eAAe,GAC1B,OAAM,OAAO,EAAO,KACnB;IACD,OAAO,EAAE,KAAK,CAAC,SAAS,CAAC,WAAW,CAAC,CAAC;IACtC,aAAa,EAAE,OAAO,CAAC;CA6BxB,CAAC"}

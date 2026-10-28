@@ -1,0 +1,230 @@
+/* === Accordion title (rendered inside AccordionModern header slot) === */
+.accordionTitle {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 21px;
+  color: #0d152c;
+  text-transform: capitalize;
+}
+
+/* === Heatmap layout: chart plot + legend === */
+.heatmapWrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.plot {
+  flex: 1;
+  min-width: 0;
+  overflow: visible;
+}
+
+/* Highcharts overrides for Figma pixel-perfect match */
+.plot :global(.chart-container) {
+  gap: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.plot :global(.chart-container-header) {
+  display: none;
+}
+
+.plot :global(.highcharts-background),
+.plot :global(.highcharts-plot-background) {
+  fill: transparent;
+}
+
+.plot :global(.highcharts-axis-line),
+.plot :global(.highcharts-tick),
+.plot :global(.highcharts-grid-line) {
+  display: none;
+}
+
+.plot :global(.highcharts-data-label text) {
+  fill: #1f2b4d !important;
+  font-family: var(--font-family-base) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.plot :global(.highcharts-xaxis-labels text) {
+  fill: #1f2b4d !important;
+  color: #1f2b4d !important;
+  font-family: var(--font-family-base) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.plot :global(.highcharts-yaxis-labels text) {
+  fill: #1f2b4d !important;
+  color: #1f2b4d !important;
+  font-family: var(--font-family-base) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+/* === Legend (right side) === */
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 82px;
+}
+
+.legendBar {
+  display: flex;
+  flex-direction: column;
+  width: 22px;
+  gap: 2px;
+}
+
+.legendSegment {
+  width: 22px;
+  height: 49px;
+}
+
+.legendSegTop {
+  background: linear-gradient(to bottom, #ed9998, #f6cccc);
+  border-radius: 6px 6px 0 0;
+}
+
+.legendSegUpperMid {
+  background: linear-gradient(to bottom, #f6cccc, rgba(252, 238, 238, 0.51));
+}
+
+.legendSegLowerMid {
+  background: linear-gradient(to bottom, rgba(235, 247, 241, 0.51), #c4e8d5);
+}
+
+.legendSegBottom {
+  background: linear-gradient(to bottom, #c4e8d5, #3bb273);
+  border-radius: 0 0 6px 6px;
+}
+
+.legendLabels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 37px;
+  height: 241px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1f2b4d;
+  margin-left: 12px;
+}
+
+.legendRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.legendBarWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 22px;
+}
+
+.legendPage {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1f2b4d;
+}
+
+/* === Empty state === */
+.stateText {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+/* === Visually hidden (a11y) === */
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* === Skeleton === */
+.skeletonGrid {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  padding: 16px 0;
+}
+
+.skeletonRowLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 160px;
+  min-width: 160px;
+  padding-bottom: 41px;
+}
+
+.skeletonRowLabel {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.skeletonColumns {
+  display: flex;
+  gap: 0;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.skeletonColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 216px;
+  min-width: 216px;
+  padding: 2px;
+}
+
+.skeletonCell {
+  height: 60px;
+  border-radius: 8px;
+}
+
+.skeletonLegend {
+  width: 22px;
+  height: 196px;
+  border-radius: 6px;
+  margin-left: 24px;
+}
+
+.skeletonBone {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

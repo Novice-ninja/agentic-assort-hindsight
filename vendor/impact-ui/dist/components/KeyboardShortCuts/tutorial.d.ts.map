@@ -1,0 +1,1 @@
+{"version":3,"file":"tutorial.d.ts","sourceRoot":"","sources":["../../../src/components/KeyboardShortCuts/tutorial.tsx"],"names":[],"mappings":"AAUA,OAAO,iCAAiC,CAAC;AA+FzC,UAAU,kBAAkB;IAC1B,oBAAoB,EAAE,CAAC,IAAI,EAAE,OAAO,KAAK,IAAI,CAAC;IAC9C,WAAW,CAAC,EAAE,MAAM,IAAI,CAAC;CAC1B;AAED,eAAO,MAAM,aAAa,GAAI,uCAAuC,kBAAkB,4CA0MtF,CAAC"}

@@ -1,0 +1,30 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+.value {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.delta {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.up {
+  color: var(--color-success);
+}
+
+.down {
+  color: var(--color-error);
+}
+
+.label {
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}

@@ -1,0 +1,1014 @@
+{
+  "document": "Hindsight Netlify App - Design Team Fix List (SS).docx",
+  "source": "qa/browser-exports/Hindsight Netlify App - Design Team Fix List (SS).docx",
+  "extracted_text": "qa/redesign/priority-fix-list-text.txt",
+  "image_inventory": "qa/redesign/priority-fix-images/image-context.json",
+  "reference_images_reviewed": 17,
+  "ordering": [
+    "Section A before Wednesday walkthrough",
+    "Section B defects",
+    "Section C quick changes",
+    "Section D held pending Omar confirmation"
+  ],
+  "current_release_tabs": [
+    "Overview",
+    "By Item",
+    "Sales Mix"
+  ],
+  "R67_status": "Draft views preserved; broad integration paused while priority fix list is implemented.",
+  "evidence_policy": "This is an acceptance plan. Source code or a build does not establish browser pass. Each browser result must cite its actual recorded event or screenshot.",
+  "requirements": [
+    {
+      "id": "A1",
+      "title": "One dataset behind every tab (totals and brand list)",
+      "source_section": "A",
+      "source_heading": "A1. One dataset behind every tab (totals and brand list)",
+      "surfaces": [
+        "Overview Summary",
+        "Overview Brand chart",
+        "By Item KPI strip and table",
+        "Sales Mix summary and breakdown"
+      ],
+      "owner": "local_data",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "A1.1",
+          "expected": "At the identical unfiltered SS26 / Flooring scope, Overview, By Item, Sales Mix and brand charts reconcile to $8.4M sales and 182,400 sales units.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A1.2",
+          "expected": "Every brand view uses one canonical brand dictionary; style names Northport, Hillside and Seashell do not masquerade as brands.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A1.3",
+          "expected": "Brand share uses each brand sales divided by the same scoped sales denominator; Woodland Reserve share matches across all three surfaces.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A1.4",
+          "expected": "After a Category/Subcategory cut, the summary strip, table leaf sums, brand total and contribution shares reconcile under that same cut.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A1.5",
+          "expected": "All quantities, sales, GM and stock are derived from the same synthetic ledger; rate totals recalculate from numerators/denominators rather than averaging percentages.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A1.6",
+          "expected": "Synthetic source status remains visible; no generated value is represented as an actual F&D client fact.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image1.png",
+        "qa/redesign/priority-fix-images/image2.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        1
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "Same product, one ID, one story",
+      "source_section": "A",
+      "source_heading": "A2. Same product, one ID, one story",
+      "surfaces": [
+        "Overview Missed Opportunities",
+        "By Item cards/table",
+        "hidden Watchlist later"
+      ],
+      "owner": "local_data",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "A2.1",
+          "expected": "Northport and all repeated products have exactly one stable canonical product ID across current visible tabs.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A2.2",
+          "expected": "The same product sales, stock condition and growth story agree across Overview and By Item.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A2.3",
+          "expected": "When both demand/stockout and relative underperformance apply, the explanation distinguishes them and does not present conflicting categorical labels.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A2.4",
+          "expected": "Any ID crosswalk is explicit; matching descriptions alone do not fabricate product identity.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A2.5",
+          "expected": "Watchlist alignment is recorded as deferred while C6 hides that concept.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image3.png",
+        "qa/redesign/priority-fix-images/image4.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        1
+      ]
+    },
+    {
+      "id": "A3",
+      "title": "Remove apparel and non-flooring leftovers",
+      "source_section": "A",
+      "source_heading": "A3. Remove apparel and non-flooring leftovers",
+      "surfaces": [
+        "Overview Category × Cluster",
+        "Category global filter"
+      ],
+      "owner": "local_data",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "A3.1",
+          "expected": "No Footwear, Premium, Outlet or apparel category wording remains in the flooring cluster grid or commentary.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A3.2",
+          "expected": "Grid row identities match the current selected flooring categories; an unselected Laminate row does not remain in a Hardwood / Engineered Hardwood / Bamboo scope.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A3.3",
+          "expected": "Cluster labels are A–F.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A3.4",
+          "expected": "Combination count is calculated as displayed row count times displayed cluster count; red-cell count is counted from those same cells and thresholds.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A3.5",
+          "expected": "Changing category selection updates both the visible grid and its narrative count.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image5.png",
+        "qa/redesign/priority-fix-images/image6.png"
+      ],
+      "production_dependencies": [],
+      "source_review_note": "Hardcoded Footwear/Outlet/10-of-30 fallback removed. Widget now displays only the API-provided insight or omits it. Dynamic source/grid and browser verification remain separate.",
+      "source_rendered_pages": [
+        2
+      ]
+    },
+    {
+      "id": "A4",
+      "title": "Copy cleanup: double full stops and repeated insight text",
+      "source_section": "A",
+      "source_heading": "A4. Copy cleanup: double full stops and repeated insight text",
+      "surfaces": [
+        "Summary insight",
+        "Color / Brand / Product Type charts",
+        "weekly chart",
+        "Category × Cluster"
+      ],
+      "owner": "local_data / root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "A4.1",
+          "expected": "Sentence case is used for narrative prose; brand/category proper names retain their correct case.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A4.2",
+          "expected": "No doubled terminal full stop remains in rendered insight prose or its tooltip.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A4.3",
+          "expected": "Each attribute chart has a metric/lens-specific insight or omits one; the identical generic product-type paragraph is not copied above every chart.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A4.4",
+          "expected": "Quantified narrative values match the selected chart and scope.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image7.png"
+      ],
+      "production_dependencies": [],
+      "source_review_note": "Already-punctuated bullets now use joinInsightProse in KPI, Contribution and Hierarchy Pareto widgets. Weekly file is owned by root; shared AIStrip sentence casing is owned by source_build.",
+      "source_rendered_pages": [
+        3
+      ]
+    },
+    {
+      "id": "A5",
+      "title": "Watchlist counters do not add up",
+      "source_section": "A",
+      "source_heading": "A5. Watchlist counters do not add up",
+      "surfaces": [
+        "Watchlist header"
+      ],
+      "owner": "deferred with C6",
+      "implementation_status": "conditional_deferred_watchlist_hidden",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "A5.1",
+          "expected": "If the Watchlist is later made visible, mutually exclusive Critical + High + Watch counts equal the items-needing-attention headline.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A5.2",
+          "expected": "Total Scanned is a separately computed larger population, not copied from each priority count.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "A5.3",
+          "expected": "No Watchlist entry is exposed in the current three-tab release.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image8.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        4
+      ]
+    },
+    {
+      "id": "B1",
+      "title": "Division dropdown stays open",
+      "source_section": "B",
+      "source_heading": "B1. Division dropdown stays open",
+      "surfaces": [
+        "Filter bar Division"
+      ],
+      "owner": "source_build",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "B1.1",
+          "expected": "Choose an individual Division option: the dropdown closes immediately.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B1.2",
+          "expected": "The selected division is applied/displayed; dependent values follow the existing scope contract.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B1.3",
+          "expected": "Reopen and use keyboard selection; the menu closes and focus returns predictably.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image9.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        5
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "Netlify badge and header overlap content",
+      "source_section": "B",
+      "source_heading": "B2. Netlify badge and header overlap content",
+      "surfaces": [
+        "all screens bottom right",
+        "header at 798 px"
+      ],
+      "owner": "source_build",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "B2.1",
+          "expected": "The preview contains no Powered by Netlify badge overlaying page content.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B2.2",
+          "expected": "At 798 px width, the header decoration and top-right controls do not overlap the filter bar.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B2.3",
+          "expected": "Check desktop and a narrower viewport; content and buttons remain reachable without horizontal page overflow.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B2.4",
+          "expected": "Only branding/deployment chrome is changed; unrelated product controls remain clickable.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image10.png"
+      ],
+      "production_dependencies": [
+        "A hosted preview badge may also require Netlify project configuration; local HTML/CSS removal alone is not proof of the hosted deployment state."
+      ],
+      "source_rendered_pages": [
+        5
+      ]
+    },
+    {
+      "id": "B3",
+      "title": "Narrative card text is clipped",
+      "source_section": "B",
+      "source_heading": "B3. Narrative card text is clipped",
+      "surfaces": [
+        "Overview Season Narrative Summary cards"
+      ],
+      "owner": "root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "B3.1",
+          "expected": "All three bullets in each card are fully readable, or text is cleanly truncated before a distinct Read More control.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B3.2",
+          "expected": "Read More expands the correct narrative and the control does not cover the last visible line.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B3.3",
+          "expected": "Expanded/collapsed and narrow layouts remain readable.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image11.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        6
+      ]
+    },
+    {
+      "id": "B4",
+      "title": "Load error and URL naming (deployment)",
+      "source_section": "B",
+      "source_heading": "B4. Load error and URL naming (deployment)",
+      "surfaces": [
+        "initial app boot",
+        "route and document title",
+        "header/breadcrumb",
+        "preview site name"
+      ],
+      "owner": "source_build",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "B4.1",
+          "expected": "A direct Hindsight URL lands in Hindsight; initial loading has no error toast and no empty Decision Dashboard flash.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B4.2",
+          "expected": "Canonical local route, document title, header and breadcrumb use Assort.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B4.3",
+          "expected": "Old agentic-assort routes redirect compatibly so existing links still open the intended screen.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B4.4",
+          "expected": "A direct reload of By Item and Sales Mix works.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "B4.5",
+          "expected": "Hosted site naming is verified separately when deployed; local naming does not claim that a remote Netlify project was renamed.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image12.png"
+      ],
+      "production_dependencies": [
+        "Renaming the actual hosted Netlify site/address requires deployment project control; preserve an explicit pending external task if unavailable."
+      ],
+      "source_rendered_pages": [
+        7
+      ]
+    },
+    {
+      "id": "C1",
+      "title": "Replace per-object Ask Iris with one entry point",
+      "source_section": "C",
+      "source_heading": "C1. Replace per-object Ask Iris with one entry point",
+      "surfaces": [
+        "header Iris trigger",
+        "Overview all cards/charts/opportunities"
+      ],
+      "owner": "source_build / root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C1.1",
+          "expected": "A context-aware header Iris control carries the current screen and filters.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C1.2",
+          "expected": "Repeated literal Ask Iris text is removed from object controls; if contextual controls are retained, they are symbol-only with accessible names and correct object context.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C1.3",
+          "expected": "No context button silently opens an unrelated chart or stale selection.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C1.4",
+          "expected": "Keyboard activation, close and focus return remain usable.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C1.5",
+          "expected": "Interpretation of the document ambiguity is explicit: its Expected line permits icon-only contextual buttons, while the issue text prefers one entry point.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image13.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        8
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Rename Season Scorecard",
+      "source_section": "C",
+      "source_heading": "C2. Rename Season Scorecard",
+      "surfaces": [
+        "Overview scorecard heading",
+        "demo script"
+      ],
+      "owner": "root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C2.1",
+          "expected": "The visible section heading is Summary.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C2.2",
+          "expected": "The same section label is used by the demo walkthrough/script and accessible names.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C2.3",
+          "expected": "No visible Season Scorecard title remains in the current app.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image14.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        8
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Replace hex store map with a table (and fix its copy)",
+      "source_section": "C",
+      "source_heading": "C3. Replace hex store map with a table (and fix its copy)",
+      "surfaces": [
+        "Overview Store Performance"
+      ],
+      "owner": "parity_inventory",
+      "implementation_status": "implemented_source_pending_browser",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C3.1",
+          "expected": "The honeycomb/map is removed and the original 45 store identities remain available in a sortable table.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.2",
+          "expected": "The table shows Store, Store ID, Cluster A–F and colour-shaded ST% cells.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.3",
+          "expected": "Each column sorts in both directions; numeric ST sorting is numeric and ties use stable store ID.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.4",
+          "expected": "Search by store name/ID/cluster changes the result count; clearing search restores the same store population.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.5",
+          "expected": "Narrative names actual A–F clusters and derives its highest/lowest store-average rates from the displayed source population; no Premium/Outlet wording remains.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.6",
+          "expected": "ST% is an absolute rate calculated from synthetic units and supply/buy, never the original signed change values.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.7",
+          "expected": "Click a store to open its side panel with the matching identity, cluster, sales, sales units, GM, stock and ST KPIs from the same source.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.8",
+          "expected": "Close button, backdrop and Escape close the panel; focus enters the panel, stays within it and returns to the originating store control.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.9",
+          "expected": "Loading, error/retry and no-search-results states remain explicit.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.10",
+          "expected": "Desktop, 798 px and narrow viewports retain all table content and panel controls without page overflow.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C3.11",
+          "expected": "Rate shading is labeled as a demo convention with definition TBC, not an approved F&D target.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image15.png"
+      ],
+      "production_dependencies": [],
+      "source_files": [
+        "src/modules/hindsight/components/overview/StoreHexMapWidget.tsx",
+        "src/modules/hindsight/components/overview/StoreHexMapWidget.module.css",
+        "src/modules/hindsight/api/getStoreHexMapChart.ts",
+        "src/modules/hindsight/services/storePerformanceTable.ts"
+      ],
+      "non_browser_evidence": [
+        "qa/redesign/priority-store-source-checks.json"
+      ],
+      "source_rendered_pages": [
+        9
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Add R4 / R13 / R52, sales per sq ft and PLR baseline columns",
+      "source_section": "C",
+      "source_heading": "C4. Add R4 / R13 / R52, sales per sq ft and PLR baseline columns",
+      "surfaces": [
+        "By Item Table View",
+        "Sales Mix tables",
+        "Overview Summary"
+      ],
+      "owner": "local_data + source_build / root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C4.1",
+          "expected": "R4, R13 and R52 columns are visible with synthetic values and an explicit definition TBC label.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C4.2",
+          "expected": "Sales per sq ft is visible and labeled synthetic / definition TBC; it does not silently use selling-space productivity when the source is product area.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C4.3",
+          "expected": "PLR baseline is visible next to LY and Plan where those comparison columns exist.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C4.4",
+          "expected": "The Overview Summary exposes the same proposed period/baseline measures without claiming an original production PLR feed.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C4.5",
+          "expected": "New fields flow into column chooser, sorting and actual workbook download where those controls already apply.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C4.6",
+          "expected": "Period totals reconcile to their synthetic ledger definitions; one unrelated value is not relabeled for all three periods.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        9
+      ],
+      "export_source_evidence": [
+        "qa/redesign/priority-export-package-checks.json"
+      ],
+      "export_source_note": "Optional metadata writes Data/Scope/Definitions. Numeric period values, raw sales sums, filtered input and grouped-header compatibility are independently parsed. Root owns grid filtering/download browser evidence and caller wiring."
+    },
+    {
+      "id": "C5",
+      "title": "Weekly chart: fit to screen with zoom",
+      "source_section": "C",
+      "source_heading": "C5. Weekly chart: fit to screen with zoom",
+      "surfaces": [
+        "Overview weekly SlsU chart"
+      ],
+      "owner": "root",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C5.1",
+          "expected": "All 26 season weeks fit the chart container without an initial horizontal scrollbar.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C5.2",
+          "expected": "A zoom or brush/range control narrows the visible weeks and visibly shows the selected interval.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C5.3",
+          "expected": "Reset restores all 26 weeks.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C5.4",
+          "expected": "Metric, subgroup and weekly/monthly changes remain correctly bound and the chart remains accessible at narrow widths.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image16.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        10
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Hide the Watchlist tab for now",
+      "source_section": "C",
+      "source_heading": "C6. Hide the Watchlist tab for now",
+      "surfaces": [
+        "Hindsight primary tab bar",
+        "direct Watchlist route"
+      ],
+      "owner": "source_build",
+      "implementation_status": "planned",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "C6.1",
+          "expected": "The visible primary tabs are exactly Overview, By Item and Sales Mix.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C6.2",
+          "expected": "Watchlist is not moved into a Decisions tab or advertised elsewhere.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C6.3",
+          "expected": "A saved direct Watchlist URL resolves safely without exposing an unvalidated day-one workflow.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "C6.4",
+          "expected": "Experimental Watchlist creation and decision-lifecycle mock-ups are absent from this priority release.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [
+        "qa/redesign/priority-fix-images/image17.png"
+      ],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        10
+      ]
+    },
+    {
+      "id": "D1",
+      "title": "Master tabs and Deep Dive",
+      "source_section": "D",
+      "source_heading": "D1. Master tabs and Deep Dive",
+      "surfaces": [
+        "Future structure"
+      ],
+      "owner": "deferred to Omar confirmation",
+      "implementation_status": "explicitly_deferred_pending_Omar",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "D1.1",
+          "expected": "Do not integrate this change into the priority release before Omar confirms the layout.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D1.2",
+          "expected": "Preserve R67 draft source separately; its existence is not a claim that this structure is approved or released.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D1.3",
+          "expected": "Overview / Deep Dive / Decisions, By Store, presets and folding Sales Mix into Overview change the page structure.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        11
+      ]
+    },
+    {
+      "id": "D2",
+      "title": "PLR review vs In-season mode",
+      "source_section": "D",
+      "source_heading": "D2. PLR review vs In-season mode",
+      "surfaces": [
+        "Future structure"
+      ],
+      "owner": "deferred to Omar confirmation",
+      "implementation_status": "explicitly_deferred_pending_Omar",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "D2.1",
+          "expected": "Do not integrate this change into the priority release before Omar confirms the layout.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D2.2",
+          "expected": "Preserve R67 draft source separately; its existence is not a claim that this structure is approved or released.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D2.3",
+          "expected": "The mode switch and restricted PLR calendar/L0 alter scope and workflows.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        11
+      ]
+    },
+    {
+      "id": "D3",
+      "title": "Scope lock and saved views / filters",
+      "source_section": "D",
+      "source_heading": "D3. Scope lock and saved views / filters",
+      "surfaces": [
+        "Future structure"
+      ],
+      "owner": "deferred to Omar confirmation",
+      "implementation_status": "explicitly_deferred_pending_Omar",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "D3.1",
+          "expected": "Do not integrate this change into the priority release before Omar confirms the layout.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D3.2",
+          "expected": "Preserve R67 draft source separately; its existence is not a claim that this structure is approved or released.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D3.3",
+          "expected": "Scope lock, immutable original buy baseline and saved view/filter controls alter persistent configuration.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        11
+      ]
+    },
+    {
+      "id": "D4",
+      "title": "Complete filter set, including store hierarchy",
+      "source_section": "D",
+      "source_heading": "D4. Complete filter set, including store hierarchy",
+      "surfaces": [
+        "Future structure"
+      ],
+      "owner": "deferred to Omar confirmation",
+      "implementation_status": "explicitly_deferred_pending_Omar",
+      "browser_status": "not_tested",
+      "acceptance": [
+        {
+          "id": "D4.1",
+          "expected": "Do not integrate this change into the priority release before Omar confirms the layout.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D4.2",
+          "expected": "Preserve R67 draft source separately; its existence is not a claim that this structure is approved or released.",
+          "status": "not_tested",
+          "evidence": []
+        },
+        {
+          "id": "D4.3",
+          "expected": "Adding region/district/store/cluster/time/population/lifecycle/attribute/unit groups changes the existing filter architecture.",
+          "status": "not_tested",
+          "evidence": []
+        }
+      ],
+      "reference_images": [],
+      "production_dependencies": [],
+      "source_rendered_pages": [
+        12
+      ]
+    }
+  ],
+  "summary": {
+    "requirement_groups": 19,
+    "priority_groups": 15,
+    "unconditional_priority_groups": 14,
+    "conditional_watchlist_group": 1,
+    "explicitly_deferred_structure_groups": 4,
+    "acceptance_checks": 83
+  },
+  "build_evidence": {
+    "early_priority_build": "Passed before A3/A4 final edits; final build must be rerun after all agents finish.",
+    "strict_source_check": "Canonical flooring fixture, store sorting/commentary helper, prose helper, Excel workbook builder and restored grid-handle type all pass standalone strict TypeScript. This does not claim the recovered app declaration baseline is strict-clean.",
+    "browser": "Not run by this agent; root owns Chrome.",
+    "priority_integration_build": {
+      "status": "passed",
+      "duration_seconds": 10.7,
+      "log": "qa/redesign/priority-build.log",
+      "snapshot_note": "Before the final optional export metadata and DataGrid handle additions; root must run the final integrated build after wiring its callers."
+    }
+  },
+  "rendered_source_pdf": "qa/redesign/priority-render/Hindsight Netlify App - Design Team Fix List (SS).pdf",
+  "source_page_basis": "Requirement heading location in the rendered 12-page PDF. Reference images may continue on following pages.",
+  "source_review_findings": [
+    {
+      "finding": "Largest-remainder allocation recomputed its shrinking residual bound.",
+      "resolution": "Fixed centrally by local_data; exact full and 45-store additive reconciliation now passes.",
+      "evidence": "qa/redesign/priority-store-source-checks.json"
+    },
+    {
+      "finding": "Duplicated full stops arose from joining already-punctuated insight bullets.",
+      "resolution": "Safe join helper now used in KPI, contribution, hierarchy Pareto and weekly widgets; shared insight prose uses sentence case.",
+      "evidence": "src/modules/hindsight/services/insightProse.ts"
+    },
+    {
+      "finding": "Sales Mix exports used compact display strings and did not include scoped filter metadata.",
+      "resolution": "Shared workbook builder now supports numeric Data plus Scope and Definitions; root/source_build wired current callers and filtered/sorted leaf collection. Actual browser files still require parsing.",
+      "evidence": "qa/redesign/priority-export-package-checks.json"
+    },
+    {
+      "finding": "Category heatmap could relabel ST values as another metric.",
+      "resolution": "Latest priority source binds a disabled ST%-only selector and matching percent format.",
+      "evidence": "src/modules/hindsight/components/overview/CategoryByClusterWidget.tsx"
+    },
+    {
+      "finding": "Remaining product thumbnails visible in desktop screenshots still show apparel for flooring products.",
+      "resolution": "Latest ItemThumbnail source replaces canonical priority IDs with illustrative flooring swatches and a neutral material fallback. Fresh browser screenshot/alt-text validation remains pending.",
+      "evidence": "qa/redesign/priority-browser/stores-table-desktop.jpg",
+      "source_evidence": "src/modules/hindsight/components/cells/ItemThumbnail.tsx"
+    },
+    {
+      "finding": "Overview legend rounds Woodland Reserve share to 27%, while the source insight and Sales Mix show 27.4%.",
+      "resolution": "Underlying source agrees. Consistent one-decimal legend display was recommended to root; verify final presentation.",
+      "evidence": "qa/redesign/priority-browser/narrative-expanded-desktop.jpg"
+    },
+    {
+      "finding": "Sales Mix export filenames exposed reference season 74 while metadata named the SS26 plan.",
+      "resolution": "Latest source names Sales Mix exports explicitly SS26; By Item uses seasonCode SS26 and records plan and reference codes separately in Scope metadata.",
+      "evidence": [
+        "src/modules/hindsight/components/attributes/SalesMixChartCard.tsx",
+        "src/modules/hindsight/components/attributes/SalesMixBreakdownTable.tsx",
+        "src/modules/hindsight/components/panels/ByItemPanel.tsx"
+      ]
+    }
+  ],
+  "current_coverage_audit": "qa/redesign/priority-coverage-audit.json",
+  "current_coverage_note": "The criteria below are the acceptance plan, not browser results. Current source/data and actual browser evidence are separated in priority-coverage-audit.json/md. Later user steering authorizes future structural work after priority completion; Section D remains outside this priority release."
+}

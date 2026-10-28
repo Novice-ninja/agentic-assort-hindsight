@@ -1,0 +1,273 @@
+{
+  "allPlans": {
+    "title": "All Plans",
+    "subtitle": "Browse, filter, and resume your assortment plans."
+  },
+  "createPlan": {
+    "title": "Create Plan",
+    "subtitle": "",
+    "backToPlans": "Back to All Plans",
+    "comingSoon": "The Create Plan stepper is set up on this route.",
+    "successMessage": "Plan created successfully!"
+  },
+  "actions": {
+    "createPlan": "Create New Plan",
+    "editPlan": "Edit Plan",
+    "clonePlan": "Clone Plan",
+    "deletePlan": "Delete",
+    "download": "Download Plans",
+    "showDeletedPlans": "Show Deleted Plans",
+    "cancel": "Cancel",
+    "back": "Back",
+    "backToNameCalendar": "Back To Name & Calendar",
+    "backToProductScope": "Back To Product Scope",
+    "backToClustering": "Back To Clustering & Run Mode",
+    "goToProductScope": "Go To Product Scope",
+    "goToClustering": "Go To Clustering & Run Mode",
+    "goToReview": "Review & Create",
+    "done": "Done",
+    "chooseColumns": "Choose columns",
+    "searchColumns": "Search columns"
+  },
+  "deleteConfirm": {
+    "title": "Delete plan(s)?",
+    "body": "Are you sure you want to delete {{count}} selected plan(s)? This action cannot be undone from this view.",
+    "confirm": "Delete"
+  },
+  "toasts": {
+    "deleteSuccess": "{{count}} plan(s) deleted successfully",
+    "deleteError": "Failed to delete plan(s). Please try again."
+  },
+  "tabs": {
+    "label": "Filter plans by status",
+    "all": "All Plans",
+    "draft": "Draft",
+    "inProgress": "In Progress",
+    "review": "Review",
+    "approved": "Approved",
+    "count": "{{count}} plans"
+  },
+  "filters": {
+    "label": "Plan filters",
+    "stages": "Stages",
+    "seasons": "Seasons",
+    "selectStages": "Select Stages...",
+    "selectSeasons": "Select Seasons...",
+    "selected": "{{count}} selected"
+  },
+  "view": {
+    "label": "View mode",
+    "grid": "Grid view",
+    "table": "Table view"
+  },
+  "card": {
+    "steps": "Step {{current}} of {{total}}",
+    "stepsShort": "Steps: {{current}} / {{total}}",
+    "stepTooltip": "Step {{current}} of {{total}} · {{step}}",
+    "clusterTag": "Cluster:{{clusters}}",
+    "pipeline": "Pipeline:",
+    "select": "Select {{name}}",
+    "metrics": {
+      "sales": "Sales",
+      "units": "Units",
+      "sellThrough": "Sell-through",
+      "grossMargin": "Gross margin"
+    },
+    "actions": {
+      "resume": "Resume",
+      "view": "View",
+      "resumeNamed": "Resume {{name}}",
+      "viewNamed": "View {{name}}",
+      "history": "View history for {{name}}"
+    }
+  },
+  "table": {
+    "caption": "Assortment plans",
+    "name": "Plan name",
+    "status": "Status",
+    "season": "Season",
+    "category": "Category",
+    "cluster": "Cluster",
+    "progress": "Progress",
+    "createdBy": "Created by",
+    "createdAt": "Created at",
+    "sales": "Sales",
+    "margin": "Margin",
+    "actions": "Actions"
+  },
+  "empty": {
+    "noPlansTitle": "No plans yet",
+    "noPlansBody": "Create your first assortment plan to get started.",
+    "filteredTitle": "No plans match your filters",
+    "filteredBody": "Try clearing a filter or switching status tabs.",
+    "filtered": "No plans match your filters"
+  },
+  "common": {
+    "upcoming": "Upcoming"
+  },
+  "wizard": {
+    "stepperLabel": "Create plan steps",
+    "stepLabel": "Step {{number}}"
+  },
+  "steps": {
+    "nameCalendar": {
+      "title": "Name & Calendar",
+      "description": "Name your plan and choose the fiscal year, trading season, and starting point."
+    },
+    "productScope": {
+      "title": "Product Scope",
+      "description": "Select the department and the classes, sub classes, and SKUs to plan."
+    },
+    "clusteringRunMode": {
+      "title": "Clustering & Run Mode",
+      "description": "Choose a store clustering scenario, run mode, and confidence threshold."
+    },
+    "reviewCreate": {
+      "title": "Review & Create",
+      "description": "Review your selections and see what the agent will do, then create the plan."
+    }
+  },
+  "planDetails": "Plan Details",
+  "fields": {
+    "planName": "Plan Name",
+    "planNamePlaceholder": "e.g. SS26 Womenswear – Scenario B",
+    "fiscalYear": "Fiscal Year",
+    "seasonsAvailable": "{{count}} seasons available",
+    "tradingSeason": "Trading Season",
+    "selectFiscalFirst": "Select a fiscal year to see its trading seasons.",
+    "startingPoint": "Starting Point"
+  },
+  "fiscalTags": {
+    "complete": "Complete",
+    "current": "Current",
+    "future": "Future"
+  },
+  "startingPoints": {
+    "startFresh": "Start Fresh",
+    "carryForwardLY": "Carry Forward From LY"
+  },
+  "startingPointDesc": {
+    "startFresh": "Agent builds the plan from scratch using the current data signals.",
+    "carryForwardLY": "Apply hindsight insight and carry-forwards from the prior equivalent season automatically."
+  },
+  "scope": {
+    "department": "Department",
+    "class": "Class",
+    "subClass": "Sub Class",
+    "sku": "SKU",
+    "notSelected": "Not Selected",
+    "noneSelected": "None selected",
+    "selectedCount": "{{count}} selected",
+    "selectAll": "Select All",
+    "selectAllAccessible": "Select all {{level}}",
+    "selectAllMatchingAccessible": "Select all {{level}} matching the current search",
+    "allSelected": "All selected",
+    "allSelectedWithExcept": "All selected (−{{count}})",
+    "matchingSelected": "Matching “{{needles}}”",
+    "exceptMatchingSelected": "Except matching “{{needles}}”",
+    "matchingAndExceptSelected": "Matching “{{matching}}”; except “{{except}}”",
+    "clear": "Clear",
+    "searchLabel": "Search {{level}}",
+    "searchPlaceholder": "Search…",
+    "styles": "{{count}} Styles",
+    "listView": "List view",
+    "gridView": "Grid view",
+    "selectProductHierarchy": "Select Product Heirarchy",
+    "overflowCount": "+{{count}}",
+    "selectParentFirst": "Select {{parent}} first",
+    "noOptions": "No options for this selection",
+    "levelLoadError": "This level could not load",
+    "retry": "Retry",
+    "loadingMore": "Loading…",
+    "noHierarchy": "No product hierarchy available"
+  },
+  "clustering": {
+    "scenario": "Store Clustering Scenario",
+    "confidence": "Confidence {{pct}}%",
+    "runMode": "Pipeline Run Mode",
+    "default": "Default",
+    "confidenceThreshold": "Confidence Threshold",
+    "marks": {
+      "autonomous": "60% Autonomous",
+      "recommended": "80% Recommended",
+      "strict": "95% Strict"
+    }
+  },
+  "clusteringTags": {
+    "recommended": "Recommended",
+    "alternative": "Alternative",
+    "experimental": "Experimental"
+  },
+  "runModes": {
+    "gated": {
+      "title": "Gated Mode",
+      "description": "Agent completes each stage then pauses for your sign-off. Best for first-time plans and high-value seasons."
+    },
+    "autonomous": {
+      "title": "Autonomous",
+      "description": "Agent chains stages automatically when confidence meets your threshold. Pauses on flags and low confidence."
+    }
+  },
+  "review": {
+    "edit": "Edit",
+    "skuCount": "{{count}} SKUs",
+    "clustering": "Clustering",
+    "runMode": "Run Mode"
+  },
+  "agent": {
+    "title": "What The Agent Will Do",
+    "stageMeta": "{{scenario}} · {{pct}}% confidence",
+    "selectScenarioFirst": "Select a clustering scenario to preview the pipeline."
+  },
+  "errors": {
+    "nameRequired": "Plan name is required.",
+    "nameTooLong": "Plan name is too long.",
+    "nameInvalidChars": "Use only letters, numbers, spaces, hyphens, and underscores.",
+    "nameNotUnique": "A plan with this name already exists.",
+    "createFailed": "We couldn't create the plan. Please try again.",
+    "seasonsFetchFailed": "Failed to load seasons. Please try again."
+  },
+  "history": {
+    "heading": "Heading",
+    "close": "Close history",
+    "tabsLabel": "Plan history views",
+    "mode": "{{mode}} - {{pct}}% Threshold",
+    "runMode": {
+      "gated": "Gated",
+      "autonomous": "Autonomous"
+    },
+    "stages": "{{completed}}/{{total}} Stages",
+    "progressLabel": "{{percent}}% complete",
+    "tabs": {
+      "pipeline": "Pipeline",
+      "versionHistory": "Version History",
+      "activityLog": "Agent's Activity Log"
+    },
+    "review": {
+      "needed": "Your review needed — {{stage}}"
+    },
+    "stage": {
+      "view": "View",
+      "review": "Review",
+      "reasoning": "Agent Decisions & Reasoning"
+    },
+    "versions": {
+      "cascade": "Cascade: {{count}} Downstream Stages Re-Run.",
+      "empty": "No version history yet."
+    },
+    "activity": {
+      "emptyTitle": "Activity log coming soon",
+      "emptyBody": "The agent's activity log will appear here."
+    },
+    "states": {
+      "loading": "Loading history…",
+      "errorTitle": "Couldn't load history",
+      "errorBody": "Something went wrong while loading this plan's history.",
+      "retry": "Retry"
+    },
+    "footer": {
+      "cancel": "Cancel",
+      "apply": "Apply"
+    }
+  }
+}

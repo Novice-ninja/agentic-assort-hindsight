@@ -1,0 +1,95 @@
+{
+  "document": "/Users/niravs_mac_2025/Work tasks/outputs/hindsight-priority-2026-10-27/Hindsight_Demo_Script_Priority.docx",
+  "sha256": "ffdd1b2cf702860230c1e23070af864ec0fd3b831e2362f6f78fa73b4da9c6ef",
+  "pages": 8,
+  "screenshots": 8,
+  "allImagesMatchRootSuppliedScreenshots": true,
+  "visualQa": {
+    "allPagesInspected": true,
+    "finalReplacementPagesReinspected": [
+      3,
+      4,
+      7,
+      8
+    ],
+    "findings": [],
+    "checks": [
+      "page breaks and one scene per page",
+      "no clipped prose or orphaned captions",
+      "screenshot proportions and readability",
+      "settled weekly zoom and full Bamboo donut rings",
+      "fully framed store detail panel and Close details",
+      "product1000037 and storeST1001 identities",
+      "synthetic/TBC and offline Iris limits explicit",
+      "approved next layout stated without exposing unfinished workflow"
+    ]
+  },
+  "sourceImages": [
+    {
+      "path": "qa/redesign/priority-browser/summary-desktop.jpg",
+      "sha256": "0515fed9f295a287826d8b2b2e01c52917539e6ac1e89772a8904e2bcba8edd2"
+    },
+    {
+      "path": "qa/redesign/priority-browser/by-item-table-desktop.jpg",
+      "sha256": "a8c46733b9d8c96c2d789229b9d4e9ed49f0d086a826ba42cee08c3a8058f055"
+    },
+    {
+      "path": "qa/redesign/priority-browser/mix-brand-desktop.jpg",
+      "sha256": "a4b771f325e22d9f854e1ebd1f13ef6c61c6a9773029e9dfc2663f55543078c0"
+    },
+    {
+      "path": "qa/redesign/priority-browser/filtered-summary-desktop.jpg",
+      "sha256": "f57f7fcf8dcf0318021fa515a4f08ad14ba3a9c18dd0bd6ad1c49c14a458d28b"
+    },
+    {
+      "path": "qa/redesign/priority-browser/narrative-expanded-desktop.jpg",
+      "sha256": "96be34e46b6b3d77ef5daedcd3f24ccb5b5a6b87832239425a310cd32ca036bb"
+    },
+    {
+      "path": "qa/redesign/priority-browser/weekly-zoom-desktop.jpg",
+      "sha256": "b051160630692ad655cd1adc7e391aa6260c99d86569cde22c71bcd8ccd86b78"
+    },
+    {
+      "path": "qa/redesign/priority-browser/stores-table-desktop.jpg",
+      "sha256": "d02ec02e1714a22c7bb9b02f6a0dc1149e2701b84371e36fd2bb8c16876d9448"
+    },
+    {
+      "path": "qa/redesign/priority-browser/store-panel-desktop.jpg",
+      "sha256": "d6fb35e119b35a28d3afad0dac625679579ada7c30d38266d2333643c790d116"
+    }
+  ],
+  "renderedPages": [
+    {
+      "page": 1,
+      "sha256": "8bd1de68d50ace8bf0318804264513bcc24419fd767666517935026c597df543"
+    },
+    {
+      "page": 2,
+      "sha256": "4db5843b268428d252b3aa3484722ba17dcb65313a4ca5acbe33053c5f94211a"
+    },
+    {
+      "page": 3,
+      "sha256": "4f7a660b1ba1a753e08079f8b9d8422b02c5d831f5e49242656ec66143b3ef83"
+    },
+    {
+      "page": 4,
+      "sha256": "8abdaeb4fbbdf5b0c342b70aa3ef3317faf2ae8cd8b1725d3bd9d03c69ccc20b"
+    },
+    {
+      "page": 5,
+      "sha256": "ccfd6c3a2cb2a64c4620b1063e5d6855391e8b66c3bba08dbb2ffa95e77c15e8"
+    },
+    {
+      "page": 6,
+      "sha256": "50eb114462ef6bafda5de7cbab468620114d5c0db46378cf8fe629e17af82b31"
+    },
+    {
+      "page": 7,
+      "sha256": "c01f4d875b313bd9221fb5a231014ce336d740021876de7638e5d899390ec8a8"
+    },
+    {
+      "page": 8,
+      "sha256": "055fbb58b3f78687117aaf3deaa4397a88a618b5071d4273c404b376381f2e40"
+    }
+  ]
+}

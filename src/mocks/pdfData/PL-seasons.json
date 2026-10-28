@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "fiscalYear": 2024,
+      "seasonCode": 70,
+      "season": "SS24",
+      "type": "Spring/Summer",
+      "active": true,
+      "start": "2024-02-01",
+      "end": "2024-07-31",
+      "displayName": "SS24"
+    },
+    {
+      "fiscalYear": 2024,
+      "seasonCode": 72,
+      "season": "AW24",
+      "type": "Autumn/Winter",
+      "active": true,
+      "start": "2024-08-01",
+      "end": "2025-01-31",
+      "displayName": "AW24"
+    },
+    {
+      "fiscalYear": 2025,
+      "seasonCode": 74,
+      "season": "SS25",
+      "type": "Spring/Summer",
+      "active": true,
+      "start": "2025-02-01",
+      "end": "2025-07-31",
+      "displayName": "SS25"
+    },
+    {
+      "fiscalYear": 2025,
+      "seasonCode": 76,
+      "season": "AW25",
+      "type": "Autumn/Winter",
+      "active": true,
+      "start": "2025-08-01",
+      "end": "2026-01-31",
+      "displayName": "AW25"
+    },
+    {
+      "fiscalYear": 2026,
+      "seasonCode": 78,
+      "season": "SS26",
+      "type": "Spring/Summer",
+      "active": true,
+      "start": "2026-02-01",
+      "end": "2026-07-31",
+      "displayName": "SS26"
+    },
+    {
+      "fiscalYear": 2026,
+      "seasonCode": 80,
+      "season": "AW26",
+      "type": "Autumn/Winter",
+      "active": true,
+      "start": "2026-08-01",
+      "end": "2027-01-31",
+      "displayName": "AW26"
+    },
+    {
+      "fiscalYear": 2027,
+      "seasonCode": 82,
+      "season": "SS27",
+      "type": "Spring/Summer",
+      "active": true,
+      "start": "2027-02-01",
+      "end": "2027-07-31",
+      "displayName": "SS27"
+    },
+    {
+      "fiscalYear": 2027,
+      "seasonCode": 84,
+      "season": "AW27",
+      "type": "Autumn/Winter",
+      "active": true,
+      "start": "2027-08-01",
+      "end": "2028-01-31",
+      "displayName": "AW27"
+    }
+  ]
+}

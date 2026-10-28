@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "primary": "Primary",
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "decisionDashboard": "Decision Dashboard",
+    "allPlan": "All Plan",
+    "reports": "Reports",
+    "products": "Products",
+    "locations": "Locations",
+    "plans": "Plans",
+    "hindsight": "Hindsight",
+    "admin": "Admin",
+    "planningAdmin": "Planning Admin",
+    "assortmentPeriod": "Assortment Period",
+    "locationClustering": "Location Clustering",
+    "planningRules": "Planning Rules",
+    "settings": "Settings",
+    "logout": "Logout",
+    "expand": "Expand sidebar",
+    "collapse": "Collapse sidebar",
+    "comingSoon": "This area is coming soon."
+  }
+}

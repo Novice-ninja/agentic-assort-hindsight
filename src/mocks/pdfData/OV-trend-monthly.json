@@ -1,0 +1,61 @@
+{
+  "data": {
+    "metric": "qty_sold",
+    "rows": [
+      {
+        "month": "Feb",
+        "ly": 23947,
+        "lly": 23948,
+        "optimisedLy": 27214,
+        "forecast": 27046,
+        "plan": 25157,
+        "optimisedLLy": 24120
+      },
+      {
+        "month": "Mar",
+        "ly": 36638,
+        "lly": 31621,
+        "optimisedLy": 39635,
+        "forecast": 38234,
+        "plan": 37200,
+        "optimisedLLy": 33625
+      },
+      {
+        "month": "Apr",
+        "ly": 39269,
+        "lly": 34250,
+        "optimisedLy": 41089,
+        "forecast": 36446,
+        "plan": 39629,
+        "optimisedLLy": 37783
+      },
+      {
+        "month": "May",
+        "ly": 28141,
+        "lly": 25517,
+        "optimisedLy": 30870,
+        "forecast": 31268,
+        "plan": 28527,
+        "optimisedLLy": 27495
+      },
+      {
+        "month": "Jun",
+        "ly": 25516,
+        "lly": 24444,
+        "optimisedLy": 27808,
+        "forecast": 27317,
+        "plan": 26473,
+        "optimisedLLy": 25274
+      },
+      {
+        "month": "Jul",
+        "ly": 31187,
+        "lly": 26506,
+        "optimisedLy": 29754,
+        "forecast": 29251,
+        "plan": 32362,
+        "optimisedLLy": 30521
+      }
+    ]
+  }
+}

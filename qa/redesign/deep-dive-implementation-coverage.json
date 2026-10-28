@@ -1,0 +1,513 @@
+{
+  "title": "R67 Deep Dive implementation handoff",
+  "scope": "22 assigned view/data requirements plus 4 shared Mix integration contracts; not a claim of 26 native browser passes",
+  "requirements": [
+    {
+      "id": "HSP21-item-base",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "requirement": "By Item defaults to a compact table, with Cards as an alternative and grouping off.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Table/cards use the same filtered canonical SKU rows. Grouping defaults off. Recovered DataGrid and Impact controls preserve identity, selection, typed filters and personal columns; 72 cards are paginated.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP22-item-tools",
+      "sourcePages": [
+        22,
+        24
+      ],
+      "requirement": "Pin identity, provide sales/stock, velocity/exposure and lifecycle/focus presets plus columns/export.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Sales/stock, velocity/exposure, lifecycle/focus and source-parity presets; searchable aliases; locked identity on desktop and unpinned narrow layout. Controlled sort uses stable IDs and unavailable-last ordering. Data export follows current filtered/sorted aggregate rows; a separate worksheet retains exact contributing pairs.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP22-item-counts",
+      "sourcePages": [
+        22
+      ],
+      "requirement": "Ranged stores per SKU and chain total use different distinct grains.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Main counts use the canonical 72-SKU/45-store ledger. Footer/summary distinct union is recomputed from leaves, not summed store breadth. Original 4×4 specification figures remain algorithm controls in the data agent’s separate tests, not fabricated current main rows.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP23-velocity",
+      "sourcePages": [
+        23
+      ],
+      "requirement": "Expose qualifying numerator and pair-week denominator next to velocity.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Velocity preset shows qualifying ranged quantity, total net quantity, ranged pair-weeks and computed velocity. Filtered totals expose the same numerator/denominator and recomputed ratio.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP24-source-fields",
+      "sourcePages": [
+        24
+      ],
+      "requirement": "Keep full identity, productivity, inventory, range, lifecycle and decision column groups with exact legacy aliases.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "MIP, MIP Sales By Location, PWPS, ELP, VP Avg and Active Assorted remain searchable exact source aliases with Definition pending. OH CST$ points to OH cost. No guessed expansion or source-definition approval is claimed; denied margin values remain restricted and are removed by workbook permissions.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP25-item-detail",
+      "sourcePages": [
+        25
+      ],
+      "requirement": "Provide Performance, Stores, PLR history, Actions and notes inside Item Detail.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Performance, Stores, PLR history and Actions/notes share a canonical SKU anchor. Current-range and all-candidate store lenses are explicit. Local interval/pair selection remains visible and removable.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP25-reverse-path",
+      "sourcePages": [
+        25
+      ],
+      "requirement": "Both drill directions use the same pair facts and preserve state.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Item→Stores→shared Pair→full Store assortment clears the local SKU/pair restriction while retaining local fiscal interval and global applied scope; originating SKU is only a highlight. Context snapshots restore table search/sort/columns/group/page/selection; the table also records native grid scroll positions.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP25-missing-members",
+      "sourcePages": [
+        25,
+        31,
+        59
+      ],
+      "requirement": "Never infer member identities from company facts or aggregate breadth counts.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Unknown range history is labeled. Breadth identity drill disables when membership is unknown or matched LY date is absent. Aggregate source report fields remain definition-pending; no aggregate count creates invented canonical members.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP26-optional-map",
+      "sourcePages": [
+        26
+      ],
+      "requirement": "Store table is primary; optional map uses real metric scales and navigates to store detail.",
+      "owner": "parity_inventory",
+      "implementationStatus": "truthful_external_data_boundary",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Primary sortable store table is fully implemented. Geographic map is explicitly unavailable because canonical masters do not contain approved coordinates/boundaries. No inferred geography or false metric scale is drawn.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP26-cluster",
+      "sourcePages": [
+        26
+      ],
+      "requirement": "Only show governed dated cluster summaries.",
+      "owner": "parity_inventory",
+      "implementationStatus": "truthful_external_data_boundary",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "A–F source labels support grouping and scoped search. Governed dated targets are not connected, so actual/target/pp-gap summary is disabled with a reason rather than generated as an approved comparison.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP27-store-index",
+      "sourcePages": [
+        27
+      ],
+      "requirement": "By Store begins with a sortable store table with search/group/columns/export and comparison.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Recovered DataGrid provides the store index; typed local conditions, search, region/district/cluster grouping, columns, exact exports and direct single-store detail. Aggregates use the same item-store leaves as By Item.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP28-store-detail",
+      "sourcePages": [
+        28
+      ],
+      "requirement": "Assortment is Store Detail default with a single-store anchor and Change store.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Assortment defaults; Change store is explicit. Product/time/snapshot filters persist. Population choices are inherited, current range, all eligible, exited and all candidates. Zero-sales ranged and stocked exited pairs are retained by canonical selectors.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP29-store-subviews",
+      "sourcePages": [
+        29
+      ],
+      "requirement": "Provide Performance, Focus and actions, External reports beside Assortment.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Assortment, Performance, Focus/actions and External reports. Highcharts trend uses exact fiscal points and an accessible data alternative; local week selection is removable and drills without changing the applied PLR prefix. Named top-20 ranking uses canonical ties. External feed needs/source grain are disclosed; no traffic or competition values are invented.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP29-compare",
+      "sourcePages": [
+        29
+      ],
+      "requirement": "Compare two to five stores on the same measures and exposure window.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "2–5 stores are enforced; selected stores can be removed and comparison measure changed. All cards use the same product/date scope, open store-weeks and ratio definitions. Format/space comparability remains explicitly not connected.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP30-matrix",
+      "sourcePages": [
+        30,
+        32
+      ],
+      "requirement": "Provide Range/stock, Sales and Coverage modes over dated canonical SKU-store cells.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Range/stock, net sales and backward R4 WOS share one canonical pair map. Search rows/columns, explicit all-candidates option, pair selection/comparison, scoped review and shared detail. Original PLR remains a fixed cohort.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP30-matrix-baseline",
+      "sourcePages": [
+        30
+      ],
+      "requirement": "Match the proposed coherent baseline range state matrix.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Main UI now uses 72×45 canonical identities. The original P101/P104 four-item matrix is retained solely as a separately passing data algorithm control. Every main cell state comes from dated canonical facts.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP31-breadth",
+      "sourcePages": [
+        31
+      ],
+      "requirement": "Provide Breadth TY/LY with product/geography grouping and source/governed count labels.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Distinct TY/LY and signed delta use the same canonical membership set. Product grouping and Store/Region/District/Cluster grouping use distinct unions; TY and mapped LY dates are visible. Locations and member pairs are paginated, with dated source-member drill.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP32-matrix-failure",
+      "sourcePages": [
+        32
+      ],
+      "requirement": "Handle unknown, missing, valid zero and negative inventory distinctly.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Unknown has patterned state text, valid zero remains R0 only when ranged, negative stock is reconciliation, outside-population cells are explicitly excluded and unavailable metrics never become zero. Unknown/unauthorized selections cannot enter bulk review.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP32-matrix-scale",
+      "sourcePages": [
+        32
+      ],
+      "requirement": "Bound large grids, keep pinned labels and support keyboard plus narrow pair-list alternative.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Explicit 5/10-item and 5/10-store pages cover all 72×45 identities; no hidden slice. Arrows cross page boundaries and Enter opens pair evidence; Escape clears selection. Narrow layout uses a separately paginated pair list. Grid labels are pinned on desktop.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP33-pair-detail",
+      "sourcePages": [
+        33,
+        34
+      ],
+      "requirement": "Provide Performance, Availability, Range history and Decisions in shared pair detail.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Shared canonical pair detail contains Performance, Availability/supply, Range/PLR history and Decisions/notes. Exact local interval and scope filters apply consistently; observed facts, hypotheses and follow-up decisions are separate.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP33-supply",
+      "sourcePages": [
+        33,
+        34
+      ],
+      "requirement": "Store, inbound, allocation and DC pool are different grains and availability states.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Physical store inventory, sellable stock, open orders/ETA and shared DC pool references stay separate grains. Recovered evidence grids preserve source IDs/dates/UOM/allocation. Separate source-ledger exports are offered; no inbound or DC pool is added to today’s sellable stock.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP35-leaderboard",
+      "sourcePages": [
+        35
+      ],
+      "requirement": "Put product leaderboard in By Item and keep product/image actions distinct.",
+      "owner": "parity_inventory",
+      "implementationStatus": "implemented_source_and_model_checked",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "By Item ranks a named measure and limit within the filtered period using stable ties. Name opens performance; actual canonical material image opens a focus-contained enlargement dialog only. No repeated Iris control is attached to each product.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP37-mix-bind",
+      "sourcePages": [
+        37,
+        38
+      ],
+      "requirement": "Bind category-specific attribute choices to real groups, chart/table/export/drill.",
+      "owner": "root Mix implementation; Deep Dive consumes exact drill contract",
+      "implementationStatus": "shared_integration_contract_ready",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Mix passes exact itemIds/storeIds/pairIds and local weekIds. Deep Dive intersects those leaves, treating present empty arrays as NONE, and Back retains the originating scope/controls. Root owns chart/denominator/source binding acceptance.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP38-mix-share",
+      "sourcePages": [
+        38,
+        40
+      ],
+      "requirement": "Use one definition for chart and table shares/index.",
+      "owner": "root Mix implementation; Deep Dive consumes exact drill contract",
+      "implementationStatus": "shared_integration_contract_ready",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Mix passes exact itemIds/storeIds/pairIds and local weekIds. Deep Dive intersects those leaves, treating present empty arrays as NONE, and Back retains the originating scope/controls. Root owns chart/denominator/source binding acceptance.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP39-gbb",
+      "sourcePages": [
+        39
+      ],
+      "requirement": "GBB uses assigned tiers and dates, not realized ASP sorting.",
+      "owner": "root Mix implementation; Deep Dive consumes exact drill contract",
+      "implementationStatus": "shared_integration_contract_ready",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Mix passes exact itemIds/storeIds/pairIds and local weekIds. Deep Dive intersects those leaves, treating present empty arrays as NONE, and Back retains the originating scope/controls. Root owns chart/denominator/source binding acceptance.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    },
+    {
+      "id": "HSP40-mix-interactions",
+      "sourcePages": [
+        40
+      ],
+      "requirement": "Attribute marks add a local item filter and preserve a return path.",
+      "owner": "root Mix implementation; Deep Dive consumes exact drill contract",
+      "implementationStatus": "shared_integration_contract_ready",
+      "browserStatus": "pending_root_native_walkthrough",
+      "implementation": "Mix passes exact itemIds/storeIds/pairIds and local weekIds. Deep Dive intersects those leaves, treating present empty arrays as NONE, and Back retains the originating scope/controls. Root owns chart/denominator/source binding acceptance.",
+      "evidence": [
+        "qa/redesign/deep-dive-model-checks.json",
+        "qa/redesign/deep-dive-source-checks.json",
+        "qa/redesign/deep-dive-tsc.log"
+      ],
+      "limits": "Source/model/parse evidence does not prove actual browser rendering, focus motion or saved browser downloads."
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "sha256": "e66ef4734284dfe34a12cce1c1315085988e812e3754b0035664d4e069af8ed4"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ByStoreView.tsx",
+      "sha256": "2ada1b409d7ad63ada877dd5360c04f9f05a37982978ba0bb4843592d0022f39"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ItemDetailView.tsx",
+      "sha256": "eaf2506e4219e64eb77fd79e9882862f91cf3ce55d11c0a906b7dc11f54671d9"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/StoreDetailView.tsx",
+      "sha256": "db43b5003fd948591501649b0a13fd0905e6400399093a8148ebc245d2013439"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/PairDetailView.tsx",
+      "sha256": "48fc109795a2c2f8b83fc874f0e6e5ec3bee0b2bfdecf98748fe28f116cdff44"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/viewHelpers.tsx",
+      "sha256": "bf2d5f02b3cbd96d5e688f41b4dceb684811d84c9802a4a6735d16de1edcda03"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/tableModel.ts",
+      "sha256": "fbd4ce7c8420ccabbf0a4208c2a5e8be53e49560689620fad55f9e6453f89238"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/detailHelpers.tsx",
+      "sha256": "024423d6a802e546eff97fbf025f5cb4265836d999c40da5c6f48be40db96793"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/views.module.css",
+      "sha256": "37ea9a75478c9e327454bb136c11328ab74ded556137ca963f0d55ac8113874f"
+    },
+    {
+      "path": "src/modules/hindsight/redesign/views/ScreenChart.tsx",
+      "sha256": "828ec5a22fc56fe2f6faa96593b4f8cb2244c9964d47a0a4ff9dd7e2a5ee83df"
+    }
+  ],
+  "dataBoundary": "72 canonical products × 45 stores. Main demo facts are illustrative; original four-SKU numeric examples remain separately tested algorithm controls. External coordinates, governed cluster targets, original client alias definitions and real execution feeds are not fabricated.",
+  "nativeChecksRecommended": [
+    "Full item table/cards and three table presets; search aliases PWPS / OH CST$; between/missing/nonpositive filters, AND/OR and invalid bounds.",
+    "Item name→Stores→pair→full store assortment→Back, checking exact values, local interval, original scope, selected columns/page/scroll and highlight.",
+    "Matrix final item page (items 71–72) and final store page (stores 41–45); arrows across paging boundary, selection count, unknown disable and normalized export.",
+    "At 390px: pair-list paging, item/store grids without frozen lead columns, metric filter/chooser controls, store comparison and supply ledger reachability.",
+    "Breadth product/geography grouping, explicit TY/LY dates, unknown disabled drill, signed deltas, chain distinct union and member history.",
+    "Compare 2 and 5 stores, reject 1 and 6; change measure/remove a store; exact scoped store-week productivity.",
+    "Actual native aggregate export after filtering/sorting/preset change: Data row order, Scope/Definitions, Contributing pairs, source IDs/UOM/dates and restricted-margin exclusion.",
+    "Detail trend week/month/metric selection, local interval drill and clear, keeping the applied original PLR period pinned."
+  ],
+  "modelCheckCount": 18,
+  "sourceParseCheckCount": 11,
+  "designSystemRestoration": "qa/redesign/design-system-restoration.json"
+}

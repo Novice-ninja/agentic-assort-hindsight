@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "primary": "الرئيسية",
+    "home": "الصفحة الرئيسية",
+    "dashboard": "لوحة التحكم",
+    "decisionDashboard": "لوحة القرارات",
+    "allPlan": "جميع الخطط",
+    "reports": "التقارير",
+    "products": "المنتجات",
+    "locations": "المواقع",
+    "plans": "الخطط",
+    "hindsight": "نظرة رجعية",
+    "admin": "الإدارة",
+    "planningAdmin": "إدارة التخطيط",
+    "assortmentPeriod": "فترة التشكيلة",
+    "locationClustering": "تجميع المواقع",
+    "planningRules": "قواعد التخطيط",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "expand": "توسيع الشريط الجانبي",
+    "collapse": "طي الشريط الجانبي",
+    "comingSoon": "هذا القسم قادم قريبًا."
+  }
+}

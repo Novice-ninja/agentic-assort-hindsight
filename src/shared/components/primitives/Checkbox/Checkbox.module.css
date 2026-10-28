@@ -1,0 +1,23 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.hideLabel {
+  gap: 0;
+}
+
+.checkbox {
+  width: var(--space-md);
+  height: var(--space-md);
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.checkbox:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

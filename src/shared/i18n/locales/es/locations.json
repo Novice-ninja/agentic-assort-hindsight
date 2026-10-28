@@ -1,0 +1,17 @@
+{
+  "locations": {
+    "title": "Ubicaciones",
+    "subtitle": "Explora y filtra tus ubicaciones",
+    "columns": {
+      "name": "Nombre",
+      "region": "Región",
+      "status": "Estado",
+      "updatedAt": "Actualizado"
+    },
+    "status": {
+      "open": "Abierto",
+      "closed": "Cerrado",
+      "pending": "Pendiente"
+    }
+  }
+}

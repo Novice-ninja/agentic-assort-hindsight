@@ -1,0 +1,9 @@
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  gap: var(--space-sm);
+  width: auto;
+  max-width: 100%;
+  min-width: 0;
+}

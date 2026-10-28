@@ -1,0 +1,62 @@
+{
+  "kind": "Actual AIChatContext, Header, WorkspaceProvider, Iris, vendor Chatbot and FilterPanel mounted in jsdom; functional DOM evidence, not native Chrome/visual geometry",
+  "passed": 14,
+  "checks": [
+    {
+      "name": "Actual header interceptor opens the recovered Chatbot host",
+      "pass": true
+    },
+    {
+      "name": "Actual conversation mapper formats both user and assistant message timestamps",
+      "pass": true
+    },
+    {
+      "name": "Actual header reopens the host after a nested workspace route change",
+      "pass": true
+    },
+    {
+      "name": "Recovered FilterPanel opens and exposes its actual Cancel control",
+      "pass": true
+    },
+    {
+      "name": "Actual drawer Cancel clears only the draft panel state",
+      "pass": true
+    },
+    {
+      "name": "Header opens recovered Iris after Close, Filters and Cancel",
+      "pass": true
+    },
+    {
+      "name": "Recovered welcome message has valid date/time rendering",
+      "pass": true
+    },
+    {
+      "name": "Actual assistant clarification retains the question and withholds a broader denominator answer",
+      "pass": true
+    },
+    {
+      "name": "Actual recovered Select confirmation resolves only the answer context against canonical exposure",
+      "pass": true
+    },
+    {
+      "name": "Recovered host starts at the compact448px workspace width",
+      "pass": true
+    },
+    {
+      "name": "Existing west resize handle supports keyboard expansion and value semantics",
+      "pass": true
+    },
+    {
+      "name": "Original width-toggle control and reopening restore the saved personal width",
+      "pass": true
+    },
+    {
+      "name": "Pointer resize uses the displayed width and persists the bounded result",
+      "pass": true
+    },
+    {
+      "name": "Phone width is clamped to374px with8px viewport margins",
+      "pass": true
+    }
+  ]
+}

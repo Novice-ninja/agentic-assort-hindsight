@@ -1,0 +1,19 @@
+{
+  "kind": "Actual recovered vendor components mounted in jsdom; not Chrome or visual acceptance",
+  "passed": 3,
+  "checkCount": 3,
+  "checks": [
+    {
+      "name": "Real recovered Checkbox input retains supplied accessible name after vendor overwrite",
+      "pass": true
+    },
+    {
+      "name": "Real recovered Checkbox click preserves native event.target.checked and controlled state",
+      "pass": true
+    },
+    {
+      "name": "Actual recovered Select option produces the existing native-compatible value event",
+      "pass": true
+    }
+  ]
+}

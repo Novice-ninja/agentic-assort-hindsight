@@ -1,0 +1,424 @@
+{
+  "title": "نظرة رجعية",
+  "subtitle": "الأداء الفعلي للمواسم السابقة",
+  "tabs": {
+    "label": "عروض النظرة الرجعية",
+    "overview": "نظرة عامة",
+    "byItem": "حسب الصنف",
+    "byAttribute": "مزيج المبيعات",
+    "watchlist": "قائمة المراقبة"
+  },
+  "salesMix": {
+    "title": "المبيعات",
+    "subtitle": "اكتشف ما استحق المساحة"
+  },
+  "watchlist": {
+    "bannerLabel": "لافتة قائمة المراقبة",
+    "attentionTitle": "{{count}} عناصر تحتاج إلى اهتمام",
+    "lastEdited": "آخر تعديل في {{date}}",
+    "critical": "حرج",
+    "high": "مرتفع",
+    "watch": "مراقبة",
+    "totalScanned": "إجمالي الممسوح",
+    "thresholds": "الحدود",
+    "editThresholds": "تعديل الحدود",
+    "editThresholdTitle": "تعديل الحد",
+    "resetToDefault": "إعادة التعيين إلى الافتراضي",
+    "applyChanges": "تطبيق التغييرات",
+    "tableTitle": "الأقل أداءً",
+    "hideRules": "إخفاء القواعد",
+    "showRules": "إظهار القواعد"
+  },
+  "filters": {
+    "label": "الفلاتر المطبقة",
+    "season": "الموسم",
+    "productLevel": "مستوى المنتج",
+    "product": "المنتج",
+    "country": "الدولة",
+    "channel": "القناة",
+    "selectAll": "تحديد الكل",
+    "clear": "مسح الفلاتر",
+    "collapse": "طي الفلاتر",
+    "expand": "توسيع الفلاتر",
+    "appliedCount": "{{count}} فلاتر مطبقة",
+    "noneSelected": "لا يوجد تحديد",
+    "applied": "الفلاتر المطبقة",
+    "allFilters": "كل الفلاتر",
+    "required": "مطلوب",
+    "loadingStrip": "جارٍ تحميل الفلاتر المطبقة…",
+    "emptyStrip": "لا توجد فلاتر مطبقة"
+  },
+  "hierarchyFilter": {
+    "placeholder": "اختر",
+    "noOptions": "لا توجد قيم للتسلسل الهرمي",
+    "selectAll": "تحديد الكل",
+    "deselectAll": "إلغاء تحديد الكل"
+  },
+  "aiStrip": {
+    "noInsight": "لا تتوفر رؤية"
+  },
+  "regularPromoTrend": {
+    "title": "Regular + Promo {{metric}}",
+    "grainLabel": "دقة الزمن",
+    "weekly": "أسبوعي",
+    "monthly": "شهري",
+    "weekLabel": "الأسبوع {{n}}",
+    "monthLabel": "الشهر {{n}}",
+    "metricLabel": "المقياس",
+    "metricPlaceholder": "اختر",
+    "noMetrics": "لا توجد مقاييس متاحة"
+  },
+  "levels": {
+    "division": "الشعبة",
+    "department": "القسم",
+    "category": "الفئة",
+    "subcategory": "الفئة الفرعية"
+  },
+  "seasonSelect": {
+    "label": "الموسم",
+    "loading": "جارٍ التحميل…",
+    "empty": "لا توجد مواسم"
+  },
+  "seasons": {
+    "aw25": "AW25",
+    "ss25": "SS25",
+    "aw24": "AW24",
+    "ss24": "SS24"
+  },
+  "positions": {
+    "womenswear": "ملابس نسائية",
+    "menswear": "ملابس رجالية",
+    "kidswear": "ملابس أطفال",
+    "dresses": "فساتين",
+    "knitwear": "تريكو",
+    "outerwear": "ملابس خارجية",
+    "denim": "دينيم",
+    "tops": "بلوزات",
+    "mensShirts": "قمصان رجالية",
+    "mensKnitwear": "تريكو رجالي",
+    "kidsTops": "بلوزات أطفال",
+    "jumpers": "كنزات",
+    "cardigans": "كارديغان",
+    "midiDresses": "فساتين ميدي",
+    "miniDresses": "فساتين ميني",
+    "jeans": "جينز",
+    "coats": "معاطف",
+    "rollNeck": "رقبة مطوية",
+    "crewNeck": "رقبة دائرية",
+    "wideLeg": "ساق واسعة",
+    "straightLeg": "ساق مستقيمة"
+  },
+  "countries": {
+    "us": "الولايات المتحدة",
+    "ca": "كندا",
+    "gb": "المملكة المتحدة",
+    "ae": "الإمارات العربية المتحدة"
+  },
+  "channels": {
+    "retail": "التجزئة",
+    "ecom": "التجارة الإلكترونية",
+    "wholesale": "البيع بالجملة",
+    "outlet": "أوتلت"
+  },
+  "colours": {
+    "black": "أسود",
+    "ivory": "عاجي",
+    "camel": "بيج",
+    "navy": "كحلي",
+    "burgundy": "نبيتي",
+    "olive": "زيتوني",
+    "chocolate": "بني شوكولاتي"
+  },
+  "brands": {
+    "ownLabel": "العلامة الخاصة",
+    "studioEdit": "Studio Edit",
+    "atelierNine": "Atelier Nine",
+    "northTrail": "North Trail",
+    "casaLinen": "Casa Linen",
+    "veraKnit": "Vera Knit"
+  },
+  "metrics": {
+    "salesValue": "قيمة المبيعات",
+    "salesUnits": "وحدات المبيعات",
+    "sellThrough": "نسبة البيع",
+    "grossMargin": "الهامش الإجمالي",
+    "markdownPercent": "التخفيض",
+    "revenueShare": "حصة الإيرادات"
+  },
+  "versions": {
+    "ly": "العام السابق",
+    "lly": "قبل السابق",
+    "optLy": "السابق المحسّن",
+    "optLly": "قبل السابق المحسّن",
+    "forecast": "التوقع",
+    "plan": "الخطة"
+  },
+  "pareto": {
+    "title": "مساهمة الفئة الفرعية — {{metric}}",
+    "contribution": "المساهمة",
+    "cumulative": "تراكمي",
+    "cumulativeSeries": "{{version}} تراكمي",
+    "contributionSeries": "{{version}} مساهمة",
+    "metricSeries": "{{version}} {{metric}}",
+    "threshold": "عتبة {{value}}%"
+  },
+  "scorecard": {
+    "title": "ملخص",
+    "caption": "أداء الموسم مقارنة بالعام السابق والعام السابق المحسّن",
+    "metric": "المقياس",
+    "season": "الموسم",
+    "ly": "العام السابق",
+    "optLy": "السابق المحسّن"
+  },
+  "productPerformance": {
+    "title": "أداء المنتج",
+    "seasonScorecard": "ملخص",
+    "vsLastWeek": "مقارنة بالأسبوع السابق",
+    "vsLastYear": "مقارنة بالعام السابق"
+  },
+  "contribution": {
+    "title": "المساهمة",
+    "colourTitle": "مساهمة اللون",
+    "askAlan": "اسأل آلان",
+    "others": "أخرى",
+    "share": "{{percent}} من الإجمالي",
+    "summary": "{{label}} يتصدر بنسبة {{percent}} من الإجمالي.",
+    "scrollLeft": "التمرير لليسار",
+    "scrollRight": "التمرير لليمين"
+  },
+  "clusters": {
+    "title": "أداء مجموعات المتاجر",
+    "categoryByCluster": "الفئة حسب المجموعة",
+    "cluster": "المجموعة",
+    "category": "الفئة",
+    "a": "A — حضري فاخر",
+    "b": "B — قلب المدينة",
+    "c": "C — عائلي في الضواحي",
+    "d": "D — إقليمي اقتصادي",
+    "e": "E — أوتلت",
+    "f": "F — تجزئة السفر"
+  },
+  "categoryByCluster": {
+    "title": "الفئة × المجموعة — {{metric}}",
+    "metricLabel": "المقياس",
+    "metricPlaceholder": "اختر",
+    "noMetrics": "لا توجد مقاييس متاحة",
+    "hierarchyError": "تعذر تحميل التسلسل الهرمي لـ الفئة × المجموعة",
+    "chartError": "تعذر تحميل مخطط الفئة × المجموعة",
+    "insight": "تُرمَّز الخلايا بالألوان مقابل خطة 69%: أخضر ≥+10 نقطة مئوية، كهرماني ضمن ±5، أحمر ≤−5."
+  },
+  "storeHexMap": {
+    "title": "خريطة أداء المتاجر",
+    "metricLabel": "المقياس",
+    "metricPlaceholder": "اختر",
+    "noMetrics": "لا توجد مقاييس متاحة",
+    "insight": "Premium هي أقوى مجموعة بنسبة 78% متوسط ST مقابل خطة 69%. Outlet هي الأضعف بنسبة 56%.",
+    "loading": "جارٍ التحميل…",
+    "empty": "لا توجد بيانات لخريطة المتاجر",
+    "dataTableCaption": "خريطة سداسية لأداء المتاجر"
+  },
+  "versionCharts": {
+    "title": "مقارنة الإصدارات",
+    "byDepartment": "{{metric}} حسب القسم"
+  },
+  "topPerformers": {
+    "title": "الأفضل أداءً",
+    "listLength": "الصفوف",
+    "listLengthCapped": "تم التحديد بالحد الأقصى {{max}} صفًا.",
+    "rank": "الترتيب",
+    "style": "الموديل",
+    "noImage": "لا توجد صورة"
+  },
+  "items": {
+    "card": {
+      "idChip": "المعرف: {{id}}",
+      "showMetrics": "عرض أرقام الأداء لـ {{style}}",
+      "showImage": "عرض صورة المنتج {{style}}"
+    },
+    "imagePreview": "صورة المنتج",
+    "enlargeImage": "تكبير الصورة: {{description}}",
+    "title": "الأصناف",
+    "viewVisual": "عرض البطاقات",
+    "viewTable": "عرض الجدول",
+    "viewLabel": "عرض الأصناف",
+    "search": "بحث في الأصناف",
+    "searchPlaceholder": "رقم الموديل أو الوصف",
+    "tyLy": "إظهار العام السابق",
+    "totalsLabel": "إجماليات التوصيات",
+    "totalItems": "{{count}} صنفًا",
+    "columns": {
+      "image": "الصورة",
+      "styleNumber": "الموديل",
+      "description": "الوصف",
+      "productHierarchy": "التسلسل الهرمي للمنتج",
+      "cluster": "المجموعة",
+      "recommendation": "التوصية",
+      "trend": "الاتجاه",
+      "lastYear": "{{metric}} العام السابق"
+    },
+    "hierarchy": {
+      "label": "التسلسل الهرمي",
+      "placeholder": "اختر",
+      "selectAll": "تحديد الكل",
+      "deselectAll": "إلغاء تحديد الكل",
+      "expandAll": "توسيع الكل",
+      "collapseAll": "طي الكل",
+      "expandGroup": "توسيع التسلسل الهرمي",
+      "levels": {
+        "l0_name": "القسم",
+        "l1_name": "الإدارة",
+        "l2_name": "الفئة",
+        "l3_name": "الفئة الفرعية"
+      }
+    },
+    "filters": {
+      "open": "إعدادات التصفية",
+      "settingsTitle": "إعدادات التصفية",
+      "hierarchySection": "التسلسل الهرمي للمنتج",
+      "apply": "تطبيق",
+      "cancel": "إلغاء"
+    },
+    "verdict": {
+      "label": "التوصية لـ {{style}}",
+      "keep": "الإبقاء",
+      "shop": "بديل مشابه",
+      "drop": "الإيقاف"
+    },
+    "table": {
+      "askAi": "اسأل إيريس عن {{style}}"
+    },
+    "overridden": "تم تعديلها بواسطة المخطط",
+    "agentVerdict": "أوصى الوكيل بـ {{verdict}}",
+    "overrideMode": "تعديلات المخطط",
+    "agenticMode": "توصيات الوكيل",
+    "recommendation": {
+      "saving": "جارٍ حفظ التوصية",
+      "saved": "تم تحديث التوصية",
+      "failed": "تعذّر تحديث التوصية"
+    },
+    "bulkEdit": {
+      "action": "تعديل جماعي",
+      "title": "تعديل جماعي",
+      "close": "إغلاق التعديل الجماعي",
+      "apply": "تطبيق",
+      "selectPlaceholder": "اختر",
+      "selectAll": "تحديد كل الصفوف",
+      "selectItem": "تحديد {{style}}",
+      "appliedToItems": "سيتم تطبيق التغييرات على {{count}} أصناف محددة",
+      "appliedToRows": "سيتم تطبيق {{changes}} تغيير على {{count}} صفوف محددة"
+    }
+  },
+  "attributes": {
+    "title": "تحليل السمات",
+    "selectorLabel": "السمة",
+    "count": "{{count}} قيم",
+    "valueCount": "{{count}} قيم",
+    "brand": "العلامة التجارية",
+    "colour": "اللون",
+    "collar": "الياقة",
+    "neckline": "فتحة الرقبة",
+    "sleeveLength": "طول الكم",
+    "heatmapTitle": "{{attribute}} حسب المجموعة",
+    "breakdownTitle": "تفصيل {{attribute}}",
+    "breakdownHeading": "{{attribute}} - تفصيل الأداء · {{values}} قيم",
+    "breakdownSubtitle": "تفصيل الأداء",
+    "tableEmpty": "لم يتم العثور على بيانات",
+    "orgLevel": "الأداء — مستوى المؤسسة",
+    "byCluster": "{{metric}} حسب المجموعة",
+    "value": "القيمة",
+    "trend": "الاتجاه السنوي",
+    "signal": "الإشارة",
+    "aboveThreshold": "{{count}} أعلى من الحد",
+    "signals": {
+      "grow": "توسيع",
+      "hold": "تثبيت",
+      "exit": "خروج"
+    },
+    "heatmapFetchFailed": "بيانات الخريطة الحرارية غير متوفرة حاليًا. يتم عرض بيانات نموذجية.",
+    "fetchFailed": "السمات غير متوفرة حاليًا. يتم عرض القيم الافتراضية."
+  },
+  "overview": {
+    "seasonSummary": {
+      "title": "ملخص سرد الموسم",
+      "listLabel": "رؤى سرد الموسم",
+      "readMore": "اقرأ المزيد",
+      "showLess": "عرض أقل",
+      "askIris": "اسأل Iris",
+      "empty": "لا توجد رؤى سردية لهذا التحديد"
+    },
+    "styleColors": {
+      "title": "أفضل ألوان الأنماط أداءً",
+      "listLabel": "أفضل ألوان الأنماط أداءً",
+      "sellThrough": "{{value}} ST",
+      "cardLabel": "الترتيب {{rank}}: {{name}}، {{sales}}، {{sellThrough}}"
+    }
+  },
+  "carryForward": {
+    "title": "اتجاه متعدد المواسم",
+    "viewLabel": "عرض اللوحة",
+    "missedOpportunities": "فرص ضائعة",
+    "liveWatch": "المراقبة المباشرة",
+    "openUnderperformers": "المنتجات ضعيفة الأداء المفتوحة",
+    "carryForward": "الترحيل",
+    "threshold": "الحساسية",
+    "thresholdClamped": "تم التعديل إلى {{value}}%، أقرب قيمة مسموح بها.",
+    "flagged": "مُعلَّم"
+  },
+  "narration": {
+    "label": "استنتاج",
+    "generating": "جارٍ إنشاء الاستنتاج",
+    "fallback": {
+      "scorecard": "{{metric}} كان {{value}} لهذا الموسم.",
+      "contribution": "{{label}} يمثل {{value}} من الإجمالي.",
+      "versionChart": "{{metric}} يظهر {{value}} في الإصدارات المحددة.",
+      "cluster": "{{metric}} كان {{value}} في المجموعات.",
+      "attribute": "{{label}} سجّل {{value}}.",
+      "carryForward": "{{label}} ظهر عند {{value}}.",
+      "generic": "{{metric}} هو {{value}}."
+    }
+  },
+  "insights": {
+    "loading": "جارٍ جمع الرؤى...",
+    "error": "تعذّر إنشاء الرؤى",
+    "empty": "لا توجد رؤى متاحة"
+  },
+  "states": {
+    "loading": "جارٍ التحميل",
+    "loadingPage": "جارٍ تحميل النظرة الرجعية",
+    "empty": "لا توجد بيانات لهذا التحديد",
+    "emptyHint": "الفلتر الحالي ضيق جدًا. وسّع تحديد الموسم أو المنتج أو القناة.",
+    "error": "تعذّر تحميل هذه الأداة",
+    "retry": "إعادة المحاولة",
+    "noComparison": "—"
+  },
+  "actions": {
+    "resetToDefault": "إعادة التعيين الافتراضي",
+    "chooseMetric": "اختيار المقياس",
+    "metricFor": "مقياس {{widget}}",
+    "download": "تنزيل",
+    "downloadAttributes": "تنزيل السمات",
+    "downloadWatchlist": "تنزيل قائمة المراقبة",
+    "more": "المزيد",
+    "chooseColumns": "اختيار الأعمدة",
+    "searchColumns": "بحث في الأعمدة"
+  },
+  "export": {
+    "downloadItems": "تنزيل العناصر",
+    "downloadAttributes": "تنزيل السمات",
+    "success": "بدأ التنزيل",
+    "failed": "تعذر تصدير الجدول",
+    "sheetByItem": "حسب الصنف",
+    "sheetByAttribute": "حسب السمة"
+  },
+  "a11y": {
+    "chartDataTable": "بيانات {{name}}",
+    "seriesLabel": "السلسلة",
+    "categoryLabel": "الفئة",
+    "progressValue": "{{label}}: {{value}}",
+    "deltaUp": "ارتفاع {{value}}",
+    "deltaDown": "انخفاض {{value}}",
+    "deltaFlat": "بدون تغيير",
+    "favourable": "إيجابي",
+    "unfavourable": "سلبي"
+  }
+}

@@ -1,0 +1,111 @@
+.page {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  overflow: hidden;
+  min-height: calc(100vh - 130px);
+  padding: 0 var(--space-lg) 8px;
+}
+
+/* Pre-filter empty state: single centered card (reference admin_page) */
+.pageCentered {
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+/* Decorative pulsing dotted concentric circles (reference admin_page::before/::after) */
+.page::before,
+.page::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.page::before {
+  top: 12%;
+  inset-inline-start: 6%;
+  width: 360px;
+  height: 360px;
+  transform: translate(-50%, -50%);
+  background: var(--gradient-admin-pulse-iris);
+  opacity: 0.45;
+  animation: admin-page-pulse 5s ease-in-out infinite;
+}
+
+.page::after {
+  bottom: 15%;
+  inset-inline-end: 8%;
+  width: 280px;
+  height: 280px;
+  transform: translate(50%, 50%);
+  background: var(--gradient-admin-pulse-coral);
+  opacity: 0.35;
+  animation: admin-page-pulse 6.5s ease-in-out infinite reverse;
+}
+
+@keyframes admin-page-pulse {
+  0%,
+  100% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.06;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page::before,
+  .page::after {
+    animation: none;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.pageCentered .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Breadcrumb "Hide Filter" action — reference tertiary button.
+   Doubled class selector so it reliably wins over the shared Button variant styles. */
+.hideFilterBtn.hideFilterBtn {
+  height: 32px;
+  padding: 6px var(--space-smd);
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--slate-800);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.hideFilterBtn.hideFilterBtn:hover:not(:disabled) {
+  background-color: var(--indigo-100);
+  border-color: var(--indigo-500);
+  color: var(--indigo-500);
+}
+
+:global(html[data-theme='dark']) .page::before,
+:global(html[data-theme='dark']) .page::after {
+  opacity: 1;
+}
+
+:global(html[data-theme='dark']) .hideFilterBtn.hideFilterBtn {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text-primary);
+}

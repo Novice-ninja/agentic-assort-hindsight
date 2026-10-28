@@ -1,0 +1,424 @@
+{
+  "title": "Hindsight",
+  "subtitle": "",
+  "tabs": {
+    "label": "Hindsight views",
+    "overview": "Overview",
+    "byItem": "By Item",
+    "byAttribute": "Sales Mix",
+    "watchlist": "Watchlist"
+  },
+  "salesMix": {
+    "title": "Sales",
+    "subtitle": "See what earned space"
+  },
+  "watchlist": {
+    "bannerLabel": "Watchlist banner",
+    "attentionTitle": "{{count}} Items Need Attention",
+    "lastEdited": "Last edited on {{date}}",
+    "critical": "Critical",
+    "high": "High",
+    "watch": "Watch",
+    "totalScanned": "Total Scanned",
+    "thresholds": "Thresholds",
+    "editThresholds": "Edit thresholds",
+    "editThresholdTitle": "Edit Threshold",
+    "resetToDefault": "Reset to Default",
+    "applyChanges": "Apply Changes",
+    "tableTitle": "Underperformers",
+    "hideRules": "Hide Rules",
+    "showRules": "Show Rules"
+  },
+  "filters": {
+    "label": "Applied filters",
+    "season": "Season",
+    "productLevel": "Product level",
+    "product": "Product",
+    "country": "Country",
+    "channel": "Channel",
+    "selectAll": "Select all",
+    "clear": "Clear filters",
+    "collapse": "Collapse filters",
+    "expand": "Expand filters",
+    "appliedCount": "{{count}} filters applied",
+    "noneSelected": "Nothing selected",
+    "applied": "Filters Applied",
+    "allFilters": "All filters",
+    "required": "required",
+    "loadingStrip": "Loading applied filters…",
+    "emptyStrip": "No filters applied"
+  },
+  "hierarchyFilter": {
+    "placeholder": "Select",
+    "noOptions": "No hierarchy values available",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All"
+  },
+  "aiStrip": {
+    "noInsight": "No insight available"
+  },
+  "regularPromoTrend": {
+    "title": "Regular + Promo {{metric}}",
+    "grainLabel": "Time grain",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "weekLabel": "Week {{n}}",
+    "monthLabel": "Month {{n}}",
+    "metricLabel": "Metric",
+    "metricPlaceholder": "Select",
+    "noMetrics": "No metrics available"
+  },
+  "levels": {
+    "division": "Division",
+    "department": "Department",
+    "category": "Category",
+    "subcategory": "Subcategory"
+  },
+  "seasonSelect": {
+    "label": "Season",
+    "loading": "Loading…",
+    "empty": "No seasons"
+  },
+  "seasons": {
+    "aw25": "AW25",
+    "ss25": "SS25",
+    "aw24": "AW24",
+    "ss24": "SS24"
+  },
+  "positions": {
+    "womenswear": "Womenswear",
+    "menswear": "Menswear",
+    "kidswear": "Kidswear",
+    "dresses": "Dresses",
+    "knitwear": "Knitwear",
+    "outerwear": "Outerwear",
+    "denim": "Denim",
+    "tops": "Tops",
+    "mensShirts": "Men's Shirts",
+    "mensKnitwear": "Men's Knitwear",
+    "kidsTops": "Kids' Tops",
+    "jumpers": "Jumpers",
+    "cardigans": "Cardigans",
+    "midiDresses": "Midi Dresses",
+    "miniDresses": "Mini Dresses",
+    "jeans": "Jeans",
+    "coats": "Coats",
+    "rollNeck": "Roll Neck",
+    "crewNeck": "Crew Neck",
+    "wideLeg": "Wide Leg",
+    "straightLeg": "Straight Leg"
+  },
+  "countries": {
+    "us": "United States",
+    "ca": "Canada",
+    "gb": "United Kingdom",
+    "ae": "United Arab Emirates"
+  },
+  "channels": {
+    "retail": "Retail",
+    "ecom": "Ecom",
+    "wholesale": "Wholesale",
+    "outlet": "Outlet"
+  },
+  "colours": {
+    "black": "Black",
+    "ivory": "Ivory",
+    "camel": "Camel",
+    "navy": "Navy",
+    "burgundy": "Burgundy",
+    "olive": "Olive",
+    "chocolate": "Chocolate"
+  },
+  "brands": {
+    "ownLabel": "Own Label",
+    "studioEdit": "Studio Edit",
+    "atelierNine": "Atelier Nine",
+    "northTrail": "North Trail",
+    "casaLinen": "Casa Linen",
+    "veraKnit": "Vera Knit"
+  },
+  "metrics": {
+    "salesValue": "Sales value",
+    "salesUnits": "Sales units",
+    "sellThrough": "Sell-through",
+    "grossMargin": "Gross margin",
+    "markdownPercent": "Markdown",
+    "revenueShare": "Revenue share"
+  },
+  "versions": {
+    "ly": "LY",
+    "lly": "LLY",
+    "optLy": "Optimised LY",
+    "optLly": "Optimised LLY",
+    "forecast": "Forecast",
+    "plan": "Plan"
+  },
+  "pareto": {
+    "title": "Sub-Category Contribution — {{metric}}",
+    "contribution": "Contribution",
+    "cumulative": "Cumulative",
+    "cumulativeSeries": "{{version}} Cumulative",
+    "contributionSeries": "{{version}} Contribution",
+    "metricSeries": "{{version}} {{metric}}",
+    "threshold": "{{value}}% threshold"
+  },
+  "scorecard": {
+    "title": "Summary",
+    "caption": "Season performance against last year and optimised last year",
+    "metric": "Metric",
+    "season": "Season",
+    "ly": "LY",
+    "optLy": "Optimised LY"
+  },
+  "productPerformance": {
+    "title": "Product performance",
+    "seasonScorecard": "Summary",
+    "vsLastWeek": "vs last week",
+    "vsLastYear": "vs last year"
+  },
+  "contribution": {
+    "title": "Contribution",
+    "colourTitle": "Colour Contribution",
+    "askAlan": "Ask Alan",
+    "others": "Others",
+    "share": "{{percent}} of total",
+    "summary": "{{label}} leads with {{percent}} of the total.",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right"
+  },
+  "clusters": {
+    "title": "Store cluster performance",
+    "categoryByCluster": "Category by cluster",
+    "cluster": "Cluster",
+    "category": "Category",
+    "a": "A — Premium Urban",
+    "b": "B — Metro Core",
+    "c": "C — Suburban Family",
+    "d": "D — Value Regional",
+    "e": "E — Outlet",
+    "f": "F — Travel Retail"
+  },
+  "categoryByCluster": {
+    "title": "Category × Cluster — {{metric}}",
+    "metricLabel": "Metric",
+    "metricPlaceholder": "Select",
+    "noMetrics": "No metrics available",
+    "hierarchyError": "Could not load hierarchy for Category × Cluster",
+    "chartError": "Could not load Category × Cluster chart",
+    "insight": "Cells are colour-coded against the 69% plan: green ≥+10pp, amber within ±5pp, red ≤−5pp. 10 of 30 category-cluster combinations are running red — Footwear × Outlet is the weakest at 46% ST, the first candidate for reallocation or cluster-specific markdown."
+  },
+  "storeHexMap": {
+    "title": "Store Performance Map",
+    "metricLabel": "Metric",
+    "metricPlaceholder": "Select",
+    "noMetrics": "No metrics available",
+    "insight": "Premium is the strongest cluster at 78% avg ST vs a 69% plan. Outlet is weakest at 56%.",
+    "loading": "Loading…",
+    "empty": "No store map data",
+    "dataTableCaption": "Store performance hex map"
+  },
+  "versionCharts": {
+    "title": "Version comparison",
+    "byDepartment": "{{metric}} by department"
+  },
+  "topPerformers": {
+    "title": "Top performers",
+    "listLength": "Rows",
+    "listLengthCapped": "Capped at the maximum of {{max}} rows.",
+    "rank": "Rank",
+    "style": "Style",
+    "noImage": "No image available"
+  },
+  "items": {
+    "card": {
+      "idChip": "ID: {{id}}",
+      "showMetrics": "Show performance figures for {{style}}",
+      "showImage": "Show product image for {{style}}"
+    },
+    "imagePreview": "Product image",
+    "enlargeImage": "Enlarge image: {{description}}",
+    "title": "Items",
+    "viewVisual": "Card view",
+    "viewTable": "Table view",
+    "viewLabel": "Item view",
+    "search": "Search items",
+    "searchPlaceholder": "Style number or description",
+    "tyLy": "Show last year",
+    "totalsLabel": "Recommendation totals",
+    "totalItems": "{{count}} items",
+    "columns": {
+      "image": "Image",
+      "styleNumber": "Style",
+      "description": "Description",
+      "productHierarchy": "Product Hierarchy",
+      "cluster": "Cluster",
+      "recommendation": "Recommendation",
+      "trend": "Trend",
+      "lastYear": "{{metric}} LY"
+    },
+    "hierarchy": {
+      "label": "Hierarchy",
+      "placeholder": "Select",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+      "expandAll": "Expand all",
+      "collapseAll": "Collapse all",
+      "expandGroup": "Hierarchy expand",
+      "levels": {
+        "l0_name": "Division",
+        "l1_name": "Department",
+        "l2_name": "Category",
+        "l3_name": "Subcategory"
+      }
+    },
+    "filters": {
+      "open": "Filter Settings",
+      "settingsTitle": "Filter Settings",
+      "hierarchySection": "Product Hierarchy",
+      "apply": "Apply",
+      "cancel": "Cancel"
+    },
+    "verdict": {
+      "label": "Recommendation for {{style}}",
+      "keep": "Keep",
+      "shop": "Shop",
+      "drop": "Drop"
+    },
+    "table": {
+      "askAi": "Ask Iris about {{style}}"
+    },
+    "overridden": "Overridden by planner",
+    "agentVerdict": "Agent recommended {{verdict}}",
+    "overrideMode": "Planner overrides",
+    "agenticMode": "Agent recommendations",
+    "recommendation": {
+      "saving": "Saving recommendation",
+      "saved": "Recommendation updated",
+      "failed": "Could not update recommendation"
+    },
+    "bulkEdit": {
+      "action": "Bulk Edit",
+      "title": "Bulk Edit",
+      "close": "Close bulk edit",
+      "apply": "Apply",
+      "selectPlaceholder": "Select",
+      "selectAll": "Select all rows",
+      "selectItem": "Select {{style}}",
+      "appliedToItems": "Changes Will Be Applied To {{count}} Selected Items",
+      "appliedToRows": "{{changes}} Change Will Be Applied To {{count}} Selected Rows"
+    }
+  },
+  "attributes": {
+    "title": "Attribute analysis",
+    "selectorLabel": "Attribute",
+    "count": "{{count}} values",
+    "valueCount": "{{count}} values",
+    "brand": "Brand",
+    "colour": "Colour",
+    "collar": "Collar",
+    "neckline": "Neckline",
+    "sleeveLength": "Sleeve length",
+    "heatmapTitle": "{{attribute}} by cluster",
+    "breakdownTitle": "{{attribute}} breakdown",
+    "breakdownHeading": "{{attribute}} - Performance Breakdown · {{values}} values",
+    "breakdownSubtitle": "Performance Breakdown",
+    "tableEmpty": "No data found",
+    "orgLevel": "Performance — org level",
+    "byCluster": "{{metric}} by cluster",
+    "value": "Value",
+    "trend": "Trend YoY",
+    "signal": "Signal",
+    "aboveThreshold": "{{count}} above threshold",
+    "signals": {
+      "grow": "Grow",
+      "hold": "Hold",
+      "exit": "Exit"
+    },
+    "heatmapFetchFailed": "Heatmap data is currently unavailable. Showing sample data.",
+    "fetchFailed": "Attributes are currently unavailable. Showing defaults."
+  },
+  "overview": {
+    "seasonSummary": {
+      "title": "Season Narrative Summary",
+      "listLabel": "Season narrative insights",
+      "readMore": "Read More",
+      "showLess": "Show Less",
+      "askIris": "Ask Iris",
+      "empty": "No season narrative insights for this selection"
+    },
+    "styleColors": {
+      "title": "Top Performing Style-Colors",
+      "listLabel": "Top performing style-colors",
+      "sellThrough": "{{value}} ST",
+      "cardLabel": "Rank {{rank}}: {{name}}, {{sales}}, {{sellThrough}}"
+    }
+  },
+  "carryForward": {
+    "title": "Multi-season trend",
+    "viewLabel": "Panel view",
+    "missedOpportunities": "Missed Opportunities",
+    "liveWatch": "Live Watch",
+    "openUnderperformers": "Open underperformers",
+    "carryForward": "Carry-Forward & Flags",
+    "threshold": "Sensitivity",
+    "thresholdClamped": "Adjusted to {{value}}%, the nearest allowed value.",
+    "flagged": "Flagged"
+  },
+  "narration": {
+    "label": "Insight",
+    "generating": "Insight generating",
+    "fallback": {
+      "scorecard": "{{metric}} was {{value}} for the season.",
+      "contribution": "{{label}} accounts for {{value}} of the total.",
+      "versionChart": "{{metric}} shows {{value}} across the selected versions.",
+      "cluster": "{{metric}} was {{value}} across clusters.",
+      "attribute": "{{label}} recorded {{value}}.",
+      "carryForward": "{{label}} was surfaced at {{value}}.",
+      "generic": "{{metric}} is {{value}}."
+    }
+  },
+  "insights": {
+    "loading": "Gathering insights...",
+    "error": "Insights could not be generated",
+    "empty": "No insights available"
+  },
+  "states": {
+    "loading": "Loading",
+    "loadingPage": "Loading Hindsight",
+    "empty": "No data for this selection",
+    "emptyHint": "The current filter is too narrow. Widen the season, product, or channel selection.",
+    "error": "This widget could not load",
+    "retry": "Retry",
+    "noComparison": "—"
+  },
+  "actions": {
+    "resetToDefault": "Reset to default",
+    "chooseMetric": "Choose metric",
+    "metricFor": "Metric for {{widget}}",
+    "download": "Download",
+    "downloadAttributes": "Download attributes",
+    "downloadWatchlist": "Download watchlist",
+    "more": "More",
+    "chooseColumns": "Choose columns",
+    "searchColumns": "Search columns"
+  },
+  "export": {
+    "downloadItems": "Download items",
+    "downloadAttributes": "Download attributes",
+    "success": "Download started",
+    "failed": "Could not export the table",
+    "sheetByItem": "By Item",
+    "sheetByAttribute": "By Attribute"
+  },
+  "a11y": {
+    "chartDataTable": "Data for {{name}}",
+    "seriesLabel": "Series",
+    "categoryLabel": "Category",
+    "progressValue": "{{label}}: {{value}}",
+    "deltaUp": "up {{value}}",
+    "deltaDown": "down {{value}}",
+    "deltaFlat": "unchanged",
+    "favourable": "favourable",
+    "unfavourable": "unfavourable"
+  }
+}

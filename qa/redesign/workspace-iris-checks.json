@@ -1,0 +1,50 @@
+{
+  "kind": "Real React provider/Iris in jsdom, semantic vendor button/chat-host stand-ins, no Chrome/visual claim",
+  "passed": 11,
+  "checks": [
+    {
+      "name": "One existing header interceptor opens the new contextual panel and focuses its composer",
+      "pass": true
+    },
+    {
+      "name": "A sent question produces clearly labeled computed facts, hypothesis and contributing evidence",
+      "pass": true
+    },
+    {
+      "name": "Applying a new scope retains old evidence and requires an explicit context choice",
+      "pass": true
+    },
+    {
+      "name": "Keep previous context permits another question without rewriting earlier answers",
+      "pass": true
+    },
+    {
+      "name": "Use current view adopts the new scope for later questions while preserving earlier answer scope",
+      "pass": true
+    },
+    {
+      "name": "Access revocation cannot expose denied financial context and disables authoring",
+      "pass": true
+    },
+    {
+      "name": "Unavailable assistant retains the question, offers retry and manual evidence without blocking the workspace",
+      "pass": true
+    },
+    {
+      "name": "Retry computes against the same frozen context and restores evidence actions",
+      "pass": true
+    },
+    {
+      "name": "Escape closes the panel and restores focus to its original header entry",
+      "pass": true
+    },
+    {
+      "name": "Opening a scope dialog closes Iris so panels do not stack",
+      "pass": true
+    },
+    {
+      "name": "Local demo reset clears prior assistant exchanges without affecting the existing header entry",
+      "pass": true
+    }
+  ]
+}

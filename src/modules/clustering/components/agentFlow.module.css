@@ -1,0 +1,242 @@
+/*
+ * Describe Your Plan — agent-driven wizard visuals.
+ * Figma: section "describe autonomous" (7672:284218), flows 39/40/47/48.
+ * Palette mirrors the Ask In Chat gradient (cyan → violet → orange) via tokens.
+ */
+
+.flow {
+  /* Card inset is 0 24px 24px. The glow uses the same box, except the right
+     edge moves to the expanded chat. */
+  --describe-glow-edge: 24px;
+}
+
+/*
+ * Section the agent is currently filling: "STROKE GLOW" (I7672:284301;3467:128731).
+ * The stroke is the sparkle SVG gradient (cyan #2ac2ee, violet #6962ef, orange #f26921)
+ * drawn as a 2px ring so the radius stays continuous around the corners.
+ */
+.sectionGlow.sectionGlow {
+  position: relative;
+  border: 0;
+  border-radius: var(--radius-lg);
+  outline: none;
+  overflow: visible;
+}
+
+/* stylelint-disable color-no-hex */
+.sectionGlow::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  pointer-events: none;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #2ac2ee 0deg,
+    #6962ef 80deg,
+    #f26921 96deg,
+    #f26921 262deg,
+    #2ac2ee 278deg,
+    #2ac2ee 360deg
+  );
+  mask:
+    linear-gradient(black 0 0) content-box,
+    linear-gradient(black 0 0);
+  mask-composite: exclude;
+}
+/* stylelint-enable color-no-hex */
+
+/* Pill centered on the highlighted section's lower edge. */
+.statusPill {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 11px 19px;
+  /* stylelint-disable color-no-hex */
+  background-color: #4659e5;
+  border: 2px solid #3a49c0;
+  box-shadow:
+    0 4px 10px rgb(55 77 205 / 22%),
+    0 1px 3px rgb(55 77 205 / 12%);
+  /* stylelint-enable color-no-hex */
+  border-radius: 9999px;
+  color: var(--graphite-10);
+  font-family: var(--font-family-base);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+
+/*
+ * The highlighted section is fully under the maximized dock. Keep the same
+ * pill, pinned in the open band above the footer, and lift the chat via
+ * --describe-pill-reserve.
+ */
+.statusPillDocked {
+  position: fixed;
+  z-index: 1201;
+  left: var(--describe-pill-left, var(--space-md));
+  bottom: var(--describe-pill-bottom, var(--space-smd));
+  transform: none;
+  max-width: calc(100vw - var(--describe-pill-left, var(--space-md)) - var(--space-md));
+}
+
+/*
+ * Whole-content glow while the agent is working. The source frame is
+ * describe-plan-glow.png (1024×918, transparent center, ~22px edge fade).
+ * border-image keeps the corners and only stretches the edges.
+ * The export's edge is about 32% opaque, so on white it turns pale.
+ * This file keeps those RGB values and raises that edge to alpha 155.
+ * `--describe-glow-right` moves the right edge to the expanded chat.
+ * The outset fills the shell gutter: 24px on the sides and bottom. The top
+ * outset reaches the top edge of the breadcrumb bar, above its text.
+ * Every edge uses the same 28px band.
+ * The right outset is 0 while the expanded chat already meets this edge.
+ * The card's absolute inset is unchanged.
+ */
+.pageGlow.pageGlow {
+  isolation: isolate;
+  overflow: visible;
+}
+
+:global(html[data-describe-page-glow='true']) :global(main) {
+  overflow: visible;
+}
+
+.pageGlow::before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  pointer-events: none;
+  inset: 0 var(--describe-glow-right, var(--describe-glow-edge)) var(--describe-glow-edge)
+    var(--describe-glow-edge);
+  border: 28px solid transparent;
+  border-image: url('../../../assets/icons/clustering/describe-plan-glow.png') 36 / 28px /
+    var(--describe-glow-outset-top, 45px) var(--describe-glow-outset-right, 24px) 24px 24px
+    stretch;
+}
+
+.pageGlow :global(.dynamic-layout-container) {
+  z-index: 1;
+}
+
+/* Keep the findings banner in the content column, above the footer, clear of the chat. */
+.flow :global(.right-column) {
+  position: relative;
+}
+
+.flow :global(.dynamic-layout-footer) {
+  position: relative;
+  overflow: visible;
+}
+
+.flow:has(.toast) :global(.right-content) {
+  padding-bottom: 48px;
+}
+
+/* Footer notification (I7672:284301;3331:226773). */
+.toast {
+  position: absolute;
+  z-index: 3;
+  inset-inline-start: 0;
+  bottom: calc(100% + 12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(40rem, 100%);
+  min-height: 36px;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--indigo-200);
+  border-radius: var(--radius-sm);
+  background: var(--sky-50);
+  box-shadow: 0 0 8px rgb(0 0 0 / 12%);
+}
+
+/*
+ * Used when the docked chat covers the footer. The banner pins to the bottom of
+ * the content column, and the chat is lifted by --describe-banner-reserve.
+ */
+.toastStacked {
+  position: fixed;
+  z-index: 1200;
+  left: var(--describe-banner-left, var(--space-md));
+  right: auto;
+  bottom: var(--space-smd);
+  width: max-content;
+  max-width: calc(100vw - var(--describe-banner-left, var(--space-md)) - var(--space-md));
+}
+
+.toastBody {
+  display: flex;
+  align-items: center;
+  gap: var(--space-smd);
+  min-width: 0;
+}
+
+.toastIcon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--indigo-400);
+}
+
+.toastText {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--slate-800);
+  min-width: 0;
+}
+
+.toastClose {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--slate-800);
+  cursor: pointer;
+}
+
+.toastClose:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.toastClose svg {
+  width: 20px;
+  height: 20px;
+}
+
+:global([data-theme='dark']) .toast {
+  background: color-mix(in srgb, var(--color-info) 18%, var(--color-surface));
+  border-color: color-mix(in srgb, var(--color-info) 40%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .toastText,
+:global([data-theme='dark']) .toastClose {
+  color: var(--color-text-primary);
+}

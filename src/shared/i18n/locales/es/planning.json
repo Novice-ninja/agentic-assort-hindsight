@@ -1,0 +1,273 @@
+{
+  "allPlans": {
+    "title": "Todos los planes",
+    "subtitle": "Explora, filtra y reanuda tus planes de surtido."
+  },
+  "createPlan": {
+    "title": "Crear plan",
+    "subtitle": "",
+    "backToPlans": "Volver a Todos los planes",
+    "comingSoon": "El asistente de creación de planes está configurado en esta ruta.",
+    "successMessage": "¡Plan creado correctamente!"
+  },
+  "actions": {
+    "createPlan": "Crear nuevo plan",
+    "editPlan": "Editar plan",
+    "clonePlan": "Clonar plan",
+    "deletePlan": "Eliminar",
+    "download": "Descargar planes",
+    "showDeletedPlans": "Mostrar planes eliminados",
+    "cancel": "Cancelar",
+    "back": "Atrás",
+    "backToNameCalendar": "Volver a Nombre y Calendario",
+    "backToProductScope": "Volver a Alcance de Producto",
+    "backToClustering": "Volver a Agrupación y Modo de Ejecución",
+    "goToProductScope": "Ir a Alcance de producto",
+    "goToClustering": "Ir a Agrupación y modo de ejecución",
+    "goToReview": "Revisar y crear",
+    "done": "Listo",
+    "chooseColumns": "Elegir columnas",
+    "searchColumns": "Buscar columnas"
+  },
+  "deleteConfirm": {
+    "title": "¿Eliminar plan(es)?",
+    "body": "¿Seguro que quieres eliminar {{count}} plan(es) seleccionado(s)? Esta acción no se puede deshacer desde esta vista.",
+    "confirm": "Eliminar"
+  },
+  "toasts": {
+    "deleteSuccess": "{{count}} plan(es) eliminado(s) correctamente",
+    "deleteError": "No se pudieron eliminar los planes. Inténtalo de nuevo."
+  },
+  "tabs": {
+    "label": "Filtrar planes por estado",
+    "all": "Todos los planes",
+    "draft": "Borrador",
+    "inProgress": "En curso",
+    "review": "Revisión",
+    "approved": "Aprobado",
+    "count": "{{count}} planes"
+  },
+  "filters": {
+    "label": "Filtros de planes",
+    "stages": "Etapas",
+    "seasons": "Temporadas",
+    "selectStages": "Seleccionar etapas...",
+    "selectSeasons": "Seleccionar temporadas...",
+    "selected": "{{count}} seleccionados"
+  },
+  "view": {
+    "label": "Modo de vista",
+    "grid": "Vista de cuadrícula",
+    "table": "Vista de tabla"
+  },
+  "card": {
+    "steps": "Paso {{current}} de {{total}}",
+    "stepsShort": "Pasos: {{current}} / {{total}}",
+    "stepTooltip": "Paso {{current}} de {{total}} · {{step}}",
+    "clusterTag": "Clúster:{{clusters}}",
+    "pipeline": "Flujo:",
+    "select": "Seleccionar {{name}}",
+    "metrics": {
+      "sales": "Ventas",
+      "units": "Unidades",
+      "sellThrough": "Venta neta",
+      "grossMargin": "Margen bruto"
+    },
+    "actions": {
+      "resume": "Reanudar",
+      "view": "Ver",
+      "resumeNamed": "Reanudar {{name}}",
+      "viewNamed": "Ver {{name}}",
+      "history": "Ver historial de {{name}}"
+    }
+  },
+  "table": {
+    "caption": "Planes de surtido",
+    "name": "Nombre del plan",
+    "status": "Estado",
+    "season": "Temporada",
+    "category": "Categoría",
+    "cluster": "Clúster",
+    "progress": "Progreso",
+    "createdBy": "Creado por",
+    "createdAt": "Creado el",
+    "sales": "Ventas",
+    "margin": "Margen",
+    "actions": "Acciones"
+  },
+  "empty": {
+    "noPlansTitle": "Aún no hay planes",
+    "noPlansBody": "Crea tu primer plan de surtido para comenzar.",
+    "filteredTitle": "Ningún plan coincide con tus filtros",
+    "filteredBody": "Intenta borrar un filtro o cambiar de pestaña de estado.",
+    "filtered": "Ningún plan coincide con tus filtros"
+  },
+  "common": {
+    "upcoming": "Próximamente"
+  },
+  "wizard": {
+    "stepperLabel": "Pasos para crear el plan",
+    "stepLabel": "Paso {{number}}"
+  },
+  "steps": {
+    "nameCalendar": {
+      "title": "Nombre y calendario",
+      "description": "Nombra tu plan y elige el año fiscal, la temporada comercial y el punto de partida."
+    },
+    "productScope": {
+      "title": "Alcance de producto",
+      "description": "Selecciona el departamento y las clases, subclases y SKU a planificar."
+    },
+    "clusteringRunMode": {
+      "title": "Agrupación y modo de ejecución",
+      "description": "Elige un escenario de agrupación de tiendas, el modo de ejecución y el umbral de confianza."
+    },
+    "reviewCreate": {
+      "title": "Revisar y crear",
+      "description": "Revisa tus selecciones y ve qué hará el agente, luego crea el plan."
+    }
+  },
+  "planDetails": "Detalles del plan",
+  "fields": {
+    "planName": "Nombre del plan",
+    "planNamePlaceholder": "p. ej. SS26 Mujer – Escenario B",
+    "fiscalYear": "Año fiscal",
+    "seasonsAvailable": "{{count}} temporadas disponibles",
+    "tradingSeason": "Temporada comercial",
+    "selectFiscalFirst": "Selecciona un año fiscal para ver sus temporadas comerciales.",
+    "startingPoint": "Punto de partida"
+  },
+  "fiscalTags": {
+    "complete": "Completo",
+    "current": "Actual",
+    "future": "Futuro"
+  },
+  "startingPoints": {
+    "startFresh": "Empezar de cero",
+    "carryForwardLY": "Trasladar del año anterior"
+  },
+  "startingPointDesc": {
+    "startFresh": "El agente construye el plan desde cero utilizando las señales de datos actuales.",
+    "carryForwardLY": "Aplicar información retrospectiva y traslados de la temporada equivalente anterior automáticamente."
+  },
+  "scope": {
+    "department": "Departamento",
+    "class": "Clase",
+    "subClass": "Subclase",
+    "sku": "SKU",
+    "notSelected": "No seleccionado",
+    "noneSelected": "Ninguno seleccionado",
+    "selectedCount": "{{count}} seleccionados",
+    "selectAll": "Seleccionar todo",
+    "selectAllAccessible": "Seleccionar todo {{level}}",
+    "selectAllMatchingAccessible": "Seleccionar todo {{level}} que coincida con la búsqueda actual",
+    "allSelected": "Todo seleccionado",
+    "allSelectedWithExcept": "Todo seleccionado (−{{count}})",
+    "matchingSelected": "Coincidencias: {{needles}}",
+    "exceptMatchingSelected": "Excepto coincidencias: {{needles}}",
+    "matchingAndExceptSelected": "Coincidencias: {{matching}}; excepto: {{except}}",
+    "clear": "Borrar",
+    "searchLabel": "Buscar {{level}}",
+    "searchPlaceholder": "Buscar…",
+    "styles": "{{count}} estilos",
+    "listView": "Vista de lista",
+    "gridView": "Vista de cuadrícula",
+    "selectProductHierarchy": "Seleccionar jerarquía de producto",
+    "overflowCount": "+{{count}}",
+    "selectParentFirst": "Seleccione {{parent}} primero",
+    "noOptions": "No hay opciones para esta selección",
+    "levelLoadError": "No se pudo cargar este nivel",
+    "retry": "Reintentar",
+    "loadingMore": "Cargando…",
+    "noHierarchy": "No hay jerarquía de producto disponible"
+  },
+  "clustering": {
+    "scenario": "Escenario de agrupación de tiendas",
+    "confidence": "Confianza {{pct}}%",
+    "runMode": "Modo de ejecución del flujo",
+    "default": "Predeterminado",
+    "confidenceThreshold": "Umbral de confianza",
+    "marks": {
+      "autonomous": "60% Autónomo",
+      "recommended": "80% Recomendado",
+      "strict": "95% Estricto"
+    }
+  },
+  "clusteringTags": {
+    "recommended": "Recomendado",
+    "alternative": "Alternativo",
+    "experimental": "Experimental"
+  },
+  "runModes": {
+    "gated": {
+      "title": "Modo controlado",
+      "description": "El agente se detiene para aprobación en cada etapa del flujo."
+    },
+    "autonomous": {
+      "title": "Autónomo",
+      "description": "El agente se ejecuta de principio a fin y solo se detiene con baja confianza."
+    }
+  },
+  "review": {
+    "edit": "Editar",
+    "skuCount": "{{count}} SKU",
+    "clustering": "Agrupación",
+    "runMode": "Modo de ejecución"
+  },
+  "agent": {
+    "title": "Qué hará el agente",
+    "stageMeta": "{{scenario}} · {{pct}}% de confianza",
+    "selectScenarioFirst": "Selecciona un escenario de agrupación para previsualizar el flujo."
+  },
+  "errors": {
+    "nameRequired": "El nombre del plan es obligatorio.",
+    "nameTooLong": "El nombre del plan es demasiado largo.",
+    "nameInvalidChars": "Usa solo letras, números, espacios, guiones y guiones bajos.",
+    "nameNotUnique": "Ya existe un plan con este nombre.",
+    "createFailed": "No pudimos crear el plan. Inténtalo de nuevo.",
+    "seasonsFetchFailed": "No se pudieron cargar las temporadas. Inténtalo de nuevo."
+  },
+  "history": {
+    "heading": "Encabezado",
+    "close": "Cerrar historial",
+    "tabsLabel": "Vistas del historial del plan",
+    "mode": "{{mode}} - Umbral {{pct}}%",
+    "runMode": {
+      "gated": "Controlado",
+      "autonomous": "Autónomo"
+    },
+    "stages": "{{completed}}/{{total}} etapas",
+    "progressLabel": "{{percent}}% completado",
+    "tabs": {
+      "pipeline": "Flujo",
+      "versionHistory": "Historial de versiones",
+      "activityLog": "Registro de actividad del agente"
+    },
+    "review": {
+      "needed": "Se necesita tu revisión — {{stage}}"
+    },
+    "stage": {
+      "view": "Ver",
+      "review": "Revisar",
+      "reasoning": "Decisiones y razonamiento del agente"
+    },
+    "versions": {
+      "cascade": "Cascada: {{count}} etapas posteriores se reejecutarán.",
+      "empty": "Aún no hay historial de versiones."
+    },
+    "activity": {
+      "emptyTitle": "Registro de actividad próximamente",
+      "emptyBody": "El registro de actividad del agente aparecerá aquí."
+    },
+    "states": {
+      "loading": "Cargando historial…",
+      "errorTitle": "No se pudo cargar el historial",
+      "errorBody": "Algo salió mal al cargar el historial de este plan.",
+      "retry": "Reintentar"
+    },
+    "footer": {
+      "cancel": "Cancelar",
+      "apply": "Aplicar"
+    }
+  }
+}

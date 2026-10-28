@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 435px;
+  height: 100%;
+}
+
+.wrapper :global(.chart-container) {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+.wrapper :global(.divider-line) {
+  display: none;
+}
+
+.actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.rangeControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  color: var(--color-text-secondary, #60697d);
+  font: 12px/18px var(--font-family-base, Manrope, sans-serif);
+}
+
+.rangeControls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rangeControls select {
+  min-height: 28px;
+  border: 1px solid var(--color-border, #d9dde7);
+  border-radius: 6px;
+  padding: 3px 6px;
+  color: var(--color-text-primary, #0d152c);
+  background: var(--color-surface, #fff);
+  font: inherit;
+}
+
+.rangeHint { margin-inline-start: auto; }
+
+@media (max-width: 800px) {
+  .rangeHint { display: none; }
+}
+
+.grainToggle {
+  flex-shrink: 0;
+}
+
+.actions :global([data-orientation='horizontal']) {
+  gap: 6px;
+}
+
+.actions :global([data-orientation='horizontal'] > span) {
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 9px;
+  line-height: 12px;
+}
+
+.actions :global([data-orientation='horizontal'] button) {
+  min-width: 116px;
+  height: 26px;
+  padding: 4px 30px 4px 10px;
+  border: 1px solid var(--color-border, rgb(217 221 231));
+  border-radius: 6px;
+  color: var(--color-text-secondary, var(--slate-500));
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.wrapper :global(.highcharts-legend-item text) {
+  color: var(--color-text-secondary, var(--slate-500)) !important;
+  fill: var(--color-text-secondary, var(--slate-500)) !important;
+  font-family: var(--font-family-base) !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+/* Highcharts paints this path over the Y-axis so scrolled series stays hidden. */
+.wrapper :global(.highcharts-scrollable-mask) {
+  fill: var(--color-surface, #ffffff);
+  fill-opacity: 1;
+}

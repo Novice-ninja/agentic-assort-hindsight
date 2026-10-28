@@ -1,0 +1,879 @@
+{
+  "kind": "Independent read-only validation of actual XLSX browser downloads saved through native Save dialogs",
+  "status": "passed",
+  "passed": 114,
+  "checkCount": 114,
+  "browser_files_verified": 6,
+  "files": [
+    {
+      "path": "qa/redesign/priority-browser/exports/by-item-bamboo.xlsx",
+      "sha256": "e7b42e8e78d4f4a29465f69840f709c227f746db65059b32afcb38e367bd08ab",
+      "row_count": 12,
+      "column_count": 24,
+      "numeric_cells_checked": 228,
+      "canonical_comparison": "Actual MSW local table endpoint → real normalizer → real export column adapter",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [
+            "Hardwood",
+            "Engineered Hardwood"
+          ],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Sls$": 1049808.28,
+        "SlsU": 23836.0,
+        "LY sales $": 874876.56,
+        "Plan sales $ · synthetic": 1074803.72,
+        "PLR baseline $ · definition TBC": 1099799.15,
+        "R4 sales $ · definition TBC": 105705.69,
+        "R13 sales $ · definition TBC": 437923.5,
+        "R52 sales $ · definition TBC": 1963848.39,
+        "GM$": 347311.8,
+        "Buy Units": 41489.0,
+        "Buy $": 1048597.51
+      }
+    },
+    {
+      "path": "qa/redesign/priority-browser/exports/by-item-full.xlsx",
+      "sha256": "68b22c520fbeb6d7d47765017f2dd38e70b84f945e41c60b601e5b580ca26cf7",
+      "row_count": 72,
+      "column_count": 24,
+      "numeric_cells_checked": 1368,
+      "canonical_comparison": "Actual MSW local table endpoint → real normalizer → real export column adapter",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Sls$": 8400000.0,
+        "SlsU": 182400.0,
+        "LY sales $": 7865168.54,
+        "Plan sales $ · synthetic": 8600000.0,
+        "PLR baseline $ · definition TBC": 8800000.0,
+        "R4 sales $ · definition TBC": 845799.66,
+        "R13 sales $ · definition TBC": 3504027.54,
+        "R52 sales $ · definition TBC": 15691973.05,
+        "GM$": 2654400.0,
+        "Buy Units": 281481.0,
+        "Buy $": 7359589.21
+      }
+    },
+    {
+      "path": "qa/redesign/priority-browser/exports/sales-mix-breakdown-bamboo.xlsx",
+      "sha256": "713f0c7355f6d289c20cd32ebaf2ec4b1d6661226c9f0b6d1eb1dc98d70ec8de",
+      "row_count": 2,
+      "column_count": 18,
+      "numeric_cells_checked": 30,
+      "canonical_comparison": "Canonical scoped Sales Mix facts → actual UI EXPORT_COLUMNS extracted by AST",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [
+            "Hardwood",
+            "Engineered Hardwood"
+          ],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Sales": 1049808.28,
+        "Selling SKUs": 12.0,
+        "LY sales": 874876.56,
+        "Plan": 1074803.72,
+        "PLR baseline · definition TBC": 1099799.15,
+        "R4 sales · definition TBC": 105705.69,
+        "R13 sales · definition TBC": 437923.5,
+        "R52 sales · definition TBC": 1963848.39
+      }
+    },
+    {
+      "path": "qa/redesign/priority-browser/exports/sales-mix-breakdown-full.xlsx",
+      "sha256": "7e83a8f56b0e1c658a9323b29c5ab15ff37a6d25bb00d9356f6bd4720ac0980e",
+      "row_count": 5,
+      "column_count": 18,
+      "numeric_cells_checked": 75,
+      "canonical_comparison": "Canonical scoped Sales Mix facts → actual UI EXPORT_COLUMNS extracted by AST",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Sales": 8400000.0,
+        "Selling SKUs": 72.0,
+        "LY sales": 7865168.54,
+        "Plan": 8600000.0,
+        "PLR baseline · definition TBC": 8800000.0,
+        "R4 sales · definition TBC": 845799.66,
+        "R13 sales · definition TBC": 3504027.54,
+        "R52 sales · definition TBC": 15691973.05
+      }
+    },
+    {
+      "path": "qa/redesign/priority-browser/exports/sales-mix-breakdown-sorted.xlsx",
+      "sha256": "4a1c669bf5f5628af1c5bc7387b0cf73313ca984195d8c5fa93e7a58aab9c8e6",
+      "row_count": 5,
+      "column_count": 18,
+      "numeric_cells_checked": 75,
+      "canonical_comparison": "Canonical scoped Sales Mix facts → actual UI EXPORT_COLUMNS extracted by AST",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Sales": 8400000.0,
+        "Selling SKUs": 72.0,
+        "LY sales": 7865168.54,
+        "Plan": 8600000.0,
+        "PLR baseline · definition TBC": 8800000.0,
+        "R4 sales · definition TBC": 845799.66,
+        "R13 sales · definition TBC": 3504027.54,
+        "R52 sales · definition TBC": 15691973.05
+      }
+    },
+    {
+      "path": "qa/redesign/priority-browser/exports/sales-mix-summary-full.xlsx",
+      "sha256": "e80a8ab446b53cfbb52faf5944adf62a56980831ef7dc51b2ca775d39449ba50",
+      "row_count": 5,
+      "column_count": 5,
+      "numeric_cells_checked": 20,
+      "canonical_comparison": "Canonical scoped Sales Mix facts → actual UI EXPORT_COLUMNS extracted by AST",
+      "scope_recipe": [
+        {
+          "levelName": "Division",
+          "levelNo": "l0_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Category",
+          "levelNo": "l1_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        },
+        {
+          "levelName": "Sub Category",
+          "levelNo": "l2_name",
+          "selectedValues": [],
+          "selectAll": true,
+          "search": [],
+          "exceptSearch": [],
+          "except": [],
+          "include": []
+        }
+      ],
+      "totals": {
+        "Total SKUs": 72.0
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "by-item-bamboo.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 12,
+        "compared_columns": 24
+      }
+    },
+    {
+      "name": "by-item-bamboo.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 228
+      }
+    },
+    {
+      "name": "by-item-bamboo.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: stable IDs remain text and match all scoped canonical products",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: loaded/exported/scoped counts disclose exact export population",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: plan and reference season are distinct metadata fields",
+      "pass": true
+    },
+    {
+      "name": "by-item-bamboo.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Sls$": 1049808.28,
+        "SlsU": 23836.0,
+        "LY sales $": 874876.56,
+        "Plan sales $ · synthetic": 1074803.72,
+        "PLR baseline $ · definition TBC": 1099799.15,
+        "R4 sales $ · definition TBC": 105705.69,
+        "R13 sales $ · definition TBC": 437923.5,
+        "R52 sales $ · definition TBC": 1963848.39,
+        "GM$": 347311.8,
+        "Buy Units": 41489.0,
+        "Buy $": 1048597.51
+      }
+    },
+    {
+      "name": "by-item-bamboo.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 72,
+        "compared_columns": 24
+      }
+    },
+    {
+      "name": "by-item-full.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 1368
+      }
+    },
+    {
+      "name": "by-item-full.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: stable IDs remain text and match all scoped canonical products",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: loaded/exported/scoped counts disclose exact export population",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: plan and reference season are distinct metadata fields",
+      "pass": true
+    },
+    {
+      "name": "by-item-full.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Sls$": 8400000.0,
+        "SlsU": 182400.0,
+        "LY sales $": 7865168.54,
+        "Plan sales $ · synthetic": 8600000.0,
+        "PLR baseline $ · definition TBC": 8800000.0,
+        "R4 sales $ · definition TBC": 845799.66,
+        "R13 sales $ · definition TBC": 3504027.54,
+        "R52 sales $ · definition TBC": 15691973.05,
+        "GM$": 2654400.0,
+        "Buy Units": 281481.0,
+        "Buy $": 7359589.21
+      }
+    },
+    {
+      "name": "by-item-full.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 2,
+        "compared_columns": 18
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 30
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: all current grid filter/sort fields are machine readable",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: sales and SKU shares each sum to100%",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: sales-weighted GM matches canonical ratio",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Sales": 1049808.28,
+        "Selling SKUs": 12.0,
+        "LY sales": 874876.56,
+        "Plan": 1074803.72,
+        "PLR baseline · definition TBC": 1099799.15,
+        "R4 sales · definition TBC": 105705.69,
+        "R13 sales · definition TBC": 437923.5,
+        "R52 sales · definition TBC": 1963848.39
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: percent number format preserves stored whole-percent semantics",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-bamboo.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 5,
+        "compared_columns": 18
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 75
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: all current grid filter/sort fields are machine readable",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: sales and SKU shares each sum to100%",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: sales-weighted GM matches canonical ratio",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Sales": 8400000.0,
+        "Selling SKUs": 72.0,
+        "LY sales": 7865168.54,
+        "Plan": 8600000.0,
+        "PLR baseline · definition TBC": 8800000.0,
+        "R4 sales · definition TBC": 845799.66,
+        "R13 sales · definition TBC": 3504027.54,
+        "R52 sales · definition TBC": 15691973.05
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: percent number format preserves stored whole-percent semantics",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-full.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 5,
+        "compared_columns": 18
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 75
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: all current grid filter/sort fields are machine readable",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: actual Sales ascending metadata is captured",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: actual row order follows visible Sales ascending sort",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: sales and SKU shares each sum to100%",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: sales-weighted GM matches canonical ratio",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Sales": 8400000.0,
+        "Selling SKUs": 72.0,
+        "LY sales": 7865168.54,
+        "Plan": 8600000.0,
+        "PLR baseline · definition TBC": 8800000.0,
+        "R4 sales · definition TBC": 845799.66,
+        "R13 sales · definition TBC": 3504027.54,
+        "R52 sales · definition TBC": 15691973.05
+      }
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: percent number format preserves stored whole-percent semantics",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-breakdown-sorted.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: valid three-sheet XLSX, no parser warnings",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: valid package CRC",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: exact canonical row identities/count, no duplicate rollups",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: exact current UI export headers",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: every exported value agrees with real API/actual column adapter",
+      "pass": true,
+      "details": {
+        "compared_rows": 5,
+        "compared_columns": 5
+      }
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: raw numeric cells remain typed numbers",
+      "pass": true,
+      "details": {
+        "numeric_cells": 20
+      }
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: no formula/error cells introduced",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: exported count matches Data",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: SS26, source/version and explicit recipe metadata",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: generated filename names SS26, not the reference code",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: export timestamp is a valid ISO instant",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: definitions disclose periods, area denominator, original baseline and synthetic status",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: all five brands and whole-percent shares are preserved",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: all additive monetary/quantity/period totals reconcile",
+      "pass": true,
+      "details": {
+        "Total SKUs": 72.0
+      }
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: percent number format preserves stored whole-percent semantics",
+      "pass": true
+    },
+    {
+      "name": "sales-mix-summary-full.xlsx: workbook bytes were not changed by audit",
+      "pass": true
+    },
+    {
+      "name": "Full By Item exact headline controls",
+      "pass": true
+    },
+    {
+      "name": "Bamboo By Item exact headline controls",
+      "pass": true
+    },
+    {
+      "name": "Bamboo contains only its12 products and excludes Northport",
+      "pass": true
+    },
+    {
+      "name": "full: By Item and Sales Mix exact same scope recipe",
+      "pass": true
+    },
+    {
+      "name": "full: By Item and Sales Mix reconcile sales/LY/Plan/PLR/R4/R13/R52 across actual browser files",
+      "pass": true
+    },
+    {
+      "name": "bamboo: By Item and Sales Mix exact same scope recipe",
+      "pass": true
+    },
+    {
+      "name": "bamboo: By Item and Sales Mix reconcile sales/LY/Plan/PLR/R4/R13/R52 across actual browser files",
+      "pass": true
+    },
+    {
+      "name": "Full summary and lower brand shares/SKU counts/productivity agree",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Five files capture unfiltered local grid states under full/Bamboo global scopes; a sixth captures actual full Brand Sales ascending order and nonempty Scope sort metadata. A nonempty local column filter is not demonstrated; root reports that this particular name-column menu has no filter.",
+    "Browser save/click/sort provenance is supplied by root; this agent independently reads the resulting file bytes and real API/column-adapter expectations without operating Chrome.",
+    "By Item leaf rates may be rounded by its API contract. Aggregate ratios are recomputed from additive evidence; individual rates or sales-per-area values are never summed.",
+    "These are synthetic local prototype exports; production fiscal periods, quantity UOM, selling area and PLR definitions remain explicitly TBC."
+  ]
+}

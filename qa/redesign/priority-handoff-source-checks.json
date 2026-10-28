@@ -1,0 +1,17 @@
+{
+  "netlifyConfigParses": true,
+  "packageScriptParses": true,
+  "scope": "CLI configuration checks only; no deployment/browser claim",
+  "frozenPhaseOneArchives": [
+    {
+      "path": "artifacts/agentic-assort-source.zip",
+      "sha256": "1988055a4a3b0250120e4c8bf59da2be3a1af77041528551850c44a0ce81ae36",
+      "unchanged": true
+    },
+    {
+      "path": "artifacts/agentic-assort-preview.zip",
+      "sha256": "25a62546c6ac0cecdba246cfee887a7554d886314dd4c9b696417fa1fbdbe434",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "species": "White Oak",
+      "sellingSkus": 117,
+      "sales": 52773764,
+      "growthVsLy": -38.6,
+      "salesSharePct": 27.7,
+      "skuSharePct": 18.1,
+      "productivity": 1.53,
+      "gmPct": 10.6,
+      "returnsPct": 9,
+      "sellThroughPct": 63.1
+    },
+    {
+      "species": "Acacia",
+      "sellingSkus": 99,
+      "sales": 37139242,
+      "growthVsLy": -21.1,
+      "salesSharePct": 19.5,
+      "skuSharePct": 15.3,
+      "productivity": 1.27,
+      "gmPct": 2.8,
+      "returnsPct": 12,
+      "sellThroughPct": 50.7
+    },
+    {
+      "species": "Hickory",
+      "sellingSkus": 108,
+      "sales": 28076862,
+      "growthVsLy": -14,
+      "salesSharePct": 14.7,
+      "skuSharePct": 16.7,
+      "productivity": 0.88,
+      "gmPct": 14,
+      "returnsPct": 7,
+      "sellThroughPct": 49.7
+    },
+    {
+      "species": "Stranded Bamboo",
+      "sellingSkus": 108,
+      "sales": 26098829,
+      "growthVsLy": -27.6,
+      "salesSharePct": 13.7,
+      "skuSharePct": 16.7,
+      "productivity": 0.82,
+      "gmPct": 6.4,
+      "returnsPct": 15,
+      "sellThroughPct": 49.1
+    },
+    {
+      "species": "Hard Maple",
+      "sellingSkus": 117,
+      "sales": 23335284,
+      "growthVsLy": -25.9,
+      "salesSharePct": 12.2,
+      "skuSharePct": 18.1,
+      "productivity": 0.67,
+      "gmPct": 6.9,
+      "returnsPct": 16,
+      "sellThroughPct": 48.6
+    },
+    {
+      "species": "Red Oak",
+      "sellingSkus": 99,
+      "sales": 23176019,
+      "growthVsLy": -27.8,
+      "salesSharePct": 12.2,
+      "skuSharePct": 15.3,
+      "productivity": 0.8,
+      "gmPct": 4.1,
+      "returnsPct": 7,
+      "sellThroughPct": 62
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+/*
+ * First step of the agentic Create Cluster Plan flow (Describe & Scope).
+ * The page shell (header, stepper, footer) is the shared WizardFlow.
+ */
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-smd);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* Technology line art sits behind the step; the parent shell clips overflow. */
+.backdrop {
+  position: absolute;
+  z-index: 0;
+  top: -12%;
+  inset-inline-end: -18%;
+  width: min(78%, 760px);
+  height: auto;
+  opacity: 0.2;
+  pointer-events: none;
+  user-select: none;
+  transform: rotate(41deg);
+  transform-origin: top center;
+}
+
+.panel,
+.notice {
+  position: relative;
+  z-index: 1;
+}
+
+.panel[data-highlighted='true'] {
+  margin-bottom: 18px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  border: 1px solid var(--iris-600);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--color-primary) 12%, transparent),
+    color-mix(in srgb, var(--color-primary) 5%, transparent)
+  );
+}
+
+.panelHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-smd);
+}
+
+.headingRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--slate-800);
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.15;
+  color: var(--slate-600);
+}
+
+.sparkle {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Bulk Plan Creation — Figma 7717:333960. Switch stays disabled until the flow exists. */
+.bulk {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 4px;
+  padding: 4px 16px;
+  border-radius: 1000px;
+  background: #eceefd;
+  white-space: nowrap;
+}
+
+.bulkLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.bulkText {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--slate-600, #60697d);
+  text-transform: capitalize;
+}
+
+.bulkInfo {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+  flex-shrink: 0;
+}
+
+.generate:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 40px;
+  padding: var(--space-sm) var(--space-smd);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.field:focus-within {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--slate-900);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.input::placeholder {
+  color: var(--slate-400);
+  opacity: 1;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.generate {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px var(--space-smd);
+  border: 1px solid var(--sky-500);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--slate-900);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.generateIcon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.error {
+  margin: 0;
+  color: var(--color-error);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.35;
+}
+
+.notice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: var(--space-sm) var(--space-smd);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(to right, var(--slate-100), var(--slate-50));
+  color: var(--slate-500);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.35;
+}
+
+.noticeIcon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+@media (width <= 720px) {
+  .field {
+    flex-wrap: wrap;
+  }
+
+  .generate {
+    margin-inline-start: auto;
+  }
+
+  .bulk {
+    white-space: normal;
+  }
+}

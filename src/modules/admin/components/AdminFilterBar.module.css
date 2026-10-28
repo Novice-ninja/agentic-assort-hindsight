@@ -1,0 +1,208 @@
+/* Full-bleed white strip under the breadcrumb (reference filterstrip_container /
+   impact-info-panel-container). Escapes the page's horizontal padding. */
+.wrap {
+  position: relative;
+  z-index: 2;
+  margin-inline: calc(-1 * var(--space-lg));
+  background: var(--color-surface);
+  border-bottom: 1px solid color-mix(in srgb, var(--slate-950) 8%, transparent);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-smd);
+  height: 56px;
+  padding: var(--space-sm) var(--space-lg);
+}
+
+.meta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.metaLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 21px;
+  color: var(--slate-600);
+  white-space: nowrap;
+}
+
+.countBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 2px var(--space-sm);
+  border: 1px solid var(--indigo-300);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--indigo-400);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.chevronBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: var(--space-sm);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--slate-100);
+  color: var(--slate-800);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chevron {
+  transition: transform 0.15s ease;
+}
+
+.chevronExpanded {
+  transform: rotate(180deg);
+}
+
+.separator {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1px;
+  height: 16px;
+  background-color: var(--slate-200);
+}
+
+.groups {
+  display: flex;
+  align-items: center;
+  gap: var(--space-smd);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  flex-shrink: 0;
+}
+
+.groupLabel {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 21px;
+  color: var(--slate-600);
+  white-space: nowrap;
+  padding-inline-end: var(--space-xs);
+}
+
+.chips {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Flat solid chip (reference MuiChip impact-tag-solid) */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  height: 24px;
+  padding: 2px var(--space-sm);
+  border: none;
+  border-radius: 8px;
+  background: var(--indigo-100);
+  color: var(--slate-800);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.chipRemove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--slate-600);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+/* Reference tertiary "All Filters" button */
+.allFiltersBtn.allFiltersBtn {
+  margin-inline-start: auto;
+  flex-shrink: 0;
+  height: 32px;
+  padding: 6px var(--space-smd);
+  gap: 6px;
+  border: 1px solid var(--slate-300);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--slate-800);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+}
+
+.allFiltersBtn.allFiltersBtn:hover:not(:disabled) {
+  background-color: var(--indigo-100);
+  border-color: var(--indigo-500);
+  color: var(--indigo-500);
+}
+
+@media (width <= 768px) {
+  .bar {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .allFiltersBtn.allFiltersBtn {
+    margin-inline-start: 0;
+  }
+}
+
+:global(html[data-theme='dark']) .wrap {
+  background: var(--graphite-4);
+  border-bottom-color: color-mix(in srgb, var(--graphite-10) 6%, transparent);
+}
+
+:global(html[data-theme='dark']) .metaLabel,
+:global(html[data-theme='dark']) .groupLabel {
+  color: var(--graphite-8);
+}
+
+:global(html[data-theme='dark']) .chevronBtn {
+  background-color: color-mix(in srgb, var(--graphite-10) 6%, transparent);
+  color: var(--graphite-9);
+}
+
+:global(html[data-theme='dark']) .countBadge {
+  background: transparent;
+  border-color: var(--indigo-200);
+  color: var(--indigo-200);
+}
+
+:global(html[data-theme='dark']) .separator {
+  background-color: color-mix(in srgb, var(--graphite-10) 12%, transparent);
+}
+
+:global(html[data-theme='dark']) .chip {
+  background: color-mix(in srgb, var(--graphite-10) 8%, transparent);
+  color: var(--graphite-9);
+}
+
+:global(html[data-theme='dark']) .allFiltersBtn.allFiltersBtn {
+  background-color: color-mix(in srgb, var(--graphite-10) 6%, transparent);
+  border-color: transparent;
+  color: var(--graphite-9);
+}

@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.errorSummary {
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  color: var(--color-error);
+  background-color: color-mix(in srgb, var(--color-error) 8%, var(--color-surface));
+}
+
+.errorTitle {
+  margin: 0 0 var(--space-sm);
+  font-weight: var(--font-weight-semibold);
+}

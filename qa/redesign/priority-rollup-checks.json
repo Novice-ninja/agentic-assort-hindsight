@@ -1,0 +1,34 @@
+{
+  "kind": "Actual API, normalization and grouped-ratio source checks; not browser acceptance",
+  "passed": 7,
+  "checks": [
+    {
+      "name": "Actual API-normalized group retains full additive sales, units and synthetic baseline",
+      "pass": true
+    },
+    {
+      "name": "Full-scope GM, ST, area productivity and AUR are ratios of additive evidence",
+      "pass": true
+    },
+    {
+      "name": "Every category group independently reconciles weighted ratios to its canonical facts",
+      "pass": true
+    },
+    {
+      "name": "Unknown markdown and WOH group rates remain unavailable instead of averaged",
+      "pass": true
+    },
+    {
+      "name": "Leaf cells and ratio evidence survive normalization and grouping without mutation",
+      "pass": true
+    },
+    {
+      "name": "Zero-denominator and partial ratio evidence do not fabricate group values",
+      "pass": true
+    },
+    {
+      "name": "Unequal weights produce the ratio of totals rather than the arithmetic mean",
+      "pass": true
+    }
+  ]
+}

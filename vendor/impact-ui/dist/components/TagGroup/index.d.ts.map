@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/components/TagGroup/index.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,kBAAkB,CAAC;AACtD,OAAO,wBAAwB,CAAC;AAEhC,YAAY,EAAE,aAAa,EAAE,MAAM,kBAAkB,CAAC;AAEtD;;GAEG;AACH,wBAAgB,QAAQ,CAAC,EACvB,QAAQ,EACR,SAAS,EACT,KAAK,EACL,EAAE,EACF,aAAa,EAAE,UAAU,EACzB,IAAc,GACf,EAAE,aAAa,2CAYf;yBAnBe,QAAQ"}

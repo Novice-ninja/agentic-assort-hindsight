@@ -1,0 +1,4 @@
+/* Reserves the plot's height so a card whose data arrives late does not shift its neighbours. */
+.card {
+  min-block-size: 18rem;
+}

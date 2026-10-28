@@ -1,0 +1,18 @@
+{
+  "products": {
+    "title": "Products",
+    "subtitle": "Manage your product assortment",
+    "columns": {
+      "name": "Name",
+      "category": "Category",
+      "status": "Status",
+      "price": "Price",
+      "updatedAt": "Updated"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "draft": "Draft"
+    }
+  }
+}

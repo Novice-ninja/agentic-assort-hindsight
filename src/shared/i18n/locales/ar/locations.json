@@ -1,0 +1,17 @@
+{
+  "locations": {
+    "title": "المواقع",
+    "subtitle": "تصفح وصفِّ مواقعك",
+    "columns": {
+      "name": "الاسم",
+      "region": "المنطقة",
+      "status": "الحالة",
+      "updatedAt": "آخر تحديث"
+    },
+    "status": {
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "pending": "قيد الانتظار"
+    }
+  }
+}

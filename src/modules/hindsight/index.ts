@@ -1,0 +1,20 @@
+// Restored tree-shaken barrel: reexports retain the recovered implementation.
+export { ByAttributePanel } from './components/panels/ByAttributePanel';
+export { ByItemFilterPanel } from './components/items/ByItemFilterPanel';
+export { ByItemPanel } from './components/panels/ByItemPanel';
+export { EmptySelection } from './components/EmptySelection';
+export { HindsightFilterStrip } from './components/HindsightFilterStrip';
+export { OverviewPanel } from './components/panels/OverviewPanel';
+export { WatchlistPanel } from './components/watchlist/WatchlistPanel';
+export { hierarchyScopeFromFilterStrip } from './services/byItemTableFilters';
+export { toRecommendationFilter } from './types/byItem';
+export { useAttributeColumnConfig } from './hooks/useAttributeColumnConfig';
+export { useAttributeTable } from './hooks/useAttributeTable';
+export { useByItemSummary } from './hooks/useByItemSummary';
+export { useByItemTable } from './hooks/useByItemTable';
+export { useByItemVisualView } from './hooks/useByItemVisualView';
+export { useHindsight } from './hooks/useHindsight';
+export { usePlanContext } from './hooks/usePlanContext';
+export { usePlanFilterStrip } from './hooks/usePlanFilterStrip';
+export { useProductContribution } from './hooks/useProductContribution';
+export { useProductPerformanceKpis } from './hooks/useProductPerformanceKpis';

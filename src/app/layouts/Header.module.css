@@ -1,0 +1,301 @@
+/* === Layout === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px var(--space-lg);
+  background-color: var(--color-surface);
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-smd);
+  min-width: 0;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* === Brand === */
+.brandName {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+}
+
+.brandDivider {
+  width: 1px;
+  height: var(--space-lg);
+  background-color: #d9dde7;
+}
+
+.product {
+  font-family: var(--font-family-base);
+  font-weight: 800;
+  font-size: var(--font-size-md);
+  line-height: 24px;
+  color: #0d152c;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+/* === Mode Toggle === */
+.modeToggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #f5f6fa;
+  border: 1px solid #d9dde7;
+}
+
+.modeBtn {
+  padding: 2px 8px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #b4bac7;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.modeBtnActive {
+  background-color: #4259ee;
+  color: #fff;
+  border: 0.5px solid #d9dde7;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+/* === Ask Iris Button === */
+/*
+ * Static cyan→purple→orange border (::before) plus a soft smoke-like glow (::after)
+ * that orbits across the button face.
+ */
+@keyframes ask-iris-glow-orbit {
+  from {
+    transform: rotate(0deg) translateX(32px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(32px) rotate(-360deg);
+  }
+}
+
+.askIrisBtn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  height: 32px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #0d152c;
+  border: none;
+  color: #fff;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.askIrisBtn > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Static multi-colour border ring */
+.askIrisBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    136deg,
+    rgb(42, 194, 238) 12.23%,
+    rgb(105, 98, 239) 49.23%,
+    rgb(242, 105, 33) 88.52%
+  );
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/*
+ * Soft smoke-like glow that orbits across the button face (not border-only).
+ * Large blurred radial blob + screen blend so it reads as light on the dark fill.
+ */
+.askIrisBtn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin: -24px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.75) 0%,
+    rgba(42, 194, 238, 0.55) 28%,
+    rgba(105, 98, 239, 0.28) 52%,
+    rgba(242, 105, 33, 0.12) 68%,
+    transparent 78%
+  );
+  filter: blur(8px);
+  mix-blend-mode: screen;
+  animation: ask-iris-glow-orbit 4s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .askIrisBtn::after {
+    animation: none;
+    opacity: 0.45;
+    transform: translateX(10px);
+  }
+}
+
+.askIrisIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* === Notification Bell === */
+.notification {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bellIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 8px;
+  height: 8px;
+  pointer-events: none;
+}
+
+.badgeInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: #c64746;
+  border-radius: 50%;
+}
+
+.badgeOuter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #fceeee;
+  border-radius: 50%;
+  animation: waves 1.5s ease-out infinite;
+}
+
+@keyframes waves {
+  0% {
+    width: 8px;
+    height: 8px;
+  }
+  100% {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* === Avatar === */
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background-color: #31935f;
+  flex-shrink: 0;
+}
+
+.avatarText {
+  font-family: var(--font-family-base);
+  font-weight: 800;
+  font-size: var(--font-size-xs);
+  line-height: 30px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* === Language Select === */
+.langLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.langSelect {
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-family-base);
+  cursor: pointer;
+}
+
+/* Priority B2: contain decorative paint and keep controls inside the header at 798px. */
+@media (width <= 900px) {
+  .header { gap: var(--space-md); padding-inline: var(--space-md); isolation: isolate; overflow: clip; }
+  .actions { gap: var(--space-md); flex-shrink: 0; }
+  .brand { gap: var(--space-sm); }
+}
+@media (width <= 560px) {
+  .header { flex-wrap: wrap; gap: var(--space-sm); padding-inline: var(--space-smd); }
+  .brand { flex-basis: 100%; }
+  .actions { margin-inline-start: auto; }
+}

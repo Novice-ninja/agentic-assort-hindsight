@@ -1,0 +1,34 @@
+{
+  "kind": "Actual symbol-button SSR and vendor close-control AST checks; browser verification separate",
+  "passed": 7,
+  "checks": [
+    {
+      "name": "Empty label undefined receives meaningful aria-label and title",
+      "pass": true
+    },
+    {
+      "name": "Empty label \"\" receives meaningful aria-label and title",
+      "pass": true
+    },
+    {
+      "name": "Empty label \"   \" receives meaningful aria-label and title",
+      "pass": true
+    },
+    {
+      "name": "An injected empty tooltip aria-label cannot erase the item-specific accessible name",
+      "pass": true
+    },
+    {
+      "name": "An explicit title is retained while the accessible name remains item-specific",
+      "pass": true
+    },
+    {
+      "name": "chatbotModuleMenu.js: the actual close-control props provide both aria-label and title",
+      "pass": true
+    },
+    {
+      "name": "chatBotLandingScreen.js: the actual close-control props provide both aria-label and title",
+      "pass": true
+    }
+  ]
+}

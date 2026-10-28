@@ -1,0 +1,124 @@
+/* === Layout === */
+.tabs {
+  --pedestal-bottom: 1px;
+  --glyph-blink-duration: 0.5s;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 14px;
+  margin-bottom: -14px;
+  scrollbar-width: none;
+}
+
+.tabs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Fixed card width per Figma (351 x 54) — override the shared card's flex-grow */
+.tabs > * {
+  flex: 0 0 351px;
+  width: 351px;
+  min-width: 351px;
+}
+
+/* Allow content group to shrink so the label can truncate inside the fixed-width card */
+.tabs > * > div:first-child {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+/* === Skeleton (mirrors ProductPerformanceKpiCards / ItemSummary card chrome) === */
+.skeletonTabs {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.skeletonTabs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.skeletonCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex: 0 0 351px;
+  width: 351px;
+  min-width: 351px;
+  height: 54px;
+  padding: 4px 16px 1px;
+  border: 1px solid #d9dde7;
+  border-radius: 16px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.skeletonContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.skeletonIcon {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px 17.5px 4px 4px;
+}
+
+.skeletonLabel {
+  width: 96px;
+  height: 14px;
+  border-radius: 6px;
+}
+
+.skeletonCount {
+  flex-shrink: 0;
+  width: 28px;
+  height: 16px;
+  border-radius: 6px;
+}
+
+.skeletonBone {
+  background: linear-gradient(90deg, #eff2fa 25%, #e4e8f4 37%, #eff2fa 63%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeletonBone {
+    animation: none;
+  }
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

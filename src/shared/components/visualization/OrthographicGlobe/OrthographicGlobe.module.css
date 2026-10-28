@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+}
+
+.sphere {
+  pointer-events: none;
+}
+
+.land {
+  pointer-events: none;
+}
+
+:global(.marker.selected) .pulse {
+  animation: pulse 1.6s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    r: 6;
+    opacity: 0.7;
+  }
+
+  100% {
+    r: 18;
+    opacity: 0;
+  }
+}

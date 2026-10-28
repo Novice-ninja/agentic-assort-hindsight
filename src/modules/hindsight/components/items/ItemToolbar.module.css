@@ -1,0 +1,116 @@
+.toolbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 32px;
+  padding: 0px 16px;
+}
+
+.titleGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  color: var(--neutrals-text-icon-title, #0d152c);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.views {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0;
+  z-index: 2;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hierarchyExpand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+
+.filterActive {
+  background-color: color-mix(in srgb, #4259ee 12%, transparent);
+  border-radius: 8px;
+}
+
+.divider {
+  display: block;
+  width: 1px;
+  height: 12px;
+  flex: 0 0 auto;
+  background-color: #d9dde7;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bulkEditAnchor {
+  display: inline-flex;
+}
+
+/* Keep the existing controls in flow when their combined widths no longer fit.
+   The centered desktop view switch must not cover the hierarchy selection. */
+@media (max-width: 1080px) {
+  .toolbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .titleGroup {
+    flex: 1 1 100%;
+  }
+
+  .views {
+    position: static;
+    transform: none;
+    flex-shrink: 0;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 560px) {
+  .toolbar {
+    padding-inline: 12px;
+  }
+
+  .titleGroup {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hierarchyDropdown {
+    flex: 1 0 100%;
+    min-width: 0;
+  }
+}

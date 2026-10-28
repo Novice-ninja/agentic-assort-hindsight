@@ -1,0 +1,235 @@
+/* === Typography === */
+
+.valueLabel {
+  overflow: hidden;
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attributeCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 164px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  background-color: var(--colors-alert-badge-information-surface-subtle, #f1f3fe);
+  color: var(--colors-alert-badge-information-text-default, #4259ee);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.badge[data-variant='secondary'],
+.badge[data-variant='neutral'] {
+  background-color: var(--colors-alert-badge-neutral-surface-subtle, #f2f3f4);
+  color: var(--colors-alert-badge-neutral-text-default, #5f6673);
+}
+
+/* === Metrics === */
+
+.number {
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.number[data-color='success'] {
+  color: var(--colors-success-surface-darker, #26734b);
+}
+
+.number[data-color='danger'] {
+  color: var(--colors-error-surface-darker, #ab3939);
+}
+
+.number[data-color='warning'] {
+  color: var(--color-warning, #b45309);
+}
+
+.number[data-color='neutral'] {
+  color: var(--color-text-secondary, #60697d);
+}
+
+/* === Progress Bar === */
+
+.progressCell {
+  display: inline-grid;
+  grid-template-columns: 73px auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.progressTrack {
+  display: block;
+  width: 73px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: var(--colors-greys-500, #d9dde7);
+  overflow: hidden;
+}
+
+.progressBar {
+  display: block;
+  height: 8px;
+  border-radius: 100px;
+  background-color: var(--colors-primary-surface-default, #4259ee);
+}
+
+/* === Cluster === */
+
+.clusterCell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background-color: var(--slate-400, #b4bac7);
+}
+
+.dot[data-status='positive'] {
+  background-color: var(--color-success, #18a56a);
+}
+
+.dot[data-status='negative'] {
+  background-color: var(--color-danger, #d94d55);
+}
+
+.delta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 164px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.delta[data-status='positive'] {
+  background-color: var(--colors-alert-badge-success-surface-subtle, #f4fff7);
+  color: var(--colors-alert-badge-success-text-default, #108431);
+}
+
+.delta[data-status='negative'] {
+  background-color: var(--colors-alert-badge-error-surface-subtle, #fef4f5);
+  color: var(--colors-alert-badge-error-text-default, #d62f2d);
+}
+
+/* === Trend === */
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+.trend[data-color='success'] {
+  color: var(--colors-success-surface-darker, #26734b);
+}
+
+.trend[data-color='danger'] {
+  color: var(--colors-error-border-darker, #ab3939);
+}
+
+.trend[data-color='warning'] {
+  color: var(--color-warning, #b45309);
+}
+
+.trendIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* === Signal Badge === */
+
+.signal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  max-width: 164px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.signal[data-status='success'] {
+  background-color: var(--colors-alert-badge-success-surface-subtle, #f4fff7);
+  color: var(--colors-alert-badge-success-text-default, #108431);
+}
+
+.signal[data-status='warning'] {
+  background-color: var(--colors-alert-badge-warning-surface-subtle, #fff8ec);
+  color: var(--colors-alert-badge-warning-text-default, #a35a08);
+}
+
+.signal[data-status='danger'] {
+  background-color: var(--colors-alert-badge-error-surface-subtle, #fef4f5);
+  color: var(--colors-alert-badge-error-text-default, #d62f2d);
+}
+
+.signal[data-status='neutral'],
+.signal[data-status='default'] {
+  background-color: var(--colors-alert-badge-neutral-surface-subtle, #f2f3f4);
+  color: var(--colors-alert-badge-neutral-text-default, #5f6673);
+}
+
+/* === Absent === */
+
+.absent {
+  color: var(--color-text-tertiary, #99a0b0);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "Real React drawer/provider state with semantic vendor-control stand-ins, not visual/Chrome acceptance",
+  "passed": 9,
+  "checks": [
+    {
+      "name": "Comp is an explicit draft selection with inspectable illustrative policy, exact members and holdout reason",
+      "pass": true
+    },
+    {
+      "name": "Cancel discards the Comp draft without changing applied location membership",
+      "pass": true
+    },
+    {
+      "name": "Apply anchors one explicit eligible cohort and uses it for the report population",
+      "pass": true
+    },
+    {
+      "name": "Broadening a draft facet reevaluates its Comp preview instead of retaining the narrower applied anchor",
+      "pass": true
+    },
+    {
+      "name": "Applying the broadened location draft captures the same 44-store cohort shown in preview",
+      "pass": true
+    },
+    {
+      "name": "Invalid Comp comparator cannot silently apply a zero or all-location replacement",
+      "pass": true
+    },
+    {
+      "name": "Explicitly clearing Comp restores all selected locations with no policy anchor",
+      "pass": true
+    },
+    {
+      "name": "PLR cannot select the tactical demo Comp basis",
+      "pass": true
+    },
+    {
+      "name": "An explicit empty store selection remains empty under Comp rather than expanding to policy members",
+      "pass": true
+    }
+  ]
+}

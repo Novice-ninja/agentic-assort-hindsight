@@ -1,0 +1,111 @@
+{
+  "label": "SS26 coherent flooring demo",
+  "definitionStatus": "Synthetic · definition TBC",
+  "phase": "Priority SS26 original three-tab app; separate from R67 experiment",
+  "inventoryAsOf": "2026-07-31",
+  "totals": {
+    "sales": 8400000,
+    "units": 182400,
+    "lyRevenue": 7865168.54,
+    "lyUnits": 175048,
+    "planRevenue": 8600000,
+    "plrBaseline": 8800000,
+    "r4Sales": 845799.66,
+    "r13Sales": 3504027.54,
+    "r52Sales": 15691973.05,
+    "allocatedAreaSqFt": 84000,
+    "salesPerSqFt": 100,
+    "grossMargin": 2654400,
+    "gmPct": 31.6,
+    "buyUnits": 281481,
+    "buyDollars": 7359589.21,
+    "sellThroughPct": 64.80011084229487,
+    "itemCount": 72,
+    "ohCost": 2353139.2,
+    "sellableUnits": 95707,
+    "definitionStatus": "Synthetic · definition TBC"
+  },
+  "brands": [
+    {
+      "name": "Woodland Reserve",
+      "sales": 2301600,
+      "salesShare": 27.400000000000002,
+      "sellingSkus": 19,
+      "skuShare": 26.38888888888889,
+      "productivity": 1.0383157894736843
+    },
+    {
+      "name": "Westridge",
+      "sales": 1839600,
+      "salesShare": 21.9,
+      "sellingSkus": 12,
+      "skuShare": 16.666666666666664,
+      "productivity": 1.314
+    },
+    {
+      "name": "American Spirit",
+      "sales": 1696800,
+      "salesShare": 20.200000000000003,
+      "sellingSkus": 12,
+      "skuShare": 16.666666666666664,
+      "productivity": 1.2120000000000004
+    },
+    {
+      "name": "Lifescapes",
+      "sales": 1461600,
+      "salesShare": 17.4,
+      "sellingSkus": 12,
+      "skuShare": 16.666666666666664,
+      "productivity": 1.044
+    },
+    {
+      "name": "Bruce",
+      "sales": 1100400,
+      "salesShare": 13.100000000000001,
+      "sellingSkus": 17,
+      "skuShare": 23.61111111111111,
+      "productivity": 0.5548235294117648
+    }
+  ],
+  "northport": {
+    "id": "1000037",
+    "article": "NOR-WO-DWR",
+    "name": "Northport White Oak Distressed Water Resistant Engineered Hardwood",
+    "brand": "Westridge",
+    "sales": 1600000,
+    "quantity": 23288,
+    "lyRevenue": 2263083.45,
+    "growthVsLy": -29.29999996244063,
+    "sellableUnits": 0,
+    "reason": "High in-stock run-rate, but intermittent stockouts constrained season sales: -29.3% vs LY. Strong local demand and lower full-season sales can coexist. Validate supply before increasing the buy."
+  },
+  "categories": [
+    "Hardwood",
+    "Engineered Hardwood",
+    "Bamboo"
+  ],
+  "clusters": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "storeCount": 45,
+  "pairCount": 3240,
+  "categoryClusterCellCount": 18,
+  "definitions": {
+    "scope": "Illustrative SS26 Flooring, 72 canonical style-colour rows and 45 stores. Not client actuals.",
+    "sales": "Signed net sales in USD; all tables and charts aggregate the same canonical style-colour facts.",
+    "quantity": "Synthetic selling units; pack size and canonical flooring UOM require F&D confirmation.",
+    "r4Sales": "Synthetic net sales in the last 4 completed prototype weeks ending 26 Jul 2026; fiscal calendar definition TBC.",
+    "r13Sales": "Synthetic net sales in the last 13 completed prototype weeks ending 26 Jul 2026; fiscal calendar definition TBC.",
+    "r52Sales": "Synthetic net sales in the last 52 completed prototype weeks ending 26 Jul 2026; fiscal calendar definition TBC.",
+    "salesPerSqFt": "Season net sales / allocated selling area in sq ft. Area allocation and whether F&D intends selling-area productivity or another measure are definition TBC. This is not selling-unit AUR.",
+    "plrBaseline": "Synthetic original approved SS26 sales target, frozen at 8.8M for this demo; not a recovered client PLR.",
+    "planRevenue": "Synthetic latest SS26 sales plan, 8.6M for the full scope; distinct from original PLR baseline.",
+    "sellThrough": "Synthetic season net sold units / season available supply units. Inventory opening, receipts and adjustment policy are definition TBC.",
+    "stocks": "Single synthetic end-of-season snapshot at 31 Jul 2026. Stock is not summed over weeks."
+  }
+}

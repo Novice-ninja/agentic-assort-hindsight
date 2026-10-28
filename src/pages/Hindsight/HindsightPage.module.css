@@ -1,0 +1,93 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  padding: 0 24px 0;
+  background-color: var(--color-background);
+}
+
+/* Full-width strip that breaks out of the page's horizontal padding */
+.filtersStripWrapper {
+  margin-inline: -24px;
+  padding-inline: 0;
+  border-bottom: 1px solid var(--color-border, var(--slate-200));
+  background: var(--color-surface, #fff);
+}
+
+.seasonPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 135px;
+  height: 32px;
+  padding-inline: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.seasonPill::after {
+  content: '⌄';
+  color: var(--color-text-tertiary, var(--slate-500));
+  font-size: 16px;
+}
+
+.chromeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding-inline: 12px;
+  border: 1px solid var(--color-border-subtle, var(--slate-200));
+  border-radius: 8px;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary, var(--slate-800));
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.panel {
+  min-width: 0;
+  padding-top: 4px;
+  padding-bottom: 24px;
+}
+
+/* The panel is programmatically focusable for the tab pattern, but a visible ring on a
+   container reads as an error rather than as focus. */
+.panel:focus {
+  outline: none;
+}
+
+.tabNavigation {
+  padding: 0;
+  border-bottom: 1px solid var(--color-border, var(--slate-200));
+  background: transparent;
+}
+
+.panel:focus-visible {
+  outline: 2px solid var(--color-focus-ring, var(--iris-400));
+  outline-offset: 4px;
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 900px) {
+  .page :global(.chart-container-header) { flex-wrap: wrap; height: auto; gap: 8px; }
+  .page :global(.chart-container-header-actions),
+  .page :global(.chart-custom-actions) { display: flex; flex-wrap: wrap; min-width: 0; max-width: 100%; flex-basis: 100%; }
+  .page :global(.chart-custom-actions) > div { flex-wrap: wrap; min-width: 0; max-width: 100%; }
+  .page :global(.chart-container) { min-width: 0; max-width: 100%; }
+}
+
+@media (max-width: 560px) {
+  .page { padding-inline: 12px; }
+  .filtersStripWrapper { margin-inline: -12px; }
+  .tabNavigation { overflow-x: auto; }
+}

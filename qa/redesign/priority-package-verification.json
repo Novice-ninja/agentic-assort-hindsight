@@ -1,0 +1,49 @@
+{
+  "stage": "Priority source archive clean install and production rebuild",
+  "verifiedAt": "2026-10-28T04:07:29.000150+00:00",
+  "testedPlatform": "macOS with Node.js v22.23.2; Windows not tested",
+  "testedSourceArchive": "artifacts/priority-fixes/agentic-assort-source.zip",
+  "testedSourceArchiveSha256": "5aea6e0b5f5de80deab15193fe0fc837effa13191025d137623a7938b5e88058",
+  "extractedProject": "/var/folders/pb/l0sl_88s343_sf1fvpbrxn1w0000gn/T/assort-priority-source-6l_dv_5q/agentic-assort-local",
+  "excludedUnmountedRedesign": true,
+  "cleanInstall": {
+    "command": "npm ci --legacy-peer-deps --offline",
+    "exitCode": 0
+  },
+  "cleanBuild": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "compiledComparison": {
+    "reference": "/Users/niravs_mac_2025/Work tasks/agentic-assort-local/dist",
+    "jsCssFiles": 15,
+    "byteIdentical": true,
+    "files": {
+      "assets/ImpactChart-BRiZ7ZU8.css": "90fc0bef12728791257ef39b3088892eb184a219817c469be9a81763620753ca",
+      "assets/ImpactChart-LcOq72sq.js": "e8f85dd1d9098a357594cf0765dfa24f0b9e7b71decfe82670ec5ccef3d7a0d9",
+      "assets/bootstrap-D34eiZ3a.js": "b12ca4550256d16bc2096afa3e78c1664698e4b08f1957ea0eab2a0f3e4a0575",
+      "assets/bootstrap-v8a9THWd.css": "afbcbc964c0ffa91be7ae61fd7f0643bb9846fae895070914cbc8935de4b2dfe",
+      "assets/browser-jj8LL3Hu.js": "26f9419062baca33da624c4e933e4da19d6af674715fc36e430c140bfe66943f",
+      "assets/firebase-BFTgpAFx.js": "8a741a37c8aed55df2c23e42d168306fa1fcb451ac7fa497bdd3c0e3e259fed0",
+      "assets/index-3ItChtY4.js": "3e9e0058a5ca741591849c7939db5172f76a0405e3648f6b8e7e1454a0a954d4",
+      "assets/index-B641zNPl.js": "7dd85885eb086aa1857ff49a5da741f0a3e008ee91eec67214c1f6b1c297a405",
+      "assets/index-C8GqCUyM.css": "88d92e301b5c9bcccbfa0a7e55ccbf84fa20ad7328e164014d8a0e88467fd8b1",
+      "assets/index-Cu-40WKz.css": "3da98ed2365b68bfa87ca2a1c90fec9d7fe021d8b12b80de9f2ac9520550af63",
+      "assets/index-Dxcjr93U.js": "116f3fb56598ca185d33879c03bfb3a3fcaaa2ceaecae8dc21c31312c7cbd8e2",
+      "assets/localApiRecovery-CH_w2HLr.js": "a54b624311e27fef9cae46a49411b1be7d5cbaa39657ea753b0a65004de1c92c",
+      "fonts.css": "b7be44b1ba249250eb416b00f76a958bc75905c19525921e54fb254d9c5b3df2",
+      "mockServiceWorker.js": "26171599d94d5445297303f3a1f1cedec26835ea3d0057dcfa92ec520cb35cca",
+      "vendor/google-fonts.css": "b7be44b1ba249250eb416b00f76a958bc75905c19525921e54fb254d9c5b3df2"
+    }
+  },
+  "normalizedRuntimeFiles": {
+    "count": 2934,
+    "allMatchWorkingSource": true,
+    "digest": "8dcca3122cdc94897c2a9226088391aa1de47847f490824076331aa3b7136f8b"
+  },
+  "notes": [
+    "This verifies the packaged runtime source and emitted JS/CSS, not browser acceptance.",
+    "Strict whole-project TypeScript checking remains incomplete because original declaration-only files were unavailable.",
+    "The extracted project is retained for independent inspection; the working app was not modified."
+  ]
+}

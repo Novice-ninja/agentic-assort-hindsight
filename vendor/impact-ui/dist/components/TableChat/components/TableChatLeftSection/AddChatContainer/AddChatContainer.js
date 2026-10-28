@@ -1,0 +1,171 @@
+!function(){"use strict";try{if("undefined"!=typeof document){var e=document.createElement("style");e.appendChild(document.createTextNode('@keyframes ia-shimmer-horizontal{0%{background-position:100% 0}to{background-position:0 0}}@keyframes ia-shimmer-vertical{0%{background-position:0 100%}to{background-position:0 0}}@property --ia-shimmer-angle{syntax:"<angle>";inherits:false;initial-value:0deg}@keyframes ia-shimmer-circular{0%{--ia-shimmer-angle:0deg}to{--ia-shimmer-angle:360deg}}.ia-shimmer{animation:ia-shimmer-horizontal 1.6s ease-in-out infinite;animation-direction:normal;background-color:#e8edf5;background-image:linear-gradient(90deg,#e8edf5,#eceef4 22%,#e8edf5 48%,#d5dbe8 62%,#e8edf5);background-repeat:no-repeat;background-size:300% 100%}@media (prefers-reduced-motion:reduce){.ia-shimmer{animation:none;background-image:linear-gradient(90deg,#e8edf5,#eceef4 40%,#d5dbe8);background-size:100% 100%}}.ia-shimmer--ltr{animation:ia-shimmer-horizontal 1.6s ease-in-out infinite;animation-direction:normal;background-color:#e8edf5;background-image:linear-gradient(90deg,#e8edf5,#eceef4 22%,#e8edf5 48%,#d5dbe8 62%,#e8edf5);background-repeat:no-repeat;background-size:300% 100%}@media (prefers-reduced-motion:reduce){.ia-shimmer--ltr{animation:none;background-image:linear-gradient(90deg,#e8edf5,#eceef4 40%,#d5dbe8);background-size:100% 100%}}.ia-shimmer--rtl{animation:ia-shimmer-horizontal 1.6s ease-in-out infinite;animation-direction:reverse;background-color:#e8edf5;background-image:linear-gradient(270deg,#e8edf5,#eceef4 22%,#e8edf5 48%,#d5dbe8 62%,#e8edf5);background-repeat:no-repeat;background-size:300% 100%}@media (prefers-reduced-motion:reduce){.ia-shimmer--rtl{animation:none;background-image:linear-gradient(270deg,#e8edf5,#eceef4 40%,#d5dbe8);background-size:100% 100%}}.ia-shimmer--btt{animation:ia-shimmer-vertical 1.6s ease-in-out infinite;animation-direction:reverse;background-color:#e8edf5;background-image:linear-gradient(0deg,#e8edf5,#eceef4 22%,#e8edf5 48%,#d5dbe8 62%,#e8edf5);background-repeat:no-repeat;background-size:100% 300%}@media (prefers-reduced-motion:reduce){.ia-shimmer--btt{animation:none;background-image:linear-gradient(0deg,#e8edf5,#eceef4 40%,#d5dbe8);background-size:100% 100%}}.ia-shimmer--ttb{animation:ia-shimmer-vertical 1.6s ease-in-out infinite;animation-direction:normal;background-color:#e8edf5;background-image:linear-gradient(0deg,#e8edf5,#eceef4 22%,#e8edf5 48%,#d5dbe8 62%,#e8edf5);background-repeat:no-repeat;background-size:100% 300%}@media (prefers-reduced-motion:reduce){.ia-shimmer--ttb{animation:none;background-image:linear-gradient(0deg,#e8edf5,#eceef4 40%,#d5dbe8);background-size:100% 100%}}.ia-shimmer--circular{background-color:#e8edf5;background-repeat:no-repeat;--ia-shimmer-angle:0deg;animation:ia-shimmer-circular 1.6s linear infinite;background-image:conic-gradient(from var(--ia-shimmer-angle),#eceef4 0deg,#e8edf5 80deg,#d5dbe8 160deg,#e8edf5 260deg,#eceef4 1turn);background-size:100% 100%}@media (prefers-reduced-motion:reduce){.ia-shimmer--circular{animation:none;background-image:conic-gradient(from 0deg,#eceef4,#e8edf5,#d5dbe8,#e8edf5 1turn)}}:root{--ia-focus-color:#4259ee;--ia-focus-bg:#fff;--ia-focus-ring-width:2px;--ia-focus-ring-offset:2px;--ia-modal-backdrop:#0d152ccc}*,:after,:before{box-sizing:border-box}body,textarea{font-style:normal;font-weight:500}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{border:0;font-size:100%;font:inherit;margin:0;padding:0;vertical-align:initial}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}body{font-family:Manrope,sans-serif}.impact-notification-separator{background-color:#d9dde7;display:inline-block;height:16px;width:1.5px}.impact-notification-horizontal-separator{background-color:#d9dde7;display:inline-block;height:1px;width:100%}ul.storybook-order-list{list-style-type:disc;padding-left:12px}ul.storybook-order-list li{font-size:12px;line-height:20px;padding-bottom:8px}ul.storybook-order-list li strong{font-weight:800}ul.storybook-order-child-list{list-style-type:circle;padding-left:20px}ul.storybook-order-child-list li{font-size:12px;line-height:20px;padding-bottom:8px}ul.storybook-order-child-list li strong{font-weight:800}.chatcontainer{background:#fff;border-radius:10px;box-shadow:0 0 4px #0000001f;display:grid;grid-auto-flow:row;padding:10px;position:fixed;row-gap:10px;top:120px;width:231px;z-index:9999}.chatcontainer .chat-header-navigation .nav-right button{background-color:#4259ee!important;border:1px solid #c3c8d4}.chatcontainer .MuiInputBase-root input.MuiInputBase-input{min-width:210px!important}.chatFooterContainer{display:flex;gap:8px;justify-content:flex-end}.addChat_container{position:absolute}.chat_save_btn{background-color:#4259ee!important}')),document.head.appendChild(e)}}catch(i){console.error("vite-plugin-css-injected-by-js",i)}}();
+import { jsx, jsxs, Fragment } from "react/jsx-runtime";
+import { useRef, useEffect } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { Button } from "../../../../Button/index.js";
+import { Input } from "../../../../Input/index.js";
+import { TextArea } from "../../../../TextArea/index.js";
+
+import { useTranslation } from "../../../../../i18n/useTranslation.js";
+const AddChat = ({
+  setShowAddChat,
+  handleChatName,
+  selectedChannelInfo,
+  handleToast,
+  setIsCreateNewChatOpen,
+  inputPanelConfig
+}) => {
+  const { t } = useTranslation();
+  const validationRules = {
+    chatName: {
+      required: t("tableChat.addChat.nameRequired"),
+      minLength: {
+        value: 2,
+        message: t("tableChat.addChat.nameMinLength")
+      },
+      maxLength: {
+        value: 50,
+        message: t("tableChat.addChat.nameMaxLength")
+      }
+      // pattern: {
+      //   value: /^[a-zA-Z0-9\s\-_]+$/,
+      //   message:
+      //     "Chat name can only contain letters, numbers, spaces, hyphens, and underscores",
+      // },
+    },
+    chatDescription: {
+      maxLength: {
+        value: 100,
+        message: t("tableChat.addChat.descriptionMaxLength")
+      }
+    }
+  };
+  const containerRef = useRef(null);
+  const {
+    control,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    reset
+  } = useForm({
+    mode: "onSubmit",
+    defaultValues: {
+      chatName: "",
+      chatDescription: ""
+    }
+  });
+  const handleCancel = () => {
+    reset();
+    setShowAddChat(false);
+    setIsCreateNewChatOpen(false);
+  };
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        handleCancel();
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+  const onSubmit = async (data) => {
+    try {
+      const response = await handleChatName(data, selectedChannelInfo);
+      if ((response == null ? void 0 : response.success) === false) {
+        handleToast(true, t("tableChat.addChat.saveError"), "error");
+        return;
+      }
+      handleToast(true, t("tableChat.addChat.savedSuccess"), "success");
+      handleCancel();
+    } catch (err) {
+      console.error("Error while saving chat:", err);
+      handleToast(true, t("tableChat.addChat.saveError"), "error");
+    }
+  };
+  return /* @__PURE__ */ jsx("div", { ref: containerRef, className: "addChat_container", children: /* @__PURE__ */ jsxs("form", { noValidate: true, className: "chatcontainer", onSubmit: handleSubmit(onSubmit), children: [
+    /* @__PURE__ */ jsx(
+      Controller,
+      {
+        control,
+        name: "chatName",
+        render: ({ field }) => {
+          var _a;
+          return /* @__PURE__ */ jsx(
+            Input,
+            {
+              helperText: (_a = errors.chatName) == null ? void 0 : _a.message,
+              isDisabled: isSubmitting,
+              isError: !!errors.chatName,
+              isHelperText: !!errors.chatName,
+              label: t("tableChat.addChat.nameLabel"),
+              name: field.name,
+              placeholder: (inputPanelConfig == null ? void 0 : inputPanelConfig.inputPlaceholder) || t("tableChat.addChat.namePlaceholder"),
+              type: "text",
+              value: field.value,
+              onBlur: field.onBlur,
+              onChange: field.onChange
+            }
+          );
+        },
+        rules: validationRules.chatName
+      }
+    ),
+    /* @__PURE__ */ jsx(
+      Controller,
+      {
+        control,
+        name: "chatDescription",
+        render: ({ field }) => {
+          var _a;
+          return /* @__PURE__ */ jsx(
+            TextArea,
+            {
+              characterLimit: 100,
+              height: "80px",
+              isDisabled: isSubmitting,
+              isError: !!errors.chatDescription,
+              label: t("tableChat.addChat.descriptionLabel"),
+              maxRows: 2,
+              name: field.name,
+              placeholder: (inputPanelConfig == null ? void 0 : inputPanelConfig.textAreaPlaceholder) || t("tableChat.addChat.descriptionPlaceholder"),
+              secondaryLabel: (_a = errors.chatDescription) == null ? void 0 : _a.message,
+              value: field.value || "",
+              width: "100%",
+              onBlur: field.onBlur,
+              onChange: field.onChange
+            }
+          );
+        },
+        rules: validationRules.chatDescription
+      }
+    ),
+    /* @__PURE__ */ jsxs("div", { className: "chatFooterContainer", children: [
+      /* @__PURE__ */ jsx(
+        Button,
+        {
+          disabled: isSubmitting,
+          htmlType: "button",
+          size: "large",
+          variant: "tertiary",
+          onClick: handleCancel,
+          children: t("common.cancel")
+        }
+      ),
+      /* @__PURE__ */ jsx(
+        Button,
+        {
+          className: "chat_save_btn",
+          disabled: isSubmitting,
+          htmlType: "submit",
+          size: "large",
+          variant: "primary",
+          children: isSubmitting ? /* @__PURE__ */ jsx(Fragment, { children: t("table.views.saving") }) : t("common.save")
+        }
+      )
+    ] })
+  ] }) });
+};
+export {
+  AddChat as default
+};

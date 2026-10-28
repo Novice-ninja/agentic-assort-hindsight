@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checkCount": 24,
+  "checks": [
+    "One tactical cohort reconciles Overview, item rows, store rows and pair leaves.",
+    "Exact proposed product/store totals and all 16 matrix states match the shared story contract.",
+    "Bidirectional item/store drills use identical pair facts, separate inbound and one shared DC pool.",
+    "Range exposure retains exits and LY-only zero TY activity; candidate-only nonmember is excluded.",
+    "Transaction presence retains zero-net activity; a zero net is not an absence predicate.",
+    "Exposure normalization exposes the 3300/48 denominator and differs from store-week productivity.",
+    "Ratios are ratios of totals; monthly GM is recomputed from weighted facts.",
+    "Color/finish/GBB bind real grouping and include Unknown; Gray is 40/25 =1.60.",
+    "Changing window changes sales and fiscal comparisons while the stock snapshot remains fixed.",
+    "K14 backward R4 cover follows the stock snapshot independently of the sales display window.",
+    "Original PLR reconciles 48k/50k,46k revision,6k later adds,8000/12000 and ending16k.",
+    "Original cohort is immutable under a week6 exit, revision selection, closures and later additions.",
+    "Elapsed review uses phased weeks; future due and unknown history are separate from failed launches.",
+    "Historical stock is exact-date only and a missing original plan is not replaced by LY.",
+    "Zero/negative comparison bases retain signed deltas without invalid percent growth.",
+    "Negative stock is reconciliation, missing stock is unknown and no positive demand is not Infinity.",
+    "Mixed UOM splits quantity and suppresses aggregate ASP; stale feeds remain dated nonzero facts.",
+    "Unknown membership is distinct and closures retain selected stores with explicit fractional exposure.",
+    "Margin restriction propagates to totals, mix, trend, PLR and raw drill projection.",
+    "Case counts use distinct case IDs, pairs and products; filtering reconciles the destination.",
+    "Draft validation prevents duplicate commitments, missing evidence, wrong units and excess chase.",
+    "Approval is distinct from execution; acknowledgements preserve partial failures and audit history.",
+    "ISO note timestamps and reviewed learnings save without rewriting the approved plan.",
+    "Breadth totals use distinct membership rather than adding store counts or inventing identity."
+  ],
+  "dataVersion": "illustrative-coherent-demo-v1",
+  "illustrativeNotClientData": true
+}

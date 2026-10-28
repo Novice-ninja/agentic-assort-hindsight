@@ -1,0 +1,11 @@
+{
+  "kind": "Final source scan after authorized token repair; not native style acceptance",
+  "unresolvedFormerAliases": [],
+  "dynamicTokens": [
+    {
+      "token": "--iris-panel-width",
+      "status": "Valid runtime variable supplied by IrisWorkspace inline style"
+    }
+  ],
+  "previousFindings": "final-design-unresolved-tokens-before.json"
+}

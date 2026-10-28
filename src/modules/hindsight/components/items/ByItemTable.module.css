@@ -1,0 +1,308 @@
+/* Colours are token-first with the design's literal as the fallback. */
+
+/* === Layout === */
+
+.viewport {
+  position: relative;
+}
+
+/* === Grid chrome === */
+
+.grid {
+  inline-size: 100%;
+  --ag-background-color: var(--colors-greys-50, #fafafa);
+  --ag-border-color: var(--colors-neutrals-border-subtle, #d9dde7);
+  --ag-header-background-color: var(--colors-neutrals-surface-lighter, #f5f6fa);
+  --ag-odd-row-background-color: var(--colors-greys-50, #fafafa);
+  --ag-row-hover-color: #f0f1f8;
+  --ag-selected-row-background-color: #eceefd;
+  --ag-row-border-color: var(--colors-neutrals-border-subtle, #d9dde7);
+  --ag-font-family: var(--font-family-base);
+  --ag-font-size: 14px;
+  --ag-cell-horizontal-padding: 16px;
+}
+
+.grid :global(.ag-root-wrapper) {
+  border: 0;
+  border-radius: 0;
+}
+
+.grid :global(.ag-header) {
+  border-block-start: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  border-block-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  background-color: var(--colors-neutrals-surface-lighter, #f5f6fa);
+}
+
+.grid :global(.ag-header-cell) {
+  padding-inline: 16px;
+  border-inline-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  color: var(--colors-neutrals-text-icon-title, #0d152c);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.grid :global(.ag-cell) {
+  display: flex;
+  align-items: center;
+  padding: 13px 16px;
+  border-inline-end: 1px solid var(--colors-neutrals-border-subtle, #d9dde7);
+  border-block-end: 1px solid var(--colors-neutrals-border-subtle, #d9dde7);
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+/* Hover and checked-row fill match the plans table. The checkbox column is pinned, so the
+   checked class is applied to both row parts; :has covers the pinned cell before a redraw. */
+.grid :global(.ag-row-hover),
+.grid :global(.ag-row-hover) :global(.ag-cell) {
+  background-color: #f0f1f8;
+}
+
+.grid :global(.ag-row:has(input:checked)),
+.grid :global(.ag-row).rowChecked,
+.grid :global(.ag-row:has(input:checked)) :global(.ag-cell),
+.grid :global(.ag-row).rowChecked :global(.ag-cell) {
+  background-color: #eceefd;
+}
+
+.grid :global(.ag-row).rowGroup :global(.ag-cell) {
+  background-color: var(--colors-neutrals-surface-white, #ffffff);
+  font-weight: 600;
+}
+
+.grid :global(.ag-row:has(input:checked)) :global(.ag-cell),
+.grid :global(.ag-row).rowChecked :global(.ag-cell) {
+  border-inline-end-color: #b3bdf8;
+}
+
+.grid :global(.ag-header-cell[col-id='__select']),
+.grid :global(.ag-cell[col-id='__select']) {
+  justify-content: center;
+}
+
+/*
+ * Pinned-left overflow clips each cell's own right border. Put the separator on the
+ * pin wrapper (its border is not clipped) and drop the theme's soft shadow so the
+ * line reads as a column rule.
+ */
+.grid :global(.ag-grid-pinned-left-cells) {
+  box-shadow: none;
+  border-inline-end: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+}
+
+/* === Cells === */
+
+.style {
+  overflow: hidden;
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+}
+
+.swatch {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* Table thumbs are 32×32 r 4; card `ItemThumbnail` `sm` stays 32×40 / r 10. */
+.product > button,
+.product > img {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.description {
+  display: block;
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-width: 0;
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.numeric {
+  color: var(--colors-neutrals-text-icon-subtitle, #31416e);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The backend asks for emphasis by name so a threshold change never needs a frontend change. */
+.numeric[data-color='positive'] {
+  color: var(--colors-alert-badge-success-text-default, #108431);
+}
+
+.numeric[data-color='negative'] {
+  color: var(--colors-alert-badge-error-text-default, #d62f2d);
+}
+
+.numeric[data-color='warning'] {
+  color: var(--color-warning, var(--amber-600));
+}
+
+.comparison {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+}
+
+.comparison .numeric {
+  color: var(--colors-neutrals-text-icon-body, #1f2b4d);
+  flex: none;
+}
+
+.change {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 2px 8px;
+  border-radius: 1000px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.change[data-status='positive'] {
+  background-color: var(--colors-alert-badge-success-surface-subtle, #f4fff7);
+  color: var(--colors-alert-badge-success-text-default, #108431);
+}
+
+.change[data-status='negative'] {
+  background-color: var(--colors-alert-badge-error-surface-subtle, #fef4f5);
+  color: var(--colors-alert-badge-error-text-default, #d62f2d);
+}
+
+.verdict {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  min-width: 82px;
+  padding-inline: 12px;
+  border: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  border-radius: 8px;
+  background-color: var(--colors-neutrals-surface-white, #ffffff);
+  color: var(--colors-neutrals-text-icon-body, #1f2b4d);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* Read-only Working Plan is this node; editable wraps Impact Select (reset chrome below). */
+.select {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  width: 100%;
+  height: 32px;
+  padding-inline: 12px;
+  border: 1px solid var(--colors-neutrals-border-default, #c3c8d4);
+  border-radius: 8px;
+  background-color: var(--colors-neutrals-surface-white, #ffffff);
+  color: var(--colors-neutrals-text-icon-body, #1f2b4d);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.select:has(:global(.ia-select-main-container-v3)) {
+  height: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.select :global(.ia-select-main-container-v3),
+.select :global(.ia-select-container-v3),
+.select :global(.ia-select-styled-dropdown-main-button) {
+  width: 100%;
+}
+
+.aiRecommendation {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  width: 100%;
+}
+
+.aiRecommendationValue {
+  color: var(--color-text-primary, var(--slate-900));
+  font-size: 13px;
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.verdictPortal {
+  z-index: 9999;
+}
+
+.selectionHeader,
+.selectionCell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid :global(.impact-form-checkbox-container .MuiCheckbox-root.impact-checkbox-container) {
+  margin-right: 0;
+}
+
+:global([data-theme='dark']) .grid {
+  --ag-row-hover-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+  --ag-selected-row-background-color: color-mix(
+    in srgb,
+    var(--indigo-400, #4259ee) 18%,
+    var(--color-surface)
+  );
+}
+
+:global([data-theme='dark']) .grid :global(.ag-row-hover),
+:global([data-theme='dark']) .grid :global(.ag-row-hover) :global(.ag-cell) {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 14%, var(--color-surface));
+}
+
+:global([data-theme='dark']) .grid :global(.ag-row:has(input:checked)),
+:global([data-theme='dark']) .grid :global(.ag-row).rowChecked,
+:global([data-theme='dark']) .grid :global(.ag-row:has(input:checked)) :global(.ag-cell),
+:global([data-theme='dark']) .grid :global(.ag-row).rowChecked :global(.ag-cell) {
+  background-color: color-mix(in srgb, var(--indigo-400, #4259ee) 18%, var(--color-surface));
+  border-inline-end-color: var(--color-border);
+}

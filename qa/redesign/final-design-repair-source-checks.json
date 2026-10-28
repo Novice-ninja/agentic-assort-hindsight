@@ -1,0 +1,21 @@
+{
+  "kind": "Syntax only; not native acceptance",
+  "checks": [
+    {
+      "file": "src/modules/hindsight/redesign/views/ScreenChart.tsx",
+      "pass": true
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/ByItemView.tsx",
+      "pass": true
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/CaseDetailView.tsx",
+      "pass": true
+    },
+    {
+      "file": "src/modules/hindsight/redesign/views/DecisionsView.tsx",
+      "pass": true
+    }
+  ]
+}

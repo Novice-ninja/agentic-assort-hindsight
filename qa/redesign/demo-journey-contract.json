@@ -1,0 +1,22 @@
+{
+  "source": "67-page Hindsight redesign specification, especially pages 13-20, 22-25, 27-44 and 63",
+  "datasetStatus": "Illustrative design-session data; not live F&D results or approved financial definitions",
+  "calendar": {"sellingWindow": "2026-02-02/2026-03-29", "inSeasonWindow": "2026-03-02/2026-03-29", "stockSnapshot": "2026-03-29", "rangeSnapshot": "2026-03-29"},
+  "anchors": {
+    "inSeason": {"sales": 24000, "quantitySqft": 4000, "gmDollars": 7680, "gmPercent": 32, "onHandCost": 16000, "rangedPairs": 12, "stockoutRangedPairs": 2, "exposurePairs": 15, "candidatePairs": 16, "openCases": 3, "impactedPairs": 3, "impactedSkus": 2},
+    "plr": {"originalCohortPairs": 12, "actualSales": 48000, "originalPhasedSalesPlan": 50000, "revisionSalesPlan": 46000, "laterAdditionSales": 6000, "actualQuantitySqft": 8000, "demandPlanSqft": 10000, "gmDollars": 15360, "onTimeDuePairs": 10, "duePairs": 12, "availableSupplySqft": 12000, "openingSqft": 2000, "receivedSqft": 10000, "openOrderSqft": 2000, "endingSqft": 4000, "endingInventoryCost": 16000, "plannedEndingInventoryCost": 8000},
+    "P101_S102": {"caseId": "Q01", "netSales": 1800, "lySales": 2400, "sellableSqft": 0, "existingInboundSqft": 200, "inboundEta": "2026-04-01", "stockoutDays": 7, "observedDays": 28, "sharedDcPoolSqft": 900},
+    "cases": [{"id":"Q01","pair":"P101/S102","queue":"Shortages"},{"id":"Q02","pair":"P101/S103","queue":"Lifecycle/exit"},{"id":"Q03","pair":"P104/S104","queue":"Coverage/excess"}],
+    "colorMixSales": {"Ivory":7200,"Gray":9600,"White":4800,"Unknown":2400}
+  },
+  "journey": [
+    {"step":1,"view":"PLR Overview","story":"Review original breadth and depth by store; original approval remains primary.","assert":"48000 versus original50000; later6000 separately named; cohort12 never rewritten by a current exit."},
+    {"step":2,"view":"PLR variance and supply","story":"Distinguish demand realization from buy and receipt execution.","assert":"2000 opening +10000 receipts -8000 sold =4000 ending; open2000 excluded from available supply."},
+    {"step":3,"view":"Timeline and learning","story":"Connect dated events and field observations to a reviewed learning.","assert":"Saving observation/learning does not mutate plan facts or cohort."},
+    {"step":4,"view":"In-season By Store","story":"Open East S102 and inspect current assortment plus exposure.","assert":"Global sales24000 reconcile by item and store; zero-selling ranged and exited-stock pairs remain discoverable."},
+    {"step":5,"view":"P101/S102 pair and Item Stores","story":"Inspect stockout, existing inbound and other-store exit stock; reverse the drill.","assert":"Same pair1800/2400/zero stock on every entry; DC900 is separate and counted once; Back restores origin."},
+    {"step":6,"view":"Mix and GBB","story":"Compare assigned breadth with contribution, then inspect affected items.","assert":"ColorGray is actual color data, sales9600/share40/index1.6; Unknown remains10%; GBB is assigned not derived from ASP."},
+    {"step":7,"view":"Q01 case and decision","story":"Draft chase of the existing200sqft with owner, evidence and review date.","assert":"Draft does not create another order, approve or acknowledge execution. Duplicate pending response is blocked."},
+    {"step":8,"view":"Iris and PLR return","story":"Explain frozen context with evidence, continue manually if unavailable, and carry the learning forward.","assert":"One header trigger; no restricted-margin leak; previous answer context cannot silently change."}
+  ]
+}

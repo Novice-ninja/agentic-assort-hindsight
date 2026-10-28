@@ -1,0 +1,46 @@
+{
+  "kind": "Actual destination LearningRegister/provider and pure cohorts with semantic design controls; not native or visual acceptance",
+  "passed": 10,
+  "checks": [
+    {
+      "name": "Source register retains pending and accepted records from the current original review",
+      "pass": true
+    },
+    {
+      "name": "Destination helper is accepted-only, isolated by destination and does not mutate records",
+      "pass": true
+    },
+    {
+      "name": "Destination view lists accepted carry-forward records and excludes pending conclusions",
+      "pass": true
+    },
+    {
+      "name": "Changing destination is a local reading filter, with no global scope or approval mutation",
+      "pass": true
+    },
+    {
+      "name": "Direction and chosen destination persist through provider reload/remount",
+      "pass": true
+    },
+    {
+      "name": "Origin scope opens only a connected source approval and never raises current access",
+      "pass": true
+    },
+    {
+      "name": "Opening a learning source PLR clears tactical Comp without mutating its stored provenance",
+      "pass": true
+    },
+    {
+      "name": "Origin link navigates to the existing approval with the learning exact pair evidence",
+      "pass": true
+    },
+    {
+      "name": "Back from source evidence restores destination-register context and its chosen target",
+      "pass": true
+    },
+    {
+      "name": "Case links require an explicit case/decision evidence reference rather than coincidental pair overlap",
+      "pass": true
+    }
+  ]
+}

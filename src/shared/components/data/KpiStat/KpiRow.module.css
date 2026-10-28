@@ -1,0 +1,12 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Tablet: 4 → 2 columns */
+@media (width <= 1280px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

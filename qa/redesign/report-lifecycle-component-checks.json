@@ -1,0 +1,45 @@
+{
+  "requirement": "HSP60-loading-error",
+  "kind": "Actual React provider + WorkspaceCard + recovered Impact controls mounted in jsdom",
+  "passed": 8,
+  "checkCount": 8,
+  "checks": [
+    {
+      "name": "Actual WorkspaceCards register stable semantic IDs and readable titles",
+      "pass": true
+    },
+    {
+      "name": "Loading affects one report, retains the original mounted body footprint, hides it semantically, and preserves scope and selected rows",
+      "pass": true
+    },
+    {
+      "name": "Real Impact Retry button restores only the failed card; unrelated failure, child identity, selection, sort and hidden columns survive",
+      "pass": true
+    },
+    {
+      "name": "Retained failure keeps current evidence readable with its exact source refresh timestamp and explicit local-rehearsal disclosure",
+      "pass": true
+    },
+    {
+      "name": "Legitimate missing-feed and empty-result states remain distinct and do not acquire misleading retry actions",
+      "pass": true
+    },
+    {
+      "name": "New scope clears component rehearsals without remounting the table or flashing an unrelated category; returning Back does not reactivate a stale failure",
+      "pass": true
+    },
+    {
+      "name": "Retry is limited to actual failure states; Ready rehearsal restores a loading card without invoking any workspace reset",
+      "pass": true
+    },
+    {
+      "name": "A removed report deregisters from the live target list without remounting neighboring content; workspace cleanup succeeds",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Not a Chrome or pixel-layout assertion; root owns native walkthrough.",
+    "The local synchronous dataset has explicit rehearsal controls, not production network requests.",
+    "A production request adapter, response cache and service retry policy remain external integrations."
+  ]
+}

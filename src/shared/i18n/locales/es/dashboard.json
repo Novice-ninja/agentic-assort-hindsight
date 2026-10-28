@@ -1,0 +1,62 @@
+{
+  "dashboard": {
+    "title": "Panel",
+    "subtitle": "Resumen de tu surtido",
+    "greeting": "Hola {{name}}, te damos la bienvenida a {{product}}",
+    "greetingGeneric": "Te damos la bienvenida a {{product}}",
+    "focusHeading": "El foco del agente para ti hoy",
+    "focus": {
+      "cards": {
+        "attributePlanReady": {
+          "title": "Plan de atributos listo",
+          "description": "Los 5 atributos principales clasificados. Tonos tierra marcados como color ancla. Ajuste oversize confirmado como salida."
+        },
+        "earthTonesConfirmed": {
+          "title": "Tonos tierra confirmados",
+          "description": "Los 5 atributos principales clasificados. Tonos tierra marcados como color ancla. Ajuste oversize confirmado como salida."
+        },
+        "exitOversizedConfirmed": {
+          "title": "Salida oversize confirmada",
+          "description": "Los 5 atributos principales clasificados. Tonos tierra marcados como color ancla. Ajuste oversize confirmado como salida."
+        }
+      }
+    },
+    "platform": {
+      "review": "Revisar ahora",
+      "status": {
+        "active": "Activo",
+        "done": "Hecho",
+        "inProgress": "En progreso"
+      }
+    },
+    "charts": {
+      "revenue": "Análisis de ingresos",
+      "trend": "Tendencia de rendimiento",
+      "deferred": "Visualización próximamente",
+      "viewAsTable": "Ver como tabla",
+      "expand": "Ampliar gráfico",
+      "legend": {
+        "revenue": "Ingresos",
+        "expenses": "Gastos",
+        "plan": "Plan"
+      },
+      "ranges": {
+        "week": "Semana",
+        "month": "Mes",
+        "year": "Año"
+      }
+    },
+    "kpi": {
+      "groupLabel": "Indicadores clave de rendimiento"
+    },
+    "tasks": {
+      "title": "Mis tareas",
+      "due": "Vence {{date}}",
+      "completed": "Completada",
+      "empty": "Sin tareas"
+    },
+    "weather": {
+      "loading": "Cargando…"
+    }
+  }
+}

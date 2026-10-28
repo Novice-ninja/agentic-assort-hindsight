@@ -1,0 +1,206 @@
+{
+  "kind": "Actual React provider in jsdom and pure selector evidence; not Chrome acceptance",
+  "passed": 50,
+  "checks": [
+    {
+      "name": "Primary routes and preserved aliases resolve to Overview / Deep Dive / Decisions",
+      "pass": true
+    },
+    {
+      "name": "Canonical main master is shared 72 products and 45 stores; default R4 and TBC unit are explicit",
+      "pass": true
+    },
+    {
+      "name": "Applying sales-window and product/store scope does not silently change stock dates",
+      "pass": true
+    },
+    {
+      "name": "Back restores original scope, local pair cohort, table state and main scroll",
+      "pass": true
+    },
+    {
+      "name": "Browser Forward restores the departed detail route and its saved view state",
+      "pass": true
+    },
+    {
+      "name": "PLR has independent default scope and personal table settings",
+      "pass": true
+    },
+    {
+      "name": "PLR global scope rejects rolling last-N weeks and noncontiguous approval cuts",
+      "pass": true
+    },
+    {
+      "name": "PLR accepts a contiguous complete-through prefix without changing original approval identity",
+      "pass": true
+    },
+    {
+      "name": "Returning to tactical mode restores remembered scope, detail route and table state",
+      "pass": true
+    },
+    {
+      "name": "Explicit none never broadens to all, including an Iris detail selection",
+      "pass": true
+    },
+    {
+      "name": "A canceled filter draft is pure; hierarchy changes invalidate incompatible descendants",
+      "pass": true
+    },
+    {
+      "name": "Multiple signals merge into one open canonical pair case",
+      "pass": true
+    },
+    {
+      "name": "Draft-only edits whitelist authorable fields and ignore injected execution/history properties",
+      "pass": true
+    },
+    {
+      "name": "Draft merges cannot create approval/execution or replace immutable history",
+      "pass": true
+    },
+    {
+      "name": "Invalid or unauthorized lifecycle transitions do not mutate state",
+      "pass": true
+    },
+    {
+      "name": "Approval stays awaiting execution until an authorized explicit acknowledgement",
+      "pass": true
+    },
+    {
+      "name": "Administrator local acknowledgement records completed pair and retains history",
+      "pass": true
+    },
+    {
+      "name": "Published rule history rejects replacement or mutation of prior versions",
+      "pass": true
+    },
+    {
+      "name": "Accepted learning records an authorized review actor, timestamp, conclusion and evidence",
+      "pass": true
+    },
+    {
+      "name": "Back/Forward cannot roll back a rule version published after the origin snapshot",
+      "pass": true
+    },
+    {
+      "name": "Restricted access projects underlying COGS, plan GM, case signals and free text before context exposure",
+      "pass": true
+    },
+    {
+      "name": "Viewer cannot publish a new rule version through direct context state writes",
+      "pass": true
+    },
+    {
+      "name": "Accepted learning cannot be edited through a lower-privilege partial update",
+      "pass": true
+    },
+    {
+      "name": "Iris exact pair cohort is not expanded to a Cartesian selection and does not mutate snapshots",
+      "pass": true
+    },
+    {
+      "name": "Iris source denominator arithmetic explicitly remains one-row inference",
+      "pass": true
+    },
+    {
+      "name": "Header Iris freezes the current filtered table leaf cohort across pages",
+      "pass": true
+    },
+    {
+      "name": "An empty locally filtered table produces an empty Iris cohort rather than a broad global answer",
+      "pass": true
+    },
+    {
+      "name": "A case Iris context resolves exactly its canonical pair and local interval stays separate from global dates",
+      "pass": true
+    },
+    {
+      "name": "Saved configuration captures full local cuts and table controls while excluding nested lists/audit history",
+      "pass": true
+    },
+    {
+      "name": "Applying a saved view atomically restores route, local cohort, table search/sort/columns without raising access",
+      "pass": true
+    },
+    {
+      "name": "Back from an applied saved view restores the pre-apply origin and its controls",
+      "pass": true
+    },
+    {
+      "name": "Saved views reject unknown canonical members rather than broadening their scope",
+      "pass": true
+    },
+    {
+      "name": "Saved views reject retired metric IDs before any navigation/state change",
+      "pass": true
+    },
+    {
+      "name": "Cross-mode saved views restore scope and controls in the target mode atomically",
+      "pass": true
+    },
+    {
+      "name": "Back from cross-mode saved view restores tactical mode and its prior controls",
+      "pass": true
+    },
+    {
+      "name": "Reload/remount restores the versioned local session, controls and restricted permissions",
+      "pass": true
+    },
+    {
+      "name": "Unavailable local storage keeps in-memory state usable and announces the persistence limit",
+      "pass": true
+    },
+    {
+      "name": "Reset is deterministic and restores only the local design session",
+      "pass": true
+    },
+    {
+      "name": "An item-only observation derives stores from the anchored exact pair cohort",
+      "pass": true
+    },
+    {
+      "name": "An unanchored diagonal observation retains exact pairs rather than the axes Cartesian product",
+      "pass": true
+    },
+    {
+      "name": "Separately valid axes cannot create an observation for an excluded cross pair",
+      "pass": true
+    },
+    {
+      "name": "Clearing global scope does not leak an anchored observation to another store for the same item",
+      "pass": true
+    },
+    {
+      "name": "Iris observations require one matching canonical pair, not independent matching axes",
+      "pass": true
+    },
+    {
+      "name": "Global Apply captures a versioned exact Demo Comp store/window cohort",
+      "pass": true
+    },
+    {
+      "name": "Iris local week analysis preserves the applied Comp cohort anchor",
+      "pass": true
+    },
+    {
+      "name": "Invalid global Comp selection is rejected without silently falling back to all stores",
+      "pass": true
+    },
+    {
+      "name": "Invalid Comp comparator preserves the current applied scope and cohort",
+      "pass": true
+    },
+    {
+      "name": "Saved Comp view rejects an outdated policy version before restoring any state",
+      "pass": true
+    },
+    {
+      "name": "Saved Comp view cannot silently recapture a missing historical cohort anchor",
+      "pass": true
+    },
+    {
+      "name": "A deliberate global period Apply recaptures rather than retaining a stale Comp interval",
+      "pass": true
+    }
+  ]
+}

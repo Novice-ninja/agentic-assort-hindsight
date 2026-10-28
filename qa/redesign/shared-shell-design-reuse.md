@@ -1,0 +1,21 @@
+# Shell, filters and Iris — recovered component reuse
+
+The initial functional preview was too far from the original Hindsight composition. The shared shell has been changed before the next build, using the original components directly.
+
+- `WorkspacePage` now places the existing Impact ButtonGroup mode switch and a 32 px page-options button in the existing breadcrumb action slot. The repeated Hindsight heading, large gray scope card and proposed-workspace banner are removed.
+- The applied scope is rendered by the original `HindsightFilterStrip`, which delegates to the exact recovered Impact `FiltersStrip`. Its original lavender tags, typography, overflow tag and All filters button remain. The intentional extension is wrapping filter groups instead of horizontally hiding them. A small second row keeps independently dated stock/range/comparison/refresh context and a compact demo/definition status.
+- Primary navigation uses the recovered ImpactTabs without overriding its button typography, padding or selected treatment. The three approved views remain Overview / Deep Dive / Decisions. Secondary view/preset choices use the original Impact ButtonGroup treatment used by Visuals / Table.
+- `GlobalFilterDrawer` now uses the recovered Impact FilterPanel, including its 840 px desktop panel, original left section rail, title/close chrome and fixed Apply/Cancel/Reset footer. The visible field controls are actual Impact Select, Input and Checkbox through shared controlled adapters. The eight existing functional groups are retained. On phones the same section rail becomes a horizontally scrollable row and the footer stays visible.
+- `IrisWorkspace` now uses the existing AIChatPanel/ChatBotComponent, original header/icons, resize/minimize behavior, assistant/user message bubbles and composer classes. The separate handcrafted panel, title mark and invented bubble styles are removed. Computed evidence and context controls are JSX inside the recovered host. Source/version detail remains inspectable, while engineering labels no longer occupy the main flow.
+
+No scope, permission, decision lifecycle, saved-view or data logic was replaced by this visual migration. Context regression evidence remains separate from visual proof. The Iris component regression uses semantic vendor-host/control stand-ins; it does not establish actual component appearance. Root owns native Chrome review of the next integrated build against the frozen priority reference.
+
+## Native QA repairs after the first aligned build
+
+The first native comparison exposed a zero-width select wrapper: the recovered Select derives its layout width from `minWidth ?? width`, and the adapter supplied zero. The adapter now gives the wrapper its requested width/flex basis and lets the original control fill that space. The parent’s native 1440 px retest reported 180 px controls with no overlap; the separate two-case markup contract prevents reintroducing the zero layout basis but does not itself measure browser geometry.
+
+Nested navigation also exposed an AppShell effect clearing the breadcrumb slot after the workspace published its controls. Its action owner now remains stable across Hindsight report/detail routes; six real React/AppShell effect checks cover this transition. Compact numeric grid columns now show numbers without repeated unit suffixes, with one humane unit note above the table and complete formatted values/reasons in tooltips. Six presentation checks cover full digits, restricted/mixed states and the human unit label. Native clipping and route persistence acceptance remains a distinct browser task.
+
+## Current coordinated build additions
+
+The report state boundary uses the recovered Skeleton, DataState and normal card headings/Retry controls. Temporary workspace notices now use the original Impact Toast integration and do not accumulate bespoke success banners above Summary. Comp remains an explicit applied location policy tag, with no extra primary navigation. Scoped Iris clarification controls remain inside the original chat host and use the same Impact Select and Buttons. These integrations are functional/source-verified; current native acceptance belongs to the parent browser log.

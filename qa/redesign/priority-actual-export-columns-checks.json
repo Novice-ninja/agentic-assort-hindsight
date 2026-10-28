@@ -1,0 +1,342 @@
+{
+  "kind": "Actual Sales Mix UI column and metadata declaration regression; no browser download claim",
+  "status": "passed",
+  "passed": 54,
+  "checkCount": 54,
+  "actual_browser_download_verified": false,
+  "source_extraction": "TypeScript AST selects EXPORT_COLUMNS plus useExcelDownload getMetadata/fileName properties; esbuild transpiles those pure declarations only.",
+  "source_snapshots": {
+    "summary": {
+      "path": "src/modules/hindsight/components/attributes/SalesMixChartCard.tsx",
+      "sha256": "ab6a98bad034d06cc0fc7267bfb2f7f9721bc94c4207a9f6a17e29878d8afd5c",
+      "columnIds": [
+        "name",
+        "totalSkus",
+        "share",
+        "vsLy",
+        "productivity"
+      ]
+    },
+    "breakdown": {
+      "path": "src/modules/hindsight/components/attributes/SalesMixBreakdownTable.tsx",
+      "sha256": "1dba3853f0d7a80232255d9db419e29f43dbc4993ea7d4a7a81925cb3b99d12c",
+      "columnIds": [
+        "name",
+        "sellingSkus",
+        "sales",
+        "lyRevenue",
+        "planRevenue",
+        "plrBaseline",
+        "r4Sales",
+        "r13Sales",
+        "r52Sales",
+        "salesPerSqFt",
+        "definitionStatus",
+        "growth",
+        "salesShare",
+        "skuShare",
+        "productivity",
+        "gm",
+        "returns",
+        "action"
+      ]
+    }
+  },
+  "variants": [
+    {
+      "name": "summary-full-all",
+      "surface": "summary",
+      "scope": "full",
+      "rowSelection": "all",
+      "path": "/private/tmp/priority-actual-ui-exports/summary-full-all.xlsx",
+      "fileName": {
+        "view": "sales-mix-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 5
+    },
+    {
+      "name": "summary-bamboo-all",
+      "surface": "summary",
+      "scope": "bamboo",
+      "rowSelection": "all",
+      "path": "/private/tmp/priority-actual-ui-exports/summary-bamboo-all.xlsx",
+      "fileName": {
+        "view": "sales-mix-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 2
+    },
+    {
+      "name": "breakdown-full-all",
+      "surface": "breakdown",
+      "scope": "full",
+      "rowSelection": "all",
+      "path": "/private/tmp/priority-actual-ui-exports/breakdown-full-all.xlsx",
+      "fileName": {
+        "view": "sales-mix-breakdown-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 5
+    },
+    {
+      "name": "breakdown-full-filtered",
+      "surface": "breakdown",
+      "scope": "full",
+      "rowSelection": "filtered",
+      "path": "/private/tmp/priority-actual-ui-exports/breakdown-full-filtered.xlsx",
+      "fileName": {
+        "view": "sales-mix-breakdown-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 1
+    },
+    {
+      "name": "breakdown-bamboo-all",
+      "surface": "breakdown",
+      "scope": "bamboo",
+      "rowSelection": "all",
+      "path": "/private/tmp/priority-actual-ui-exports/breakdown-bamboo-all.xlsx",
+      "fileName": {
+        "view": "sales-mix-breakdown-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 2
+    },
+    {
+      "name": "breakdown-bamboo-filtered",
+      "surface": "breakdown",
+      "scope": "bamboo",
+      "rowSelection": "filtered",
+      "path": "/private/tmp/priority-actual-ui-exports/breakdown-bamboo-filtered.xlsx",
+      "fileName": {
+        "view": "sales-mix-breakdown-SS26",
+        "planCode": "PLAN1001"
+      },
+      "rowCount": 1
+    }
+  ],
+  "checks": [
+    {
+      "name": "summary-full-all: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: package CRC",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "summary-full-all: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: package CRC",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: Bamboo recipe is explicit",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "summary-bamboo-all: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: package CRC",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-all: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: package CRC",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "breakdown-full-filtered: filtered rows and current grid view metadata",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: package CRC",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: Bamboo recipe is explicit",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-all: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: valid Data/Scope/Definitions and warning-free parse",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: package CRC",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: actual UI row identity/count",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: every actual UI value is preserved with numeric cells",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: click-time SS26 scope/source metadata",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: Bamboo recipe is explicit",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: period, original baseline and area caveats survive",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: actual caller filename uses SS26",
+      "pass": true
+    },
+    {
+      "name": "breakdown-bamboo-filtered: filtered rows and current grid view metadata",
+      "pass": true
+    },
+    {
+      "name": "Actual lower columns export the exact $8.4M full-scope sales",
+      "pass": true
+    },
+    {
+      "name": "Actual lower columns export exact LY/Plan/PLR/R4/R13/R52 cents",
+      "pass": true
+    },
+    {
+      "name": "Actual full lower export contains the five canonical brands",
+      "pass": true
+    },
+    {
+      "name": "Actual Bamboo columns reconcile the selected scope and exact $1,049,808.28 sales",
+      "pass": true
+    },
+    {
+      "name": "Actual upper/lower shares agree without converting whole-percent values to fractions",
+      "pass": true
+    },
+    {
+      "name": "Percentage number format displays stored whole-percent values correctly",
+      "pass": true
+    },
+    {
+      "name": "Sales-per-area exports the weighted brand ratios rather than adding ratios",
+      "pass": true
+    }
+  ],
+  "limits": [
+    "Executes the actual current UI column functions and metadata arrows with synthetic full/Bamboo rows; React and AG Grid are not mounted.",
+    "Filtered-row variants verify writer fidelity to caller inputs; actual getDisplayedRows traversal, browser click and saved download still require browser acceptance.",
+    "The upper summary export intentionally contains name, SKU count, sales share, LY change and productivity; C4 period and baseline columns belong to the lower breakdown export."
+  ]
+}

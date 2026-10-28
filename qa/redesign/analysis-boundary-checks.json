@@ -1,0 +1,59 @@
+{
+  "kind": "Production pure selector/helper and extracted production callback regressions; not browser or visual acceptance",
+  "passed": 13,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "No-op local labels preserve the PLR original/addition/realized reconciliation",
+      "pass": true
+    },
+    {
+      "name": "Local product/store cuts preserve later additions on those axes and match equivalent global axes",
+      "pass": true
+    },
+    {
+      "name": "Exact diagonal pair cuts remain an AND intersection without a product/store Cartesian expansion",
+      "pass": true
+    },
+    {
+      "name": "Explicit empty item/store/pair local selections never fall back to all members",
+      "pass": true
+    },
+    {
+      "name": "Local weeks intersect the applied interval and retain independent stock/range dates",
+      "pass": true
+    },
+    {
+      "name": "Partial fiscal-month chart marks retain only the applied complete weeks in export/drill scope",
+      "pass": true
+    },
+    {
+      "name": "Trend margin is recalculated from selected pair-week numerators and denominators",
+      "pass": true
+    },
+    {
+      "name": "An arbitrary PLR local week stays an analysis interval, never an elapsed approved prefix",
+      "pass": true
+    },
+    {
+      "name": "Historical colour drill uses its exact approved pair IDs and retains local store/week constraints",
+      "pass": true
+    },
+    {
+      "name": "All defaults have supported mode-specific calculations; distinct inventory and coverage definitions are never aliased",
+      "pass": true
+    },
+    {
+      "name": "Normal workbook Definitions preserve all 87 source evidence statuses, aliases and guards with the active version",
+      "pass": true
+    },
+    {
+      "name": "Exact export contributors retain local pair/week scope and withhold restricted margin numerators",
+      "pass": true
+    },
+    {
+      "name": "Editing a pending case learning retains exact affected-pair provenance when only text changes",
+      "pass": true
+    }
+  ]
+}

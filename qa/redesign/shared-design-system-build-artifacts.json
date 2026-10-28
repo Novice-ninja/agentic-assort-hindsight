@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "dist/assets/WorkspacePage-D9KGTDPl.js",
+      "bytes": 735745,
+      "sha256": "6ec188e11bc8a460d57fe61643ead94f588f356710c2858b63c19dd99fc58280"
+    },
+    {
+      "path": "dist/assets/WorkspacePage-D9KGTDPl.js.map",
+      "bytes": 1587203,
+      "sha256": "b4f49b6ff8e8effdc694f30edcad5490032beb6a25ba6d574b5945ebe31cde19"
+    },
+    {
+      "path": "dist/assets/WorkspacePage-Bq5CHXHH.css",
+      "bytes": 101397,
+      "sha256": "7473842bdb54fdc81f3c6134a9d850a86fa16ad7587d9ca0c342d38f18be3592"
+    }
+  ],
+  "indexHtml": "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"UTF-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>Assort \u00b7 Hindsight</title><meta name=\"application-name\" content=\"Assort\" /><meta name=\"description\" content=\"Assort \u00b7 assortment hindsight workspace\" /><link rel=\"stylesheet\" href=\"/fonts.css\" />  <script type=\"module\" crossorigin src=\"/assets/index-DyBBSpwl.js\"></script>\n</head><body><div id=\"agenticassort-root\"></div></body></html>\n"
+}

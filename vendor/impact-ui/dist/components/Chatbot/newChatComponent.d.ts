@@ -1,0 +1,4 @@
+import { NewChatComponentProps } from './Chatbot.types';
+
+export declare function NewChatComponent({ onClose: _onClose, userName, inputValue, setInputValue, setIsNewChat, onSendIconClick, userChats, setUserChats, moduleList: _moduleList, onModuleClick: _onModuleClick, activeList, handleRefresh, handleSaveChat, handleMicClick, hideMenuArrow: _hideMenuArrow, isModuleListLoading: _isModuleListLoading, suggestionBanner, isStopIcon, onStopIconClick, onCloseSuggestionBanner, showSuggestionBanner, customInputComponent, footerText, }: NewChatComponentProps): import("react/jsx-runtime").JSX.Element;
+//# sourceMappingURL=newChatComponent.d.ts.map

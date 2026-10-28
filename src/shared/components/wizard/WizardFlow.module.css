@@ -1,0 +1,33 @@
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/*
+ * CreateItemFlow always mounts extraButtonProp in `.footer-right-group` (before Next).
+ * Clustering keeps Ask In Chat with Back; this only applies when extraStart is set.
+ */
+.extraStart :global(.dynamic-layout-footer) {
+  gap: 12px;
+}
+
+.extraStart :global(.footer-right-group) {
+  display: contents;
+}
+
+.extraStart :global(.dynamic-layout-footer > :last-child) {
+  margin-inline-start: auto;
+}
+
+/* NewCreateItemFlow always renders Back. Hide it when the host omits prevButtonProps. */
+.hidePrev :global(.new-dynamic-layout-footer > .MuiButton-root) {
+  display: none;
+}
+
+.hidePrev :global(.new-dynamic-layout-footer) :global(.footer-right-group) {
+  display: flex;
+  margin-inline-start: auto;
+}

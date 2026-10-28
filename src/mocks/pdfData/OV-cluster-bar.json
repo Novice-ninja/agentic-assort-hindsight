@@ -1,0 +1,31 @@
+{
+  "data": {
+    "metric": "sell_through_percentage",
+    "rows": [
+      {
+        "cluster": "A",
+        "metricValue": 71.1
+      },
+      {
+        "cluster": "B",
+        "metricValue": 64.6
+      },
+      {
+        "cluster": "C",
+        "metricValue": 60.4
+      },
+      {
+        "cluster": "D",
+        "metricValue": 65.7
+      },
+      {
+        "cluster": "E",
+        "metricValue": 61.1
+      },
+      {
+        "cluster": "F",
+        "metricValue": 55.7
+      }
+    ]
+  }
+}

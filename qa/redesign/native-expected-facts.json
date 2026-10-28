@@ -1,0 +1,2339 @@
+{
+  "status": "Expected facts derived from current actual selectors; not browser execution",
+  "version": "flooring-ledger-ss26-v2",
+  "calendar": {
+    "id": "prototype-52-week-monday-v1",
+    "version": "1.0-TBC",
+    "completeThrough": "2026-07-26",
+    "currentWeekIds": [
+      "PW-105",
+      "PW-106",
+      "PW-107",
+      "PW-108",
+      "PW-109",
+      "PW-110",
+      "PW-111",
+      "PW-112",
+      "PW-113",
+      "PW-114",
+      "PW-115",
+      "PW-116",
+      "PW-117",
+      "PW-118",
+      "PW-119",
+      "PW-120",
+      "PW-121",
+      "PW-122",
+      "PW-123",
+      "PW-124",
+      "PW-125",
+      "PW-126",
+      "PW-127",
+      "PW-128",
+      "PW-129",
+      "PW-130",
+      "PW-131",
+      "PW-132",
+      "PW-133",
+      "PW-134",
+      "PW-135",
+      "PW-136",
+      "PW-137",
+      "PW-138",
+      "PW-139",
+      "PW-140",
+      "PW-141",
+      "PW-142",
+      "PW-143",
+      "PW-144",
+      "PW-145",
+      "PW-146",
+      "PW-147",
+      "PW-148",
+      "PW-149",
+      "PW-150",
+      "PW-151",
+      "PW-152",
+      "PW-153",
+      "PW-154",
+      "PW-155",
+      "PW-156"
+    ],
+    "seasonWeekIds": [
+      "PW-131",
+      "PW-132",
+      "PW-133",
+      "PW-134",
+      "PW-135",
+      "PW-136",
+      "PW-137",
+      "PW-138",
+      "PW-139",
+      "PW-140",
+      "PW-141",
+      "PW-142",
+      "PW-143",
+      "PW-144",
+      "PW-145",
+      "PW-146",
+      "PW-147",
+      "PW-148",
+      "PW-149",
+      "PW-150",
+      "PW-151",
+      "PW-152",
+      "PW-153",
+      "PW-154",
+      "PW-155",
+      "PW-156"
+    ],
+    "periodOptions": [
+      {
+        "id": "LW",
+        "label": "Last completed week",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "R4",
+        "label": "Last4 completed weeks",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "R13",
+        "label": "Last13 completed weeks",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "R52",
+        "label": "Last52 completed weeks",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "MTD",
+        "label": "Month to date",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "QTD",
+        "label": "Quarter to date",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "YTD",
+        "label": "Year to date",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "SEASON",
+        "label": "SS26 selling season",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      },
+      {
+        "id": "CUSTOM",
+        "label": "Custom completed weeks",
+        "definition": "Prototype Monday–Sunday calendar; fiscal alignment requires F&D confirmation."
+      }
+    ],
+    "definitionStatus": "Synthetic prototype calendar · fiscal definition TBC"
+  },
+  "refresh": "2026-08-01T06:00:00Z",
+  "master": {
+    "styles": 72,
+    "stores": 45,
+    "candidates": 3240
+  },
+  "scopes": {
+    "R4": {
+      "scope": {
+        "mode": "in-season",
+        "reviewId": "PLR-SS26-FLOORING",
+        "version": "v1",
+        "productIds": [],
+        "storeIds": [],
+        "productSelection": "all",
+        "storeSelection": "all",
+        "population": "exposure",
+        "window": "R4",
+        "comparison": "ly",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "uom": "SELLING_UNIT_TBC",
+        "access": "full",
+        "calendarId": "prototype-52-week-monday-v1",
+        "seasonId": "SS26",
+        "localFilters": {}
+      },
+      "dates": [
+        "2026-06-29",
+        "2026-07-26"
+      ],
+      "weekCount": 4,
+      "total": {
+        "sales": {
+          "value": 845799.66,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "comparisonSales": {
+          "value": 791947.31,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "salesChange": {
+          "value": 6.79999153,
+          "unit": "%",
+          "state": "ok"
+        },
+        "quantity": {
+          "value": 18358,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "gmDollars": {
+          "value": 267272.56,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "gmRate": {
+          "value": 31.59998433,
+          "unit": "%",
+          "state": "ok"
+        },
+        "ohCost": {
+          "value": 2353139.2,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "physicalOh": {
+          "value": 99081,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "sellableOh": {
+          "value": 95707,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "openInbound": {
+          "value": 200,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "velocity": {
+          "value": null,
+          "unit": "SELLING_UNIT_TBC/pair-week",
+          "state": "missing",
+          "reason": "Compatible numerator/exposure unavailable."
+        },
+        "itemCount": 72,
+        "storeCount": 45,
+        "pairCount": 3240,
+        "rangedPairCount": 3237,
+        "stockoutPairCount": 276,
+        "openCaseCount": 6,
+        "impactedPairCount": 6,
+        "impactedSkuCount": 6,
+        "rangedSkuCount": 72,
+        "storeExposureWeeks": {
+          "value": 180,
+          "unit": "store-weeks",
+          "state": "ok"
+        },
+        "salesPerStoreWeek": {
+          "value": 4698.887,
+          "unit": "USD/store-week",
+          "state": "ok"
+        }
+      }
+    },
+    "R13": {
+      "scope": {
+        "mode": "in-season",
+        "reviewId": "PLR-SS26-FLOORING",
+        "version": "v1",
+        "productIds": [],
+        "storeIds": [],
+        "productSelection": "all",
+        "storeSelection": "all",
+        "population": "exposure",
+        "window": "R13",
+        "comparison": "ly",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "uom": "SELLING_UNIT_TBC",
+        "access": "full",
+        "calendarId": "prototype-52-week-monday-v1",
+        "seasonId": "SS26",
+        "localFilters": {}
+      },
+      "dates": [
+        "2026-04-27",
+        "2026-07-26"
+      ],
+      "weekCount": 13,
+      "total": {
+        "sales": {
+          "value": 3504027.54,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "comparisonSales": {
+          "value": 3280924.71,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "salesChange": {
+          "value": 6.79999847,
+          "unit": "%",
+          "state": "ok"
+        },
+        "quantity": {
+          "value": 76070,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "gmDollars": {
+          "value": 1107272.6,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "gmRate": {
+          "value": 31.59999707,
+          "unit": "%",
+          "state": "ok"
+        },
+        "ohCost": {
+          "value": 2353139.2,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "physicalOh": {
+          "value": 99081,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "sellableOh": {
+          "value": 95707,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "openInbound": {
+          "value": 200,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "velocity": {
+          "value": null,
+          "unit": "SELLING_UNIT_TBC/pair-week",
+          "state": "missing",
+          "reason": "Compatible numerator/exposure unavailable."
+        },
+        "itemCount": 72,
+        "storeCount": 45,
+        "pairCount": 3240,
+        "rangedPairCount": 3237,
+        "stockoutPairCount": 276,
+        "openCaseCount": 6,
+        "impactedPairCount": 6,
+        "impactedSkuCount": 6,
+        "rangedSkuCount": 72,
+        "storeExposureWeeks": {
+          "value": 585,
+          "unit": "store-weeks",
+          "state": "ok"
+        },
+        "salesPerStoreWeek": {
+          "value": 5989.79066667,
+          "unit": "USD/store-week",
+          "state": "ok"
+        }
+      }
+    },
+    "R52": {
+      "scope": {
+        "mode": "in-season",
+        "reviewId": "PLR-SS26-FLOORING",
+        "version": "v1",
+        "productIds": [],
+        "storeIds": [],
+        "productSelection": "all",
+        "storeSelection": "all",
+        "population": "exposure",
+        "window": "R52",
+        "comparison": "ly",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "uom": "SELLING_UNIT_TBC",
+        "access": "full",
+        "calendarId": "prototype-52-week-monday-v1",
+        "seasonId": "SS26",
+        "localFilters": {}
+      },
+      "dates": [
+        "2025-07-28",
+        "2026-07-26"
+      ],
+      "weekCount": 52,
+      "total": {
+        "sales": {
+          "value": 15691973.05,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "comparisonSales": {
+          "value": 14646045.21,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "salesChange": {
+          "value": 7.141367,
+          "unit": "%",
+          "state": "ok"
+        },
+        "quantity": {
+          "value": 341246,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "gmDollars": {
+          "value": 4979084.32,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "gmRate": {
+          "value": 31.73013555,
+          "unit": "%",
+          "state": "ok"
+        },
+        "ohCost": {
+          "value": 2353139.2,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "physicalOh": {
+          "value": 99081,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "sellableOh": {
+          "value": 95707,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "openInbound": {
+          "value": 200,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "velocity": {
+          "value": null,
+          "unit": "SELLING_UNIT_TBC/pair-week",
+          "state": "missing",
+          "reason": "Compatible numerator/exposure unavailable."
+        },
+        "itemCount": 72,
+        "storeCount": 45,
+        "pairCount": 3240,
+        "rangedPairCount": 3237,
+        "stockoutPairCount": 276,
+        "openCaseCount": 6,
+        "impactedPairCount": 6,
+        "impactedSkuCount": 6,
+        "rangedSkuCount": 72,
+        "storeExposureWeeks": {
+          "value": 2340,
+          "unit": "store-weeks",
+          "state": "ok"
+        },
+        "salesPerStoreWeek": {
+          "value": 6705.97138889,
+          "unit": "USD/store-week",
+          "state": "ok"
+        }
+      }
+    },
+    "SEASON": {
+      "scope": {
+        "mode": "in-season",
+        "reviewId": "PLR-SS26-FLOORING",
+        "version": "v1",
+        "productIds": [],
+        "storeIds": [],
+        "productSelection": "all",
+        "storeSelection": "all",
+        "population": "exposure",
+        "window": "SEASON",
+        "comparison": "ly",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "uom": "SELLING_UNIT_TBC",
+        "access": "full",
+        "calendarId": "prototype-52-week-monday-v1",
+        "seasonId": "SS26",
+        "localFilters": {}
+      },
+      "dates": [
+        "2026-01-26",
+        "2026-07-26"
+      ],
+      "weekCount": 26,
+      "total": {
+        "sales": {
+          "value": 8400000,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "comparisonSales": {
+          "value": 7865168.54,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "salesChange": {
+          "value": 6.79999999,
+          "unit": "%",
+          "state": "ok"
+        },
+        "quantity": {
+          "value": 182400,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "gmDollars": {
+          "value": 2654400,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "gmRate": {
+          "value": 31.6,
+          "unit": "%",
+          "state": "ok"
+        },
+        "ohCost": {
+          "value": 2353139.2,
+          "unit": "USD",
+          "state": "ok"
+        },
+        "physicalOh": {
+          "value": 99081,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "sellableOh": {
+          "value": 95707,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "openInbound": {
+          "value": 200,
+          "unit": "SELLING_UNIT_TBC",
+          "state": "ok"
+        },
+        "velocity": {
+          "value": null,
+          "unit": "SELLING_UNIT_TBC/pair-week",
+          "state": "missing",
+          "reason": "Compatible numerator/exposure unavailable."
+        },
+        "itemCount": 72,
+        "storeCount": 45,
+        "pairCount": 3240,
+        "rangedPairCount": 3237,
+        "stockoutPairCount": 276,
+        "openCaseCount": 6,
+        "impactedPairCount": 6,
+        "impactedSkuCount": 6,
+        "rangedSkuCount": 72,
+        "storeExposureWeeks": {
+          "value": 1170,
+          "unit": "store-weeks",
+          "state": "ok"
+        },
+        "salesPerStoreWeek": {
+          "value": 7179.48717949,
+          "unit": "USD/store-week",
+          "state": "ok"
+        }
+      }
+    }
+  },
+  "plr": {
+    "scope": {
+      "mode": "plr",
+      "reviewId": "PLR-SS26-FLOORING",
+      "version": "v1",
+      "productIds": [],
+      "storeIds": [],
+      "productSelection": "all",
+      "storeSelection": "all",
+      "population": "original",
+      "window": "PLR",
+      "comparison": "original",
+      "stockAsOf": "2026-07-31",
+      "rangeAsOf": "2026-07-31",
+      "uom": "SELLING_UNIT_TBC",
+      "access": "full",
+      "calendarId": "prototype-52-week-monday-v1",
+      "seasonId": "SS26",
+      "localFilters": {}
+    },
+    "review": {
+      "connected": true,
+      "originalVersionId": "v1",
+      "selectedVersionId": "v1",
+      "sellingStart": "2026-01-26",
+      "sellingEnd": "2026-07-31",
+      "originalPairCount": 2970,
+      "selectedOriginalPairCount": 2970,
+      "duePairs": 2968,
+      "onTimePairs": 2964,
+      "latePairs": 2,
+      "notActivatedPairs": 1,
+      "notYetDuePairs": 2,
+      "unknownHistoryPairs": 1,
+      "executionRate": {
+        "value": null,
+        "unit": "%",
+        "state": "unknown",
+        "reason": "Unknown history; show explicit bounds."
+      },
+      "executionBounds": {
+        "lower": 99.86522911051213,
+        "upper": 99.8989218328841
+      },
+      "actualSales": {
+        "value": 8373352.01,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "originalSalesPlan": {
+        "value": 8800000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "revisedSalesPlan": {
+        "value": 8100000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesVariance": {
+        "value": -426647.99,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "laterAdditionSales": {
+        "value": 26647.99,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "totalRealizedSales": {
+        "value": 8400000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "actualQuantity": {
+        "value": 181746,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "demandPlanQuantity": {
+        "value": 200000,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 2642938.2,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 31.56368199,
+        "unit": "%",
+        "state": "ok"
+      },
+      "plannedGmRate": {
+        "value": 32,
+        "unit": "%",
+        "state": "ok"
+      },
+      "gmGapPp": {
+        "value": -0.43631801,
+        "unit": "pp",
+        "state": "ok"
+      },
+      "supplyAvailable": {
+        "value": 280388,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellThrough": {
+        "value": 64.81946446,
+        "unit": "%",
+        "state": "ok"
+      },
+      "endingInventoryCost": {
+        "value": 2341747.8,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "plannedEndingInventoryCost": {
+        "value": 2400000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "approvedBuyQuantity": {
+        "value": 300000,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "receivedQuantity": {
+        "value": 225458,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "transferInQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "transferOutQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "adjustmentQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "customerReturnQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "expectedPhysicalEndingQuantity": {
+        "value": 98642,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "physicalEndingQuantity": {
+        "value": 98642,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableEndingQuantity": {
+        "value": 95268,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "blockedEndingQuantity": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openingQuantity": {
+        "value": 54930,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openOrderQuantity": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "exceptions": [
+        {
+          "pairId": "1000074:ST1002",
+          "state": "Late",
+          "targetDate": "2026-01-26",
+          "activatedOn": "2026-02-02"
+        },
+        {
+          "pairId": "1000481:ST1003",
+          "state": "Late",
+          "targetDate": "2026-01-26",
+          "activatedOn": "2026-02-02"
+        },
+        {
+          "pairId": "1000518:ST1004",
+          "state": "Not activated",
+          "targetDate": "2026-01-26"
+        },
+        {
+          "pairId": "1000592:ST1005",
+          "state": "History unavailable",
+          "targetDate": "2026-01-26"
+        },
+        {
+          "pairId": "1000555:ST1006",
+          "state": "Not yet due",
+          "targetDate": "2026-08-03",
+          "activatedOn": "2026-01-26"
+        },
+        {
+          "pairId": "1000666:ST1007",
+          "state": "Not yet due",
+          "targetDate": "2026-08-03",
+          "activatedOn": "2026-01-26"
+        }
+      ],
+      "warnings": [
+        "Unknown history suppresses verified execution rate.",
+        "Original approval and latest all-population plan have different cohorts.",
+        "Prototype calendar and selling-unit definition require confirmation."
+      ],
+      "elapsedWeeks": 26,
+      "plannedWeeks": 26,
+      "latestPlanAllSales": {
+        "value": 8600000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalFlowDifference": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "blockedQuantity": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      }
+    }
+  },
+  "northport": {
+    "r4Product": {
+      "sales": {
+        "value": 161104.73,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 227870.88,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": -29.29999217,
+        "unit": "%",
+        "state": "ok"
+      },
+      "quantity": {
+        "value": 2345,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 37091.02,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 23.02292428,
+        "unit": "%",
+        "state": "ok"
+      },
+      "ohCost": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": 13.02777778,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "ok"
+      },
+      "itemCount": 1,
+      "storeCount": 45,
+      "pairCount": 45,
+      "rangedPairCount": 45,
+      "stockoutPairCount": 45,
+      "openCaseCount": 1,
+      "impactedPairCount": 1,
+      "impactedSkuCount": 1,
+      "rangedSkuCount": 1,
+      "storeExposureWeeks": {
+        "value": 180,
+        "unit": "store-weeks",
+        "state": "ok"
+      },
+      "salesPerStoreWeek": {
+        "value": 895.02627778,
+        "unit": "USD/store-week",
+        "state": "ok"
+      }
+    },
+    "r4Pair": {
+      "sales": {
+        "value": 4333.09,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 6128.85,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": -29.3001134,
+        "unit": "%",
+        "state": "ok"
+      },
+      "quantity": {
+        "value": 62,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 997.61,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 23.02306206,
+        "unit": "%",
+        "state": "ok"
+      },
+      "ohCost": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 91,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": 15.5,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "ok"
+      }
+    },
+    "product": {
+      "id": "1000037",
+      "name": "Northport White Oak Distressed Water Resistant Engineered Hardwood",
+      "sales": {
+        "value": 1600000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 2263083.45,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": -29.29999996,
+        "unit": "%",
+        "state": "ok"
+      },
+      "quantity": {
+        "value": 23288,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 368366.92,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 23.0229325,
+        "unit": "%",
+        "state": "ok"
+      },
+      "ohCost": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": 19.9042735,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "ok"
+      },
+      "itemCount": 1,
+      "storeCount": 45,
+      "pairCount": 45,
+      "rangedPairCount": 45,
+      "stockoutPairCount": 45,
+      "openCaseCount": 1,
+      "impactedPairCount": 1,
+      "impactedSkuCount": 1,
+      "rangedSkuCount": 1,
+      "storeExposureWeeks": {
+        "value": 1170,
+        "unit": "store-weeks",
+        "state": "ok"
+      },
+      "salesPerStoreWeek": {
+        "value": 1367.52136752,
+        "unit": "USD/store-week",
+        "state": "ok"
+      }
+    },
+    "pair": {
+      "id": "1000037:ST1001",
+      "store": {
+        "id": "ST1001",
+        "name": "Houston, TX",
+        "cluster": "B",
+        "region": "Unknown",
+        "district": "Unknown",
+        "market": "Houston, TX",
+        "openedOn": "2018-01-01",
+        "channel": "Store"
+      },
+      "range": "ranged",
+      "state": "R0",
+      "sales": {
+        "value": 43033.89,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 60868.3,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": -29.29999688,
+        "unit": "%",
+        "state": "ok"
+      },
+      "quantity": {
+        "value": 626,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 9907.66,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 23.02292449,
+        "unit": "%",
+        "state": "ok"
+      },
+      "ohCost": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 91,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": 24.07692308,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "ok"
+      },
+      "supply": [
+        {
+          "id": "1000037:ST1001:opening",
+          "itemId": "1000037",
+          "storeId": "ST1001",
+          "uom": "SELLING_UNIT_TBC",
+          "reviewId": "PLR-SS26-FLOORING",
+          "kind": "opening",
+          "quantity": 143,
+          "date": "2026-01-26",
+          "status": "Recorded",
+          "sourceRef": "DEMO-OPEN-1000037:ST1001"
+        },
+        {
+          "id": "1000037:ST1001:receipt",
+          "itemId": "1000037",
+          "storeId": "ST1001",
+          "uom": "SELLING_UNIT_TBC",
+          "reviewId": "PLR-SS26-FLOORING",
+          "kind": "receipt",
+          "quantity": 574,
+          "date": "2026-02-02",
+          "status": "Received",
+          "sourceRef": "DEMO-RECEIPT-1000037:ST1001"
+        },
+        {
+          "id": "PO-NORTHPORT-200",
+          "itemId": "1000037",
+          "storeId": "ST1001",
+          "dcId": "DC01",
+          "kind": "open-order",
+          "quantity": 200,
+          "uom": "SELLING_UNIT_TBC",
+          "date": "2026-07-31",
+          "eta": "2026-08-04",
+          "allocated": 200,
+          "status": "Open · allocated",
+          "sourceRef": "DEMO-PO-NORTHPORT",
+          "reviewId": "PLR-SS26-FLOORING"
+        },
+        {
+          "id": "DC-NORTHPORT-900",
+          "itemId": "1000037",
+          "dcId": "DC01",
+          "kind": "dc-pool",
+          "quantity": 900,
+          "uom": "SELLING_UNIT_TBC",
+          "date": "2026-07-31",
+          "allocated": 200,
+          "status": "Shared pool · count once",
+          "sourceRef": "DEMO-DC-NORTHPORT"
+        }
+      ]
+    }
+  },
+  "bamboo": {
+    "scope": {
+      "mode": "in-season",
+      "reviewId": "PLR-SS26-FLOORING",
+      "version": "v1",
+      "productIds": [],
+      "storeIds": [],
+      "productSelection": "all",
+      "storeSelection": "all",
+      "population": "exposure",
+      "window": "SEASON",
+      "comparison": "ly",
+      "stockAsOf": "2026-07-31",
+      "rangeAsOf": "2026-07-31",
+      "uom": "SELLING_UNIT_TBC",
+      "access": "full",
+      "calendarId": "prototype-52-week-monday-v1",
+      "seasonId": "SS26",
+      "localFilters": {},
+      "productFacets": {
+        "subcategories": [
+          "Bamboo"
+        ]
+      }
+    },
+    "total": {
+      "sales": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": null,
+        "unit": "%",
+        "state": "no-positive-base",
+        "reason": "No positive comparison base; inspect absolute change."
+      },
+      "quantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": null,
+        "unit": "%",
+        "state": "no-positive-base",
+        "reason": "Denominator must be positive."
+      },
+      "ohCost": {
+        "value": 0,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": null,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "no-positive-base",
+        "reason": "Denominator must be positive."
+      },
+      "itemCount": 0,
+      "storeCount": 0,
+      "pairCount": 0,
+      "rangedPairCount": 0,
+      "stockoutPairCount": 0,
+      "openCaseCount": 0,
+      "impactedPairCount": 0,
+      "impactedSkuCount": 0,
+      "rangedSkuCount": 0,
+      "storeExposureWeeks": {
+        "value": 0,
+        "unit": "store-weeks",
+        "state": "ok"
+      },
+      "salesPerStoreWeek": {
+        "value": null,
+        "unit": "USD/store-week",
+        "state": "no-positive-base",
+        "reason": "Denominator must be positive."
+      }
+    }
+  },
+  "comp": {
+    "scope": {
+      "mode": "in-season",
+      "reviewId": "PLR-SS26-FLOORING",
+      "version": "v1",
+      "productIds": [],
+      "storeIds": [],
+      "productSelection": "all",
+      "storeSelection": "all",
+      "population": "exposure",
+      "window": "SEASON",
+      "comparison": "ly",
+      "stockAsOf": "2026-07-31",
+      "rangeAsOf": "2026-07-31",
+      "uom": "SELLING_UNIT_TBC",
+      "access": "full",
+      "calendarId": "prototype-52-week-monday-v1",
+      "seasonId": "SS26",
+      "localFilters": {},
+      "compPolicyId": "demo-flooring-comp-v1"
+    },
+    "policy": {
+      "actualWeekIds": [
+        "PW-131",
+        "PW-132",
+        "PW-133",
+        "PW-134",
+        "PW-135",
+        "PW-136",
+        "PW-137",
+        "PW-138",
+        "PW-139",
+        "PW-140",
+        "PW-141",
+        "PW-142",
+        "PW-143",
+        "PW-144",
+        "PW-145",
+        "PW-146",
+        "PW-147",
+        "PW-148",
+        "PW-149",
+        "PW-150",
+        "PW-151",
+        "PW-152",
+        "PW-153",
+        "PW-154",
+        "PW-155",
+        "PW-156"
+      ],
+      "comparisonWeekIds": [
+        "PW-079",
+        "PW-080",
+        "PW-081",
+        "PW-082",
+        "PW-083",
+        "PW-084",
+        "PW-085",
+        "PW-086",
+        "PW-087",
+        "PW-088",
+        "PW-089",
+        "PW-090",
+        "PW-091",
+        "PW-092",
+        "PW-093",
+        "PW-094",
+        "PW-095",
+        "PW-096",
+        "PW-097",
+        "PW-098",
+        "PW-099",
+        "PW-100",
+        "PW-101",
+        "PW-102",
+        "PW-103",
+        "PW-104"
+      ],
+      "cohortActualWeekIds": [
+        "PW-131",
+        "PW-132",
+        "PW-133",
+        "PW-134",
+        "PW-135",
+        "PW-136",
+        "PW-137",
+        "PW-138",
+        "PW-139",
+        "PW-140",
+        "PW-141",
+        "PW-142",
+        "PW-143",
+        "PW-144",
+        "PW-145",
+        "PW-146",
+        "PW-147",
+        "PW-148",
+        "PW-149",
+        "PW-150",
+        "PW-151",
+        "PW-152",
+        "PW-153",
+        "PW-154",
+        "PW-155",
+        "PW-156"
+      ],
+      "cohortComparisonWeekIds": [
+        "PW-079",
+        "PW-080",
+        "PW-081",
+        "PW-082",
+        "PW-083",
+        "PW-084",
+        "PW-085",
+        "PW-086",
+        "PW-087",
+        "PW-088",
+        "PW-089",
+        "PW-090",
+        "PW-091",
+        "PW-092",
+        "PW-093",
+        "PW-094",
+        "PW-095",
+        "PW-096",
+        "PW-097",
+        "PW-098",
+        "PW-099",
+        "PW-100",
+        "PW-101",
+        "PW-102",
+        "PW-103",
+        "PW-104"
+      ],
+      "cohortStoreIds": [
+        "ST1001",
+        "ST1002",
+        "ST1003",
+        "ST1004",
+        "ST1005",
+        "ST1006",
+        "ST1007",
+        "ST1008",
+        "ST1009",
+        "ST1010",
+        "ST1011",
+        "ST1012",
+        "ST1013",
+        "ST1014",
+        "ST1015",
+        "ST1016",
+        "ST1017",
+        "ST1018",
+        "ST1019",
+        "ST1020",
+        "ST1021",
+        "ST1022",
+        "ST1023",
+        "ST1024",
+        "ST1025",
+        "ST1026",
+        "ST1027",
+        "ST1028",
+        "ST1029",
+        "ST1030",
+        "ST1031",
+        "ST1032",
+        "ST1033",
+        "ST1034",
+        "ST1035",
+        "ST1036",
+        "ST1037",
+        "ST1038",
+        "ST1039",
+        "ST1040",
+        "ST1041",
+        "ST1042",
+        "ST1043",
+        "ST1044"
+      ],
+      "members": [
+        {
+          "storeId": "ST1001",
+          "storeName": "Houston, TX",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1002",
+          "storeName": "Dallas, TX",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1003",
+          "storeName": "Austin, TX",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1004",
+          "storeName": "San Antonio, TX",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1005",
+          "storeName": "Atlanta, GA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1006",
+          "storeName": "Savannah, GA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1007",
+          "storeName": "Charlotte, NC",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1008",
+          "storeName": "Raleigh, NC",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1009",
+          "storeName": "Nashville, TN",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1010",
+          "storeName": "Memphis, TN",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1011",
+          "storeName": "Orlando, FL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1012",
+          "storeName": "Tampa, FL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1013",
+          "storeName": "Miami, FL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1014",
+          "storeName": "Jacksonville, FL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1015",
+          "storeName": "Phoenix, AZ",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1016",
+          "storeName": "Tucson, AZ",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1017",
+          "storeName": "Denver, CO",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1018",
+          "storeName": "Salt Lake City, UT",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1019",
+          "storeName": "Las Vegas, NV",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1020",
+          "storeName": "Los Angeles, CA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1021",
+          "storeName": "San Diego, CA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1022",
+          "storeName": "Sacramento, CA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1023",
+          "storeName": "Portland, OR",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1024",
+          "storeName": "Seattle, WA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1025",
+          "storeName": "Chicago, IL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1026",
+          "storeName": "Indianapolis, IN",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1027",
+          "storeName": "Columbus, OH",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1028",
+          "storeName": "Cleveland, OH",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1029",
+          "storeName": "Detroit, MI",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1030",
+          "storeName": "Minneapolis, MN",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1031",
+          "storeName": "Kansas City, MO",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1032",
+          "storeName": "St. Louis, MO",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1033",
+          "storeName": "Oklahoma City, OK",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1034",
+          "storeName": "New Orleans, LA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1035",
+          "storeName": "Birmingham, AL",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1036",
+          "storeName": "Louisville, KY",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1037",
+          "storeName": "Pittsburgh, PA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1038",
+          "storeName": "Philadelphia, PA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1039",
+          "storeName": "Baltimore, MD",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1040",
+          "storeName": "Richmond, VA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1041",
+          "storeName": "Boston, MA",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1042",
+          "storeName": "Hartford, CT",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1043",
+          "storeName": "Newark, NJ",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1044",
+          "storeName": "Buffalo, NY",
+          "state": "included",
+          "reason": "Explicitly eligible and trading throughout the same actual and comparison windows."
+        },
+        {
+          "storeId": "ST1045",
+          "storeName": "Albany, NY",
+          "state": "excluded",
+          "reason": "Explicit demo holdout; no client exclusion is asserted."
+        }
+      ],
+      "anchored": false,
+      "policy": {
+        "id": "demo-flooring-comp-v1",
+        "version": "demo-1",
+        "name": "Demo Comp locations",
+        "status": "illustrative-governed",
+        "approval": "Illustrative policy only · not F&D approved",
+        "rationale": "The same explicitly eligible canonical stores must trade throughout both the actual and matched comparison windows. ST1045 is a declared rehearsal holdout; its exclusion is not an observed client policy.",
+        "effectiveFrom": "2023-07-31",
+        "effectiveTo": "2026-12-31",
+        "members": [
+          {
+            "storeId": "ST1001",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1002",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1003",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1004",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1005",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1006",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1007",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1008",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1009",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1010",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1011",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1012",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1013",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1014",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1015",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1016",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1017",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1018",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1019",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1020",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1021",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1022",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1023",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1024",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1025",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1026",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1027",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1028",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1029",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1030",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1031",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1032",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1033",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1034",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1035",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1036",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1037",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1038",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1039",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1040",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1041",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1042",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1043",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1044",
+            "state": "eligible",
+            "reason": "Explicit demo eligibility, subject to verified opening/closure dates in both windows.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          },
+          {
+            "storeId": "ST1045",
+            "state": "ineligible",
+            "reason": "Explicit demo holdout; no client exclusion is asserted.",
+            "validFrom": "2023-07-31",
+            "validTo": "2026-12-31"
+          }
+        ]
+      },
+      "state": "ready",
+      "valid": true,
+      "label": "Demo Comp locations",
+      "reason": "44 included, 1 excluded, 0 unknown eligibility. Identical stores are used for actual and comparison. Illustrative policy only · not F&D approved."
+    },
+    "total": {
+      "sales": {
+        "value": 8139313.95,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "comparisonSales": {
+        "value": 7621080.51,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesChange": {
+        "value": 6.79999954,
+        "unit": "%",
+        "state": "ok"
+      },
+      "quantity": {
+        "value": 176740,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 2572023.21,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 31.60000002,
+        "unit": "%",
+        "state": "ok"
+      },
+      "ohCost": {
+        "value": 2290326.42,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalOh": {
+        "value": 96448,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableOh": {
+        "value": 93179,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openInbound": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "velocity": {
+        "value": null,
+        "unit": "SELLING_UNIT_TBC/pair-week",
+        "state": "missing",
+        "reason": "Compatible numerator/exposure unavailable."
+      },
+      "itemCount": 72,
+      "storeCount": 44,
+      "pairCount": 3168,
+      "rangedPairCount": 3165,
+      "stockoutPairCount": 263,
+      "openCaseCount": 6,
+      "impactedPairCount": 6,
+      "impactedSkuCount": 6,
+      "rangedSkuCount": 72,
+      "storeExposureWeeks": {
+        "value": 1144,
+        "unit": "store-weeks",
+        "state": "ok"
+      },
+      "salesPerStoreWeek": {
+        "value": 7114.78492133,
+        "unit": "USD/store-week",
+        "state": "ok"
+      }
+    }
+  },
+  "matrixLast": {
+    "item": {
+      "id": "1000000",
+      "article": "MAV-RO-WB",
+      "name": "Maverick Red Oak Wire-Brushed Solid Hardwood",
+      "description": "Maverick",
+      "category": "Hardwood",
+      "subcategory": "Solid Hardwood",
+      "brand": "Woodland Reserve",
+      "color": "Natural",
+      "finish": "Wire-Brushed",
+      "species": "Red Oak",
+      "gbb": null,
+      "uom": "SELLING_UNIT_TBC",
+      "lifecycle": "Active",
+      "focusGroups": [],
+      "vendor": "Unknown",
+      "provenance": "illustrative-demo",
+      "imageUrl": "/demo-flooring/1000000.svg",
+      "sourceMip": null,
+      "sourceMipStatus": "unavailable",
+      "allocatedAreaSqFt": 168,
+      "definitionStatus": "Synthetic · definition TBC"
+    },
+    "store": {
+      "id": "ST1045",
+      "name": "Albany, NY",
+      "cluster": "A",
+      "region": "Unknown",
+      "district": "Unknown",
+      "market": "Albany, NY",
+      "openedOn": "2018-01-01",
+      "channel": "Store"
+    }
+  },
+  "cases": [
+    {
+      "id": "FQ01",
+      "title": "Shortages review ·1000037 at ST1001",
+      "itemId": "1000037",
+      "storeId": "ST1001",
+      "priority": "Critical",
+      "queue": "Shortages",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-shortages",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K06",
+      "actual": {
+        "value": 0,
+        "state": "ok",
+        "unit": "SELLING_UNIT_TBC"
+      },
+      "threshold": "Ranged and zero sellable stock",
+      "observation": "Northport chain product sales are $1.6M for SS26, -29.3% vs matched LY. This Houston pair has zero sellable stock; blocked physical stock is unavailable. Existing inbound 200 and shared DC 900 are separate. Current pair facts below use the applied period and comparator.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000037:ST1001",
+        "PO-NORTHPORT-200",
+        "DC-NORTHPORT-900"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    },
+    {
+      "id": "FQ02",
+      "title": "Coverage/excess review ·1000444 at ST1001",
+      "itemId": "1000444",
+      "storeId": "ST1001",
+      "priority": "High",
+      "queue": "Coverage/excess",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-coverage-excess",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K56",
+      "actual": {
+        "value": 1476.11,
+        "state": "ok",
+        "unit": "USD"
+      },
+      "threshold": "Merchant review candidate; production predicate not confirmed",
+      "observation": "Synthetic case demonstrates review workflow; this is not a claimed validated exception rule.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000444:ST1001"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    },
+    {
+      "id": "FQ03",
+      "title": "New item review ·1000074 at ST1002",
+      "itemId": "1000074",
+      "storeId": "ST1002",
+      "priority": "High",
+      "queue": "New item",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-new-item",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K56",
+      "actual": {
+        "value": 3044.04,
+        "state": "ok",
+        "unit": "USD"
+      },
+      "threshold": "Merchant review candidate; production predicate not confirmed",
+      "observation": "Synthetic case demonstrates review workflow; this is not a claimed validated exception rule.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000074:ST1002"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    },
+    {
+      "id": "FQ04",
+      "title": "Nonproductive review ·1000481 at ST1003",
+      "itemId": "1000481",
+      "storeId": "ST1003",
+      "priority": "Watch",
+      "queue": "Nonproductive",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-nonproductive",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K56",
+      "actual": {
+        "value": 2130.25,
+        "state": "ok",
+        "unit": "USD"
+      },
+      "threshold": "Merchant review candidate; production predicate not confirmed",
+      "observation": "Synthetic case demonstrates review workflow; this is not a claimed validated exception rule.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000481:ST1003"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    },
+    {
+      "id": "FQ05",
+      "title": "Bulk out review ·1000518 at ST1004",
+      "itemId": "1000518",
+      "storeId": "ST1004",
+      "priority": "Watch",
+      "queue": "Bulk out",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-bulk-out",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K56",
+      "actual": {
+        "value": 1212.06,
+        "state": "ok",
+        "unit": "USD"
+      },
+      "threshold": "Merchant review candidate; production predicate not confirmed",
+      "observation": "Synthetic case demonstrates review workflow; this is not a claimed validated exception rule.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000518:ST1004"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    },
+    {
+      "id": "FQ06",
+      "title": "Lifecycle/exit review ·1000592 at ST1005",
+      "itemId": "1000592",
+      "storeId": "ST1005",
+      "priority": "Watch",
+      "queue": "Lifecycle/exit",
+      "state": "Open",
+      "owner": "Demo category merchant",
+      "reviewDate": "2026-08-07",
+      "ruleId": "demo-lifecycle-exit",
+      "ruleVersion": "illustrative-v2",
+      "metric": "K56",
+      "actual": {
+        "value": 2168.48,
+        "state": "ok",
+        "unit": "USD"
+      },
+      "threshold": "Merchant review candidate; production predicate not confirmed",
+      "observation": "Synthetic case demonstrates review workflow; this is not a claimed validated exception rule.",
+      "hypothesis": "Confirm demand, membership, supply and field evidence before choosing an action.",
+      "evidenceIds": [
+        "1000592:ST1005"
+      ],
+      "evaluatedAt": "2026-08-01T06:00:00Z",
+      "evaluationScope": {
+        "window": "SEASON",
+        "stockAsOf": "2026-07-31",
+        "rangeAsOf": "2026-07-31",
+        "dataVersion": "flooring-ledger-ss26-v2"
+      }
+    }
+  ]
+}

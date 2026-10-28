@@ -1,0 +1,3979 @@
+{
+  "title": "Current R67 native final QA runbook",
+  "generatedAtUTC": "2026-10-28T05:26:59.643484+00:00",
+  "status": "Plan only \u2014 no native execution performed by this runbook author",
+  "counts": {
+    "screens": 28,
+    "workflows": 12,
+    "metricInvariants": 30,
+    "requirements": 90,
+    "orderedNativeRuns": 12,
+    "priorTargetedNativeChecks": 18
+  },
+  "currentSourceHashes": {
+    "src/modules/hindsight/redesign/WorkspacePage.tsx": "10f0f49e56cda1dfb0dd75af2aee72d56bac80a09cffe7d9d33d68a248b0e88d",
+    "src/modules/hindsight/redesign/components/GlobalFilterDrawer.tsx": "033626432e6ce05361461a1feaf666ae0aa4961cf1974a0797ea29e7c357e2cd",
+    "src/modules/hindsight/redesign/components/ui.tsx": "7b46c4a5bd7c27dc7d730b8faaeb1d062efcda93c85758f3a8b57184e044e08c",
+    "src/modules/hindsight/redesign/components/IrisWorkspace.tsx": "89328624f9986ef06a60b916fab77b632813d2c905ccc41784edda71bb7673e2",
+    "src/modules/hindsight/redesign/views/ConfigurationDialog.tsx": "6c9eabf0db23df45dbca92b18cb3fb47100af6d56dda22e6efec11742dc02244",
+    "src/modules/hindsight/redesign/data/story-contract.json": "185c48d3e557e05f6b66600c2d715547799c2c7f82d6dbf3b6ddecc541e2354b"
+  },
+  "buildGate": "Root must record actual final served JS/CSS and package hash. Historical BRsf/Dz7/6Hi/O-d/D9 builds are prior targeted evidence, not this final integration.",
+  "canonicalData": {
+    "version": "flooring-ledger-ss26-v2",
+    "source": "native-expected-facts.json generated from actual selectors; not browser proof",
+    "mainStory": "72flooring styles/45stores; selling units definition TBC; prototype calendar; explicit illustrative data",
+    "expectedNumbers": {
+      "R4": {
+        "scope": {
+          "mode": "in-season",
+          "reviewId": "PLR-SS26-FLOORING",
+          "version": "v1",
+          "productIds": [],
+          "storeIds": [],
+          "productSelection": "all",
+          "storeSelection": "all",
+          "population": "exposure",
+          "window": "R4",
+          "comparison": "ly",
+          "stockAsOf": "2026-07-31",
+          "rangeAsOf": "2026-07-31",
+          "uom": "SELLING_UNIT_TBC",
+          "access": "full",
+          "calendarId": "prototype-52-week-monday-v1",
+          "seasonId": "SS26",
+          "localFilters": {}
+        },
+        "dates": [
+          "2026-06-29",
+          "2026-07-26"
+        ],
+        "weekCount": 4,
+        "total": {
+          "sales": {
+            "value": 845799.66,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "comparisonSales": {
+            "value": 791947.31,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "salesChange": {
+            "value": 6.79999153,
+            "unit": "%",
+            "state": "ok"
+          },
+          "quantity": {
+            "value": 18358,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "gmDollars": {
+            "value": 267272.56,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "gmRate": {
+            "value": 31.59998433,
+            "unit": "%",
+            "state": "ok"
+          },
+          "ohCost": {
+            "value": 2353139.2,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "physicalOh": {
+            "value": 99081,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "sellableOh": {
+            "value": 95707,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "openInbound": {
+            "value": 200,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "velocity": {
+            "value": null,
+            "unit": "SELLING_UNIT_TBC/pair-week",
+            "state": "missing",
+            "reason": "Compatible numerator/exposure unavailable."
+          },
+          "itemCount": 72,
+          "storeCount": 45,
+          "pairCount": 3240,
+          "rangedPairCount": 3237,
+          "stockoutPairCount": 276,
+          "openCaseCount": 6,
+          "impactedPairCount": 6,
+          "impactedSkuCount": 6,
+          "rangedSkuCount": 72,
+          "storeExposureWeeks": {
+            "value": 180,
+            "unit": "store-weeks",
+            "state": "ok"
+          },
+          "salesPerStoreWeek": {
+            "value": 4698.887,
+            "unit": "USD/store-week",
+            "state": "ok"
+          }
+        }
+      },
+      "R13": {
+        "scope": {
+          "mode": "in-season",
+          "reviewId": "PLR-SS26-FLOORING",
+          "version": "v1",
+          "productIds": [],
+          "storeIds": [],
+          "productSelection": "all",
+          "storeSelection": "all",
+          "population": "exposure",
+          "window": "R13",
+          "comparison": "ly",
+          "stockAsOf": "2026-07-31",
+          "rangeAsOf": "2026-07-31",
+          "uom": "SELLING_UNIT_TBC",
+          "access": "full",
+          "calendarId": "prototype-52-week-monday-v1",
+          "seasonId": "SS26",
+          "localFilters": {}
+        },
+        "dates": [
+          "2026-04-27",
+          "2026-07-26"
+        ],
+        "weekCount": 13,
+        "total": {
+          "sales": {
+            "value": 3504027.54,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "comparisonSales": {
+            "value": 3280924.71,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "salesChange": {
+            "value": 6.79999847,
+            "unit": "%",
+            "state": "ok"
+          },
+          "quantity": {
+            "value": 76070,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "gmDollars": {
+            "value": 1107272.6,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "gmRate": {
+            "value": 31.59999707,
+            "unit": "%",
+            "state": "ok"
+          },
+          "ohCost": {
+            "value": 2353139.2,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "physicalOh": {
+            "value": 99081,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "sellableOh": {
+            "value": 95707,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "openInbound": {
+            "value": 200,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "velocity": {
+            "value": null,
+            "unit": "SELLING_UNIT_TBC/pair-week",
+            "state": "missing",
+            "reason": "Compatible numerator/exposure unavailable."
+          },
+          "itemCount": 72,
+          "storeCount": 45,
+          "pairCount": 3240,
+          "rangedPairCount": 3237,
+          "stockoutPairCount": 276,
+          "openCaseCount": 6,
+          "impactedPairCount": 6,
+          "impactedSkuCount": 6,
+          "rangedSkuCount": 72,
+          "storeExposureWeeks": {
+            "value": 585,
+            "unit": "store-weeks",
+            "state": "ok"
+          },
+          "salesPerStoreWeek": {
+            "value": 5989.79066667,
+            "unit": "USD/store-week",
+            "state": "ok"
+          }
+        }
+      },
+      "R52": {
+        "scope": {
+          "mode": "in-season",
+          "reviewId": "PLR-SS26-FLOORING",
+          "version": "v1",
+          "productIds": [],
+          "storeIds": [],
+          "productSelection": "all",
+          "storeSelection": "all",
+          "population": "exposure",
+          "window": "R52",
+          "comparison": "ly",
+          "stockAsOf": "2026-07-31",
+          "rangeAsOf": "2026-07-31",
+          "uom": "SELLING_UNIT_TBC",
+          "access": "full",
+          "calendarId": "prototype-52-week-monday-v1",
+          "seasonId": "SS26",
+          "localFilters": {}
+        },
+        "dates": [
+          "2025-07-28",
+          "2026-07-26"
+        ],
+        "weekCount": 52,
+        "total": {
+          "sales": {
+            "value": 15691973.05,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "comparisonSales": {
+            "value": 14646045.21,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "salesChange": {
+            "value": 7.141367,
+            "unit": "%",
+            "state": "ok"
+          },
+          "quantity": {
+            "value": 341246,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "gmDollars": {
+            "value": 4979084.32,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "gmRate": {
+            "value": 31.73013555,
+            "unit": "%",
+            "state": "ok"
+          },
+          "ohCost": {
+            "value": 2353139.2,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "physicalOh": {
+            "value": 99081,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "sellableOh": {
+            "value": 95707,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "openInbound": {
+            "value": 200,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "velocity": {
+            "value": null,
+            "unit": "SELLING_UNIT_TBC/pair-week",
+            "state": "missing",
+            "reason": "Compatible numerator/exposure unavailable."
+          },
+          "itemCount": 72,
+          "storeCount": 45,
+          "pairCount": 3240,
+          "rangedPairCount": 3237,
+          "stockoutPairCount": 276,
+          "openCaseCount": 6,
+          "impactedPairCount": 6,
+          "impactedSkuCount": 6,
+          "rangedSkuCount": 72,
+          "storeExposureWeeks": {
+            "value": 2340,
+            "unit": "store-weeks",
+            "state": "ok"
+          },
+          "salesPerStoreWeek": {
+            "value": 6705.97138889,
+            "unit": "USD/store-week",
+            "state": "ok"
+          }
+        }
+      },
+      "SEASON": {
+        "scope": {
+          "mode": "in-season",
+          "reviewId": "PLR-SS26-FLOORING",
+          "version": "v1",
+          "productIds": [],
+          "storeIds": [],
+          "productSelection": "all",
+          "storeSelection": "all",
+          "population": "exposure",
+          "window": "SEASON",
+          "comparison": "ly",
+          "stockAsOf": "2026-07-31",
+          "rangeAsOf": "2026-07-31",
+          "uom": "SELLING_UNIT_TBC",
+          "access": "full",
+          "calendarId": "prototype-52-week-monday-v1",
+          "seasonId": "SS26",
+          "localFilters": {}
+        },
+        "dates": [
+          "2026-01-26",
+          "2026-07-26"
+        ],
+        "weekCount": 26,
+        "total": {
+          "sales": {
+            "value": 8400000,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "comparisonSales": {
+            "value": 7865168.54,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "salesChange": {
+            "value": 6.79999999,
+            "unit": "%",
+            "state": "ok"
+          },
+          "quantity": {
+            "value": 182400,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "gmDollars": {
+            "value": 2654400,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "gmRate": {
+            "value": 31.6,
+            "unit": "%",
+            "state": "ok"
+          },
+          "ohCost": {
+            "value": 2353139.2,
+            "unit": "USD",
+            "state": "ok"
+          },
+          "physicalOh": {
+            "value": 99081,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "sellableOh": {
+            "value": 95707,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "openInbound": {
+            "value": 200,
+            "unit": "SELLING_UNIT_TBC",
+            "state": "ok"
+          },
+          "velocity": {
+            "value": null,
+            "unit": "SELLING_UNIT_TBC/pair-week",
+            "state": "missing",
+            "reason": "Compatible numerator/exposure unavailable."
+          },
+          "itemCount": 72,
+          "storeCount": 45,
+          "pairCount": 3240,
+          "rangedPairCount": 3237,
+          "stockoutPairCount": 276,
+          "openCaseCount": 6,
+          "impactedPairCount": 6,
+          "impactedSkuCount": 6,
+          "rangedSkuCount": 72,
+          "storeExposureWeeks": {
+            "value": 1170,
+            "unit": "store-weeks",
+            "state": "ok"
+          },
+          "salesPerStoreWeek": {
+            "value": 7179.48717949,
+            "unit": "USD/store-week",
+            "state": "ok"
+          }
+        }
+      }
+    },
+    "plrSummary": {
+      "connected": true,
+      "originalVersionId": "v1",
+      "selectedVersionId": "v1",
+      "sellingStart": "2026-01-26",
+      "sellingEnd": "2026-07-31",
+      "originalPairCount": 2970,
+      "selectedOriginalPairCount": 2970,
+      "duePairs": 2968,
+      "onTimePairs": 2964,
+      "latePairs": 2,
+      "notActivatedPairs": 1,
+      "notYetDuePairs": 2,
+      "unknownHistoryPairs": 1,
+      "executionRate": {
+        "value": null,
+        "unit": "%",
+        "state": "unknown",
+        "reason": "Unknown history; show explicit bounds."
+      },
+      "executionBounds": {
+        "lower": 99.86522911051213,
+        "upper": 99.8989218328841
+      },
+      "actualSales": {
+        "value": 8373352.01,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "originalSalesPlan": {
+        "value": 8800000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "revisedSalesPlan": {
+        "value": 8100000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "salesVariance": {
+        "value": -426647.99,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "laterAdditionSales": {
+        "value": 26647.99,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "totalRealizedSales": {
+        "value": 8400000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "actualQuantity": {
+        "value": 181746,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "demandPlanQuantity": {
+        "value": 200000,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "gmDollars": {
+        "value": 2642938.2,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "gmRate": {
+        "value": 31.56368199,
+        "unit": "%",
+        "state": "ok"
+      },
+      "plannedGmRate": {
+        "value": 32,
+        "unit": "%",
+        "state": "ok"
+      },
+      "gmGapPp": {
+        "value": -0.43631801,
+        "unit": "pp",
+        "state": "ok"
+      },
+      "supplyAvailable": {
+        "value": 280388,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellThrough": {
+        "value": 64.81946446,
+        "unit": "%",
+        "state": "ok"
+      },
+      "endingInventoryCost": {
+        "value": 2341747.8,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "plannedEndingInventoryCost": {
+        "value": 2400000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "approvedBuyQuantity": {
+        "value": 300000,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "receivedQuantity": {
+        "value": 225458,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "transferInQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "transferOutQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "adjustmentQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "customerReturnQuantity": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "expectedPhysicalEndingQuantity": {
+        "value": 98642,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "physicalEndingQuantity": {
+        "value": 98642,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "sellableEndingQuantity": {
+        "value": 95268,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "blockedEndingQuantity": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openingQuantity": {
+        "value": 54930,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "openOrderQuantity": {
+        "value": 200,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "exceptions": [
+        {
+          "pairId": "1000074:ST1002",
+          "state": "Late",
+          "targetDate": "2026-01-26",
+          "activatedOn": "2026-02-02"
+        },
+        {
+          "pairId": "1000481:ST1003",
+          "state": "Late",
+          "targetDate": "2026-01-26",
+          "activatedOn": "2026-02-02"
+        },
+        {
+          "pairId": "1000518:ST1004",
+          "state": "Not activated",
+          "targetDate": "2026-01-26"
+        },
+        {
+          "pairId": "1000592:ST1005",
+          "state": "History unavailable",
+          "targetDate": "2026-01-26"
+        },
+        {
+          "pairId": "1000555:ST1006",
+          "state": "Not yet due",
+          "targetDate": "2026-08-03",
+          "activatedOn": "2026-01-26"
+        },
+        {
+          "pairId": "1000666:ST1007",
+          "state": "Not yet due",
+          "targetDate": "2026-08-03",
+          "activatedOn": "2026-01-26"
+        }
+      ],
+      "warnings": [
+        "Unknown history suppresses verified execution rate.",
+        "Original approval and latest all-population plan have different cohorts.",
+        "Prototype calendar and selling-unit definition require confirmation."
+      ],
+      "elapsedWeeks": 26,
+      "plannedWeeks": 26,
+      "latestPlanAllSales": {
+        "value": 8600000,
+        "unit": "USD",
+        "state": "ok"
+      },
+      "physicalFlowDifference": {
+        "value": 0,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      },
+      "blockedQuantity": {
+        "value": 3374,
+        "unit": "SELLING_UNIT_TBC",
+        "state": "ok"
+      }
+    },
+    "compSeason": {
+      "stores": 44,
+      "pairs": 3168,
+      "sales": 8139313.95
+    }
+  },
+  "approvedInterpretations": [
+    "Three primary tabs Overview/DeepDive/Decisions; six Deep Dive presets; Sales Mix under Overview and Attributes. The matrix original five-tab text is superseded.",
+    "Main 72\u00d745canonical ledger replaces visible 4\u00d74numeric examples. Original P101/S102/$24K/$48Kstories remain separate algorithm controls; do not treat them as native expectations.",
+    "Source/model/vendor DOM/calculation/native/export/package evidence are distinct. A source implemented clause does not become a native pass just because its run is mapped."
+  ],
+  "priorNativeEvidence": {
+    "path": "qa/redesign/browser-r67/design-alignment-native-checks.json",
+    "kind": "Native Chrome via CUA; targeted design/workflow checks, not blanket acceptance",
+    "count": 18,
+    "builds": [
+      "WorkspacePage-BRsfN0d2.js",
+      "WorkspacePage-Dz7icKqA.js",
+      "WorkspacePage-6Hi_2OZ6.js",
+      "WorkspacePage--O-dJ-dt.js",
+      "WorkspacePage-D9KGTDPl.js"
+    ],
+    "checks": [
+      {
+        "name": "Original reference comparison",
+        "observation": "Original preserved priority5176 inspected in Chrome; shared KPI assets/Manrope/Impact controls/filter tags/tabs/grid reused. Appearance alignment is ongoing, not full R67 signoff.",
+        "pass": true
+      },
+      {
+        "name": "Trend toolbar1440",
+        "observation": "Four actual dropdown trigger widths180 with non-overlapping x163.16,391.96,618.88,829.20 after zero-width adapter repair.",
+        "pass": true
+      },
+      {
+        "name": "Breadcrumb route persistence",
+        "observation": "Review mode remains present after Deep Dive / By Item / By Store / matrix navigation.",
+        "pass": true
+      },
+      {
+        "name": "Compact quantity cells",
+        "observation": "By Item/Store show complete numeric quantity with human selling-unit note; no repeated suffix clipping leading digits.",
+        "pass": true
+      },
+      {
+        "name": "Original filter drawer desktop/phone",
+        "observation": "Original FilterPanel sections, checkboxes, search and fixed Apply/Cancel observed at1440 and390; phone footer remains visible.",
+        "pass": true
+      },
+      {
+        "name": "Filter cancel",
+        "observation": "Changed category draft then Cancel; global72styles/45stores and original2970pair scope retained.",
+        "pass": true
+      },
+      {
+        "name": "Primary tabs390",
+        "observation": "Overview/Deep Dive/Decisions each100px, x77/177/277 and right377 within390; document scrollWidth390.",
+        "pass": true
+      },
+      {
+        "name": "Phone cards/trend",
+        "observation": "Original tiles stack; trend dropdowns wrap and chart stays within card at390.",
+        "pass": true
+      },
+      {
+        "name": "Mix drill and Back",
+        "observation": "Woodland Reserve PLR group drills to18styles/45stores/$2,299,988/44,816; browser Back restores Sales Mix and clears drill context.",
+        "pass": true
+      },
+      {
+        "name": "Iris timestamps",
+        "observation": "Actual original chat host shows Today and valid local time after source timestamp fix.",
+        "pass": true
+      },
+      {
+        "name": "Iris keyboard width",
+        "observation": "Desktop panel448px; End key changes aria-valuenow to640.",
+        "pass": true
+      },
+      {
+        "name": "Iris phone bounds",
+        "observation": "Viewport390: panel374px x8, Close x348 width24; Send and Close visible. Actual Close click removes composer.",
+        "pass": true
+      },
+      {
+        "name": "Iris after filter cancellation",
+        "observation": "Cancel with settled DOM followed by header Enter opens panel. Earlier rapid batched click failed; no lost-state defect reproduced with settled boundary.",
+        "pass": true
+      },
+      {
+        "name": "Draft permission boundary",
+        "observation": "Merchant saved D001 Keep for exactly1000037:ST1001 and submitted to Awaiting approval; approval disabled for merchant.",
+        "pass": true
+      },
+      {
+        "name": "Approval boundary",
+        "observation": "Local approver role enables approval; approval transitions to Awaiting execution with0completed/1pending and no execution reference.",
+        "pass": true
+      },
+      {
+        "name": "Acknowledgement permission",
+        "observation": "Approver cannot record local execution. Administrator can use explicitly labeled simulation with SIM-reference and exact pair completion.",
+        "pass": true
+      },
+      {
+        "name": "Review and carry-forward source",
+        "observation": "D001 simulated acknowledgement becomes Executed1completed/0pending; qualified baseline-only review saved as Reviewed with Accepted low-confidence learning targetingPLR-SS27-FLOORING. Incoming register native check pending next build.",
+        "pass": true
+      },
+      {
+        "name": "Frozen PLR after closure",
+        "observation": "Closing reviewedFQ01 leaves original plan8,800,000 /original actual8,373,352 /additions26,648 /realized8,400,000 unchanged.",
+        "pass": true
+      }
+    ],
+    "interpretation": "18 targeted historical observations. Replay the affected flows on the final build; especially Summary comparison, accepted learning register, Comp, report lifecycle, Iris ambiguity and phone suggestion wrap were newer integration areas."
+  },
+  "executionProtocol": [
+    "Use native Chrome/CUA as root owns; no hidden browser automation or source DOM injection required.",
+    "Capture build,URL,viewport,mode,scope chips,independent dates,local cut,role/access,and action/resultfor each assertion. Record theactual loadedbuild after each material fix.",
+    "Use settled DOM before dependent actions; a click attempt during a transition isnot a passed action.",
+    "Preservation journeys must not reset storage between origin/drill/Back/export. Reset only deliberately at NR01 or after archiving record evidence.",
+    "Log failures honestly, repair and replay affected checks. Keep original failures as historical and final repaired proof separate.",
+    "Inspect actual downloaded files independently; generated helper workbooks are notactual UI-download proof.",
+    "A visual surface capture does not prove controls not exercised; use appropriate existing model proof for calculation invariants rather than requiring manual inspection of all 3240leaves."
+  ],
+  "runs": [
+    {
+      "id": "NR01",
+      "title": "Cold boot, shell and PLR scorecard",
+      "status": "planned_not_executed",
+      "startScope": "Clean session; PLR Review; approved original v1; full 26-week prefix; 31 Jul stock/range; all product/location filters; full access; merchant",
+      "accessibleControls": [
+        "Hindsight page options",
+        "Reset local design session",
+        "PLR Review",
+        "In-season Review",
+        "Overview",
+        "Deep Dive",
+        "Decisions",
+        "Customize Summary cards",
+        "Definition of Original-cohort sales"
+      ],
+      "actions": [
+        "Record actual URL, loaded JS/CSS hashes and viewport before testing. If reusing a session, explicitly use Hindsight page options \u2192 Reset local design session once; do not reset again during preservation tests.",
+        "Open /assort/hindsight?mode=plr at 1440\u00d7900. Confirm exactly the three approved primary tabs. Scroll the entire Overview and identify all six Summary slots, trend, variance, supply, launch exceptions, events, learning and Investigate.",
+        "Open one Summary definition then close it with Escape. Each default card must name its comparator/reference or explain why unavailable; full values must be available without clipped digits.",
+        "Switch Deep Dive \u2192 By Item \u2192 By Store \u2192 Item \u00d7 Store, then return Overview. Review-mode controls must persist in the breadcrumb. Check canonical detail URL refresh and one legacy /agentic-assort/hindsight compatibility boot at the final package stage."
+      ],
+      "expected": [
+        "PLR original actual $8,373,352.01 against original plan $8,800,000; original cohort 66 styles / 2,970 pairs, not all 72 current styles.",
+        "PLR quantity 181,746 versus demand 200,000; GM31.56368199% versus planned 32% (gap\u22120.43631801 pp); ending cost $2,341,747.80 versus planned $2,400,000.",
+        "Global product master can still say 72 styles while the named original approval contains 66. No P101/P104 or $24K example is expected in the visible main dataset.",
+        "No apparel fallback, broken assets, obstructive badge, console exception or uncontrolled document overflow."
+      ],
+      "capture": [
+        "overview-plr-desktop",
+        "overview-plr-lower",
+        "definition-desktop"
+      ],
+      "priorTargetedEvidence": [
+        "Original reference comparison",
+        "Breadcrumb route persistence",
+        "Trend toolbar1440"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR02",
+      "title": "PLR cohort, supply, dated events and learning",
+      "status": "planned_not_executed",
+      "startScope": "Continue NR01, original v1; preserve original facts while changing a named overlay or review cutoff",
+      "accessibleControls": [
+        "All filters",
+        "Time and comparison",
+        "PLR review cutoff",
+        "Named plan overlay",
+        "Apply",
+        "Cancel",
+        "Trend measure",
+        "Trend grain",
+        "Trend interval start",
+        "Trend interval end",
+        "Inspect selected interval",
+        "Reset interval",
+        "Inspect launch exceptions (6)",
+        "Inspect affected pairs",
+        "Save pending learning",
+        "Accept reviewed learning",
+        "PLR learnings",
+        "For next PLR",
+        "Learning destination PLR",
+        "Open origin PLR"
+      ],
+      "actions": [
+        "Inspect Original plan, revisions and later additions: switch the named overlay to v2 and inspect it separately; original v1 remains the evaluation baseline.",
+        "Read the complete Demand, buy and available supply ledger and launch exception list. Open one exception to the same pair, then Back. Open a dated event/source record and its affected-pair drill; Back restores the interval.",
+        "Use PLR review cutoff to choose an earlier complete-week prefix, Apply, and confirm start remains 26 Jan. A missing historical EOP snapshot must remain unavailable, never silently use 31 Jul. Restore the full prefix.",
+        "Choose one trend interval and Inspect selected interval. Its local chip and exact week/pair cut must appear in Deep Dive; global approved PLR calendar stays pinned. Back restores trend settings.",
+        "If no reviewed learning was retained from NR09, save an explicitly illustrative Pending learning with an owner, evidence, conclusion and destination PLR-SS27-FLOORING. Use an authorized approver/administrator via Demo settings to accept it. Decisions \u2192 PLR learnings \u2192 For next PLR must show accepted-only carry-forward and Open origin PLR."
+      ],
+      "expected": [
+        "Original actual $8,373,352.01 + later additions $26,647.99 = realized $8,400,000. Same-cohort revision plan $8,100,000; latest all 72 plan $8,600,000 is separately named.",
+        "Opening 54,930 + receipts 225,458 = available 280,388; minus net sold 181,746 = physical 98,642 = sellable 95,268 + blocked 3,374. Open orders 200 remain excluded. Demand 200,000 and approved buy 300,000 are separate.",
+        "2,968 due:2,964 on time,2 late,1 due not activated,1 unknown;2 additional not yet due. Verified execution rate remains Unknown with explicit bounds, not a falsely exact percentage.",
+        "Learning/notes/closure/overlay changes never rewrite approval or sales facts. Future destination reading does not invent a connected future PLR."
+      ],
+      "capture": [
+        "plr-variance-supply",
+        "plr-event-evidence",
+        "plr-learning-register"
+      ],
+      "priorTargetedEvidence": [
+        "Frozen PLR after closure",
+        "Review and carry-forward source"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR03",
+      "title": "Tactical periods, atomic filters and Comp",
+      "status": "planned_not_executed",
+      "startScope": "In-season Review; canonical baseline; first R4, then Season; no Comp initially; original independent dates 31 Jul",
+      "accessibleControls": [
+        "In-season Review",
+        "All filters",
+        "Products",
+        "Locations",
+        "Time and comparison",
+        "Sales window",
+        "Primary comparator",
+        "Quantity display",
+        "Inventory snapshot",
+        "Range as-of",
+        "Apply",
+        "Cancel",
+        "Reset",
+        "Location comparison basis",
+        "Inspect Comp policy and exact cohort",
+        "Export policy evidence"
+      ],
+      "actions": [
+        "Confirm default R4, then use Time and comparison \u2192 Sales window \u2192 Season \u2192 Apply. Capture Overview, By Item footer and By Store footer against the same scope.",
+        "Stage Category/Subcategory/SKU and Region/District/store changes; inspect invalidated-child warning where applicable. Cancel and reopen to prove the applied state is unchanged. Then Apply Bamboo once; clear it explicitly for later runs.",
+        "In Season, choose Locations \u2192 Location comparison basis \u2192 Demo Comp locations \u00b7 demo-1. Inspect exact eligibility/holdout reason; Cancel once, then Apply. Compare the same eligible stores in TY and LY; export policy evidence.",
+        "Choose Primary comparator \u2192 No comparison while Comp is selected: Apply must be blocked with an explicit reason. Clear Comp to All selected locations, then apply. Check PLR cannot select tactical Comp. Return In-season/Season/all locations/LY.",
+        "Exercise R13 and R52, then restore Season. Check stock/range date does not move. Test one custom complete-week selection and incompatible confirmed UOM; do not infer SQFT from selling units."
+      ],
+      "expected": [
+        "R4:29 Jun\u201326 Jul,4 weeks,$845,799.66,18,358 selling units; matched LY$791,947.31; about+6.8%. Season:26 Jan\u201326 Jul,26 weeks,$8,400,000,182,400 selling units,31.6% GM,$2,353,139.20 OH cost.",
+        "R13:$3,504,027.54 /76,070; R52:$15,691,973.05 /341,246. The stock snapshot remains 31 Jul.",
+        "All-location season:72 styles,45 stores,3,240 exposure pairs,6 open cases on 6 SKUs/6 pairs. Current ranged pairs 3,237 and valid ranged stockouts 276.",
+        "Bamboo:12 styles,$1,049,808.28,23,836 selling units; Northport 1000037 is absent. Scope is visibly local/global as appropriate.",
+        "Demo Comp season:44 stores /3,168 pairs /$8,139,313.95. ST1045 is the explicit synthetic holdout; the policy is not F&D approved. Clearing returns 45 stores/$8.4M."
+      ],
+      "capture": [
+        "tactical-season-overview",
+        "filter-comp-desktop",
+        "filter-bamboo-applied"
+      ],
+      "priorTargetedEvidence": [
+        "Filter cancel",
+        "Original filter drawer desktop/phone"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR04",
+      "title": "By Item table, cards, typed filters and leaderboard",
+      "status": "planned_not_executed",
+      "startScope": "In-season/Season/all 72/all 45/LY; merchant; no local chip",
+      "accessibleControls": [
+        "Deep Dive",
+        "By Item",
+        "Table",
+        "Cards",
+        "Search items",
+        "Item table preset",
+        "Group items",
+        "Filter working decision",
+        "Metric filters",
+        "Add condition",
+        "Condition 1 metric",
+        "Condition 1 operator",
+        "Condition 1 value",
+        "Condition 1 upper bound",
+        "Filter condition combination",
+        "Clear conditions",
+        "Choose columns",
+        "Search columns and source aliases",
+        "Done",
+        "Leaderboard metric",
+        "Leaderboard limit",
+        "Export evidence"
+      ],
+      "actions": [
+        "Verify Sales and stock compact default; search 1000037, clear; sort Net sales ascending/descending with keyboard; select a row, hide one optional column, group by Subcategory and collapse/reopen a group. Preserve this state for NR05/NR11.",
+        "Choose Velocity and exposure, Lifecycle and focus and Source parity \u00b7 pending definitions. Search the column chooser for MIP, PWPS and OH CST$; exact source aliases remain searchable with honest Definition pending.",
+        "Add a Between inclusive Net sales condition with valid raw bounds; reverse them to check validation/no matching rows, then repair. Add a second condition and switch AND/OR. Exercise Missing / unknown and No positive comparison base against the corresponding explicit scenario in NR12, not by coercing blanks to 0.",
+        "Switch Cards and page to all 72; enlarge a material illustration with its Enlarge \u2026 material illustration button. Escape closes image-only zoom and returns focus. Product-name click opens Item Detail instead.",
+        "Change Leaderboard metric and limit; order desc/ties canonical ID. Export evidence after a local search/sort cut; leave its file for NR11 independent parsing."
+      ],
+      "expected": [
+        "Season totals reconcile exactly to NR03, despite paging/grouping. Selection describes canonical SKUs and contributing pairs; footer totals cover all filtered leaves, not only rendered page.",
+        "Northport 1000037 full-season sales $1,600,000; LY$2,263,083.45;\u221229.3%;23,288 selling units; sellable 0; physical blocked 3,374; one open case.",
+        "Ranged velocity can be unavailable for a whole population with unknown exposure; do not require every aggregate to display a number. No minimum-sales gate drops zero-sales ranged stock.",
+        "All optional controls use recovered Impact controls/DataGrid. Numeric leading digits must remain complete."
+      ],
+      "capture": [
+        "by-item-table",
+        "by-item-cards",
+        "by-item-conditions",
+        "item-image-zoom"
+      ],
+      "priorTargetedEvidence": [
+        "Compact quantity cells"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR05",
+      "title": "Item \u2194 store \u2194 shared pair, supply and Back",
+      "status": "planned_not_executed",
+      "startScope": "Continue NR04 local table state; Season/all locations; use Northport 1000037 and HoustonST1001",
+      "accessibleControls": [
+        "Stores",
+        "Item store population",
+        "PLR history",
+        "Actions and notes",
+        "Inspect all exposed stores",
+        "View all items",
+        "Availability",
+        "Range history",
+        "Decisions",
+        "Export dated membership",
+        "Review FQ01",
+        "Houston, TX",
+        "\u2190 Back",
+        "Clear highlight",
+        "Store assortment population",
+        "Change detail store",
+        "External reports"
+      ],
+      "actions": [
+        "Open 1000037 Item Detail, inspect Performance then Stores; switch inherited exposure/current range/all candidate stores. Open HoustonST1001 shared pair.",
+        "Inspect all four Pair tabs. Availability must separate store physical/sellable, existing inbound, allocated inbound and shared DC pool. Export dated membership and one pair evidence workbook.",
+        "Click Houston, TX in the pair heading to open full Store Assortment. The SKU remains highlighted, but a prior SKU/pair local cut is cleared; a selected interval remains local. Inspect eligible/exited/all-candidate lenses and Change detail store.",
+        "Use browser Back and the single \u2190 Back control to recover the originating pair, item Stores lens and table state, including scroll/sort/selected rows/hidden column. Check there is no duplicate Back row.",
+        "Visit Item PLR history/Actions and notes, Store Performance/Focus and actions/External reports and Pair Range history/Decisions. Save one clearly attributed merchant observation and one hypothesis with a validation question; no unsupported external number or executable action is asserted."
+      ],
+      "expected": [
+        "The exact pair 1000037:ST1001 repeats sales $43,033.89; LY$60,868.30; quantity 626; physical 91; sellable 0; stateR0; existing open order 200 ETA4 Aug; DC pool 900 with allocated 200.",
+        "The shared 900 pool is not added to each store or to current store stock. Supply IDs and units stay separate; no fake combined availability.",
+        "A store anchor does not secretly mutate global filters. Unknown member histories never invent store lists. Missing geographic/space/traffic feeds remain explicit.",
+        "Notes retain author/date/source/evidence class. Back restores the origin state rather than a fresh default table."
+      ],
+      "capture": [
+        "item-stores",
+        "pair-availability",
+        "store-assortment",
+        "item-back-restored",
+        "store-external-limits"
+      ],
+      "priorTargetedEvidence": [],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR06",
+      "title": "By Store, comparison bounds and network limitations",
+      "status": "planned_not_executed",
+      "startScope": "In-season/Season/all 72/all 45/LY; no local SKU cut",
+      "accessibleControls": [
+        "By Store",
+        "Search stores",
+        "Group stores",
+        "Choose columns",
+        "Compare stores (2)",
+        "Store comparison measure",
+        "Close comparison",
+        "Remove Houston, TX from comparison",
+        "Performance",
+        "Network and clusters",
+        "Open store table"
+      ],
+      "actions": [
+        "Sort/search/group the store table; inspect its complete footer. Select exactly 2 stores and Compare stores (2); change highlight measure, remove one and confirm minimum 2 validation. Add through 5 and confirm 6 cannot open a valid comparison.",
+        "Inspect sales/open-store-week alongside quantity/open-store-week; export comparison. Open a compared Store Detail and Back; selected IDs and active measure survive.",
+        "Open Network and clusters. Confirm explicit geography/target dependency messages and source A\u2013F grouping remain available through the table. The two-button Performance / Network and clusters switch appears only on By Store, not again on Matrix/Breadth.",
+        "Return Performance. Inspect at least one closed-store scenario in NR12; equal calendar windows do not pretend equivalent selling area/traffic."
+      ],
+      "expected": [
+        "45 store rows and $8.4Mseason reconcile to items. Open-store exposure 1,170 store-weeks; sales/open-store-week $7,179.48717949. SKU pair-week denominator is different.",
+        "Format, governed space, coordinates and dated cluster targets remain Not connected; no decorative map masquerades as client geography.",
+        "Selection limits 2\u20135 are enforced without changing global scope; export contains the selected exact stores and current effective interval."
+      ],
+      "capture": [
+        "by-store-performance",
+        "store-comparison",
+        "store-network-boundary"
+      ],
+      "priorTargetedEvidence": [],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR07",
+      "title": "Full-scale matrix, breadth and narrow pair list",
+      "status": "planned_not_executed",
+      "startScope": "In-season/Season/all 72/all 45; no local cut; later switch PLR briefly to check frozen population",
+      "accessibleControls": [
+        "Item \u00d7 Store",
+        "Search matrix items",
+        "Search matrix stores",
+        "Matrix metric",
+        "All candidate pairs",
+        "Matrix items per page",
+        "Matrix stores per page",
+        "Next matrix items page",
+        "Next matrix stores page",
+        "Compare 2\u20135 pairs",
+        "Review selected",
+        "Clear selection",
+        "Breadth",
+        "Breadth product grouping",
+        "Breadth location grouping",
+        "Breadth count display",
+        "Next breadth locations page",
+        "Close members",
+        "Export evidence"
+      ],
+      "actions": [
+        "Inspect Range / stock state, Net sales and Backward WOS \u00b7 R4 using text codes. With 10items/page and 10 stores/page, reach item page 8/8 and store page 5/5: final source row 1000000 and final storeST1045 must be reachable. Search 1000000/ST1045 as a faster independent check, then clear.",
+        "Focus a matrix cell and use arrows across a page boundary; Enter opens the exact shared pair, Back restores page/focus context; Escape clears selection. Select 2 known pairs, compare and review them; exact pairs must not expand into a Cartesian cohort.",
+        "At 390px use the paginated pair list (25/page by default), go next and back, select one pair and Enter its evidence. No horizontally unbounded full Cartesian grid is substituted.",
+        "Open Breadth; switch product grouping and location grouping, TY/LY display, page all 45 locations, inspect one known added/removed/retained member drill. Date labels must use range date and matched LY membership date. Export all filtered membership evidence.",
+        "Switch unknown-history/negative-stock/missing-inventory scenarios in NR12: unknown membership disables inferred identity/bulk action, negative stock is Reconcile, valid zero is R0. Switch PLR: All candidate pairs is disabled and original 2,970 pair cohort stays fixed."
+      ],
+      "expected": [
+        "Main 72\u00d745 all-candidate and exposure scope both contain 3,240 pairs because all main pairs have supplied exposure. Do not require a 15\u219216change from the separate 4\u00d74 control fixture.",
+        "Default matrix pages 8 item/5 store at 10perpage; final page covers items 71\u201372 and stores 41\u201345. Narrow pair list 130pages at 25perpage; all 3240 are reachable.",
+        "Chain breadth uses distinct SKU union, never summed store breadth. Unknown/aggregate-only membership cannot manufacture member IDs.",
+        "Matrix/Breadth headings and export labels match the active view; no redundant Store navigation bar remains."
+      ],
+      "capture": [
+        "matrix-last-pages",
+        "matrix-keyboard-detail",
+        "matrix-phone-list",
+        "breadth-members"
+      ],
+      "priorTargetedEvidence": [],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR08",
+      "title": "Sales Mix, contribution and exact local drills",
+      "status": "planned_not_executed",
+      "startScope": "First In-season/Season/all 72/all 45; then PLR for historical attribution check; no other local cut",
+      "accessibleControls": [
+        "Overview",
+        "Sales Mix",
+        "Attributes",
+        "Composition",
+        "Concentration",
+        "Good / Better / Best",
+        "Mix attribute",
+        "Mix contribution measure",
+        "Search attribute groups",
+        "Export visible groups",
+        "Clear local selection",
+        "\u2190 Back"
+      ],
+      "actions": [
+        "Open Overview \u2192 Sales Mix, then Deep Dive \u2192 Attributes. Exercise Brand, Colour, Finish, Species and Subcategory; rows/chart/export must change together, include every group and retain Unknown.",
+        "In Brand/Season, select Woodland Reserve through its accessible evidence-table link. By Item receives a local group chip and exact IDs/pairs; global filters remain unchanged. Back restores lens/search/columns/chart.",
+        "Switch Concentration: only additive Net sales / Compatible quantity choices, same denominator, descending contributions and cumulative 100%. A rate never becomes a fake contribution curve.",
+        "Open Good / Better / Best: assigned tiers/Unknown and assignment dates are explicit; no realized ASP sorting manufactures approved tiers. Inspect an available group/store evidence route and Back.",
+        "Repeat a PLR group drill and confirm approved original membership rather than current-master attribution. Export visible groups after search/sort and retain for parsing."
+      ],
+      "expected": [
+        "In-season Season Woodland Reserve:19 SKUs,$2,301,600,27.4%sales. Main SKU share 19/72 and index(salesShare/skuShare) derive from the same population.",
+        "The prior native PLR Woodland drill reported 18 styles,$2,299,988 and 44,816 units: do not conflate that approved-cohort result with current all 72data.",
+        "All source colour groups remain visible, no six-slice truncation; Unknown numerator remains in shares. The old Gray 40%/25%=1.60 example belongs to the isolated 4\u00d74 algorithm control.",
+        "Search affects visible groups, not the disclosed applied denominator; chart/table/export retain identical formula and member IDs."
+      ],
+      "capture": [
+        "sales-mix-brand",
+        "sales-mix-colour",
+        "concentration",
+        "gbb-unknown",
+        "mix-drill-back"
+      ],
+      "priorTargetedEvidence": [
+        "Mix drill and Back"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR09",
+      "title": "Decision queue, draft, approval, acknowledgement and outcome",
+      "status": "planned_not_executed",
+      "startScope": "In-season/Season/full scope; start merchant; later approver then administrator using explicit Demo role",
+      "accessibleControls": [
+        "Decisions",
+        "Queue",
+        "Decision log",
+        "Reset queue filters",
+        "FQ01 \u00b7 Shortages review \u00b71000037 at ST1001",
+        "Action",
+        "Quantity",
+        "Reason / alternatives considered",
+        "Owner",
+        "Effective date",
+        "Review date",
+        "Save draft",
+        "Submit for approval",
+        "Approve and await execution",
+        "Record local execution acknowledgement",
+        "Simulation acknowledgement reference",
+        "Save local acknowledgement",
+        "Save reviewed outcome",
+        "Close reviewed case",
+        "PLR learnings",
+        "For next PLR"
+      ],
+      "actions": [
+        "Inspect all six queue families using tabs/filters: Shortages, Coverage/excess, New item, Nonproductive, Bulk out, Lifecycle/exit. Case/SKU/pair/scanned counts are distinct. OpenFQ01; exact recorded threshold/evidence remains separate from current pair facts.",
+        "Test invalid draft (blank owner/reason or bad quantity/date) retains inputs and shows errors. Save Chase existing inbound quantity 200 for exactly 1000037:ST1001 with existing order evidence; no new order is created. Duplicate pending response must be blocked. Also inspect Swap incoming/outgoing/destination/date validation without executing it.",
+        "Submit as merchant; approval must be disabled. Switch approver, approve \u2192 Awaiting execution with no acknowledgement. Approver cannot record execution.",
+        "As administrator, record an explicitly labeled SIM-acknowledgement. For a multi-pair test, distinguish complete/failed/pending and Partially executed. One-pair acknowledgement becomes Executed, never before confirmation.",
+        "Save a qualified outcome with actual observation dates, evidence, alternative explanations and limitations. No post-intervention outcome feed is supplied: explicitly state that rather than inventing uplift. Link an Accepted low-confidence learning toPLR-SS27-FLOORING as authorized. Inspect For next PLR, source case/origin links, then close reviewed case. Recheck PLR totals unchanged."
+      ],
+      "expected": [
+        "Fresh session has 6 open cases on 6 SKUs/6 pairs; FQ01 is 1000037:ST1001. This count legitimately changes after closure; do not reset during lifecycle preservation checks.",
+        "Draft, Awaiting approval, Awaiting execution, acknowledgement and Reviewed are separate auditable states. Local simulation is visibly disclosed; no external execution is claimed.",
+        "Swap keeps one reviewed outgoing\u2192incoming change across exact selected stores; supply response remains separately linked.",
+        "An accepted carry-forward record is visible in destination reading view; Pending is excluded. Original PLR actual $8,373,352.01/plan $8.8M and later additions remain unchanged."
+      ],
+      "capture": [
+        "decision-queue",
+        "case-draft-validation",
+        "awaiting-execution",
+        "partial-or-complete-ack",
+        "reviewed-outcome",
+        "carry-forward-register"
+      ],
+      "priorTargetedEvidence": [
+        "Draft permission boundary",
+        "Approval boundary",
+        "Acknowledgement permission",
+        "Review and carry-forward source",
+        "Frozen PLR after closure"
+      ],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR10",
+      "title": "Rules and denied-data propagation",
+      "status": "planned_not_executed",
+      "startScope": "Continue records; merchant/administrator as stated; then restricted-margin viewer; restorefull access after proof",
+      "accessibleControls": [
+        "Rules",
+        "Stockout rule",
+        "Sales decline rule",
+        "S11 source recipe",
+        "Rule name",
+        "Stable rule ID",
+        "Metric",
+        "Operator",
+        "Minimum qualifying pair-weeks",
+        "Preview matching evidence",
+        "Publish new version",
+        "Edit as next draft version",
+        "Margin access",
+        "Demonstrate role"
+      ],
+      "actions": [
+        "Preview a typed rule before publish; inspect matching pairs/SKUs/cases/OH and exceptions. Change threshold or scope: stale preview cannot publish until rerun. Invalid Between bounds and missing/no-positive-base are distinct.",
+        "Merchant can preview but cannot publish. Administrator publishes a new version; edit it as next draft and prove prior case rule/evaluation evidence stays unchanged.",
+        "Open S11 source recipe. Exact footer MIP \u2265 6 AND not blank is preserved; authoritative MIP/source status predicates are unavailable, so no reproduced client cohort is claimed.",
+        "Set Demo settings \u2192 Margin access \u2192 Restricted margin and role viewer. Inspect Summary, By Item columns/filters, Store comparison, Mix, configuration, Iris GM question and an exported workbook. Denied GM/COGS must be withheld everywhere, not shown as 0/missing or leaked via rankings/narrative. Draft/approval/publish actions are disabled appropriately."
+      ],
+      "expected": [
+        "Preview creates no operational action or new case by itself. Published snapshots include version, scope and evaluation date.",
+        "No invented $500 sales gate removes valid zero-sales stock exposure.",
+        "Permission projection precedes values, totals, exports and Iris. A local role simulation is not server authorization certification."
+      ],
+      "capture": [
+        "rules-preview",
+        "rules-published",
+        "restricted-summary",
+        "restricted-export-proof"
+      ],
+      "priorTargetedEvidence": [],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR11",
+      "title": "Configuration 87, saved-view restore, exports and package boot",
+      "status": "planned_not_executed",
+      "startScope": "Use current In-season view; restore full access merchant; retain a meaningful local cut/table configuration",
+      "accessibleControls": [
+        "Hindsight page options",
+        "Customize",
+        "Customize Summary cards",
+        "Summary cards",
+        "Metric library",
+        "Search metric library",
+        "View definition",
+        "Hide definition",
+        "Restore mode defaults",
+        "Save cards",
+        "Saved views",
+        "Saved view name",
+        "Saved view visibility",
+        "Save current view",
+        "Apply",
+        "Remove",
+        "Export evidence",
+        "Export visible groups",
+        "Export comparison",
+        "Export log"
+      ],
+      "actions": [
+        "Customize Summary cards: exactly 6 unique supported IDs are required. Uncheck one \u2192 Save cards disabled; choose a supported alternative \u2192 save. Inspect one unsupported metric reason and restricted slot behavior. Restore mode defaults after capture.",
+        "Metric library must report 87 of 87 with stable K01\u2013K87 IDs and exact source labels. Search PWPS/MIP/ELP/OH CST$, open definitions and inspect unit/grain/formula/aggregation/evidence/approval question. Source-only labels do not promise a connected metric.",
+        "With table search/sort/selected rows/columns and local interval/pair cut set, page options \u2192 Saved views \u2192 Saved view name \u2192 Personal \u2192 Save current view. Change scope/view/table, Apply saved view and verify full snapshot restoration while current access remains authoritative. Switch modes to check contexts are separate. Shared visibility requires publish permission. Retired/legacy saved-view repairs have existing actual-component source tests; do not fake a native pass if no such fixture exists in session.",
+        "Actually download current By Item filtered/sorted, Mix visible groups, Matrix long-form pair evidence and one restricted-margin workbook. Parse saved files independently: Data/Scope/Definitions, numeric raw values, stable IDs, dates/units/source version, exact filtered leaf cohort, no denied GM/COGS and no formula execution from user text.",
+        "After final packaging, open the extracted ready-built server at its actual port. Boot both canonical and legacy-compatible routes, refresh one detail route, inspect Summary and populated By Item, console/broken images, and verify loaded bundle matches the frozen build. Do not substitute dev-server success for package acceptance."
+      ],
+      "expected": [
+        "Current library 87 definitions does not mean 87 Summary calculations. Exactly 6 cards, mode-specific stable IDs, unsupported reason; no silent metric substitution.",
+        "Saved state includes scope/local IDs/week IDs/route/table search/conditions/sort/group/columns/selection/chart settings. Decision/rule records are independent.",
+        "Season all 72:$8.4M/182400; Bamboo 12:$1,049,808.28/23836. Export percentages retain documented whole-percent convention (31.6 means 31.6%); cells remain numeric.",
+        "Pagination affects rendering only. Matrix export is normalized rows, not a screenshot/wide DOM dump. Production report destinations/source-owner approvals remain external."
+      ],
+      "capture": [
+        "configuration-six-cards",
+        "metric-library 87",
+        "saved-view-restored",
+        "actual-xlsx-files",
+        "packaged-canonical-boot"
+      ],
+      "priorTargetedEvidence": [],
+      "currentBuildReplayRequired": true
+    },
+    {
+      "id": "NR12",
+      "title": "New report lifecycle, Iris clarification, failure and responsive sweep",
+      "status": "planned_not_executed",
+      "startScope": "Use stable canonical In-season/Season; keep table selection/sort/columns to prove preservation; then restore default R4 for final screenshot if desired",
+      "accessibleControls": [
+        "All filters",
+        "Demo settings",
+        "Report component rehearsal",
+        "Component rehearsal state",
+        "Show component state",
+        "Retry Item performance",
+        "Ask Iris",
+        "Ask Iris about the selected context",
+        "Send Iris question",
+        "Clarify item",
+        "Clarify store",
+        "Clarify period",
+        "Clarify denominator",
+        "Use this answer context",
+        "Open frozen evidence",
+        "Use current view",
+        "Keep previous context",
+        "Conversation options",
+        "Demonstrate unavailable assistant",
+        "Retry",
+        "Open evidence",
+        "Continue manually",
+        "Resize Iris panel"
+      ],
+      "actions": [
+        "On Overview, choose Performance through the review window in Report component rehearsal \u2192 Loading \u2192 Show component state. Check its body dimensions, original heading and neighboring reports. Failed adds only that report Retry. In By Item repeat Failed after selecting/sorting/hiding a column; Retry restores state and heading focus. Retained failure keeps same evidence with exact source refresh timestamp. Show state must not Apply pending filter drafts.",
+        "Run legitimate empty Products \u2192 Clear, missing-inventory, unknown-history, negative-stock, zero-base/negative-base, stale-feed, mixed-uom and closed-store scenarios from Demo settings. Confirm explicit zero/missing/unknown/restricted/not applicable/invalid base/stale/reconcile text, never Infinity or fabricated member IDs. Restore canonical; the scope change must clear rehearsal state.",
+        "Open the one header Ask Iris entry or chart menu Explain this view. Send a general question and inspect frozen context/source version/evidence. Ask unknown item 9999999, multiple known SKUs, unknown store ST9999, recently/last month and ambiguous denominator questions in fresh contextual conversations. Each asks exact clarification with no broader answer silently substituted. Choose an exact permitted option and Use this answer context; original question persists.",
+        "Change page scope while Iris is open: choose Keep previous context once, Use current view once, and inspect normal evidence drill/Back. Demonstrate unavailable assistant must retain prompt/context and offer Retry/Open evidence/Continue manually. No answer approves or executes an action. Denied GM remains withheld even after permission downgrade.",
+        "Repeat the minimum responsive checklist below at 1440\u00d7900,1024\u00d7768 and 390\u00d7844. Capture actual window.innerWidth/document width, not a background tab resize. Use settled DOM boundaries after drawer/scroll transitions. Keyboard operate menus/filters/matrix/dialog/Iris resize; Escape closes one layer and focus returns."
+      ],
+      "expected": [
+        "Each component failure is local; its Retry never resets global/table state or another failed report. Loading retains mounted body footprint; retained data source date is visible. New scope has no apparel/default category flash.",
+        "Explicit Iris clarification types item/store/period/comparison/denominator preserve the frozen permitted cohort; unsupported production NLP/service is not claimed.",
+        "At 390 primary tabs, original FilterPanel fixed Apply/Cancel, detail tabs, numeric cells, pair list, configuration footer, decision form and Iris Send/Close remain reachable. No document overflow or layer obstructs controls.",
+        "Iris desktop default 448px expands 640px by End on Resize Iris panel; phone clamps within viewport with visible Send/Close/suggestions. Production assistant and live identity/execution remain unconnected."
+      ],
+      "capture": [
+        "report-loading",
+        "report-failure",
+        "report-retained-date",
+        "iris-clarification",
+        "iris-unavailable",
+        "overview-phone",
+        "matrix-phone",
+        "case-phone",
+        "configuration-phone",
+        "iris-phone"
+      ],
+      "priorTargetedEvidence": [
+        "Primary tabs390",
+        "Phone cards/trend",
+        "Original filter drawer desktop/phone",
+        "Iris timestamps",
+        "Iris keyboard width",
+        "Iris phone bounds",
+        "Iris after filter cancellation"
+      ],
+      "currentBuildReplayRequired": true
+    }
+  ],
+  "screenCoverage": [
+    {
+      "id": "shell",
+      "name": "Shared workspace",
+      "content": "Mode/scope/refresh context and five primary views",
+      "nativeRuns": [
+        "NR01",
+        "NR03",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": "Current three-tab layout supersedes earlier five-view wording."
+    },
+    {
+      "id": "filters",
+      "name": "Filter drawer",
+      "content": "Six staged groups and fixed footer",
+      "nativeRuns": [
+        "NR03",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "overview",
+      "name": "Tactical Overview",
+      "content": "Six cards, trend and ranked Investigate",
+      "nativeRuns": [
+        "NR03",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "plr-overview",
+      "name": "PLR Overview",
+      "content": "Six original-cohort cards and drills",
+      "nativeRuns": [
+        "NR01",
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "plr-variance",
+      "name": "PLR variance",
+      "content": "Original/revision/additions reconciliation",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "plr-supply",
+      "name": "Buy and supply",
+      "content": "Commitment/receipts/opening/transfers/sales/ending ledger",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "plr-timeline",
+      "name": "Intervention timeline",
+      "content": "Dated facts and observations",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "plr-learning",
+      "name": "PLR learning",
+      "content": "Evidence, hypothesis, conclusion and next review",
+      "nativeRuns": [
+        "NR02",
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "items",
+      "name": "By Item",
+      "content": "Table/Cards, three presets and leaderboard",
+      "nativeRuns": [
+        "NR04",
+        "NR05",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "item",
+      "name": "Item Detail",
+      "content": "Performance/Stores/PLR history/Actions and notes",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "stores",
+      "name": "By Store",
+      "content": "Store table, optional visual view and grouping",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "store",
+      "name": "Store Detail",
+      "content": "Assortment/Performance/Focus and actions/External reports",
+      "nativeRuns": [
+        "NR05",
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "store-comparison",
+      "name": "Store comparison",
+      "content": "Two to five stores at one scope",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "matrix",
+      "name": "SKU\u00d7store matrix",
+      "content": "Range/stock, sales and coverage",
+      "nativeRuns": [
+        "NR07",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "breadth",
+      "name": "Breadth TY/LY",
+      "content": "Product\u00d7geography counts with valid member drill",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "pair-list",
+      "name": "Accessible pair list",
+      "content": "Narrow/large-scope alternative",
+      "nativeRuns": [
+        "NR07",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "pair",
+      "name": "Shared SKU-store detail",
+      "content": "Performance/Availability/Range history/Decisions",
+      "nativeRuns": [
+        "NR05",
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "mix",
+      "name": "Mix & Attributes",
+      "content": "Category-specific paired shares and concentration/rates",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "gbb",
+      "name": "GBB architecture",
+      "content": "Assigned tier and location/subdepartment drills",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "decisions",
+      "name": "Decisions Queue",
+      "content": "Named presets, counts and case navigation",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "case",
+      "name": "Case workspace",
+      "content": "Evidence and validated draft form",
+      "nativeRuns": [
+        "NR09",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "decision-log",
+      "name": "Decision log",
+      "content": "Approval/execution/review and auditable history",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "rules",
+      "name": "Rules",
+      "content": "Typed rule preview/version publishing",
+      "nativeRuns": [
+        "NR10"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "iris",
+      "name": "Contextual Iris",
+      "content": "Single panel, frozen context and manual failure path",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "customize",
+      "name": "Customize",
+      "content": "Six-card and column configuration",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "saved-views",
+      "name": "Saved views",
+      "content": "Personal/shared mode contexts",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "metric-library",
+      "name": "Metric library",
+      "content": "All87 IDs with source status, definition and permission metadata",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    },
+    {
+      "id": "external-reports",
+      "name": "External report details",
+      "content": "Honest links and source limitations",
+      "nativeRuns": [
+        "NR05",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "layoutNote": null
+    }
+  ],
+  "workflowCoverage": [
+    {
+      "id": "WF01",
+      "name": "Store-first tactical review",
+      "pages": [
+        6,
+        25,
+        27,
+        28,
+        33,
+        61
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR06",
+        "NR05",
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF02",
+      "name": "Item-first reverse ranging",
+      "pages": [
+        22,
+        25,
+        30,
+        33,
+        61
+      ],
+      "nativeRuns": [
+        "NR04",
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF03",
+      "name": "Original PLR learning",
+      "pages": [
+        7,
+        13,
+        15,
+        17,
+        18,
+        63
+      ],
+      "nativeRuns": [
+        "NR01",
+        "NR02",
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF04",
+      "name": "Cross-mode and comparison",
+      "pages": [
+        10,
+        11,
+        29
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR03",
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF05",
+      "name": "Atomic scope editing",
+      "pages": [
+        8,
+        9,
+        60
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF06",
+      "name": "Matrix and breadth",
+      "pages": [
+        30,
+        31,
+        32
+      ],
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF07",
+      "name": "Mix to evidence",
+      "pages": [
+        37,
+        38,
+        39,
+        40
+      ],
+      "nativeRuns": [
+        "NR08",
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF08",
+      "name": "Case to reviewed outcome",
+      "pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF09",
+      "name": "Rule governance",
+      "pages": [
+        45,
+        49
+      ],
+      "nativeRuns": [
+        "NR10"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF10",
+      "name": "Iris context and failure",
+      "pages": [
+        46,
+        47,
+        48
+      ],
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF11",
+      "name": "Permission and configuration",
+      "pages": [
+        49,
+        50,
+        60
+      ],
+      "nativeRuns": [
+        "NR10",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    },
+    {
+      "id": "WF12",
+      "name": "Export parity",
+      "pages": [
+        12,
+        24,
+        32,
+        59
+      ],
+      "nativeRuns": [
+        "NR04",
+        "NR07",
+        "NR08",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "fixtureNote": "Use current 72\u00d745 facts and the run actions; original 4\u00d74 steps in source matrix are separate control fixtures."
+    }
+  ],
+  "metricInvariantCoverage": [
+    {
+      "id": "MI01",
+      "name": "Cross-view totals",
+      "pages": [
+        19,
+        20,
+        22,
+        27
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR04",
+        "NR06",
+        "NR11"
+      ],
+      "currentAcceptance": "Main Season Overview = items = stores = export: sales 8,400,000; quantity 182,400 selling units; GM 2,654,400/8,400,000=31.6%; OHcost 2,353,139.20. R4 uses 845,799.66/18,358, not season totals.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI02",
+      "name": "Distinct count grain",
+      "pages": [
+        22,
+        27,
+        30
+      ],
+      "nativeRuns": [
+        "NR04",
+        "NR06",
+        "NR07"
+      ],
+      "currentAcceptance": "Main 72 SKUs/45 stores/3,240candidate and exposure pairs; original 66 SKUs/2,970 pairs;3,237currentlyranged;276validranged stockouts. Four-by-four 2/3/4/3 and 15/16 is an isolated algorithm control, not mainUI.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI03",
+      "name": "Cases are not SKUs",
+      "pages": [
+        20,
+        41,
+        42
+      ],
+      "nativeRuns": [
+        "NR09"
+      ],
+      "currentAcceptance": "Fresh main six open cases on six distinctSKUs and six pairs. Counts change after closure; cases never substitute forSKU orstorecount.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI04",
+      "name": "Weighted margin",
+      "pages": [
+        14,
+        51
+      ],
+      "nativeRuns": [
+        "NR01",
+        "NR03",
+        "NR06",
+        "NR08"
+      ],
+      "currentAcceptance": "SumGM/SumSales,notmeanrowGM. Aggregate sales<=0 returns unavailable; negative GM dollars remain valid.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI05",
+      "name": "Growth bases",
+      "pages": [
+        12,
+        51
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR04",
+        "NR12"
+      ],
+      "currentAcceptance": "Positive (actual-base)/base; zero New/no positive base plus absolute change; negative signed absolute change and reason; noInfinity.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI06",
+      "name": "Rate gap",
+      "pages": [
+        12
+      ],
+      "nativeRuns": [
+        "NR01",
+        "NR02"
+      ],
+      "currentAcceptance": "+2.0 percentage points, not+2% relative growth.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI07",
+      "name": "Compatible units",
+      "pages": [
+        10,
+        51
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR08",
+        "NR12"
+      ],
+      "currentAcceptance": "No mixed quantity,ASP,WOS orvelocity. Currency totals may aggregate if permitted; unit subtotals remain distinct.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI08",
+      "name": "ASP",
+      "pages": [
+        51
+      ],
+      "nativeRuns": [
+        "NR04",
+        "NR08",
+        "NR12"
+      ],
+      "currentAcceptance": "SumSales/SumPositiveCompatibleQuantity; noaverageofrowASPs; no ratio when quantity<=0.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI09",
+      "name": "Snapshot",
+      "pages": [
+        12,
+        20,
+        52
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR03"
+      ],
+      "currentAcceptance": "Main stock 31 Jul 2026 remains fixed when R4/Season/R52 changes. Earlier PLR cutoff with no exact snapshot stays unavailable.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI10",
+      "name": "Stockout classification",
+      "pages": [
+        20,
+        32,
+        52
+      ],
+      "nativeRuns": [
+        "NR05",
+        "NR07",
+        "NR12"
+      ],
+      "currentAcceptance": "Onlycurrently ranged withvalidsellableOH=0 count asout. NegativeOH=reconcile; unknown!=zero; nonmember!=out.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI11",
+      "name": "Coverage",
+      "pages": [
+        52,
+        60
+      ],
+      "nativeRuns": [
+        "NR05",
+        "NR07",
+        "NR12"
+      ],
+      "currentAcceptance": "No positive demand state, noInfinity/negativecoverage. Forward cover uses named future forecast and beyond-horizon state.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI12",
+      "name": "Returns and supply",
+      "pages": [
+        52
+      ],
+      "nativeRuns": [
+        "NR02"
+      ],
+      "currentAcceptance": "Net sold40; customer returns notaddedagain todenominator120; ST33.333%. Nonpositive supply makesSTunavailable.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI13",
+      "name": "Shared DC",
+      "pages": [
+        33,
+        34,
+        59
+      ],
+      "nativeRuns": [
+        "NR05"
+      ],
+      "currentAcceptance": "Main Northport sharedDC900/allocated 200 counted once by supply ID and never as current store available stock.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI14",
+      "name": "Velocity numerator/exposure",
+      "pages": [
+        23
+      ],
+      "nativeRuns": [
+        "NR04"
+      ],
+      "currentAcceptance": "Recompute qualifyingranged quantity / ranged pair-weeks; preserve unavailable aggregate when one required exposure is unknown. Main Northport Season 19.9042735; original 4\u00d74=68.75 is control only.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/control-test-results.json",
+        "qa/redesign/deep-dive-model-checks.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI15",
+      "name": "Store-week productivity",
+      "pages": [
+        29,
+        51
+      ],
+      "nativeRuns": [
+        "NR06"
+      ],
+      "currentAcceptance": "Main Season 8.4M/1,170 open store-weeks=7,179.48717949; R4/180storeweeks=4,698.887. Not SKU-pair velocity.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI16",
+      "name": "Demand versus buy",
+      "pages": [
+        14,
+        15,
+        17
+      ],
+      "nativeRuns": [
+        "NR02"
+      ],
+      "currentAcceptance": "Main demand 200,000 vs approvedbuy 300,000;opening 54,930+receipts 225,458\u2212netquantity 181,746=physical 98,642. Openorder 200 excluded.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI17",
+      "name": "Original review ledger",
+      "pages": [
+        7,
+        14,
+        17
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR09"
+      ],
+      "currentAcceptance": "Main original actual 8,373,352.01\u2212original plan 8.8M=\u2212426,647.99;revision 8.1M separate; addition 26,647.99 yields 8.4M realized. No action/exit rewrites original.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI18",
+      "name": "Due denominator",
+      "pages": [
+        7,
+        52
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR07"
+      ],
+      "currentAcceptance": "Main 2,968 due contains 2,964 on-time,2 late,1notactivated,1 unknown;2 notyetdue excluded. Unknown execution rate shows bounds, neverunknown as failed.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI19",
+      "name": "Mix share/index",
+      "pages": [
+        38,
+        40
+      ],
+      "nativeRuns": [
+        "NR08"
+      ],
+      "currentAcceptance": "Current Season Woodland Reserve 27.4%sales/(19/72\u00d7100%SKU)=same formula index; all exclusive groups including Unknown sum 100% before rounding. Historical PLR group differs.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI20",
+      "name": "Nonadditive concentration",
+      "pages": [
+        35,
+        40
+      ],
+      "nativeRuns": [
+        "NR08"
+      ],
+      "currentAcceptance": "Do notcompute cumulative contribution shares from rates. Use group ratio-of-totals comparison.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI21",
+      "name": "GBB assignment",
+      "pages": [
+        39
+      ],
+      "nativeRuns": [
+        "NR08"
+      ],
+      "currentAcceptance": "Assigned tier doesnotchange because ofrealizedASP ordering; Unknown remains visible.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI22",
+      "name": "Breadth membership",
+      "pages": [
+        31,
+        66
+      ],
+      "nativeRuns": [
+        "NR05",
+        "NR07"
+      ],
+      "currentAcceptance": "Aggregate counts canrender butcannot invent memberIDs. EachSKU counts once per group/store; chain uses union.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI23",
+      "name": "PWPS inference",
+      "pages": [
+        48,
+        65,
+        66
+      ],
+      "nativeRuns": [
+        "NR10",
+        "NR11",
+        "NR12"
+      ],
+      "currentAcceptance": "S15 one-row PWPS fit remains source inference; current PWPS column says Definition pending. Do not assert a production PWPS formula or fabricate 293/294 store members.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "qa/redesign/iris-ambiguity-checks.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI24",
+      "name": "Source predicate",
+      "pages": [
+        45,
+        66
+      ],
+      "nativeRuns": [
+        "NR10"
+      ],
+      "currentAcceptance": "S11 source footer MIP \u2265 6 AND not blank; filename > 6 does not replace it. Current unconnected MIP does not claim a reproduced cohort.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/views/decisionRules.test.ts",
+        "src/modules/hindsight/redesign/views/decisionRules.ts"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI25",
+      "name": "Population retention",
+      "pages": [
+        11,
+        20,
+        61
+      ],
+      "nativeRuns": [
+        "NR03",
+        "NR05",
+        "NR07",
+        "NR12"
+      ],
+      "currentAcceptance": "Exposure union retains anytransactionineitherinterval,nonzeroOH,positiveinbound,currentrange; currentrangeonly is explicit alternative.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI26",
+      "name": "Join multiplicity",
+      "pages": [
+        59
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR05",
+        "NR11"
+      ],
+      "currentAcceptance": "No duplicatedsales/GM/OH; facts aggregatedbeforeone-to-manyjoins.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI27",
+      "name": "Permission propagation",
+      "pages": [
+        49,
+        60
+      ],
+      "nativeRuns": [
+        "NR10",
+        "NR11",
+        "NR12"
+      ],
+      "currentAcceptance": "Denied GM absent from visiblevalues,totals,rankings,exportsandIriscontext/answer; restriction notzero/missing.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "qa/redesign/export-workbook-validation.json",
+        "qa/redesign/iris-real-component-checks.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI28",
+      "name": "Execution acknowledgement",
+      "pages": [
+        44
+      ],
+      "nativeRuns": [
+        "NR09"
+      ],
+      "currentAcceptance": "Awaitingexecution untilactualack; simulatedack labeledlocal; failed/completedpairsets separate and auditable.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI29",
+      "name": "Calendar",
+      "pages": [
+        12,
+        61
+      ],
+      "nativeRuns": [
+        "NR02",
+        "NR03",
+        "NR11"
+      ],
+      "currentAcceptance": "Main prototype Monday\u2013Sunday calendar excludes current partial week, completeThrough 26 Jul. Approved client 53-week/daymappings remainexternal; isolated controls do not certify client calendar.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MI30",
+      "name": "Stable metric identity",
+      "pages": [
+        24,
+        50
+      ],
+      "nativeRuns": [
+        "NR11"
+      ],
+      "currentAcceptance": "NameaffectedIDs andpermittedalternatives; no silentformula/denominatorsubstitution.",
+      "evidenceMethod": "Planned native representative display/drill/export plus independent selector/model controls; supporting artifact references are not new execution claims",
+      "existingEvidence": [
+        "src/modules/hindsight/redesign/data/test-results.json",
+        "src/modules/hindsight/redesign/data/control-test-results.json"
+      ],
+      "status": "planned_not_executed"
+    }
+  ],
+  "requirementCoverage": [
+    {
+      "id": "HSP01-nav",
+      "pages": [
+        1,
+        6,
+        67
+      ],
+      "requirement": "Use five primary views in this exact order: Overview, By Item, By Store, Mix & Attributes, Decisions.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP01-modes",
+      "pages": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "requirement": "PLR Review and In-season Review are separate saved review contexts.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP02-scope",
+      "pages": [
+        2,
+        62
+      ],
+      "requirement": "Implement the full local functional design, not only the two-day minimum.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP03-jobs",
+      "pages": [
+        3,
+        43,
+        44
+      ],
+      "requirement": "Separate assortment decisions from supply/disposition follow-up.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP04-reports",
+      "pages": [
+        4,
+        65,
+        66
+      ],
+      "requirement": "Consolidate assortment questions while preserving source labels and specialist report context.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Native boundary/provenance inspection plus existing source evidence; production source parity remains external",
+      "productionDependencies": [
+        "D12"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP05-scopebar",
+      "pages": [
+        5,
+        6
+      ],
+      "requirement": "Replace chip carousel with wrapping product/location/time context and explicit metadata.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP05-tiles",
+      "pages": [
+        5,
+        13,
+        19
+      ],
+      "requirement": "Display six mode-specific cards in a visible 3\u00d72 grid rather than horizontal scrolling.",
+      "nativeRuns": [
+        "NR01",
+        "NR03",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP06-back",
+      "pages": [
+        6
+      ],
+      "requirement": "Detail is a full workspace page with breadcrumb and Back; preserve originating table state.",
+      "nativeRuns": [
+        "NR01",
+        "NR05",
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP06-responsive",
+      "pages": [
+        6,
+        60
+      ],
+      "requirement": "Wrap scope and provide explicit table scroll/list alternatives at narrow widths.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP07-cohort",
+      "pages": [
+        7,
+        14,
+        17
+      ],
+      "requirement": "Freeze original approved SKU-store cohort and due dates; later drops and closures stay in it.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D07",
+        "D06"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP07-elapsed",
+      "pages": [
+        7,
+        12
+      ],
+      "requirement": "Use original phased demand and due pairs through the review cutoff.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D03",
+        "D07"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP07-unknown-history",
+      "pages": [
+        7,
+        52
+      ],
+      "requirement": "Unknown history is not failed execution.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D06"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP07-missing-plan",
+      "pages": [
+        7,
+        59
+      ],
+      "requirement": "Require an approved PLR record and do not replace a missing plan with LY or current buy.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D07"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP08-draft-filter",
+      "pages": [
+        8,
+        9
+      ],
+      "requirement": "Filter changes are staged and applied atomically.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP08-filter-groups",
+      "pages": [
+        8,
+        9
+      ],
+      "requirement": "Provide Products, Locations, Time and comparison, Population, Lifecycle/focus, Attributes/units groups.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP10-hierarchy",
+      "pages": [
+        10
+      ],
+      "requirement": "Product and geography hierarchies are separate authoritative fields; do not guess L0/L2/L3 mapping.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D01",
+        "D02"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP10-locations",
+      "pages": [
+        10
+      ],
+      "requirement": "Support location hierarchy, cluster and a single store detail anchor.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D02"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP10-comp",
+      "pages": [
+        10,
+        12
+      ],
+      "requirement": "Comp locations is a separate population rule applied to both periods.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D02",
+        "D03"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP10-uom",
+      "pages": [
+        10,
+        51
+      ],
+      "requirement": "Use compatible quantity units and effective conversion factors.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D01"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP11-exposure",
+      "pages": [
+        11
+      ],
+      "requirement": "Default tactical population is range plus stock/inbound/transaction exposure in either interval.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP11-status",
+      "pages": [
+        11
+      ],
+      "requirement": "Eligibility, range, lifecycle, Active Assorted and focus are independent fields.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D06",
+        "D08"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP11-typed-filter",
+      "pages": [
+        11,
+        24,
+        45
+      ],
+      "requirement": "Provide a typed AND/OR metric filter builder with units.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP12-periods",
+      "pages": [
+        12
+      ],
+      "requirement": "Default to four completed fiscal weeks and provide LW/R13/R52/MTD/QTD/YTD/custom presets.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D03"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP12-calendar",
+      "pages": [
+        12
+      ],
+      "requirement": "Use explicit comparable fiscal keys including 53-week years.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D03"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP12-growth",
+      "pages": [
+        12,
+        51
+      ],
+      "requirement": "Percentage growth requires a positive comparable base; rate differences use percentage points.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP13-plr-cards",
+      "pages": [
+        13,
+        14
+      ],
+      "requirement": "PLR cards lead to definitions and original-cohort contributing rows.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP14-plr-card-math",
+      "pages": [
+        14
+      ],
+      "requirement": "Use consistent original-cohort card definitions.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP15-supply-ledger",
+      "pages": [
+        15
+      ],
+      "requirement": "Reconcile approved buy, PO, receipts, opening supply, sales and remaining stock independently of demand.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D07",
+        "D09"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP16-trend",
+      "pages": [
+        16
+      ],
+      "requirement": "Use one full-width metric chart with Actual and the primary comparator by default.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP16-events",
+      "pages": [
+        16,
+        18
+      ],
+      "requirement": "Display dated receipt, price, promotion, range and field events without causal claims.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP17-versions",
+      "pages": [
+        17
+      ],
+      "requirement": "Separate original v1, revision v2, original actual and additions.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D07"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP18-learning",
+      "pages": [
+        18,
+        49
+      ],
+      "requirement": "Save evidence-backed observations, hypotheses and reviewed learnings without rewriting plan.",
+      "nativeRuns": [
+        "NR02"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D11"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP19-tactical-cards",
+      "pages": [
+        19,
+        20
+      ],
+      "requirement": "Use sales, compatible quantity, authorized GM%, OH cost, ranged-out pairs and open cases as six defaults.",
+      "nativeRuns": [
+        "NR01",
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP20-productivity",
+      "pages": [
+        20,
+        51
+      ],
+      "requirement": "Proposed SKU-pair velocity differs from source PWPS and store-week productivity.",
+      "nativeRuns": [
+        "NR03"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D08",
+        "D06"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP21-item-base",
+      "pages": [
+        21,
+        22
+      ],
+      "requirement": "By Item defaults to a compact table, with Cards as an alternative and grouping off.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP22-item-tools",
+      "pages": [
+        22,
+        24
+      ],
+      "requirement": "Pin identity, provide sales/stock, velocity/exposure and lifecycle/focus presets plus columns/export.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP22-item-counts",
+      "pages": [
+        22
+      ],
+      "requirement": "Ranged stores per SKU and chain total use different distinct grains.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP23-velocity",
+      "pages": [
+        23
+      ],
+      "requirement": "Expose qualifying numerator and pair-week denominator next to velocity.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP24-source-fields",
+      "pages": [
+        24
+      ],
+      "requirement": "Keep full identity, productivity, inventory, range, lifecycle and decision column groups with exact legacy aliases.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D08",
+        "D10"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP24-export",
+      "pages": [
+        24,
+        50
+      ],
+      "requirement": "Export filtered leaf rows and a separate scope/definition sheet.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP25-item-detail",
+      "pages": [
+        25
+      ],
+      "requirement": "Provide Performance, Stores, PLR history, Actions and notes inside Item Detail.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP25-reverse-path",
+      "pages": [
+        25
+      ],
+      "requirement": "Both drill directions use the same pair facts and preserve state.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP25-missing-members",
+      "pages": [
+        25,
+        31,
+        59
+      ],
+      "requirement": "Never infer member identities from company facts or aggregate breadth counts.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D06"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP26-optional-map",
+      "pages": [
+        26
+      ],
+      "requirement": "Store table is primary; optional map uses real metric scales and navigates to store detail.",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP26-cluster",
+      "pages": [
+        26
+      ],
+      "requirement": "Only show governed dated cluster summaries.",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D02"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP27-store-index",
+      "pages": [
+        27
+      ],
+      "requirement": "By Store begins with a sortable store table with search/group/columns/export and comparison.",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP28-store-detail",
+      "pages": [
+        28
+      ],
+      "requirement": "Assortment is Store Detail default with a single-store anchor and Change store.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP29-store-subviews",
+      "pages": [
+        29
+      ],
+      "requirement": "Provide Performance, Focus and actions, External reports beside Assortment.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP29-compare",
+      "pages": [
+        29
+      ],
+      "requirement": "Compare two to five stores on the same measures and exposure window.",
+      "nativeRuns": [
+        "NR06"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP30-matrix",
+      "pages": [
+        30,
+        32
+      ],
+      "requirement": "Provide Range/stock, Sales and Coverage modes over dated canonical SKU-store cells.",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP30-matrix-baseline",
+      "pages": [
+        30
+      ],
+      "requirement": "Match the proposed coherent baseline range state matrix.",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP31-breadth",
+      "pages": [
+        31
+      ],
+      "requirement": "Provide Breadth TY/LY with product/geography grouping and source/governed count labels.",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D06",
+        "D08"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP32-matrix-failure",
+      "pages": [
+        32
+      ],
+      "requirement": "Handle unknown, missing, valid zero and negative inventory distinctly.",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP32-matrix-scale",
+      "pages": [
+        32
+      ],
+      "requirement": "Bound large grids, keep pinned labels and support keyboard plus narrow pair-list alternative.",
+      "nativeRuns": [
+        "NR07"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP33-pair-detail",
+      "pages": [
+        33,
+        34
+      ],
+      "requirement": "Provide Performance, Availability, Range history and Decisions in shared pair detail.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP33-supply",
+      "pages": [
+        33,
+        34
+      ],
+      "requirement": "Store, inbound, allocation and DC pool are different grains and availability states.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D09"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP35-concentration",
+      "pages": [
+        35
+      ],
+      "requirement": "Move contribution/Pareto into Mix and restrict it to additive measures.",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP35-leaderboard",
+      "pages": [
+        35
+      ],
+      "requirement": "Put product leaderboard in By Item and keep product/image actions distinct.",
+      "nativeRuns": [
+        "NR04"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP36-investigate",
+      "pages": [
+        36
+      ],
+      "requirement": "Replace three opportunity columns with one ranked Investigate list that routes to exact cohorts/cases.",
+      "nativeRuns": [
+        "NR08",
+        "NR01",
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP37-mix-bind",
+      "pages": [
+        37,
+        38
+      ],
+      "requirement": "Bind category-specific attribute choices to real groups, chart/table/export/drill.",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP38-mix-share",
+      "pages": [
+        38,
+        40
+      ],
+      "requirement": "Use one definition for chart and table shares/index.",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP39-gbb",
+      "pages": [
+        39
+      ],
+      "requirement": "GBB uses assigned tiers and dates, not realized ASP sorting.",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D01",
+        "D08"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP40-mix-interactions",
+      "pages": [
+        40
+      ],
+      "requirement": "Attribute marks add a local item filter and preserve a return path.",
+      "nativeRuns": [
+        "NR08"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP41-queue",
+      "pages": [
+        41,
+        42
+      ],
+      "requirement": "Decisions defaults to Queue with compact case/SKU/pair/scanned counts.",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP42-presets",
+      "pages": [
+        42
+      ],
+      "requirement": "Provide Shortages,Coverage/excess,Newitem,Nonproductive,Bulkout,Lifecycle queues.",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP43-case",
+      "pages": [
+        43
+      ],
+      "requirement": "Case is a full workspace with evidence and a validated action draft.",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP44-lifecycle",
+      "pages": [
+        44
+      ],
+      "requirement": "Separate signal,case,draft,approval,execution andoutcomereview.",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D10",
+        "D11"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP44-swap",
+      "pages": [
+        44
+      ],
+      "requirement": "Swap links outgoing/incoming SKU,store scope andeffective date as one reviewed change.",
+      "nativeRuns": [
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP45-rules",
+      "pages": [
+        45
+      ],
+      "requirement": "Rules use a typed/versioned builder with preview before publish.",
+      "nativeRuns": [
+        "NR10"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP45-nonproductive",
+      "pages": [
+        45,
+        61
+      ],
+      "requirement": "Preserve exact S11 source predicates and protectzero-salesstock exposure.",
+      "nativeRuns": [
+        "NR10"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D08"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP46-iris-entry",
+      "pages": [
+        46
+      ],
+      "requirement": "Only one visible Ask Iris entry is in the header; chart menu has Explain this view.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP47-iris-context",
+      "pages": [
+        47,
+        48
+      ],
+      "requirement": "Freeze context at send time and explicitly offer context updates.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP48-iris-answer",
+      "pages": [
+        48
+      ],
+      "requirement": "Ground every numeric answer in permitted evidence with fact/hypothesis/estimate labels.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D08",
+        "D10",
+        "D14"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP48-iris-failure",
+      "pages": [
+        48,
+        60
+      ],
+      "requirement": "Assistant failure preserves prompt/context and manual routes.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP49-notes",
+      "pages": [
+        49
+      ],
+      "requirement": "Authored notes/hypotheses/decisions/reviews retain provenance and visibility.",
+      "nativeRuns": [
+        "NR05"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D11"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP49-permissions",
+      "pages": [
+        49,
+        60
+      ],
+      "requirement": "Apply field/action permissions before facts,totals,exports,narrative andIris.",
+      "nativeRuns": [
+        "NR10",
+        "NR11",
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D10"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP50-configuration",
+      "pages": [
+        50
+      ],
+      "requirement": "Support six-card configuration,tablecolumns andmode-specific savedviews with stableIDs.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP51-metric-contract",
+      "pages": [
+        51,
+        52
+      ],
+      "requirement": "Each metric declares formula,status,unit,grain,period,population,aggregation,null/access policy andversion.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D04",
+        "D08"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP53-catalogue",
+      "pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "requirement": "Expose all87 stableKPIregisterentries with exactaliases andevidencestatus.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP59-joins",
+      "pages": [
+        59
+      ],
+      "requirement": "Aggregate facts to requested grain before joining orders,attributes or events.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [
+        "D01",
+        "D05",
+        "D06",
+        "D07",
+        "D09"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP60-loading-error",
+      "pages": [
+        60
+      ],
+      "requirement": "Loading and retry preserve scope; missingfeed differsfromemptyresults.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP60-states",
+      "pages": [
+        60
+      ],
+      "requirement": "Zero,missing,restricted,unknown,notapplicable,invalidratio,stale andinsufficienthistory aredifferent.",
+      "nativeRuns": [
+        "NR12"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP60-accessibility",
+      "pages": [
+        60
+      ],
+      "requirement": "All workflows work bykeyboard anduse noncolorstate labels.",
+      "nativeRuns": [
+        "NR12",
+        "NR04",
+        "NR05",
+        "NR07",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP61-reconciliation",
+      "pages": [
+        61
+      ],
+      "requirement": "Use one scope across all aggregate andleafresults.",
+      "nativeRuns": [
+        "NR03",
+        "NR04",
+        "NR05",
+        "NR06",
+        "NR08",
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP61-production-acceptance",
+      "pages": [
+        61,
+        65,
+        66
+      ],
+      "requirement": "Client source parity requires definitions,calendar,rights,memberhistory andactualexecutionfeeds.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Native boundary/provenance inspection plus existing source evidence; production source parity remains external",
+      "productionDependencies": [
+        "D03",
+        "D06",
+        "D07",
+        "D08",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP62-journeys",
+      "pages": [
+        62,
+        63
+      ],
+      "requirement": "Both strategic and tactical demo journeys finish with accountable follow-up andlearning.",
+      "nativeRuns": [
+        "NR02",
+        "NR05",
+        "NR09"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP64-baseline",
+      "pages": [
+        64
+      ],
+      "requirement": "The old four-tab walkthrough is baseline evidence, not redesigned acceptance.",
+      "nativeRuns": [
+        "NR01"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP65-field-sources",
+      "pages": [
+        65
+      ],
+      "requirement": "Preserve the limitations of Field Merch screenshots S01\u2013S08.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Native boundary/provenance inspection plus existing source evidence; production source parity remains external",
+      "productionDependencies": [
+        "D08",
+        "D12"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP66-ssc-sources",
+      "pages": [
+        66
+      ],
+      "requirement": "Preserve SSC export limits S09\u2013S16.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Native boundary/provenance inspection plus existing source evidence; production source parity remains external",
+      "productionDependencies": [
+        "D08",
+        "D12"
+      ],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    },
+    {
+      "id": "HSP67-handoff",
+      "pages": [
+        67
+      ],
+      "requirement": "Accept behavior against evidence, not the numberofcards; keep explicit source assumptions.",
+      "nativeRuns": [
+        "NR11"
+      ],
+      "status": "planned_not_executed",
+      "acceptanceMethod": "Current-build native behavior plus appropriate deterministic calculation/source evidence",
+      "productionDependencies": [],
+      "limit": "A mapped run is a test plan, not proof that every compound clause passed."
+    }
+  ],
+  "minimumResponsiveChecks": [
+    {
+      "viewport": "1440\u00d7900",
+      "checks": [
+        "Original Manrope/Impact buttons/selects/tabs/cards/DataGrid; six Summary cards 3\u00d72; trend controls do not overlap; no duplicate Store preset bar; complete numeric digits; scroll all lower sections."
+      ]
+    },
+    {
+      "viewport": "1024\u00d7768",
+      "checks": [
+        "Trend toolbar/card layout wrap; FilterPanel Apply/Cancel visible; Config footer reachable; comparison cards can pan; no document-wide overflow; Iris clamps without covering Close."
+      ]
+    },
+    {
+      "viewport": "390\u00d7844",
+      "checks": [
+        "Record actual innerWidth 390 and document.scrollWidth\u2264390; primary tabs within viewport; filter drawer 0..390 and fixed footer reachable.",
+        "By Item cards/table horizontal pan and detail tabs/full numeric values; Pair Availability supply quantity/unit columns; original controls remain functional.",
+        "Matrix switches to paginated pair list; next/back/select/Enter detail work. Breadth member list/controls reachable.",
+        "Case forms/dates/validation/acknowledgement and configuration search/footer work; portaled Select gets keyboard focus.",
+        "Iris panel within viewport, Send/Close and suggestion buttons visible; resize has semantic keyboard bounds; Escape/close returns focus."
+      ]
+    }
+  ],
+  "externalBoundaries": [
+    {
+      "id": "D01",
+      "name": "Product master and units",
+      "requiredForProduction": "Canonical sellable SKU IDs, style/family mapping, hierarchy, attributes/GBB and effective UOM conversion factors.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D02",
+      "name": "Store master and populations",
+      "requiredForProduction": "Location hierarchy, opening/closure/channel, dated clusters, Non Store treatment and Comp eligibility.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D03",
+      "name": "Fiscal calendar",
+      "requiredForProduction": "Approved complete fiscal periods, 53-week and comparable-week/day mappings.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D04",
+      "name": "Commercial/cost policy",
+      "requiredForProduction": "Net-sales/returns/discount/tax treatment, recognized COGS, sellable supply/adjustments and definition approvals.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D05",
+      "name": "Sales and inventory feeds",
+      "requiredForProduction": "SKU-store-day facts and complete, dated physical/sellable/cost/retail inventory snapshots with refresh metadata.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D06",
+      "name": "Range/eligibility history",
+      "requiredForProduction": "Actual effective-dated SKU-store membership, eligibility, activation/stop and exposure history; aggregate counts do not supply members.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D07",
+      "name": "Approved PLR history",
+      "requiredForProduction": "Immutable approval versions, original pair cohorts, target dates, phased demand/buy/receipt/EOP plans and approvals.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D08",
+      "name": "Legacy source definitions",
+      "requiredForProduction": "Full DAX, exact source predicates and meanings for PWPS, MIP, MIP Sales By Location, ELP, VP Avg, NPI/OP and Active Assorted.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D09",
+      "name": "Supply and fulfillment",
+      "requiredForProduction": "Order lines, source/destination, ETA, allocation, receipt/transfer state, shared DC balances and packaging factors.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D10",
+      "name": "Production identity and entitlements",
+      "requiredForProduction": "Server-enforced field/action access, genuine approver policy and audit identity; local role simulation is not security certification.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D11",
+      "name": "Execution/observation integrations",
+      "requiredForProduction": "Durable authored evidence, approvals, genuine external execution acknowledgements, outcomes and next-PLR links.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D12",
+      "name": "Report ownership and destinations",
+      "requiredForProduction": "Actual supported report links/filter contracts, source reconciliation and owner agreement before retirement.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    },
+    {
+      "id": "D14",
+      "name": "Production Iris service",
+      "requiredForProduction": "Permission-aware retrieval/generation, evidence grounding and service reliability. A local grounded demonstration must be labeled.",
+      "localImplementation": "Use explicit illustrative fixture/scenario and a visible provenance/connection state. Do not claim the live dependency is connected."
+    }
+  ],
+  "deliveryGate": [
+    "All 90requirements have explicit current evidence or documented production boundary; no unresolvedmaterialfrontenddefect.",
+    "All 28screens/12workflow paths/30invariants mapped to actual new native and appropriate independent proof; screenshots current build.",
+    "Actual R67 browser workbooks validated; extracted source clean install/build andready-builtpackagecanonical/detail/legacybootsverified.",
+    "Demo illustrations/screenshots agree with frozen build and canonical story; no obsolete 4\u00d74numbers presented as current app."
+  ]
+}

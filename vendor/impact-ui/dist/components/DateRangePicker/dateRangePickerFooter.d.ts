@@ -1,0 +1,2 @@
+export declare function DateRangePickerFooter({ selectedDaysNumber, handleResetDates, handleCancelDates, onSecondaryButtonClick, tertiaryButtonProps, handleApplyDates, primaryButtonProps, hasInputErrors, isApplyDisabled, isClearDisabled, }: any): import("react/jsx-runtime").JSX.Element;
+//# sourceMappingURL=dateRangePickerFooter.d.ts.map

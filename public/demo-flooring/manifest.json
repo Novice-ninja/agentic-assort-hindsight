@@ -1,0 +1,725 @@
+{
+  "label": "Code-native illustrative flooring swatches, not authentic product photography",
+  "items": [
+    {
+      "styleId": "1000037",
+      "article": "NOR-WO-DWR",
+      "species": "White Oak",
+      "colour": "Espresso",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1000037.svg",
+      "illustrative": true,
+      "sha256": "b09afd08bac4caebb94d3ea8087cf3720370b9d7d359e6e9cb16ce86a1c6cac4"
+    },
+    {
+      "styleId": "1000444",
+      "article": "ASH-WO-HS-01",
+      "species": "White Oak",
+      "colour": "Natural",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000444.svg",
+      "illustrative": true,
+      "sha256": "165f88017aec8266bd2386a663c7191f0a4d3bb7a3da43b17a152c37f57c487f"
+    },
+    {
+      "styleId": "1000074",
+      "article": "SEA-LLA-SH",
+      "species": "Acacia",
+      "colour": "Driftwood",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1000074.svg",
+      "illustrative": true,
+      "sha256": "e169b455b74849ab6e39a8e232de3508eafe87e747a0c98738f02857332ccd29"
+    },
+    {
+      "styleId": "1000481",
+      "article": "BRO-A-D02",
+      "species": "Acacia",
+      "colour": "Honey",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1000481.svg",
+      "illustrative": true,
+      "sha256": "e7e6c84aa70263fd63ff8b096023e6c1d013f5e99a9dff55a9cab4f96659db0d"
+    },
+    {
+      "styleId": "1000518",
+      "article": "CAM-HWB-03",
+      "species": "Hickory",
+      "colour": "Ash",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000518.svg",
+      "illustrative": true,
+      "sha256": "bfed61196f662fc54afa22e56a4ac551c4377f23cf4d47795a1c223b09d5a367"
+    },
+    {
+      "styleId": "1000592",
+      "article": "EAS-SBWR-05",
+      "species": "Stranded Bamboo",
+      "colour": "Walnut",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1000592.svg",
+      "illustrative": true,
+      "sha256": "8846af5f78e6431c26f61ad65028c84b0fa489c1bccb9b4a81f8c486863ca57f"
+    },
+    {
+      "styleId": "1000555",
+      "article": "DUN-RO-S04",
+      "species": "Red Oak",
+      "colour": "Espresso",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1000555.svg",
+      "illustrative": true,
+      "sha256": "570ab82653dd6252f6610b9a38d88579a34f8a4251a3a4a0ce0081a9adc49776"
+    },
+    {
+      "styleId": "1000666",
+      "article": "GLE-A-D07",
+      "species": "Acacia",
+      "colour": "Driftwood",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1000666.svg",
+      "illustrative": true,
+      "sha256": "14f0a956260d93e86b137b2a29715263a6af6b95a4a458c6db8bd0df4fee9f4b"
+    },
+    {
+      "styleId": "1000629",
+      "article": "FAI-WOHS-06",
+      "species": "White Oak",
+      "colour": "Chestnut",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000629.svg",
+      "illustrative": true,
+      "sha256": "db0bc4822c3a8ca4e8ff5ef02d8bf90d367caf91ba918a6b4b581ad7bb4b36d9"
+    },
+    {
+      "styleId": "1000814",
+      "article": "KIN-SB-HS11",
+      "species": "Stranded Bamboo",
+      "colour": "Ash",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000814.svg",
+      "illustrative": true,
+      "sha256": "f9c44a627141e538c0cb942aa12ec39a1d22030eeb839aa2e00a6c06175992e8"
+    },
+    {
+      "styleId": "1000740",
+      "article": "IRO-RO-S09",
+      "species": "Red Oak",
+      "colour": "Natural",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1000740.svg",
+      "illustrative": true,
+      "sha256": "94676990d287b60bda1e0f06d55da15e6c2cb98e51ad193e949ad82355e12c93"
+    },
+    {
+      "styleId": "1000777",
+      "article": "JAS-HMWR-10",
+      "species": "Hard Maple",
+      "colour": "Honey",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1000777.svg",
+      "illustrative": true,
+      "sha256": "f31fcea900b758b2314b81c7bfc29cee9b8ade1bf36cfa3381f0684b60dde631"
+    },
+    {
+      "styleId": "1000111",
+      "article": "CER-BWO-WBR",
+      "species": "White Oak",
+      "colour": "Honey",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000111.svg",
+      "illustrative": true,
+      "sha256": "99ea23cc3785ea9aff8d094b328dd3b53377e31899608730c5e9654f4ec6d647"
+    },
+    {
+      "styleId": "1000703",
+      "article": "HAR-HWB-08",
+      "species": "Hickory",
+      "colour": "Smoke Gray",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000703.svg",
+      "illustrative": true,
+      "sha256": "e00f171a1ad1cf2d52085dbcaab0a826bbd365cbe35740f50c58bea1ee774c3e"
+    },
+    {
+      "styleId": "1000148",
+      "article": "HIL-WO-WB",
+      "species": "White Oak",
+      "colour": "Walnut",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000148.svg",
+      "illustrative": true,
+      "sha256": "7b68d4e9d4c14f75f747172aaf34a1ad97b2d28b178426762241f91c252464e9"
+    },
+    {
+      "styleId": "1000851",
+      "article": "LAK-A-D-12",
+      "species": "Acacia",
+      "colour": "Espresso",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1000851.svg",
+      "illustrative": true,
+      "sha256": "d70ac3a0d4dd7a877fa549b5a1500e4a1f8595831173ac2ae4586473bb525d74"
+    },
+    {
+      "styleId": "1000962",
+      "article": "OAK-HMWR-15",
+      "species": "Hard Maple",
+      "colour": "Driftwood",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1000962.svg",
+      "illustrative": true,
+      "sha256": "44cc3464f5e6544c57b864feb6bc2b227aabe53e27afdf1b1a935aa70ffa5776"
+    },
+    {
+      "styleId": "1000999",
+      "article": "ASH-WOHS-16",
+      "species": "White Oak",
+      "colour": "Smoke Gray",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000999.svg",
+      "illustrative": true,
+      "sha256": "f7d6aaba119e6fc89b1fe56a8672b782dbee685be18cd3cf0c17bb367e3decd4"
+    },
+    {
+      "styleId": "1001073",
+      "article": "CAM-HWB-18",
+      "species": "Hickory",
+      "colour": "Honey",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001073.svg",
+      "illustrative": true,
+      "sha256": "53dbd0f9bd10f0bd3597f401af78f2b1614c0a9aa42a4f9c82105730429808e6"
+    },
+    {
+      "styleId": "1000888",
+      "article": "MON-HWB-13",
+      "species": "Hickory",
+      "colour": "Walnut",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000888.svg",
+      "illustrative": true,
+      "sha256": "d34e9fc26320ff727750673025aab4ca4ec8f72dbf0e22b7a161e3e1dc112721"
+    },
+    {
+      "styleId": "1000925",
+      "article": "NEW-ROS-14",
+      "species": "Red Oak",
+      "colour": "Chestnut",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1000925.svg",
+      "illustrative": true,
+      "sha256": "a65315c4bc55369900b01b0a598961e4f6d02151cc86a810e8e563ed4a8b54ab"
+    },
+    {
+      "styleId": "1001147",
+      "article": "EAS-HMWR-20",
+      "species": "Hard Maple",
+      "colour": "Espresso",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1001147.svg",
+      "illustrative": true,
+      "sha256": "68994a42cfd455c259942763fb9b4b102afbd50a65e8ee451698f748813cf8dc"
+    },
+    {
+      "styleId": "1001036",
+      "article": "BRO-SB-D17",
+      "species": "Stranded Bamboo",
+      "colour": "Natural",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001036.svg",
+      "illustrative": true,
+      "sha256": "c08e4bd7cbd440b99b837282fccaa0dfc55321013cc7eae79a656930acd5742d"
+    },
+    {
+      "styleId": "1000185",
+      "article": "LEG-WB-SB",
+      "species": "Stranded Bamboo",
+      "colour": "Smoke Gray",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000185.svg",
+      "illustrative": true,
+      "sha256": "f92664b9ea60631efb53a00b728382e73bf3b53de1fd6d1390d26d91bd85cad0"
+    },
+    {
+      "styleId": "1001221",
+      "article": "GLE-A-D22",
+      "species": "Acacia",
+      "colour": "Chestnut",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001221.svg",
+      "illustrative": true,
+      "sha256": "347327a76fc2c793e557dcf628211bcbf47618a0723a139c3d914e3b4811e5a1"
+    },
+    {
+      "styleId": "1000222",
+      "article": "CHA-MA-HS",
+      "species": "Hard Maple",
+      "colour": "Ash",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000222.svg",
+      "illustrative": true,
+      "sha256": "8917f48a945902d59c9a6bdc64ed3e6bb449a663ad261479dfc85dc7fd6adf45"
+    },
+    {
+      "styleId": "1001110",
+      "article": "DUN-RO-S19",
+      "species": "Red Oak",
+      "colour": "Ash",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1001110.svg",
+      "illustrative": true,
+      "sha256": "c87320f10de79de9c4cfe46b5f6755dba4fabf68d14ea205a29657a4ba6659c2"
+    },
+    {
+      "styleId": "1001332",
+      "article": "JAS-HMWR-25",
+      "species": "Hard Maple",
+      "colour": "Natural",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1001332.svg",
+      "illustrative": true,
+      "sha256": "e3bbe95cba833697373471d060858af5a141ceb1255a2e4e93eb51cbd322f9d4"
+    },
+    {
+      "styleId": "1001184",
+      "article": "FAI-WOHS-21",
+      "species": "White Oak",
+      "colour": "Walnut",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1001184.svg",
+      "illustrative": true,
+      "sha256": "3ee09e9ce621c65cb6ba7670a8d02052c39a38c500641067b96df77ce012bf6f"
+    },
+    {
+      "styleId": "1001369",
+      "article": "KIN-WOHS-26",
+      "species": "White Oak",
+      "colour": "Honey",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1001369.svg",
+      "illustrative": true,
+      "sha256": "5baf5c7041871aeae5d792cf4a7aba22704a7418b2ee7f48461f68685c7edef0"
+    },
+    {
+      "styleId": "1000259",
+      "article": "ALL-HI-WB",
+      "species": "Hickory",
+      "colour": "Chestnut",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000259.svg",
+      "illustrative": true,
+      "sha256": "6828e70d46ed3a3b10f8e96fd105afd9fae6b2629b088cb1f5c3cf1326bd543b"
+    },
+    {
+      "styleId": "1001406",
+      "article": "LAK-A-D-27",
+      "species": "Acacia",
+      "colour": "Ash",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001406.svg",
+      "illustrative": true,
+      "sha256": "28d661c7348740c3502ada6f1ebcdc9fde46b6b4a1dad2ea04c84b19bc8e7b30"
+    },
+    {
+      "styleId": "1001258",
+      "article": "HAR-SBWB-23",
+      "species": "Stranded Bamboo",
+      "colour": "Driftwood",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001258.svg",
+      "illustrative": true,
+      "sha256": "d0f6fb40780f2e98343d53f91588d3420712640449a03a81c13221d826619d73"
+    },
+    {
+      "styleId": "1001295",
+      "article": "IRO-RO-S24",
+      "species": "Red Oak",
+      "colour": "Smoke Gray",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1001295.svg",
+      "illustrative": true,
+      "sha256": "630a51056dfb0714df5862d2fe351e9b576e3a08ebb7619a1716f881960343ea"
+    },
+    {
+      "styleId": "1001554",
+      "article": "ASH-WOHS-31",
+      "species": "White Oak",
+      "colour": "Driftwood",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1001554.svg",
+      "illustrative": true,
+      "sha256": "a7ab99afe2519474dca5dbc228f67545f9b311e4f09103e165f5e969a88d0fc8"
+    },
+    {
+      "styleId": "1001443",
+      "article": "MON-HWB-28",
+      "species": "Hickory",
+      "colour": "Espresso",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001443.svg",
+      "illustrative": true,
+      "sha256": "3270f1fe0b9883d4a0be78647b9f61d944a77c9fcff4f795ffaf4868d3bab777"
+    },
+    {
+      "styleId": "1000296",
+      "article": "ARL-HI-HS",
+      "species": "Hickory",
+      "colour": "Natural",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1000296.svg",
+      "illustrative": true,
+      "sha256": "ef499a3693b2f9b27a68479242c0ac801b6901a47100a6eeb20dbd316e0cd177"
+    },
+    {
+      "styleId": "1001517",
+      "article": "OAK-HMWR-30",
+      "species": "Hard Maple",
+      "colour": "Chestnut",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1001517.svg",
+      "illustrative": true,
+      "sha256": "3c73662c814f80c244fe6abfe774be2c73f4f1e40bb65678364d4868660cdb9c"
+    },
+    {
+      "styleId": "1001591",
+      "article": "BRO-A-D32",
+      "species": "Acacia",
+      "colour": "Smoke Gray",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001591.svg",
+      "illustrative": true,
+      "sha256": "92ed11f00778fbda1307234aa508e1a6a327a8d0176a08264a770c299ec375e7"
+    },
+    {
+      "styleId": "1001628",
+      "article": "CAM-HWB-33",
+      "species": "Hickory",
+      "colour": "Natural",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001628.svg",
+      "illustrative": true,
+      "sha256": "bc2da4355dfb67b8952c323837dcc3bbb1441be86adf425e46197731964065e9"
+    },
+    {
+      "styleId": "1001480",
+      "article": "NEW-SB-S29",
+      "species": "Stranded Bamboo",
+      "colour": "Walnut",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1001480.svg",
+      "illustrative": true,
+      "sha256": "6fca7bcf26913fcdef4239e681e5a88e6d4bbdddedd46bcb42ca8b4fe1124e67"
+    },
+    {
+      "styleId": "1001665",
+      "article": "DUN-RO-S34",
+      "species": "Red Oak",
+      "colour": "Honey",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1001665.svg",
+      "illustrative": true,
+      "sha256": "090408887761dc6db15cdca0dd8164fb6953f08304f7cb75521f975bb631f9ed"
+    },
+    {
+      "styleId": "1001739",
+      "article": "FAI-WOHS-36",
+      "species": "White Oak",
+      "colour": "Espresso",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1001739.svg",
+      "illustrative": true,
+      "sha256": "97ab6116c5b8ed11f875cbe0127b004278885bb6829b66424e44292c288b805f"
+    },
+    {
+      "styleId": "1001776",
+      "article": "GLE-A-D37",
+      "species": "Acacia",
+      "colour": "Walnut",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001776.svg",
+      "illustrative": true,
+      "sha256": "853fd766d21c5f25b9640d8b40618fe8e96420778d2243cdb60f456331f90b91"
+    },
+    {
+      "styleId": "1000333",
+      "article": "DRU-HM-SM",
+      "species": "Hard Maple",
+      "colour": "Espresso",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1000333.svg",
+      "illustrative": true,
+      "sha256": "b315ac8ac85dbc175738681589e542a02cb457734ac00965c67e3dcd91cb0b5a"
+    },
+    {
+      "styleId": "1001702",
+      "article": "EAS-SBWR-35",
+      "species": "Stranded Bamboo",
+      "colour": "Ash",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1001702.svg",
+      "illustrative": true,
+      "sha256": "480ade51e2d64bb6c4a9e1066108115ba50b43edec97e951144c024982d0c99b"
+    },
+    {
+      "styleId": "1001813",
+      "article": "HAR-HWB-38",
+      "species": "Hickory",
+      "colour": "Chestnut",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001813.svg",
+      "illustrative": true,
+      "sha256": "6b5a34ce7679273fdbd1da15090f47db8d53788b4795fff37be7877cc7f0777b"
+    },
+    {
+      "styleId": "1000370",
+      "article": "ATR-WB-SB",
+      "species": "Stranded Bamboo",
+      "colour": "Driftwood",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000370.svg",
+      "illustrative": true,
+      "sha256": "bda200e27874c8e28df6d27114c9d0b18eb11326636b8e143987b241a66b1ac5"
+    },
+    {
+      "styleId": "1000407",
+      "article": "SER-HM-DS",
+      "species": "Hard Maple",
+      "colour": "Honey",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1000407.svg",
+      "illustrative": true,
+      "sha256": "7163f4128561f60474ce3c465909ad6887d62b8072c950cc46040dfaa3686c87"
+    },
+    {
+      "styleId": "1001924",
+      "article": "KIN-SB-HS41",
+      "species": "Stranded Bamboo",
+      "colour": "Natural",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1001924.svg",
+      "illustrative": true,
+      "sha256": "0ef00e1b05d2e56a27569940d571f86592c44bf9bfc6c3bf82c7cf83587bb27c"
+    },
+    {
+      "styleId": "1001887",
+      "article": "JAS-HMWR-40",
+      "species": "Hard Maple",
+      "colour": "Smoke Gray",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1001887.svg",
+      "illustrative": true,
+      "sha256": "b3a1593842f436ca47b03a3b700ff7874d0418d082a8962168b1feb1bf8a9844"
+    },
+    {
+      "styleId": "1001850",
+      "article": "IRO-RO-S39",
+      "species": "Red Oak",
+      "colour": "Driftwood",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1001850.svg",
+      "illustrative": true,
+      "sha256": "0a7117e8caad9f9ad3a9d35a3a42af640896e9e0bfd7611e1b37eca7b46143b9"
+    },
+    {
+      "styleId": "1001961",
+      "article": "LAK-A-D-42",
+      "species": "Acacia",
+      "colour": "Honey",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1001961.svg",
+      "illustrative": true,
+      "sha256": "4aae57e4162f9f6ff1797e5d55cbf1d2cc668433447504d8388041aca6c2ca29"
+    },
+    {
+      "styleId": "1002072",
+      "article": "OAK-HMWR-45",
+      "species": "Hard Maple",
+      "colour": "Walnut",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1002072.svg",
+      "illustrative": true,
+      "sha256": "2f51a5ccbdff4a4145014f54f9f458de5de09882b9a52a4e1d8895b61327a521"
+    },
+    {
+      "styleId": "1001998",
+      "article": "MON-HWB-43",
+      "species": "Hickory",
+      "colour": "Ash",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1001998.svg",
+      "illustrative": true,
+      "sha256": "f9a29f1506e78ea0b1cbc4d6953534e4f6b860b9e86b94a56078e2021d6bd4c5"
+    },
+    {
+      "styleId": "1002035",
+      "article": "NEW-ROS-44",
+      "species": "Red Oak",
+      "colour": "Espresso",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1002035.svg",
+      "illustrative": true,
+      "sha256": "2af187cb55522dfbb0859db1a98a8c85ac843b6a5c69fd2bd1aa76de80ea2e04"
+    },
+    {
+      "styleId": "1002146",
+      "article": "BRO-SB-D47",
+      "species": "Stranded Bamboo",
+      "colour": "Driftwood",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1002146.svg",
+      "illustrative": true,
+      "sha256": "3c2cb51ab10b0ef72b03b9d30bec8027d01b7f5829026d083d310dfdd28c3fc2"
+    },
+    {
+      "styleId": "1002183",
+      "article": "CAM-HWB-48",
+      "species": "Hickory",
+      "colour": "Smoke Gray",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1002183.svg",
+      "illustrative": true,
+      "sha256": "b5795597e991c988973810dfa663f698e6348637033f377113c19cf12077c02e"
+    },
+    {
+      "styleId": "1002257",
+      "article": "EAS-HMWR-50",
+      "species": "Hard Maple",
+      "colour": "Honey",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1002257.svg",
+      "illustrative": true,
+      "sha256": "319feeee18ea7bb95b78b68ffa2199935304a437b8995ad55558c5e3422aa6e4"
+    },
+    {
+      "styleId": "1002109",
+      "article": "ASH-WOHS-46",
+      "species": "White Oak",
+      "colour": "Chestnut",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1002109.svg",
+      "illustrative": true,
+      "sha256": "39d3407d5fa7e820ea95335fabcb53f5e37fdd5abe363d5c8ef3db9125f8ce7a"
+    },
+    {
+      "styleId": "1002331",
+      "article": "GLE-A-D52",
+      "species": "Acacia",
+      "colour": "Espresso",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1002331.svg",
+      "illustrative": true,
+      "sha256": "d00689a7fea3ba9fc825110512fd2dc740ecc496448ffec85fa57c2578fcd004"
+    },
+    {
+      "styleId": "1002294",
+      "article": "FAI-WOHS-51",
+      "species": "White Oak",
+      "colour": "Ash",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1002294.svg",
+      "illustrative": true,
+      "sha256": "e059d929d3195f8f3467386804cb595561cb3b93ed06133130c7b36bb208ef20"
+    },
+    {
+      "styleId": "1002220",
+      "article": "DUN-RO-S49",
+      "species": "Red Oak",
+      "colour": "Natural",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1002220.svg",
+      "illustrative": true,
+      "sha256": "a06ba1aa1b0caf88eb95463a49b49e2d0318fe00d1b2885cb0c5ae3410765734"
+    },
+    {
+      "styleId": "1002368",
+      "article": "HAR-SBWB-53",
+      "species": "Stranded Bamboo",
+      "colour": "Walnut",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1002368.svg",
+      "illustrative": true,
+      "sha256": "dbffeae7130d1381c6e741de05dab975de4558d56f62ed348f44920fd58ab0f4"
+    },
+    {
+      "styleId": "1002442",
+      "article": "JAS-HMWR-55",
+      "species": "Hard Maple",
+      "colour": "Driftwood",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1002442.svg",
+      "illustrative": true,
+      "sha256": "48e11fd3d6c65dea978db3ab96c2b2cc635a7155226c5e7610f1d1d1c46c4686"
+    },
+    {
+      "styleId": "1002590",
+      "article": "NEW-SB-S59",
+      "species": "Stranded Bamboo",
+      "colour": "Ash",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1002590.svg",
+      "illustrative": true,
+      "sha256": "81af09a850323ac9727a6ae926264186d481e6ab8ed6b119adac02f144309dc1"
+    },
+    {
+      "styleId": "1002479",
+      "article": "KIN-WOHS-56",
+      "species": "White Oak",
+      "colour": "Smoke Gray",
+      "finish": "Hand Scraped",
+      "url": "/demo-flooring/1002479.svg",
+      "illustrative": true,
+      "sha256": "47d0e22140e825b225139b71bbd1ec27fd93f574472e98c05a90b8a5f9c7ed73"
+    },
+    {
+      "styleId": "1002405",
+      "article": "IRO-RO-S54",
+      "species": "Red Oak",
+      "colour": "Chestnut",
+      "finish": "Smooth",
+      "url": "/demo-flooring/1002405.svg",
+      "illustrative": true,
+      "sha256": "6bbf6954a9f48b3b40d04e797b1ce68e8684ee313ad609c25f93f995c048f897"
+    },
+    {
+      "styleId": "1002553",
+      "article": "MON-HWB-58",
+      "species": "Hickory",
+      "colour": "Honey",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1002553.svg",
+      "illustrative": true,
+      "sha256": "80b37d19294efa172f8630bd4918acba20e2be1777b0a919ddaad23d4cb6c848"
+    },
+    {
+      "styleId": "1002627",
+      "article": "OAK-HMWR-60",
+      "species": "Hard Maple",
+      "colour": "Espresso",
+      "finish": "Water Resistant",
+      "url": "/demo-flooring/1002627.svg",
+      "illustrative": true,
+      "sha256": "5ca2f44d705fda7ed9e6ebadec837c12a20329a1863803b0c7dcbcc621682160"
+    },
+    {
+      "styleId": "1002516",
+      "article": "LAK-A-D-57",
+      "species": "Acacia",
+      "colour": "Natural",
+      "finish": "Distressed",
+      "url": "/demo-flooring/1002516.svg",
+      "illustrative": true,
+      "sha256": "68cebc88a01570e27dec93113456a4dae233ec49872ef9abd9abeda8c72d32ed"
+    },
+    {
+      "styleId": "1000000",
+      "article": "MAV-RO-WB",
+      "species": "Red Oak",
+      "colour": "Natural",
+      "finish": "Wire-Brushed",
+      "url": "/demo-flooring/1000000.svg",
+      "illustrative": true,
+      "sha256": "96b6c87260eae8d779469642433fd3aba415e14331e2436920e80db5c7e1a706"
+    }
+  ]
+}
